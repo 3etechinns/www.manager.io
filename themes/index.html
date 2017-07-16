@@ -1,4 +1,8 @@
 ---
 layout: main
 ---
-aaa
+<div style="padding-bottom: 40px; text-align: center; font-weight: bold"><div style="font-size: 24px; color: #333; line-height: 200%">Free themes for your business</div><div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">Pick the right look for your invoices, quotes, orders, receipts or statements</div></div>
+<style>.thumbnail-wrapper { float: left; padding-left: 10px; padding-right: 10px }.thumbnail { padding: 1px; float: left }.thumbnail img { width: 289px }</style>
+{% for theme in site.themes %}
+<div class="thumbnail-wrapper"><a href="{{ theme.url }}" class="thumbnail"><img src="{{ theme.preview }}"></a></div>
+{% endfor %}
