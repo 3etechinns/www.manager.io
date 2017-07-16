@@ -1,0 +1,70 @@
+---
+layout: guide
+title: Email transactions and reports
+permalink: /guides/email-transactions-and-reports/10643
+tags: email-settings settings email-settings-form
+---
+<p>You can <strong>email PDF-formatted versions of completed transactions and reports</strong> directly from within the Manager program. No setup is required for the simplest approach.</p>
+
+<h3>Sending email from in-built SMTP server</h3>
+
+<p>Once you have created a business within Manager, you can email transactions and reports with no additional setup. While viewing the document you want to send, click <kbd>Email</kbd> near the top of the window:</p>
+
+<p><img src="/uploads/manager1/original/2X/9/970b9c315020603fc3c0843ec2ee72b43a0b89d1.png" width="168" height="41"></p>
+
+<p>An email composing screen will appear:</p>
+
+<p><img src="/uploads/manager1/original/2X/b/b2b1fc1132fd4ff711631d2ef19d691a5bc94a5a.png" width="580" height="407"></p>
+
+<ul>
+<li>
+<strong><code>To</code></strong> will be filled with any email address previously recorded for a customer, supplier, or employee if one is associated with the document. Otherwise, this field will be blank. Enter or edit the address as needed. If more than one email address is entered, only the first will be sent the document.</li>
+<li>
+<strong><code>Subject</code></strong> will be pre-filled with the title of the transaction or report you are emailing.</li>
+<li>A message may be entered in the text window.</li>
+</ul>
+
+<p>Click <kbd>Send</kbd>. The document will be sent as a PDF attachment to an email. The email will originate from the email address <strong><code>no-reply@no-reply.io</code></strong>. Your business name will be used as the sender's identity.</p>
+
+<h3>Adjusting email settings</h3>
+
+<p>To adjust email settings, go to the <kbd>Settings</kbd> tab and click <kbd>Email settings</kbd>:</p>
+
+<p><img src="/uploads/manager1/original/2X/a/ad61c04add684b0b9bb91b277ba00cd12b03818d.png" width="99" height="55"> <strong>=&gt;</strong> <img src="/uploads/manager1/original/2X/5/5d287ce9dd0a98e2433f817c1aec55cd86f85898.png" width="137" height="47"></p>
+
+<p>Modify settings as desired:</p>
+
+<p><img src="/uploads/manager1/original/2X/c/c013d5b4a27e9bf0174ace0b6ffa308f9ae34321.png" width="690" height="381"></p>
+
+<ul>
+<li>Enter your own <strong><code>Email address</code></strong>. Entering an address here will not change the address from which the email is sent. But the new address will be shown as a "reply-to" address.</li>
+<li>Check the box to <strong><code>Send a copy of every email to this address</code></strong> if you want copies of your outgoing emails.</li>
+<li>
+<strong><code>Name</code></strong> will be used as the sender's identity.</li>
+<li>
+<strong><code>Paper size</code></strong> can be set to <em>A4</em> or <em>Letter</em>, depending on which you expect recipients to use.</li>
+<li>
+<strong><code>Email sending format</code></strong> can be set as <em>Plain text</em> or <em>HTML</em>.</li>
+</ul>
+
+<blockquote><p><strong>Notes</strong><br>The paper size set for emails also controls paper size for printed documents throughout the program.<br><br><em>HTML</em> should be set as the sending format if you plan to use HTML elements in <a href="https://forum.manager.io/t/use-email-templates/10392">email templates</a>.</p></blockquote>
+
+<p>If you want emails sent from Manager to come from your own email domain rather than <code>no-reply.io</code>, check the box to <strong><code>Use custom SMTP server</code></strong>. Additional fields will appear (some appear progressively):</p>
+
+<p><img src="/uploads/manager1/original/2X/f/fa84f9a150c180ccc9eebfd134911db96328a721.png" width="426" height="384"></p>
+
+<p>Check with your SMTP host to determine correct settings. For security reasons, Manager does not support port <em>465</em>. Begin by trying port <em>587</em>. Most SMTP servers will support both ports, so this should generally not be an issue. Click <kbd>Update</kbd> to save your adjusted settings.</p>
+
+<p>After settings have been updated, you can test them by clicking <kbd>Test email settings</kbd>. A test message will be sent to your email address. A notice also appears if the test is successful.</p>
+
+<blockquote><p><strong>Caution</strong><br>Email settings cannot be tested until you have clicked <kbd>Update</kbd>.</p></blockquote>
+
+<h3>Keeping track of emails</h3>
+
+<p>When you send your first email, Manager automatically activates the <kbd>Emails</kbd> tab in the left navigation pane:</p>
+
+<p><img src="/uploads/manager1/original/2X/d/d3c30ed1dcdf427385573fd440a4ac99233589d2.png" width="199" height="57"></p>
+
+<p>In that tab, you can click <kbd>View</kbd> next to any email to display it. To delete an email, click <kbd>Delete</kbd> in the lower right corner of its window:</p>
+
+<p><img src="/uploads/manager1/original/2X/9/93d4a5fde860d2a2fb6b5baadb7037bfffbce85e.png" width="66" height="37"></p>
