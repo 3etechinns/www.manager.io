@@ -1,0 +1,19 @@
+---
+layout: guide
+title: Troubleshoot email issues
+permalink: /guides/troubleshoot-email-issues/9100
+tags: email-settings settings
+---
+<p>If you can't send emails from Manager, the first thing you should try is to upgrade to the latest version. The issue causing your problem could have been a bug in the software which might have been already fixed.</p>
+
+<p>If upgrading didn't solve the problem, we need to dive into your <code>Email Settings</code> under <code>Settings</code> tab.</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/90756e1b4bce72379543e7caac15e1032c02ce0e" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/90756e1b4bce72379543e7caac15e1032c02ce0e.png" class="lightbox" title="IUcsEFC.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/9/90756e1b4bce72379543e7caac15e1032c02ce0e_1_690x475.png" width="690" height="475"><div class="meta">
+<span class="filename">IUcsEFC.png</span><span class="informations">752x518 8.12 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>By default, Manager will send emails using in-built SMTP server. As long as you're connected to the Internet, this option should always work. If it doesn't and you are using the latest version, it could indicate a bug which should be reported to us.</p>
+
+<p>If you are using <code>custom SMTP server</code>, uncheck the option and click <kbd>Update</kbd> and test emails again. If your emails start working, the problem is with your custom SMTP server settings. Your username, host, port or password could be invalid. You need to check with your SMTP provider what are the correct settings.</p>
+
+<p>Currently, Manager doesn't support port <code>465</code>. So try different port, such as <code>587</code>. Most SMTP servers will support both ports so this is generally not an issue.</p>
