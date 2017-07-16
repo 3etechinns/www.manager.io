@@ -1,0 +1,68 @@
+---
+layout: guide
+title: Set starting balances for customers
+permalink: /guides/set-starting-balances-for-customers/5494
+tags: starting-balances customers customer-form
+---
+<p><strong>Starting balances</strong> exist only if you are transferring an existing business to Manager from another accounting system. In that case, you may need to set starting balances for customers who already have credit balances or owe you money.</p>
+
+<p>Before you can enter a starting balance for any account, go to the <kbd>Settings</kbd> tab and set a <kbd>Start Date</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/bb7e2aa4562093e835b6c93ca0a5100a8f8c9055.png" width="211" height="52"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c058545832628998d511442a66bfb61ef77186de.png" width="137" height="63"></p>
+
+<p>Once your start date is set, you can enter two types of starting balances for your customers:</p>
+
+<ul>
+<li>Credit balances, when you owe the customer money</li>
+<li>Unpaid sales invoices, when the customer owes you money</li>
+</ul>
+
+<h3>Enter credit balances</h3>
+
+<p>If your customer has a credit balance that can be applied to future invoices, go to the <kbd>Customers</kbd> tab:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c3e433934a40afdc50d1a361e5db29199c34d944.png" width="217" height="57"></p>
+
+<p>Click the <kbd>Edit</kbd> button for the customer with a credit balance:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2cb8225d439d0d41759dcb9bf9b2e4a2bc33c7d2.png" width="210" height="88"></p>
+
+<p>Check the <code>Starting balance</code> checkbox and enter the available credit amount:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d6b366523937b7380366695591a35c2c81cb928d.png" width="245" height="81"></p>
+
+<p>Click <kbd>Update</kbd> to save the changes. Repeat for all customers with credit balances.</p>
+
+<h3>Enter unpaid sales invoices</h3>
+
+<p>If your customer has unpaid sales invoices, you cannot enter the starting balance as a single figure. Manager requires you to enter specific unpaid invoices, fully completed. This is so Manager can generate accurate cash-basis reports. Even if you don't adopt cash-basis accounting, it is important to enter all unpaid sales invoices so you can issue detailed customer statements.</p>
+
+<p>Starting balance invoices are entered the same way as regular sales invoices. Go to the <kbd>Sales Invoices</kbd> tab and click the <kbd>New Sales Invoice</kbd> button::</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0d681dcad956135ef9e5fabf42eec0a57876ee3a.png" width="215" height="55"> <strong>=&gt;</strong><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9c912bedf0a92f3daea115b3cb816e2d995c607e.png" width="285" height="75"></p>
+
+<p>Complete all details, especially the <code>Issue date</code> field. <strong>Only sales invoices with issue dates before your start date will be treated as starting balance invoices.</strong> When finished, click <kbd>Create</kbd> to save the invoice. You will notice that amounts in the <code>Invoice total</code> and <code>Balance due</code> columns under the <kbd>Sales Invoices</kbd> tab are equal:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/cf842365fd85e84ea2cc84c4feca8b41aa985bb5.png" width="684" height="126"></p>
+
+<p>This is usually the correct scenario, unless the invoice entered had already been partially paid by the customer as of the start date. In that case, click on the amount under the <code>Balance due</code> column, where you will see the starting balance with an amount of zero. Click <kbd>Edit</kbd> next to the starting balance transaction:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8c78e95c364c6daf05330c5e5d4140b03bfa538d.png" width="440" height="50"></p>
+
+<p>Enter the amount previously paid by the customer toward this invoice:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d2a8f3c217a6fdf6052e89ec9b944121998a9915.png" width="137" height="83"></p>
+
+<p>Click <kbd>Update</kbd> to save the change. When you go back to the <kbd>Sales Invoices</kbd> tab, you will see the <code>Balance due</code> of the partially paid invoice has decreased by the amount paid:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7253dd96462ba2c5d433d8f70849100d79c151cc.png" width="680" height="86"></p>
+
+<p>Repeat for all sales invoices predating your start date.</p>
+
+<h3>The last step</h3>
+
+<p>After you enter all starting balances, go to the<kbd>Reports</kbd> tab and click on<kbd>Starting Balances</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/28ddc2b6bd1413d8371dcad42552b85dd2549697.png" width="221" height="60"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0f60bb59a3219eb6e31b661c8a20b7e376835d9a.png" width="340" height="52"></p>
+
+<p>Ensure your starting balances for <em>Accounts receivable</em> and all customers (visible by drilling down on the blue <em>Accounts receivable</em> balance) match the closing balance sheet from the previous accounting system.</p>
