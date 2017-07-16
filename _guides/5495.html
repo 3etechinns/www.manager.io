@@ -1,0 +1,60 @@
+---
+layout: guide
+title: Pay a refund
+permalink: /guides/pay-a-refund/5495
+tags: cash-accounts payment-form
+---
+<p>Sometimes, a business owes money to a customer and must <strong>pay a refund</strong>. Two basic situations may exist, requiring slightly different procedures:</p>
+
+<ul>
+<li>A refund is being paid from a cash sale or without reference to the customer's <em>Accounts receivable</em> balance.</li>
+<li>A customer defined under the <kbd>Customers</kbd> tab has paid in advance, paid more than was owed, or has been <a href="https://forum.manager.io/t/credit-notes-for-customer-returns-and-refunds/7425">issued a credit note</a>, so a credit is being reported as a negative balance (or entry) in <em>Accounts receivable</em>.</li>
+</ul>
+
+<h3>Refunds from cash sales</h3>
+
+<p>In the <kbd>Cash Accounts</kbd> tab, click <kbd>Spend money</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/786f851ea0e747e29a02ed6e1921c3bfcf52a3e6.png" width="219" height="52"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9a8392ce1c1f13dcd838a2ef15e781c0ce72f8f4.png" width="109" height="40"></p>
+
+<p>At the first stage of the entry screen, select the cash account from which the refund will be paid:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/852df9b90cf6da213a9020b674a2dd60681d7527.png" width="351" height="217"></p>
+
+<p>The full entry screen will appear. Complete the form as you would for any other <kbd><a href="https://forum.manager.io/t/spend-money/7821">Spend money</a></kbd> transaction. In particular, complete a line item for the refund:</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/aeb19e74c45829ab189cb76ecddf2335ac1e3294" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/aeb19e74c45829ab189cb76ecddf2335ac1e3294.png" class="lightbox" title="Screen Shot 2017-04-24 at 12.07.16 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/a/aeb19e74c45829ab189cb76ecddf2335ac1e3294_1_689x42.png" width="689" height="42"><div class="meta">
+<span class="filename">Screen Shot 2017-04-24 at 12.07.16 PM.png</span><span class="informations">1209x75 8.36 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<ul>
+<li>If an inventory or non-inventory item was involved in the original purchase, choose it in the <code>Item</code> field. Most of the remaining fields will fill automatically, but may be edited.</li>
+<li>
+<code>Account</code> should be the same one to which the original purchase was posted. Because this is a spending transaction, Manager will deduct the appropriate amount from an income account, add to <em>Inventory on hand</em>, and reduce <em>Tax payable</em>.</li>
+<li>
+<code>Description</code> describes the return/refund.</li>
+<li>
+<code>Qty</code> is the number of units being refunded. If an inventory item is not actually being returned, but only adjusted in price, enter zero or leave blank.</li>
+<li>
+<code>Unit price</code> is the amount being refunded per unit of return. If only a partial refund is being made, enter the actual amount being refunded.</li>
+<li>Choose the same <code>Tax</code> code used for the original transaction.</li>
+<li>Select a <code>Tracking Code</code> if appropriate.</li>
+</ul>
+
+<p>Click <kbd>Create</kbd> when the form is complete. Remember to pay the customer.</p>
+
+<h3>Refunds of credit balances</h3>
+
+<p>Customer credit balances will be automatically applied to the customer's next invoice:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/986c65cbf86ed49592ddc86c9635cc1e27b86e02.png" width="244" height="191"></p>
+
+<p>But if the next invoice is unlikely to be issued soon or the customer has requested the credit be refunded, <kbd>Spend money</kbd> to reduce the credit balance. Most procedures are identical to refunds from cash sales as described above. However, for <code>Account</code>, select <em>Accounts receivable</em>, then select the customer and enter the amount paid to the customer. Leave the <code>Invoice (optional)</code> field blank.</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/ec1f86319dfa810a7292db4add9ced6992662d03" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ec1f86319dfa810a7292db4add9ced6992662d03.png" class="lightbox" title="Screen Shot 2017-04-24 at 12.31.03 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/e/ec1f86319dfa810a7292db4add9ced6992662d03_1_690x44.png" width="690" height="44"><div class="meta">
+<span class="filename">Screen Shot 2017-04-24 at 12.31.03 PM.png</span><span class="informations">1192x77 10.9 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>Click <kbd>Create</kbd> to save the transaction.</p>
+
+<blockquote><p><strong>Caution</strong><br>Refunding a credit balance only reduces the customer's <em>Accounts receivalbe</em> balance. It does <strong>not</strong> adjust inventory or tax accounts. To do that, you <strong>must</strong> issue a credit note first.</p></blockquote>
