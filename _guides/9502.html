@@ -1,0 +1,29 @@
+---
+layout: guide
+title: Enter tax-inclusive prices on purchase invoices
+permalink: /guides/enter-tax-inclusive-prices-on-purchase-invoices/9502
+tags: tax-codes purchase-invoices purchase-invoice-form
+---
+<p><strong>Tax-inclusive prices</strong> already have any applicable tax added to the selling price. The supplier lists the total price, including tax, rather than a tax-exclusive selling price with separately added tax. Manager can handle either situation with selection of the same tax code. But tax amounts calculated will, necessarily, be different. (See the Note below.)</p>
+
+<p>By default, unit prices on purchase invoices are treated as tax-exclusive.</p>
+
+<blockquote><p><strong>Example</strong><br>Your supplier, Northwind Traders, charges you 1,000 plus 10% tax. Since the amount of 1,000 is tax-exclusive, 10% tax is added to it, increasing the total to 1,100. The tax shows as an addition when you create your purchase invoice in response to Northwind's sales invoice:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/51713e51cb16130476756dc692ab618fdfb3e69b.png" width="384" height="112"><br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/4e276ef58f74ffa9db988e8ae269fd86c792e525.png" width="256" height="175"><br><br>Since the transaction is a purchase, 100.00 is posted to <em>Tax payable</em>, where it offsets amounts you have collected from customers on behalf of your tax authority. The full 1,000.00 sub-total is posted to the appropriate expense account.</p></blockquote>
+
+<hr>
+
+<blockquote><p><strong>Caution</strong><br>If the tax scheme in your jurisdiction does not offset taxes paid against taxes collected, <strong>do not use tax codes on your purchase invoices</strong>. Include tax in the unit price of every line item, where it will add to the expense of the item.</p></blockquote>
+
+<p>You can make unit prices tax-inclusive when creating or editing invoices. The choice applies to the entire purchase invoice. Simply check the box:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6020361dea3a5ac599dd8da58caf56161fea5978.png" width="191" height="62"></p>
+
+<blockquote><p><strong>Example</strong><br>Northwind Traders previously quoted you a single price, including tax. So you check the appropriate box when you create the purchase invoice. The purchase invoice changes to show how much tax is included in the 1,000:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8d5842d179f7bd777c6e29e2f54157adc349e681.png" width="258" height="150"><br><br>90.91 is debited to <em>Tax payable</em>, offsetting tax you would otherwise have owed. Only 909.09 is posted to the relevant expense account.</p></blockquote>
+
+<hr>
+
+<blockquote>
+<p><strong>Note</strong><br>The tax and income amounts are both lower for tax-inclusive pricing because Manager calculates what tax-exclusive unit price would have produced the total, tax-inclusive price <strong>after</strong> tax was added. This calculation is:</p>
+<pre><code>Tax-exclusive price = Tax-inclusive price / (1 + Tax rate)</code></pre>
+<p>Of course, for standard tax-exclusive pricing, the higher price entered is used directly, resulting in a higher tax amount.</p>
+</blockquote>
