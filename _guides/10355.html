@@ -1,0 +1,39 @@
+---
+layout: guide
+title: Resolve issues with automatic credit allocations
+permalink: /guides/resolve-issues-with-automatic-credit-allocations/10355
+tags: supplier-statements customer-statements purchase-invoices sales-invoices customers suppliers
+---
+<p>When you enter a new sales or purchase invoice, you might find that Manager automatically credits the invoice with some amount, making the <code>Balance due</code> less than the invoice <code>Total</code>:</p>
+
+          <a href="https://i.imgur.com/PibJxNi.png" target="_blank" rel="nofollow noopener">
+            <img src="https://i.imgur.com/PibJxNi.png" width="223" height="113">
+          </a>
+
+
+<p>This automatic credit allocation happens when the customer or supplier has a pre-existing credit balance. In other words, you owe a customer money or a supplier owes you money. Normally this is the desired outcome. You want any credits to be automatically applied to invoices, so you are not trying to collect from a customer more than is really owed to you and you don't pay suppliers more than you really owe them. For example, if a customer has overpaid a previous invoice by $100, Manager will remember this until the next invoice is issued to that customer and will automatically apply the $100 credit to without your having to keep track of it.</p>
+
+<p>But if you are certain the customer or supplier didn't have a credit balance, such an automatic credit allocation indicates something has been recorded incorrectly. The example below illustrates how to resolve the issue.</p>
+
+<blockquote><p><strong>Example</strong><br>You have issued a sales invoice  to <strong>Antonio Moreno Taquería</strong> for <strong>$3,370.00</strong> and Manager has automatically applied credit of <strong>$2,345.30</strong>, leaving a balance due of <strong>$1,024.70</strong>: <br><br>          <a href="https://i.imgur.com/Hjft5T1.png" target="_blank" rel="nofollow noopener">
+            <img src="https://i.imgur.com/Hjft5T1.png" width="690" height="461">
+          </a>
+<br><br> Suppose you know this customer didn't have any credit with your company, so you want to discover the origin of this credit. The best way is to view the customer ledger by going to <kbd>Customers</kbd> tab: <br><br>          <a href="https://i.imgur.com/Quz12DB.png" target="_blank" rel="nofollow noopener">
+            <img src="https://i.imgur.com/Quz12DB.png" width="249" height="55">
+          </a>
+<br><br>Locate the customer and click the balance in the <code>Accounts Receivable</code> column:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c929ad3370daec5e89e10d6a0f937e5365f852bc.png" width="689" height="58"><br><br>This will reveal the customer's ledger: <br><br>          <a href="https://i.imgur.com/CJzkumV.png" target="_blank" rel="nofollow noopener">
+            <img src="https://i.imgur.com/CJzkumV.png" width="690" height="214">
+          </a>
+<br><br>There, you see invoice <strong>2650</strong> for <strong>$1,284.60</strong> and a receipt for the same amount on 08/05/2017, which was payment for that invoice. However, you also see another receipt for <strong>$2,345.30</strong> on 26/04/2017, which you suspect was not paid by this customer. After looking at your bank statement, you discover this amount was actually paid by different customer and attributed to <strong>Antonio Moreno Taquería</strong> in error. You can <kbd>Edit</kbd> the receipt to fix the error and attribute the receipt to correct customer.<br><br>You take one final look at customer ledger to verify all transactions belong to this customer: <br><br>          <a href="https://i.imgur.com/FlTxbd0.png" target="_blank" rel="nofollow noopener">
+            <img src="https://i.imgur.com/FlTxbd0.png" width="690" height="179">
+          </a>
+<br><br>Now, when you view the invoice, no amount is automatically credited: <br><br>          <a href="https://i.imgur.com/Z6Z1N4A.png" target="_blank" rel="nofollow noopener">
+            <img src="https://i.imgur.com/Z6Z1N4A.png" width="690" height="418">
+          </a>
+</p></blockquote>
+
+<p>Some bookkeeping errors can be discovered immediately, some can take weeks or even months to discover. Used properly, Manager's double-entry accounting system ensures all errors will be eventually discovered.</p>
+
+<p>In the example above, even if you didn't notice the bookkeeping error, eventually the customer who actually paid <strong>$2,345.30</strong> on 26/04/2017 would complain that its customer statements did not reflect the payment. Or your Aged Receivables report would show that customer's account becoming more and more overdue. Sooner or later, you would discover the payment having been attributed to the wrong customer.</p>
+
+<blockquote><p><strong>Note</strong><br>While the example illustrates an erroneous credit being automatically applied to a sales invoice because of incorrect attribution of a receipt from a customer, similar mistakes can happen with purchase invoices and payments to suppliers. Detection and correction procedures are the same.</p></blockquote>
