@@ -1,0 +1,110 @@
+---
+layout: guide
+title: Create sales invoices
+permalink: /guides/create-sales-invoices/7178
+tags: sales-invoices sales-invoice-form
+---
+<p><strong>Sales invoices</strong> make demands for payment from customers for  goods or services. They increase the balance of the customer's subaccount in <em>Accounts receivable</em> and, therefore, are used when selling on credit. They do not record receipt of money, which must be handled by a second transaction, even if the customer pays upon delivery. In a double-entry accounting system like Manager, they also post income to appropriate accounts.</p>
+
+<h3>Enable the <kbd>Sales Invoices</kbd> tab</h3>
+
+<p>Before a sales invoice can be created, enable the <kbd>Sales Invoices</kbd> tab. Click <kbd>Customize</kbd> below the left navigation pane, check the box for <kbd>Sales Invoices</kbd>, and click <kbd>Update</kbd> below the list:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0a88235bf33a73b6ab774dd598cbd7dcc36142ef.png" width="175" height="198"> <strong>=&gt;</strong>  <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/cd5f2ff5e0ede5f297f2920cae80341fa7dd5121.png" width="162" height="200"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/db5c41b9b7d6385db2caf59b0bc77cd283a162fb.png" width="148" height="200"></p>
+
+<p>Manager offers six methods for creating sales invoices:</p>
+
+<ul>
+<li>Standard method</li>
+<li>By cloning</li>
+<li>From <kbd>Customers</kbd> tab</li>
+<li>From sales quotes</li>
+<li>From sales orders</li>
+<li>From purchase invoices</li>
+</ul>
+
+<h3>Standard method</h3>
+
+<p>In the <kbd>Sales Invoices</kbd> tab, click on <kbd>New Sales Invoice</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/699c19ad705321dc67ed52ae450b06bfe982baa3.png" width="228" height="56"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/acd8babec383738f0fcbcfc8d2e6c1b8afeec447.png" width="265" height="45"></p>
+
+<p>The first stage of the sales invoice entry screen appears:</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/86ef89f61603e62626cc3bb4b016a0a88ed77dc4" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/86ef89f61603e62626cc3bb4b016a0a88ed77dc4.png" class="lightbox" title="Screen Shot 2016-09-25 at 1.38.51 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/8/86ef89f61603e62626cc3bb4b016a0a88ed77dc4_1_690x239.png" width="690" height="239"><div class="meta">
+<span class="filename">Screen Shot 2016-09-25 at 1.38.51 PM.png</span><span class="informations">747x259 39.1 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>By default, <code>Issue date</code> is prepopulated with today's date. An optional <code>Due date</code> can be entered, either as a calendar date or as a number of days after the issue date (illustrated below). Options for <code>Late payment fees</code> can be selected. (1.5% monthly is illustrated below). Manager will automatically assign an <code>Invoice number</code> when the sales invoice is created. It will find the highest-numbered prior sales invoice and add 1.</p>
+
+<p>The <code>Order number</code> field can be used to enter a customer's purchase order number or an internal reference number. If the <kbd>Sales Quotes</kbd> tab is enabled, the <code>Quote number</code> field appears. Completion of both these last two fields is optional.</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/59346a2328bc68281cebaca2b7a9507bbba7f143" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/59346a2328bc68281cebaca2b7a9507bbba7f143.png" class="lightbox" title="Screen Shot 2016-09-25 at 1.47.57 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/5/59346a2328bc68281cebaca2b7a9507bbba7f143_1_690x50.png" width="690" height="50"><div class="meta">
+<span class="filename">Screen Shot 2016-09-25 at 1.47.57 PM.png</span><span class="informations">762x56 29.7 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>A <a href="https://forum.manager.io/t/enter-customers/7018">previously defined <code>Customer</code></a> must be selected in the dropdown box before proceeding. The customer's <code>Billing address</code> is filled automatically. Line items can be completed semi-automatically by selecting predefined inventory or non-inventory items and entering quantities. Or, they may be entered manually. Applicable tax codes can be selected. Additional lines can be added 1, 5, 10, or 20 at a time.</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/b8d94524d62e0684981e2cffb392b14bda2ef18e" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b8d94524d62e0684981e2cffb392b14bda2ef18e.png" class="lightbox" title="Screen Shot 2017-07-11 at 2.30.55 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/b/b8d94524d62e0684981e2cffb392b14bda2ef18e_1_670x500.png" width="670" height="500"><div class="meta">
+<span class="filename">Screen Shot 2017-07-11 at 2.30.55 PM.png</span><span class="informations">1077x803 43.6 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>Note the option to indicate a discount is being applied. If this box is checked, options appear for percentage or fixed amount discounts. Another option lets you indicate prices are tax inclusive. If this box is checked, tax amounts are deducted from the unit price; otherwise they are added to the invoiced amount. Options for rounding and withholding of tax can also be selected:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f62bebfa7568c2eac03e1b1f261b401635679f3b.png" width="270" height="248"></p>
+
+<p>Click <kbd>Create</kbd> to generate the finished sales invoice: </p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/11037c610bfddfa2ff2ac954941018c9e5672124" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/11037c610bfddfa2ff2ac954941018c9e5672124.png" class="lightbox" title="Screen Shot 2017-07-11 at 2.37.22 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/1/11037c610bfddfa2ff2ac954941018c9e5672124_1_659x500.png" width="659" height="500"><div class="meta">
+<span class="filename">Screen Shot 2017-07-11 at 2.37.22 PM.png</span><span class="informations">805x610 49.7 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<blockquote><p><strong>Note</strong><br>Because of the specific in-built tax code selected, this sales invoice's heading has been changed to <em>Tax Invoice</em>. This happens when such a title is known to be required by local law. That does not happen with custom tax codes. See <a href="https://forum.manager.io/t/change-a-form-title/7877">another Guide</a> to learn how to force such a change.</p></blockquote>
+
+<h3>By cloning</h3>
+
+<p>For repeat sales, an existing sales invoice can be duplicated by cloning. While viewing the existing sales invoice, click <kbd>Clone</kbd>, edit as required, and click <kbd>Create</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f6059857af0d7319595fece08865a1be09abb164.png" width="432" height="119"></p>
+
+<h3>From <kbd>Customers</kbd> tab</h3>
+
+<p>If the <kbd>Billable Time</kbd> or <kbd>Billable Expenses</kbd> tabs are being used, sales invoices can be created from the <kbd>Customers</kbd> tab:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/dd8e3ef63549ef0f5fb94b6e6d9954ac6bdf2450.png" width="221" height="52"></p>
+
+<p>Drill down by clicking the blue balance in the <code>Uninvoiced</code> column for a customer:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/69f46f9fe2b71dd137bde59d156e19850487c8f6.png" width="670" height="80"></p>
+
+<p>Select any uninvoiced billable time or billable expenses to be invoiced and click <kbd>New Sales Invoice</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5a9dac98e51ae14fcf556d0376d095e4cffe58b1.png" width="675" height="217"></p>
+
+<p>A sales invoice is created, which can be edited or added to. See <a href="https://forum.manager.io/t/invoicing-billable-time/5502">this Guide</a> for more information.</p>
+
+<h3>From sales quotes</h3>
+
+<p>If the customer was given a sales quote before goods or services were ordered, a sales invoice can be created directly from the sales quote without re-entering information. While viewing the sales quote, select <em>New Sales Invoice</em> from the <kbd>Copy to...</kbd> dropdown box:</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/8def0519e473cc850d32f8941ca3579f9d9b22c0" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8def0519e473cc850d32f8941ca3579f9d9b22c0.png" class="lightbox" title="Screen Shot 2016-09-25 at 2.33.19 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/8/8def0519e473cc850d32f8941ca3579f9d9b22c0_1_690x431.png" width="690" height="431"><div class="meta">
+<span class="filename">Screen Shot 2016-09-25 at 2.33.19 PM.png</span><span class="informations">829x519 62.8 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>A sales invoice entry screen appears, carrying forward necessary information, including the quote number. This can be edited as needed. When <kbd>Create</kbd> is clicked, a sales invoice is generated. For this illustration, no tax code was used, so the default  <em>Invoice</em> title appears:</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/b02b509cbe5beb9d904b1e30201f65717180a44d" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b02b509cbe5beb9d904b1e30201f65717180a44d.png" class="lightbox" title="Screen Shot 2016-09-25 at 2.40.45 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/b/b02b509cbe5beb9d904b1e30201f65717180a44d_1_690x405.png" width="690" height="405"><div class="meta">
+<span class="filename">Screen Shot 2016-09-25 at 2.40.45 PM.png</span><span class="informations">805x473 48.3 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<h3>From sales orders</h3>
+
+<p>If a sales order has been created in response to a customer's purchase order, a sales invoice can be created directly from it. Exactly as when creating a sales invoice from a sales quote, select <em>New Sales Invoice</em> from the <kbd>Copy to...</kbd> dropdown box:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/cc4b5398bcbe8f24c979d45ca6c3a37665cb460f.png" width="360" height="121"></p>
+
+<h3>From purchase invoices</h3>
+
+<p>If goods or services being invoiced to a customer were purchased from a supplier, and the supplier's sales invoice has been entered into Manager as a purchase invoice, a sales invoice can be created directly from the purchase invoice. Again, while viewing the purchase invoice, select <em>New Sales Invoice</em> in the <kbd>Copy to...</kbd> dropdown box:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2e3f7ffd09f61165c0ca7135f05c17f3c32f333f.png" width="396" height="118"></p>
