@@ -1,0 +1,71 @@
+---
+layout: guide
+title: Import bank statements
+permalink: /guides/import-bank-statements/9240
+tags: import-bank-statement-form cash-transactions cash-accounts
+---
+<p>To save time, you can <strong>import bank statement</strong> transactions instead of manually entering them.</p>
+
+<h3>Download your bank statement</h3>
+
+<p>Of course, you can only do this if your bank allows you to electronically export the statement first. Follow your bank's procedures for defining and downloading a statement or transaction list. To limit redundant transactions, try to download a statement covering only the period since you last downloaded one. Manager will accept statements in these formats:</p>
+
+<ul>
+<li>*.qif</li>
+<li>*.ofx</li>
+<li>*.qfx</li>
+<li>*.qbo</li>
+<li>*.sta</li>
+<li>*.swi</li>
+<li>*.940</li>
+<li>*.iif</li>
+<li>*.csv</li>
+</ul>
+
+<p>If your bank does not offer one of these formats, you may be able to import the statement into a spreadsheet program and convert it to *.csv format. If you import a *.csv file, Manager will recognize the following columns:</p>
+
+<ul>
+<li><code>Date</code></li>
+<li><code>Payee</code></li>
+<li><code>Reference</code></li>
+<li><code>Description</code></li>
+<li><code>Amount</code></li>
+</ul>
+
+<h3>Import your bank statement</h3>
+
+<p>To import a bank statement into Manager, go to the <kbd>Cash Accounts</kbd> tab:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b8b6d192a01f227a16ff9bfa1d588b946895fdfc.png" width="222" height="57"></p>
+
+<p>Click the amount in the <code>Cleared balance</code> column of the bank account you are importing transactions into:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/805c38796dce79ddc9efe4520daf517607411c78.png" width="127" height="84"></p>
+
+<p>Click <kbd>Import Bank Statement</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c3b298fae495f666ef38bf083deb1ed3c5f57aa4.png" width="672" height="50"></p>
+
+<p>Browse to the file on your computer containing the transactions you downloaded from your bank account and press <kbd>Next</kbd> (your screen may look different, depending upon your operating system):</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/61a5439be72d64fcd2035cdc8d1a40cf2d5b2b9e.png" width="334" height="245"></p>
+
+<p>Review details of the transactions to be imported and press the <kbd>Import</kbd> button.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c9465b1d4b61fa4407b576f40794c65a86b7f5de.png" width="359" height="353"></p>
+
+<blockquote><p><strong>Example</strong><br>Manager has the ability to recognize most duplicate transactions, based on type, date, and amount. In the import illustrated above, someone in the accounting department has already downloaded and imported transactions covering almost the same time period. Of the 42 transactions downloaded, Manager recognizes 41 as duplicates and only imports the single, remaining transaction.</p></blockquote>
+
+<p>Imported transactions can be automatically posted to proper accounts if their characteristics are recognized according to a bank rule. If unrecognized transactions remain, Manager will notify you when you view the balance of the affected account:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/70e7fd366ba3337c2182c2e4ba6d0e86f544b1bb.png" width="346" height="30"></p>
+
+<p>Click <kbd>View</kbd> to see the uncategorized transaction(s):</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/619aa087c9d68fe90f0d737db45d4cdc5d323e72" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/619aa087c9d68fe90f0d737db45d4cdc5d323e72.png" class="lightbox" title="Screen Shot 2017-04-19 at 12.03.14 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/6/619aa087c9d68fe90f0d737db45d4cdc5d323e72_1_690x130.png" width="690" height="130"><div class="meta">
+<span class="filename">Screen Shot 2017-04-19 at 12.03.14 PM.png</span><span class="informations">913x173 23.3 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p><kbd>Edit</kbd> transactions to post to proper accounts or add descriptions or other information. If the transaction is likely to be repeated in the future, click <kbd>New Bank Rule</kbd> to define a rule that will recognize and categorize it automatically next time. When all transactions have been edited, check boxes for those you want to update and click <kbd>Bulk Update</kbd>.</p>
+
+<blockquote><p><strong>Caution</strong><br>Bank statement imports have the potential to duplicate transactions already entered either manually or by prior import. They might also eliminate transactions erroneously as duplicates when dates and amounts are the same. (This could happen, for example, when a frequent customer buys the same thing several times in one day and some transactions are entered manually.) To minimize such problems, thorough review of imported transactions is recommended when the process is complete. The bank statement import feature is meant to save time in data entry, not substitute for regular review and oversight.</p></blockquote>
