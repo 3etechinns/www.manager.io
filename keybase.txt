@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/lubos
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.manager.io
+  * I am lubos (https://keybase.io/lubos) on keybase.
+  * I have a public key with fingerprint BAA7 0553 D0CB C116 727C  A317 BF3D 5275 814C 92AB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01012bf6e7e3bc0fb1d24dce80b4984819c9d8c84817e97278250012699799ece63a0a",
+            "fingerprint": "baa70553d0cbc116727ca317bf3d5275814c92ab",
+            "host": "keybase.io",
+            "key_id": "bf3d5275814c92ab",
+            "kid": "01012bf6e7e3bc0fb1d24dce80b4984819c9d8c84817e97278250012699799ece63a0a",
+            "uid": "eb85835eec97845872bbd0eeec628e19",
+            "username": "lubos"
+        },
+        "service": {
+            "hostname": "www.manager.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1454627629,
+    "expire_in": 157680000,
+    "prev": "5292e7e2f836f17c2d5a7c9b41ee697b454b17ec4d63c6fd98b655057c2e6ce2",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbSFRRFB01MyesiIweSnXDQjS973PPUD9W9mEaBUlUNt1z7rnOxXHu
+NDO+k356KAlaFH7Uh2VGDyJRCCqQ8pGIpVFqpgWakZihKUWJjzrX7K/Pzs85e++1
+1tl7sZsjQmz2IPe7M7VDhxt3BrU/vZxjS6/v31bEIFMrYBxFTBaZv4hbI/6AM8vQ
+GAfDcizHI10mgAgIszriNF7UMFFYJEJFVDiIoaZg6wUIBDxQeImlFBlCACHBRBZU
+VmXiGd3wZBKf12d4AlQWqSpgJUnQWIwwx8mUiFWBA0gXNIkHksKJGPIqokSX6bcY
+tDmk+kmCYdIcDZzz7f0D/5/7zpmXI0iRFEEiBEOgiJICeIQ0ltBY5hXCQQvoJz6P
+mk0o2p2DTD9THM/QVK6BieWqNcZCOS8vLyFb9ajUjz/jeH1mwMSmm9ZcgYDXYVED
+Bd55LEHOBRUnMjwadZESconPb5gexsFRJA4YliwnSqLMA5mH8QzJ9xo+4jQshARk
+haXH+obkUkmJhzy1hdcVQdY5gHlNUgGGSOQIkSFAVAdRU7CoyQKWdQ0qSJYkVqJI
+ImPCM9ZcJzwm4xBpm2omlfQbmR41kOMjTHHjk6OLbEF22+LQYGu7bPbwFX93riM7
+bE5+bY6Ott5ujgUjZwdXDpQXriuMOr5r/EP16p+dFXNL23Yc27MqN7b7UeVYQ2JS
+3LKvo8ORM4zdXdaaNjEEU1yFnaeXn9se072pzD5xoKfjeWpqXR5O29qWDG58LNoy
+JhrO69FzMQ1VrDBZsf5i19U7tVV9P4pLe9Mb2oSeV28SN4e131sS0b924NTB9JdZ
+TY9Nru4tTLp2M6podGNcr33NleSHUxciTx6Sv9zav3vmftbw7AS/bzb/+3j4dKXr
+fMlcSIJeMtgaFNpV9620yVdXncGUT9cvV/tT+nBL9Uh5TUZbU/GMoyY61f7siP7C
+8evS3YGW4KkNUw/2fsq2j7+f/PwbLX5MpQ==
+=3ydT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lubos
+
+==================================================================
