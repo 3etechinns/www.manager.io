@@ -3,7 +3,7 @@ title: About
 layout: main
 published: true
 ---
-![](cover.jpg)
+<div class="thumbnail"><img src="/desktop/about/cover.jpg"></div>
 
 **Great software should work with little configuration and setup. Manager is designed to get you up and running and fully functional within minutes.**
 
