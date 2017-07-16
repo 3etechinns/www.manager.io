@@ -1,8 +1,9 @@
 ---
 title: About
 layout: main
+published: true
 ---
-<div class="thumbnail"><img src="cover.jpg"></div>
+![](cover.jpg)
 
 **Great software should work with little configuration and setup. Manager is designed to get you up and running and fully functional within minutes.**
 
@@ -30,4 +31,4 @@ Where We Are
 Culwulla Chambers<br />
 Level 2, 67 Castlereagh Street<br />
 Sydney NSW 2000<br />
-Australia<br />
+Australia
