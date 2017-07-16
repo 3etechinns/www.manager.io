@@ -1,0 +1,42 @@
+---
+layout: guide
+title: Use production orders to manufacture inventory items
+permalink: /guides/use-production-orders-to-manufacture-inventory-items/7767
+tags: inventory-items production-orders production-order-view production-order-form
+---
+<p><strong>Production orders</strong> are used to record manufacture of finished inventory items using existing inventory and other resources. For example, manufacturing bottled fruit juices requires fruits, bottles, and lids purchased from suppliers as inventory items. These inventory items can be converted into the finished products sold to customers.</p>
+
+<blockquote><p><strong>NOTE</strong><br>Finished goods must be created as separate <a href="https://forum.manager.io/t/create-and-manage-inventory-items/7551">inventory items</a> before they can be entered on production orders.</p></blockquote>
+
+<h3>Basic production order with inventory items</h3>
+
+<p>To record a production order, go to the <kbd>Production Orders</kbd> tab and click <kbd>New Production Order</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/bec1774f423ff46054577108bb75595fc82f20f1.png" width="216" height="50"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/cc2c5d04ba0afa9b66522c184b25402f1f3c2764.png" width="306" height="50"></p>
+
+<p>Complete the entry screen:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3fa3f1024998654296ff90648a51c310025a6be5.png" width="451" height="381"></p>
+
+<ul>
+<li>
+<strong><code>Date</code></strong> will be autofilled with today's date, but may be edited.</li>
+<li>
+<strong><code>Priority</code></strong> is optional, and can be used as a literal priority or may be used to serialize production orders.</li>
+<li>
+<strong><code>Description</code></strong> can be any text useful for describing the production order.</li>
+<li>Select quantity and <em>Inventory item</em> to be produced under <strong><code>Finished item</code></strong>.</li>
+<li>Select quantity and <em>Inventory item</em> for the first raw material to be used for production under <strong><code>Bill of materials</code></strong>. If more than one inventory item is used, click <kbd>Add line</kbd> to add more line items.</li>
+</ul>
+
+<p>Click <kbd>Create</kbd> to save the production order.</p>
+
+<h3>Adding non-inventory costs</h3>
+
+<p>If non-inventory costs, such as wages, consumables, or overhead allocations are required to produce the finished inventory item(s), check the box to <code>Add non-inventory cost into production</code>. Enter accounts to which the costs will be posted and the amounts. Add lines if necessary:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8c592cd4f0ea9370b80815971dd8b77ab3ea74b4.png" width="447" height="156"></p>
+
+<p>Manager will add the non-inventory costs to the current average cost of inventory item(s) consumed by the production order to calculate the cost of the produced inventory item(s).</p>
+
+<p>In the <kbd>Inventory Items</kbd> tab, the quantity of the manufactured inventory item will increase while the quantities of input inventory items will decrease by the quantities included in the production order.</p>
