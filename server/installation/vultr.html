@@ -1,0 +1,87 @@
+---
+layout: main
+---
+<style>img { border: 1px solid #ccc; border-radius: 3px; padding: 1px; vertical-align: top; margin-right: 10px; max-width: 936px }h1 { border-bottom: 1px solid #ddd;padding-bottom: 20px; font-size: 24px; margin-bottom: 30px }h3 { border-bottom: 1px solid #ddd; margin-top: 40px; padding-bottom: 20px; }code { background-color: #fff; border: 1px solid #ccc; padding: 0 6px; white-space: pre }blockquote { background-color: #ffffcc; border-left: 5px solid orange; font-size: 14px; }ul, ol { margin-bottom: 1.7em; }ol > li > p, ol > li > p { margin-bottom: 0px; }pre > code { border: none; }pre { overflow: auto; word-wrap: normal; white-space: pre; } a.lightbox > div.meta { display: none }i.fa-li { opacity: 0.5 }p { line-height: 24px; }kbd { background-color: #fff; border: 1px solid #e9e9e9; border-radius: 3px; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8); color: #222; display: inline-block; font-size: 0.857em; line-height: 1.4; margin: 0 0.1em; padding: 0.1em 0.6em; }</style><h1>Vultr</h1><p><a href="http://www.vultr.com/?ref=6832962">Vultr.com</a> is offering servers which come with 512MB memory and 20GB SSD for <strong>only $2.50 USD per month</strong>. That is half price what usually other hosting companies charge.</p>
+
+<h3>Create Vultr.com account</h3>
+
+<p>Before you will be able to install Manager Server, you will need to sign up for <a href="http://www.vultr.com/?ref=6832962">Vultr.com account</a>. Once you sign up, you will be able to log in to control panel.</p>
+
+<h3>Setup Startup Script</h3>
+
+<p>Once in control panel, go to <code>Servers</code> tab, then click <code>Startup Scripts</code>, then <code>Add Startup Script</code> button.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/84a59cc73c72ed646d4124466bcbc65a2fbaae60.png"></p>
+
+<p>Name your startup script <code>install.manager.io</code> and copy &amp; paste to <code>Script</code> field following line:</p>
+
+<p></p><pre><code class="lang-auto">curl -fsSL http://install.manager.io | bash</code></pre>
+
+<p>So your input should look something like this.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/39c840603f2d2f8126a047b35b9d3057e514b499.png" width="542" height="255"></p>
+
+<p>Then press <code>Add Script</code> button to save your script.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6d772951e9cfd69fac8de6b82114ae94eab3abc3.png" width="538" height="66"></p>
+
+<h3>Launching the Server</h3>
+
+<p>Once your startup script is created, go to <code>Servers</code> section again and under <code>Instances</code> tab, click on the plus sign to add new server.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7a61b9b0d390106b15f164898381b490aba5ab37.png" width="100" height="78"></p>
+
+<p>This will open configuration options for your new server.</p>
+
+<p>In the first step, select location that is the closest to you. This will ensure Manager will run the fastest.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f3673f436384731e2c2cd6562a13d13534a5b713.png"></p>
+
+<p>Under <code>Server Type</code> select <code>Ubuntu</code> then select <code>16.04 x64</code> version.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c5479f5ac4fc833e9177ddafe99045fedc447041.png" width="298" height="116"></p>
+
+<p><code>Server Size</code> can be the cheapest $2.50/mo instance.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/793f08f81d2f784af34a902d2c9912cf3dc94247.png" width="351" height="304"></p>
+
+<p>Additional features are optional. You might want to enable <code>Auto Backups</code>.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d2c3d7c9139ddf1facf617389250803c0804c5f8.png" width="407" height="228"></p>
+
+<p>As startup script, select <code>install.manager.io</code></p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b6a071b81bb8715429337c56ce5534e5baa31480.png" width="362" height="186"></p>
+
+<p>Then click <code>Deploy Now</code> button at the bottom of the screen.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6c2c2a2ee130929fea88901b39c87a0045e6a89d.png" width="364" height="86"></p>
+
+<p>You will see a message that your server has been added successfully and status of the server should be <code>Installing...</code></p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ef9a5cc10ffe856e312ae7261908a72de8177736.png" width="227" height="135"></p>
+
+<p>The status will shortly change to <code>Running</code> but you might need to wait another 5-10 minutes for Manager to be actually installed on the running server.</p>
+
+<h3>Connecting to the Server</h3>
+
+<p>After you wait for 5-10 minutes, look at the list of servers which should look something like this:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7da80dd1666fb2ad2a2560f1062ff4a7b9a623a2.png" width="372" height="148"></p>
+
+<p>Note the IP address which is <code>45.76.117.79</code>. Open your web-browser and enter <code>xx.xx.xx.xx:8080</code>. where <code>xx.xx.xx.xx</code> is IP address of your server. So for example, if my IP address is <code>45.76.117.79</code> then you should enter to your web-browser <code>45.76.117.79:8080</code></p>
+
+<p>You should see login screen to Manager Server.</p>
+
+          <a href="https://imgur.com/T9yZ9P6.png" target="_blank" rel="nofollow noopener">
+            <img src="https://imgur.com/T9yZ9P6.png" width="532" height="409">
+          </a>
+
+
+<p>If this is what you see. Congratulations, you are up &amp; running. Just click <code>Login</code> button as default password is empty.</p>
+
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tbody><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p>It is highly recommended that you don't connect to your server directly via IP address for security reasons. You should have a domain name pointing to IP address of your server.</p>
+<p>For example, if you own domain name <code>mycompany.com</code>, you should create sub-domain <code>accounting.mycompany.com</code> or similar and have it pointed to IP address of your server. If you are not sure how to do this, reach out to your domain registrar or local IT person.</p>
+<p>Your server will automatically request free SSL certificate for the domain you choose to use and your connection to your server will be automatically encrypted using HTTPS protocol.</p>
+</td></tr></tbody></table>
