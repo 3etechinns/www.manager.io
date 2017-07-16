@@ -1,0 +1,35 @@
+---
+layout: guide
+title: Use customer codes
+permalink: /guides/use-customer-codes/7716
+tags: themes customers customer-form
+---
+<p>The <strong><code>Code</code></strong> field for customers is completely optional. It can be used for several purposes, including:</p>
+
+<ul>
+<li>Distinguishing customers with identical names</li>
+<li>Annotating different departments or cost centers at a single customer (with each department being created as a distinct customer)</li>
+<li>Assigning customers to regions, sales personnel, or routes</li>
+</ul>
+
+<h3>Assign a customer code</h3>
+
+<p>When creating or editing a customer in the <kbd>Customers</kbd> tab, enter any combination of letters or numbers in the <code>Code</code> field:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/71c44c53d7a9992ffa99511fcd4b0dbc685885c0.png" width="443" height="138"></p>
+
+<p>By default, the customer's code will be shown on printed documents next to customer's name:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7cc58c76659ff3ee5c2eb96f4bfe5fa91da090dd.png" width="161" height="80"></p>
+
+<p>The code will also show in the <kbd>Customers</kbd> listing and can be entered as a search parameter in other tabs:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/502d1514a78aad530e4ead58b13cc00c6b98cc77.png" width="323" height="126"></p>
+
+<h3>Removing the customer code from documents</h3>
+
+<p>If you wish to remove the customer code from completed forms, edit the theme used to display them. While viewing the theme's computer code, find the line using the variable <code>{{ recipient.code }}</code>. This is a placeholder variable that inserts the customer code into your documents. To hide the customer code, simply remove <code>{{ recipient.code }}</code> from your theme. <strong>Leave the rest of the line it was in unchanged.</strong></p>
+
+<p>After you save your new or modified theme, the customer code will no longer show.</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6bbbbababf3bdc1e474f9bee637d9b33543d2a40.png" width="142" height="90"></p>
