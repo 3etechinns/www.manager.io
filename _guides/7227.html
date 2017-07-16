@@ -1,0 +1,76 @@
+---
+layout: guide
+title: Set starting balances for suppliers
+permalink: /guides/set-starting-balances-for-suppliers/7227
+tags: starting-balances suppliers supplier-form
+---
+<p><strong>Starting balances</strong> exist only if you are transferring an existing business to Manager from another accounting system. In that case, you may need to set starting balances for suppliers to whom you already owe money or with whom you have credit balances.</p>
+
+<p>Before you can enter a starting balance for any account, go to the <kbd>Settings</kbd> tab and set a <kbd>Start Date</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0b1cb625d624d4b9b789f50db78d4fa193df4b46.png" width="219" height="52"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c058545832628998d511442a66bfb61ef77186de.png" width="137" height="63"></p>
+
+<p>Once your start date is set, you can enter two types of starting balances for your suppliers:</p>
+
+<ul>
+<li>Credit balances, when the supplier owes you money</li>
+<li>Unpaid invoices, when you owe the supplier money</li>
+</ul>
+
+<h3>Enter credit balances</h3>
+
+<p>If you have a credit balance with a supplier that is not related to a specific purchase invoice but can be applied to future purchase invoices, go to the <kbd>Suppliers</kbd> tab:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/21c14aa6501026e0abec3843a3d5b10e08e0b445.png" width="224" height="54"></p>
+
+<p>Click <kbd>Edit</kbd> for the supplier with whom you have a credit balance:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/a4adf40eb4017fbcebf22a4be21e094603aeb72b.png" width="165" height="46"></p>
+
+<p>Check the <code>Starting balance</code> checkbox, then enter the available credit amount:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/189a8688139b390b9d4bedb51179201de473a434.png" width="244" height="76"></p>
+
+<p>Click <kbd>Update</kbd> to save the change. The available supplier credit shows as a negative amount under the <code>Accounts payable</code> column in the <kbd>Suppliers</kbd> tab:</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/092662f8b07632478d7272e99cf2c4c847cb644a" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/092662f8b07632478d7272e99cf2c4c847cb644a.png" class="lightbox" title="Screen Shot 2016-09-28 at 2.52.16 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/0/092662f8b07632478d7272e99cf2c4c847cb644a_1_690x62.png" width="690" height="62"><div class="meta">
+<span class="filename">Screen Shot 2016-09-28 at 2.52.16 PM.png</span><span class="informations">745x67 16.4 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>Repeat for all suppliers with whom you have credit balances.</p>
+
+<h3>Enter unpaid purchase invoices</h3>
+
+<p>If you have unpaid purchase invoices with a supplier, you cannot enter the starting balance as a single figure. Manager requires you to enter the specific unpaid purchase invoices, fully completed. This is so Manager can assign future payments to proper purchase invoices, generate accurate cash-basis reports, and produce detailed supplier statements.</p>
+
+<p>Enter starting balance purchase invoices the same way as <a href="https://forum.manager.io/t/creating-purchase-invoices/7189">regular purchase invoices</a>. Go to the <kbd>Purchase Invoices</kbd> tab and click <kbd>New Purchase Invoice</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/ac071325fd7c85ff8e121acb1449f19140f08f29.png" width="220" height="51"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/36b494d7a8b1c858a88e76cbb85b5a5de2a410f9.png" width="308" height="42"></p>
+
+<p>Complete all details, especially the <code>Issue date</code> field. <strong>Only purchase invoices with issue dates before your start date will be treated as starting balance purchase invoices.</strong> When finished, click <kbd>Create</kbd> to save the purchase invoice. You will notice that amounts in the <code>Invoice total</code> and <code>Balance due</code> columns under the <kbd>Purchase Invoices </kbd> tab are equal:</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/6514106efb92063209a24ed534dce68b2c7a5bb5" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6514106efb92063209a24ed534dce68b2c7a5bb5.png" class="lightbox" title="Screen Shot 2017-05-09 at 11.48.44 AM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/6/6514106efb92063209a24ed534dce68b2c7a5bb5_1_690x69.png" width="690" height="69"><div class="meta">
+<span class="filename">Screen Shot 2017-05-09 at 11.48.44 AM.png</span><span class="informations">706x71 8.7 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>This is usually the correct scenario, unless you have already partially paid the purchase invoice as of your start date. In that case, click on the amount under the <code>Balance due</code> column. You will see the starting balance with an amount of zero. Click <kbd>Edit</kbd> next to the starting balance transaction:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/dc55ef0aeb5a60dfe3b79ca5945a63b9ad734c84.png" width="640" height="68"></p>
+
+<p>Enter the amount you previously paid the supplier toward this purchase invoice:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/58f6b322f90c1de4acb24bba8d0776db83b97423.png" width="163" height="146"></p>
+
+<p>Click <kbd>Update</kbd> to save the change. When you go back to the <kbd>Purchase Invoices</kbd> tab, you will see the <code>Balance</code> of the partially paid purchase invoice has decreased by the amount already paid:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/a4f403d177efb443063b56286795ab2616556a3e.png" width="588" height="68"></p>
+
+<p>Repeat for all open purchase invoices preceding your start date.</p>
+
+<h3>The last step</h3>
+
+<p>After you enter all starting balances, go to the<kbd>Reports</kbd> tab and click on <kbd>Starting Balances</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/28ddc2b6bd1413d8371dcad42552b85dd2549697.png" width="221" height="60"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0f60bb59a3219eb6e31b661c8a20b7e376835d9a.png" width="340" height="52"></p>
+
+<p>Ensure your starting balances for <em>Accounts payable</em> and all suppliers (visible by drilling down on the blue <em>Accounts payable</em> balance) match the balance sheet from the previous accounting system.</p>
