@@ -2,6 +2,6 @@
 layout: main
 ---
 <div style="padding-bottom: 40px; text-align: center; font-weight: bold"><div style="font-size: 24px; color: #333; line-height: 200%">Good design keeps the user happy</div><div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">Everything is designed. Few things are designed well.</div></div>
-{% for screenshot in site.desktop.screenshots %}
+{% for screenshot in site.screenshots %}
 <div class="thumbnail-wrapper"><a href="{{ screenshot.url }}" class="thumbnail"><img src="{{ screenshot.preview }}"></a></div>
 {% endfor %}

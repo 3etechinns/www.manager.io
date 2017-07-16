@@ -1,6 +1,9 @@
 markdown: kramdown
 
 collections:
+  screenshots:
+    output: true
+    permalink: /desktop/:collection/:name
   themes:
     output: true
   guides:
