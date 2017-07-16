@@ -1,0 +1,59 @@
+---
+layout: guide
+title: Add freight-in to inventory item costs
+permalink: /guides/add-freight-in-to-inventory-item-costs/9610
+tags: inventory-items purchase-invoice-form
+---
+<p><strong>Freight-in</strong> represents the cost of obtaining goods from a supplier. This obviously includes transportation and shipping costs, but could also include handling and brokerage fees, customs charges, and so forth, as long as you do not need to record those as expenses in separate accounts. For typical accounting purposes, freight-in is added into the cost of goods, just as though the supplier charged a higher price.</p>
+
+<blockquote><p><strong>Example</strong><br>Northwind Traders purchases 100 units of an inventory item at a unit price of $4.00. Northwind's supplier adds a shipping charge of $20. The fully delivered average cost of the items is not $4.00, but $4.20.</p></blockquote>
+
+<p>Manager provides two methods for entering freight-in costs:</p>
+
+<ul>
+<li>Manual allocation</li>
+<li>Automatic freight-in distribution</li>
+</ul>
+
+<h3>Manual allocation</h3>
+
+<p>To manually allocate freight-in costs to an inventory item, add a separate line item to a purchase invoice or cash payment form. Choose the same inventory item, but leave the <code>Qty</code> field blank: </p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/4000ef43ab4d68f6ffc538b5d8cb24ed487b557e" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/4000ef43ab4d68f6ffc538b5d8cb24ed487b557e.png" class="lightbox" title="Screen Shot 2017-05-18 at 7.28.32 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/4/4000ef43ab4d68f6ffc538b5d8cb24ed487b557e_1_690x103.png" width="690" height="103"><div class="meta">
+<span class="filename">Screen Shot 2017-05-18 at 7.28.32 PM.png</span><span class="informations">1064x159 19.6 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>The freight-in cost will be added to the average cost of the item without affecting the quantity on hand:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/49146b02f302dd5b039faaa3f54d8d42f9a3e108.png" width="296" height="70"></p>
+
+<blockquote><p><strong>Note</strong><br>Manual allocation is the only method available for cash payments. It should also be used whenever freight-in costs of separate inventory items can be determined independently, such as when shipped separately by the supplier.</p></blockquote>
+
+<h3>Automatic freight-in distribution</h3>
+
+<p>If you record the purchase of multiple inventory items <strong>on the same purchase invoice</strong>, you do not need to manually calculate the freight-in cost per inventory item. Instead, add a line item and select <em>Freight-in</em> in the <code>Item</code> field. As for manual allocation, leave the <code>Qty</code> field blank (not the default zero):</p>
+
+<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/6090963dbd4d056163b3fbfd7f9ba75ac28a5e02" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6090963dbd4d056163b3fbfd7f9ba75ac28a5e02.png" class="lightbox" title="Screen Shot 2017-05-18 at 7.40.47 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/6/6090963dbd4d056163b3fbfd7f9ba75ac28a5e02_1_690x139.png" width="690" height="139"><div class="meta">
+<span class="filename">Screen Shot 2017-05-18 at 7.40.47 PM.png</span><span class="informations">1092x221 23.1 KB</span><span class="expand"></span>
+</div></a></div></p>
+
+<p>This will allocate the freight-in cost proportionally (based on total amounts) to all inventory items purchased: </p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/79d944f11a79af460a926d15eb8468613ccba1e4.png" width="286" height="103"></p>
+
+<blockquote><p><strong>Caution</strong><br>Be sure to edit the <em>Freight-in</em> line item so <code>Qty</code> is blank, not zero, or no amount will be calculated and no freight-in cost will be apportioned to the inventory items.</p></blockquote>
+
+<h3>Entering separate freight-in invoices</h3>
+
+<p>When freight-in charges are billed by and paid to different suppliers than the inventory item, separate payment forms or purchase invoices are required. Examples include:</p>
+
+<ul>
+<li>Direct billing by freight companies</li>
+<li>Separate invoices from freight forwarders</li>
+<li>Fees from brokers</li>
+<li>Customs charges</li>
+</ul>
+
+<p>For these situations, use the manual allocation method, choosing the inventory item but leaving <code>Qty</code> blank. You do not need to consolidate these separate charges on the same transaction form as the inventory item purchase. Average inventory item costs will still be calculated correctly.</p>
+
+<p>Nor do you need to list the same date on forms for the purchase and freight-in. Transaction dates have no impact on average cost.</p>
