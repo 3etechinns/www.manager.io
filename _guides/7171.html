@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Work with multi-component custom tax codes
-permalink: /guides/work-with-multi-component-custom-tax-codes/7171
 tags: tax-codes
 ---
 <p><strong>Multi-component custom tax codes</strong> present several accounting challenges. Individual tax components may be:</p>
@@ -14,7 +13,7 @@ tags: tax-codes
 <li>Effective only for certain categories of goods or services</li>
 </ul>
 
-<p>Basic instructions for creating multi-component custom tax codes are contained <a href="https://forum.manager.io/t/tax-codes/8901">in another Guide</a>. Those instructions are adequate for simple situations where all components:</p>
+<p>Basic instructions for creating multi-component custom tax codes are contained <a href="/guides/8901">in another Guide</a>. Those instructions are adequate for simple situations where all components:</p>
 
 <ul>
 <li>Apply simultaneously to goods or services</li>
@@ -32,15 +31,11 @@ tags: tax-codes
 
 <p>In the simple situation outlined above, all components can be assigned to the default <em>Tax payable</em> account, which Manager creates automatically when the first tax code is entered. On a sales invoice with a line item to which this tax code applies, the applicable tax code is selected:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/837df679ddbd0828534c492192fb438495ed81b9" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/837df679ddbd0828534c492192fb438495ed81b9.png" class="lightbox" title="Screen Shot 2016-09-24 at 12.55.46 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/8/837df679ddbd0828534c492192fb438495ed81b9_1_690x41.png" width="690" height="41"><div class="meta">
-<span class="filename">Screen Shot 2016-09-24 at 12.55.46 PM.png</span><span class="informations">1241x75 19.5 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/837df679ddbd0828534c492192fb438495ed81b9.png"></p>
 
 <p>The resulting sales invoice lists the individual tax component amounts rather than the overall tax code:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/70ae243762e351f5363e138aeb703d7cca37e369" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/70ae243762e351f5363e138aeb703d7cca37e369.png" class="lightbox" title="Screen Shot 2016-09-24 at 1.04.55 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/7/70ae243762e351f5363e138aeb703d7cca37e369_1_690x239.png" width="690" height="239"><div class="meta">
-<span class="filename">Screen Shot 2016-09-24 at 1.04.55 PM.png</span><span class="informations">744x258 19.7 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/70ae243762e351f5363e138aeb703d7cca37e369.png"></p>
 
 <p>Assuming no other taxable transactions have been recorded yet, the <kbd>Summary</kbd> shows all taxes payable in a single account:</p>
 
@@ -60,7 +55,7 @@ tags: tax-codes
 
 <p>To keep track of individual tax components when they are payable to different authorities or on different schedules, create  separate tax payable accounts for each. In the <kbd>Settings</kbd> tab, select <kbd>Chart of Accounts</kbd>:</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/57d389d7458df073f143738af5281bf22f998b3e.png" width="204" height="50"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fdcca4650dae0928af4ed8c14fd46ad047d38568.png" width="166" height="50"></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/57d389d7458df073f143738af5281bf22f998b3e.png" width="204" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fdcca4650dae0928af4ed8c14fd46ad047d38568.png" width="166" height="50"></p>
 
 <p>On the Balance Sheet side, click <kbd>New Account</kbd>:</p>
 
@@ -70,7 +65,7 @@ tags: tax-codes
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0d1bfb84b34c7928966d6241d56fc9a2079c3dc9.png" width="410" height="344"></p>
 
-<p>Repeat the process for the other tax components. Then return to <kbd>Settings</kbd> =&gt; <kbd>Tax Codes</kbd> and edit the tax code by assigning each component to its matching tax payable account:</p>
+<p>Repeat the process for the other tax components. Then return to <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Tax Codes</kbd> and edit the tax code by assigning each component to its matching tax payable account:</p>
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/97e6220ec133261f1a725b72b60cbfabd38067be.png" width="499" height="314"></p>
 
@@ -105,7 +100,7 @@ tags: tax-codes
 
 <p>When a component of a tax code changes, a completely new tax code must be created.</p>
 
-<blockquote><p><strong>Caution</strong><br>Never edit components of a tax code that has already been used for any transaction. All previous transactions using that code will be retroactively modified.</p></blockquote>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>Caution</strong><br>Never edit components of a tax code that has already been used for any transaction. All previous transactions using that code will be retroactively modified.</p></td></tr></table>
 
 <p>Good practice is to change the name of the obsolete tax code. Reusing the original name for the updated code can help users remember which one to select. Document changes in business files to support future questions or audits. Potentially useful name changes include:</p>
 
@@ -122,9 +117,7 @@ tags: tax-codes
 
 <p>Returning to the example, assume the state sales tax component increases to 3.5% mid-year. A new tax code is created and the obsolete one renamed. Subsequently, a third sales invoice for identical services to a customer within the city is issued. The resulting Tax Summary shows all three rates used during the accounting period:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/59883e26249da44fba00222e06cbe3d71ca95972" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/59883e26249da44fba00222e06cbe3d71ca95972.png" class="lightbox" title="Screen Shot 2016-09-24 at 3.26.14 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/5/59883e26249da44fba00222e06cbe3d71ca95972_1_661x500.png" width="661" height="500"><div class="meta">
-<span class="filename">Screen Shot 2016-09-24 at 3.26.14 PM.png</span><span class="informations">667x504 29.8 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/59883e26249da44fba00222e06cbe3d71ca95972.png"></p>
 
 <h3>Paying individual tax authorities</h3>
 
