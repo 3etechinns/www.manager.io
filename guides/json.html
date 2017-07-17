@@ -3,11 +3,10 @@ permalink: /guides.json
 ---
 [
 {% for guide in site.guides %}
-{% assign parts = guide.permalink | split: '/' %}
+{% assign id = guide.id | split: '/' | last %}
 {
-  "id": {{ parts[3] }},
+  "id": {{ id }},
   "title": "{{ guide.title }}",
-  "slug": "{{ parts[2] }}",
   "tags": [ {% for tag in guide.tags %}"{{ tag }}"{% if forloop.last == false %},{% endif %}{% endfor %} ]
 }
 
