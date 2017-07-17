@@ -1,12 +1,11 @@
 ---
 layout: guide
 title: Add freight-in to inventory item costs
-permalink: /guides/add-freight-in-to-inventory-item-costs/9610
-tags: inventory-items purchase-invoice-form purchase-invoices
+tags: purchase-invoice-form purchase-invoices inventory-items
 ---
 <p><strong>Freight-in</strong> represents the cost of obtaining goods from a supplier. This obviously includes transportation and shipping costs, but could also include handling and brokerage fees, customs charges, and so forth, as long as you do not need to record those as expenses in separate accounts. For typical accounting purposes, freight-in is added into the cost of goods, just as though the supplier charged a higher price.</p>
 
-<blockquote><p><strong>Example</strong><br>Northwind Traders purchases 100 units of an inventory item at a unit price of $4.00. Northwind's supplier adds a shipping charge of $20. The fully delivered average cost of the items is not $4.00, but $4.20.</p></blockquote>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Northwind Traders purchases 100 units of an inventory item at a unit price of $4.00. Northwind's supplier adds a shipping charge of $20. The fully delivered average cost of the items is not $4.00, but $4.20.</p></td></tr></table>
 
 <p>Manager provides two methods for entering freight-in costs:</p>
 
@@ -19,29 +18,25 @@ tags: inventory-items purchase-invoice-form purchase-invoices
 
 <p>To manually allocate freight-in costs to an inventory item, add a separate line item to a purchase invoice or cash payment form. Choose the same inventory item, but leave the <code>Qty</code> field blank: </p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/4000ef43ab4d68f6ffc538b5d8cb24ed487b557e" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/4000ef43ab4d68f6ffc538b5d8cb24ed487b557e.png" class="lightbox" title="Screen Shot 2017-05-18 at 7.28.32 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/4/4000ef43ab4d68f6ffc538b5d8cb24ed487b557e_1_690x103.png" width="690" height="103"><div class="meta">
-<span class="filename">Screen Shot 2017-05-18 at 7.28.32 PM.png</span><span class="informations">1064x159 19.6 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/4000ef43ab4d68f6ffc538b5d8cb24ed487b557e.png"></p>
 
 <p>The freight-in cost will be added to the average cost of the item without affecting the quantity on hand:</p>
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/49146b02f302dd5b039faaa3f54d8d42f9a3e108.png" width="296" height="70"></p>
 
-<blockquote><p><strong>Note</strong><br>Manual allocation is the only method available for cash payments. It should also be used whenever freight-in costs of separate inventory items can be determined independently, such as when shipped separately by the supplier.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>Manual allocation is the only method available for cash payments. It should also be used whenever freight-in costs of separate inventory items can be determined independently, such as when shipped separately by the supplier.</p></td></tr></table>
 
 <h3>Automatic freight-in distribution</h3>
 
 <p>If you record the purchase of multiple inventory items <strong>on the same purchase invoice</strong>, you do not need to manually calculate the freight-in cost per inventory item. Instead, add a line item and select <em>Freight-in</em> in the <code>Item</code> field. As for manual allocation, leave the <code>Qty</code> field blank (not the default zero):</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/6090963dbd4d056163b3fbfd7f9ba75ac28a5e02" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6090963dbd4d056163b3fbfd7f9ba75ac28a5e02.png" class="lightbox" title="Screen Shot 2017-05-18 at 7.40.47 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/6/6090963dbd4d056163b3fbfd7f9ba75ac28a5e02_1_690x139.png" width="690" height="139"><div class="meta">
-<span class="filename">Screen Shot 2017-05-18 at 7.40.47 PM.png</span><span class="informations">1092x221 23.1 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6090963dbd4d056163b3fbfd7f9ba75ac28a5e02.png"></p>
 
 <p>This will allocate the freight-in cost proportionally (based on total amounts) to all inventory items purchased: </p>
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/79d944f11a79af460a926d15eb8468613ccba1e4.png" width="286" height="103"></p>
 
-<blockquote><p><strong>Caution</strong><br>Be sure to edit the <em>Freight-in</em> line item so <code>Qty</code> is blank, not zero, or no amount will be calculated and no freight-in cost will be apportioned to the inventory items.</p></blockquote>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>Caution</strong><br>Be sure to edit the <em>Freight-in</em> line item so <code>Qty</code> is blank, not zero, or no amount will be calculated and no freight-in cost will be apportioned to the inventory items.</p></td></tr></table>
 
 <h3>Entering separate freight-in invoices</h3>
 

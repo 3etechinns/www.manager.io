@@ -1,15 +1,14 @@
 ---
 layout: guide
 title: Implement India's 2017 GST scheme
-permalink: /guides/implement-indias-2017-gst-scheme/10388
 tags: tax-codes
 ---
 <p>In mid-2017, <strong>India introduced a new GST scheme</strong> with several unique requirements for invoices. Manager can handle this scheme, but several steps are required by the user. <strong>No custom theme is needed.</strong></p>
 
-<blockquote><p><strong>Example</strong><br>Below is an example of a sales invoice you can generate in Manager: <br><br>          <a href="https://i.imgur.com/qoZsLI4.png" target="_blank" rel="nofollow noopener">
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Below is an example of a sales invoice you can generate in Manager: <br><br>          <a href="https://i.imgur.com/qoZsLI4.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/qoZsLI4.png" width="690" height="481">
           </a>
-<br><br>This invoice contains two different tax codes. The amounts are tax-exclusive, which means taxes are added to the sub-total. Other variations are supported, too.</p></blockquote>
+<br><br>This invoice contains two different tax codes. The amounts are tax-exclusive, which means taxes are added to the sub-total. Other variations are supported, too.</p></td></tr></table>
 
 <p>Here are instructions you must follow to properly implement Indian GST.</p>
 
@@ -37,9 +36,9 @@ tags: tax-codes
 
 <p><strong><em>Custom fields for line items</em></strong></p>
 
-<p>To add the capability to include HSN in a line item, go to <kbd>Settings</kbd> <strong>=&gt;</strong> <kbd>Custom Fields</kbd> and find the list for <code>XXXXXXXX - Line</code>, where <code>XXXXXXXX</code> is the name of the form on which you want HSN to show. (Illustrations below are for sales invoices.) Click <kbd>New Custom Field</kbd>:</p>
+<p>To add the capability to include HSN in a line item, go to <kbd>Settings</kbd> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <kbd>Custom Fields</kbd> and find the list for <code>XXXXXXXX - Line</code>, where <code>XXXXXXXX</code> is the name of the form on which you want HSN to show. (Illustrations below are for sales invoices.) Click <kbd>New Custom Field</kbd>:</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e2d8cfd0c080baffe3eb93eb5c569e06a1f1d2e5.png" width="104" height="51"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ebe5c958330e78e594865e26b32e6a69f8c8395c.png" width="143" height="50"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6efea9b64fa98a85f45a58a404d6bf5a2936cdd4.png" width="313" height="46"></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e2d8cfd0c080baffe3eb93eb5c569e06a1f1d2e5.png" width="104" height="51"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ebe5c958330e78e594865e26b32e6a69f8c8395c.png" width="143" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6efea9b64fa98a85f45a58a404d6bf5a2936cdd4.png" width="313" height="46"></p>
 
 <p><code>Name</code> the field <em>HSN</em> and check the box to <code>Show custom field on printed documents</code>:</p>
 
@@ -47,20 +46,18 @@ tags: tax-codes
 
 <p>Click <kbd>Create</kbd>. When entering line items, the <code>HSN</code> field will appear:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/696cc45dd1b7f0428490312e69737e8ae87f50ae" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/696cc45dd1b7f0428490312e69737e8ae87f50ae.png" class="lightbox" title="Screen Shot 2017-07-15 at 11.39.30 AM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/6/696cc45dd1b7f0428490312e69737e8ae87f50ae_1_690x67.png" width="690" height="67"><div class="meta">
-<span class="filename">Screen Shot 2017-07-15 at 11.39.30 AM.png</span><span class="informations">947x92 7.24 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/696cc45dd1b7f0428490312e69737e8ae87f50ae.png"></p>
 
 <p><strong><em>Custom fields for inventory items or non-inventory items</em></strong></p>
 
-<p>To show the same HSN every time an inventory item or non-inventory item is added to an invoice, define a custom field for <code>Inventory Items</code> or <code>Non-Inventory Items</code> (or both, if necessary) under <kbd>Settings</kbd> =&gt; <kbd>Custom Fields</kbd>. Mark the custom field to show both as a column and on printed documents:</p>
+<p>To show the same HSN every time an inventory item or non-inventory item is added to an invoice, define a custom field for <code>Inventory Items</code> or <code>Non-Inventory Items</code> (or both, if necessary) under <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Custom Fields</kbd>. Mark the custom field to show both as a column and on printed documents:</p>
 
           <a href="https://i.imgur.com/LAHTA3G.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/LAHTA3G.png" width="450" height="379">
           </a>
 
 
-<p>When a custom field <code>HSN</code> is created like this, you can then set the HSN value for your inventory items (in the <kbd>Inventory Items</kbd> tab and non-inventory items (under <kbd>Settings</kbd> =&gt; <kbd>Non-Inventory Items</kbd>):</p>
+<p>When a custom field <code>HSN</code> is created like this, you can then set the HSN value for your inventory items (in the <kbd>Inventory Items</kbd> tab and non-inventory items (under <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Non-Inventory Items</kbd>):</p>
 
           <a href="https://i.imgur.com/FduaF2R.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/FduaF2R.png" width="200" height="82">
@@ -74,11 +71,11 @@ tags: tax-codes
           </a>
 
 
-<blockquote><p><strong>Caution</strong><br>An HSN defined for an inventory or non-inventory item will not appear on the transaction entry screen. But it will appear when viewing the completed transaction form.<br><br>If you do not define the HSN for an inventory or non-inventory item, it will not appear on the completed document, because the custom field will be blank.<br><br>If you define a line-item custom field for HSN, that field will appear when entering relevant transactions. It will be blank, even though you may have defined an HSN for an inventory or non-inventory item entered. This is because you will be viewing the line-item custom field, not the item's custom field. However, an entry in the visible, line-item field will overwrite any defined entry in the item's custom field. This feature allows you to correct erroneous HSNs without editing the inventory or non-inventory item definition.</p></blockquote>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>Caution</strong><br>An HSN defined for an inventory or non-inventory item will not appear on the transaction entry screen. But it will appear when viewing the completed transaction form.<br><br>If you do not define the HSN for an inventory or non-inventory item, it will not appear on the completed document, because the custom field will be blank.<br><br>If you define a line-item custom field for HSN, that field will appear when entering relevant transactions. It will be blank, even though you may have defined an HSN for an inventory or non-inventory item entered. This is because you will be viewing the line-item custom field, not the item's custom field. However, an entry in the visible, line-item field will overwrite any defined entry in the item's custom field. This feature allows you to correct erroneous HSNs without editing the inventory or non-inventory item definition.</p></td></tr></table>
 
 <h3>GSTIN identifier</h3>
 
-<p>GSTIN identifiers can be entered under <kbd>Settings</kbd> =&gt; <kbd>Business Details</kbd> for your business and under <kbd>Customers</kbd> tab for individual customers:</p>
+<p>GSTIN identifiers can be entered under <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Business Details</kbd> for your business and under <kbd>Customers</kbd> tab for individual customers:</p>
 
           <a href="https://i.imgur.com/EGIKOQu.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/EGIKOQu.png" width="355" height="88">
@@ -108,7 +105,7 @@ tags: tax-codes
           </a>
 
 
-<blockquote><p><strong>Note</strong><br>Some invoice examples for the new tax scheme on the Internet show tax amounts being individually calculated on each line item, but this is not legally required. What is important is to show the correct tax name for each line item, such as <em>CGST 14% + SGST 14%</em>.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>Some invoice examples for the new tax scheme on the Internet show tax amounts being individually calculated on each line item, but this is not legally required. What is important is to show the correct tax name for each line item, such as <em>CGST 14% + SGST 14%</em>.</p></td></tr></table>
 
 <p>Legal requirements are to show totals for each tax code. This is what you should see in Manager:</p>
 
@@ -126,18 +123,18 @@ tags: tax-codes
 
 <h3>Total in words</h3>
 
-<p>Common Indian practice adds the total invoice amount in words. If you set your base currency under <kbd>Settings</kbd> =&gt; <kbd>Base Currency</kbd> to Indian Rupees, Manager will automatically inject the spelled out total as a custom field.</p>
+<p>Common Indian practice adds the total invoice amount in words. If you set your base currency under <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Base Currency</kbd> to Indian Rupees, Manager will automatically inject the spelled out total as a custom field.</p>
 
           <a href="https://i.imgur.com/uBYHj4K.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/uBYHj4K.png" width="279" height="68">
           </a>
 
 
-<blockquote><p><strong>Note</strong><br>This guidance does not rely on custom themes. Custom themes are meant to vary presentation, not meet legal requirements. The advantage of this approach is that you are still free to use different themes from <a href="https://www.manager.io/themes">https://www.manager.io/themes</a>. None of those themes incorporate anything about Indian GST requirements, but you will still have everything in place.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>This guidance does not rely on custom themes. Custom themes are meant to vary presentation, not meet legal requirements. The advantage of this approach is that you are still free to use different themes from <a href="https://www.manager.io/themes">https://www.manager.io/themes</a>. None of those themes incorporate anything about Indian GST requirements, but you will still have everything in place.</p></td></tr></table>
 
 <hr>
 
-<blockquote><p><strong>Example</strong><br>Below is the same invoice as in the first example above, but shown in a different theme. No additional coding or setup was necessary: <br><br>          <a href="https://i.imgur.com/Oh1CTu8.png" target="_blank" rel="nofollow noopener">
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Below is the same invoice as in the first example above, but shown in a different theme. No additional coding or setup was necessary: <br><br>          <a href="https://i.imgur.com/Oh1CTu8.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/Oh1CTu8.png" width="577" height="500">
           </a>
-</p></blockquote>
+</p></td></tr></table>

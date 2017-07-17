@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Create tax codes
-permalink: /guides/create-tax-codes/8901
 tags: tax-codes settings in-built-tax-code-form tax-code-form tax-code-transactions
 ---
 <p><strong>Tax codes</strong> are used by Manager to calculate and record taxes invoiced, collected, paid, and owed. They can be used for sales taxes, goods and services taxes, value added taxes, and other taxes imposed by a country or regional tax authority. They are applied (separately and distinctly, if necessary) to individual line items on:</p>
@@ -15,20 +14,18 @@ tags: tax-codes settings in-built-tax-code-form tax-code-form tax-code-transacti
 <li>Expense claims</li>
 </ul>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/c3b07623ec9c84d417152b6cf351edbe6b754b24" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c3b07623ec9c84d417152b6cf351edbe6b754b24.png" class="lightbox" title="Screen Shot 2017-03-16 at 12.24.55 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/c/c3b07623ec9c84d417152b6cf351edbe6b754b24_1_690x44.png" width="690" height="44"><div class="meta">
-<span class="filename">Screen Shot 2017-03-16 at 12.24.55 PM.png</span><span class="informations">1162x75 20.1 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c3b07623ec9c84d417152b6cf351edbe6b754b24.png"></p>
 
 <p>Tax amounts calculated from tax codes are posted to the <em>Tax payable</em> liability account, which activates automatically in your chart of accounts when a tax code is created. <em>Tax payable</em> is a control account, keeping separate track of each tax code used, even though all are aggregated on the Balance Sheet.</p>
 
-<blockquote><p><strong>Note</strong><br>The <em>Tax payable</em> account offsets taxes collected or received under a tax code against taxes paid under the same tax code, regardless of transaction type. Whether taxes are collected from customers, paid to suppliers, refunded by or remitted to tax authorities, they all post to the same account and offset one another. This has important ramifications for how tax codes are applied on forms. The determining principles are whether and how the particular transaction affects the amount you owe to a tax authority.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>The <em>Tax payable</em> account offsets taxes collected or received under a tax code against taxes paid under the same tax code, regardless of transaction type. Whether taxes are collected from customers, paid to suppliers, refunded by or remitted to tax authorities, they all post to the same account and offset one another. This has important ramifications for how tax codes are applied on forms. The determining principles are whether and how the particular transaction affects the amount you owe to a tax authority.</p></td></tr></table>
 
 <hr>
 
-<blockquote>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example 1</strong><br>Johanna charges and collects VAT from customers on architectural design services. For tax filing, VAT she collects from customers is offset by VAT she pays to her suppliers. So she must use the same VAT tax code on sales and purchase invoices. Johanna's <em>Tax payable</em> balance will be the difference between VAT collected and VAT paid. When she remits that amount to her tax authority, the <em>Tax payable</em> balance will drop to zero.</p>
 <p><strong>Example 2</strong><br>Roberto collects sales tax from customers at his coffee shop. But local law does not permit him to offset sales tax he pays to suppliers. (In some jurisdictions, Roberto would not be assessed sales tax by his suppliers on items he will resell.) Roberto should apply the sales tax code on receipts and sales invoices. But when he purchases taxable supplies, he should include sales tax paid to his suppliers in the price of the supplies and apply no tax code on purchase invoices or payments. His <em>Tax payable</em> balance will reflect only sales tax collected until he remits that amount to his tax authority, dropping his <em>Tax payable</em> balance to zero. Sales tax he pays to suppliers will be included as an expense in the cost of supplies, reducing net income. But it will not reduce the amount he must remit to his tax authority.</p>
-</blockquote>
+</td></tr></table>
 
 <p>On some transaction forms, an option is available as to whether amounts are tax-inclusive or tax-exclusive:</p>
 
@@ -40,7 +37,7 @@ tags: tax-codes settings in-built-tax-code-form tax-code-form tax-code-transacti
 
 <p>You can add as many tax codes as you need to use. In the <kbd>Settings</kbd> tab, click <kbd>Tax Codes</kbd>:</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3aaeec05d39f8cf88eb1a39cfae64d1e650df432.png" width="215" height="57"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3131387a753b0850f404ffbaaa7c0d6d3e37a7f6.png" width="152" height="55"></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3aaeec05d39f8cf88eb1a39cfae64d1e650df432.png" width="215" height="57"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3131387a753b0850f404ffbaaa7c0d6d3e37a7f6.png" width="152" height="55"></p>
 
 <p>Click <kbd>New Tax Code</kbd>. Two options exist:</p>
 
@@ -71,7 +68,7 @@ tags: tax-codes settings in-built-tax-code-form tax-code-form tax-code-transacti
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/4fce5338a8716a7c06409065fad47f0596eb8bdd.png" width="498" height="231"></p>
 
-<p>By default, all tax amounts are posted to the <em>Tax payable</em> liability account. Posting elsewhere requires creation of custom tax payable accounts and is discussed in <a href="https://forum.manager.io/t/multi-component-custom-tax-codes/7171">another Guide</a>.</p>
+<p>By default, all tax amounts are posted to the <em>Tax payable</em> liability account. Posting elsewhere requires creation of custom tax payable accounts and is discussed in <a href="/guides/7171">another Guide</a>.</p>
 
 <p>If the custom tax code includes more than one component, select <kbd>Multiple rates</kbd> and enter each tax component on its own line. Use the <kbd>Add line</kbd> button to add additional components. If your tax code contains components subject to compounding, enter the compounded rate into applicable <code>Tax rate</code> fields.</p>
 

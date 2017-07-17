@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Manage application data folder contents
-permalink: /guides/manage-application-data-folder-contents/8394
 tags: preferences
 ---
 <p>Manager stores all business and user information, accounting data, custom themes, and attachments in a separate <strong>application data folder</strong>. No accounting, business, or user information is stored in the application itself. The default location for application data depends on your operating system and edition, but is the same for all businesses you create.</p>
@@ -18,7 +17,7 @@ tags: preferences
 
 <ul>
 <li>
-<strong><code>00000000000000000000000000000000.manager</code></strong> is an SQLite database holding a list of businesses, users, and global preferences. This file is generated automatically the first time you launch Manager and updated as businesses and users are added or removed or global preferences are changed. It contains no accounting data. If the file is deleted, the program will generate an empty version of it. Businesses can be repopulated into the file by <a href="https://forum.manager.io/t/restore-from-backup/6263">restoring them from backup</a>.</li>
+<strong><code>00000000000000000000000000000000.manager</code></strong> is an SQLite database holding a list of businesses, users, and global preferences. This file is generated automatically the first time you launch Manager and updated as businesses and users are added or removed or global preferences are changed. It contains no accounting data. If the file is deleted, the program will generate an empty version of it. Businesses can be repopulated into the file by <a href="/guides/6263">restoring them from backup</a>.</li>
 <li>Files with long, alphanumeric names like <strong><code>69703781b9284b1684e494fdd5510cb8.manager</code></strong> are generated for each business added. Characters in the file name are not related to the name of the business. All accounting data, customer and supplier information, custom themes, settings, and attachments for a business reside in this file. For privacy reasons, no data from any business appears in the file of any other.</li>
 <li>
 <strong><code>data</code></strong> stores the application data folder path.</li>
@@ -66,6 +65,6 @@ size</code></pre>
 <li>Files with alphanumeric names like <strong><code>f565db9ce66044188729588d6f5f2269.manager</code></strong> determined <em>not</em> to be associated with active businesses.</li>
 </ul>
 
-<p>Relaunch Manager and verify all active businesses are still present and contain expected accounting and custom theme data. If an active business file was moved from the application data folder by accident, Manager will regenerate a file with the required name. However, the recreated business will have only default tabs and no accounting data. The <a href="https://forum.manager.io/t/remove-a-business/9123">recreated business should be removed</a>. The associated data file should be deleted. (It will probably be the most recently created file in the folder.) The previously removed file with the same name should be moved back into the application data folder.</p>
+<p>Relaunch Manager and verify all active businesses are still present and contain expected accounting and custom theme data. If an active business file was moved from the application data folder by accident, Manager will regenerate a file with the required name. However, the recreated business will have only default tabs and no accounting data. The <a href="/guides/9123">recreated business should be removed</a>. The associated data file should be deleted. (It will probably be the most recently created file in the folder.) The previously removed file with the same name should be moved back into the application data folder.</p>
 
 <p>When satisfied all businesses are present and include expected data, delete removed files from their temporary location.</p>

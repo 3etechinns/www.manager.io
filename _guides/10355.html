@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Resolve issues with automatic credit allocations
-permalink: /guides/resolve-issues-with-automatic-credit-allocations/10355
 tags: supplier-statements customer-statements purchase-invoices sales-invoices customers suppliers
 ---
 <p>When you enter a new sales or purchase invoice, you might find that Manager automatically credits the invoice with some amount, making the <code>Balance due</code> less than the invoice <code>Total</code>:</p>
@@ -15,7 +14,7 @@ tags: supplier-statements customer-statements purchase-invoices sales-invoices c
 
 <p>But if you are certain the customer or supplier didn't have a credit balance, such an automatic credit allocation indicates something has been recorded incorrectly. The example below illustrates how to resolve the issue.</p>
 
-<blockquote><p><strong>Example</strong><br>You have issued a sales invoice  to <strong>Antonio Moreno Taquería</strong> for <strong>$3,370.00</strong> and Manager has automatically applied credit of <strong>$2,345.30</strong>, leaving a balance due of <strong>$1,024.70</strong>: <br><br>          <a href="https://i.imgur.com/Hjft5T1.png" target="_blank" rel="nofollow noopener">
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>You have issued a sales invoice  to <strong>Antonio Moreno Taquería</strong> for <strong>$3,370.00</strong> and Manager has automatically applied credit of <strong>$2,345.30</strong>, leaving a balance due of <strong>$1,024.70</strong>: <br><br>          <a href="https://i.imgur.com/Hjft5T1.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/Hjft5T1.png" width="690" height="461">
           </a>
 <br><br> Suppose you know this customer didn't have any credit with your company, so you want to discover the origin of this credit. The best way is to view the customer ledger by going to <kbd>Customers</kbd> tab: <br><br>          <a href="https://i.imgur.com/Quz12DB.png" target="_blank" rel="nofollow noopener">
@@ -30,10 +29,10 @@ tags: supplier-statements customer-statements purchase-invoices sales-invoices c
 <br><br>Now, when you view the invoice, no amount is automatically credited: <br><br>          <a href="https://i.imgur.com/Z6Z1N4A.png" target="_blank" rel="nofollow noopener">
             <img src="https://i.imgur.com/Z6Z1N4A.png" width="690" height="418">
           </a>
-</p></blockquote>
+</p></td></tr></table>
 
 <p>Some bookkeeping errors can be discovered immediately, some can take weeks or even months to discover. Used properly, Manager's double-entry accounting system ensures all errors will be eventually discovered.</p>
 
 <p>In the example above, even if you didn't notice the bookkeeping error, eventually the customer who actually paid <strong>$2,345.30</strong> on 26/04/2017 would complain that its customer statements did not reflect the payment. Or your Aged Receivables report would show that customer's account becoming more and more overdue. Sooner or later, you would discover the payment having been attributed to the wrong customer.</p>
 
-<blockquote><p><strong>Note</strong><br>While the example illustrates an erroneous credit being automatically applied to a sales invoice because of incorrect attribution of a receipt from a customer, similar mistakes can happen with purchase invoices and payments to suppliers. Detection and correction procedures are the same.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>While the example illustrates an erroneous credit being automatically applied to a sales invoice because of incorrect attribution of a receipt from a customer, similar mistakes can happen with purchase invoices and payments to suppliers. Detection and correction procedures are the same.</p></td></tr></table>

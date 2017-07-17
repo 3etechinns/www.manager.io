@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Change a form title
-permalink: /guides/change-a-form-title/7877
 tags: themes
 ---
 <p>A <strong>title</strong> is the name of a particular transaction form in Manager. Titles appear near the top of forms in many themes, but can be placed elsewhere. They include:</p>
@@ -20,11 +19,11 @@ tags: themes
 <li>Customer and supplier statements</li>
 </ul>
 
-<p>The title of a single form can be changed by modifying a custom theme. If you have not created a custom theme yet, follow instructions in <a href="https://forum.manager.io/t/change-the-look-of-forms-with-themes/10366">another Guide</a>, then these steps:</p>
+<p>The title of a single form can be changed by modifying a custom theme. If you have not created a custom theme yet, follow instructions in <a href="/guides/10366">another Guide</a>, then these steps:</p>
 
 <ul><li>Under the <kbd>Settings</kbd> tab, click <kbd>Themes</kbd>. Then click <kbd>Edit</kbd> next to the theme you want to modify:</li></ul>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/77e301cb6f71ededb0730928075b66b76f5ca48c.png" width="100" height="55"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/03ad8e815e50588c5f9ec2236b6fbff1196e885e.png" width="107" height="45"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/56c612e747bd14ee217e6e98bfe72a7da0f5ab47.png" width="208" height="120"></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/77e301cb6f71ededb0730928075b66b76f5ca48c.png" width="100" height="55"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/03ad8e815e50588c5f9ec2236b6fbff1196e885e.png" width="107" height="45"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/56c612e747bd14ee217e6e98bfe72a7da0f5ab47.png" width="208" height="120"></p>
 
 <ul>
 <li><p>When the custom theme's computer code appears, locate the following segment of code: <code>{{title}}</code>. (You may have to scroll to the right to see complete lines.)</p></li>
@@ -34,20 +33,16 @@ tags: themes
 
 <p>Any time forms are viewed in the particular custom theme, old title text will be replaced by new title text.</p>
 
-<blockquote>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example 1</strong><br>The title of a sales invoice can be converted from <em>Invoice</em> to <em>Tax Invoice</em> by substituting this code into the appropriate line: <br></p>
-<p></p>
+<p>
 <pre><code class="lang-auto">{{title | replace: "Invoice", "Tax Invoice"}}</code></pre>
-<p>with this result:<br><br><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/d744c657f3bde72cb9d15d157ae1e9152cfe13ca" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d744c657f3bde72cb9d15d157ae1e9152cfe13ca.png" class="lightbox" title="Screen Shot 2016-11-27 at 3.32.39 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/d/d744c657f3bde72cb9d15d157ae1e9152cfe13ca_1_690x145.png" width="690" height="145"><div class="meta">
-<span class="filename">Screen Shot 2016-11-27 at 3.32.39 PM.png</span><span class="informations">806x170 29.2 KB</span><span class="expand"></span>
-</div></a></div><br><br><br><strong>Example 2</strong><br>An <em>Expense Claim</em> could be turned into a <em>Travel Expense Report</em> with this substitution:<br></p>
-<p></p>
+<p>with this result:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d744c657f3bde72cb9d15d157ae1e9152cfe13ca.png"><br><br><br><strong>Example 2</strong><br>An <em>Expense Claim</em> could be turned into a <em>Travel Expense Report</em> with this substitution:<br></p>
+<p>
 <pre><code class="lang-auto">{{title | replace: "Expense Claim", "Travel Expense Report"}}</code></pre>
-<p>producing:<br><br><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/5e4801edf1988651476a4ea0d209aed5216a5394" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5e4801edf1988651476a4ea0d209aed5216a5394.png" class="lightbox" title="Screen Shot 2016-11-27 at 3.44.23 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/5/5e4801edf1988651476a4ea0d209aed5216a5394_1_690x136.png" width="690" height="136"><div class="meta">
-<span class="filename">Screen Shot 2016-11-27 at 3.44.23 PM.png</span><span class="informations">805x159 30.4 KB</span><span class="expand"></span>
-</div></a></div><br><br></p>
-</blockquote>
+<p>producing:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5e4801edf1988651476a4ea0d209aed5216a5394.png"><br><br></p>
+</td></tr></table>
 
 <hr>
 
-<blockquote><p><strong>CAUTION</strong><br>Beware of unintended consequences. Any place old title text appears in the title of any form, it will be replaced with new title text. In the first example above, not only would <em>Invoice</em> become <em>Tax Invoice</em>, but <em>Purchase Invoice</em> would become <em>Purchase Tax Invoice</em>. So you may wish to limit usage of custom themes to specific forms or create additional themes. You might also use more sophisticated conditional tests in your code. Those are beyond the scope of this Guide.</p></blockquote>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>CAUTION</strong><br>Beware of unintended consequences. Any place old title text appears in the title of any form, it will be replaced with new title text. In the first example above, not only would <em>Invoice</em> become <em>Tax Invoice</em>, but <em>Purchase Invoice</em> would become <em>Purchase Tax Invoice</em>. So you may wish to limit usage of custom themes to specific forms or create additional themes. You might also use more sophisticated conditional tests in your code. Those are beyond the scope of this Guide.</p></td></tr></table>
