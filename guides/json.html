@@ -1,0 +1,16 @@
+---
+permalink: /guides.json
+---
+[
+{% for guide in site.guides %}
+{% assign parts = guide.permalink | split: '/' %}
+{
+  "id": {{ parts[3] }},
+  "title": "{{ guide.title }}",
+  "slug": "{{ parts[2] }}",
+  "tags": [ {% for tag in guide.tags %}"{{ tag }}"{% if forloop.last == false %},{% endif %}{% endfor %} ]
+}
+
+{% if forloop.last == false %},{% endif %}
+{% endfor %}
+]
