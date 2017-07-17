@@ -13,7 +13,7 @@ p { line-height: 24px; }
 <p>Guides that describe how to set up, configure, or use Manager.</p>
 
 {% assign guides = site.guides | sort:"title" %}
-{% assign categories = "Businesses|Preferences|Users|Summary|Cash Accounts|Expense Claims|Customers|Sales Quotes|Sales Orders|Sales Invoices|Credit Notes|Delivery Notes|Suppliers|Purchase Orders|Purchase Invoices|Goods Receipts|Debit Notes|Inventory Items|Production Orders|Employees|Payslips|Billable Time|Billable Expenses|Fixed Assets|Intangible Assets|Capital Accounts|Special Accounts|Journal Entries|Folders|Reports|Chart of Accounts|Business Details|Business Logo|Custom Fields|Email Templates|Email Settings|Inventory Kits|Lock Date|Non-inventory Items|Start Date|Tax Codes|Themes|Tracking Codes" | split: '|' %}
+{% assign categories = "Businesses|Preferences|Users|Summary|Cash Accounts|Expense Claims|Customers|Sales Quotes|Sales Orders|Sales Invoices|Credit Notes|Delivery Notes|Suppliers|Purchase Orders|Purchase Invoices|Goods Receipts|Debit Notes|Inventory Items|Production Orders|Employees|Payslips|Billable Time|Billable Expenses|Fixed Assets|Intangible Assets|Capital Accounts|Special Accounts|Journal Entries|Folders|Reports|Chart of Accounts|Business Details|Business Logo|Custom Fields|Email Templates|Email Settings|Inventory Kits|Inventory Locations|Lock Date|Non-inventory Items|Start Date|Tax Codes|Themes|Tracking Codes" | split: '|' %}
 {% for category in categories %}
 <div style="border-bottom: 1px solid #ccc; margin-bottom: 20px"><h2>{{ category }}</h2></div>
 <ul class="fa-ul" style="margin-bottom: 40px">
