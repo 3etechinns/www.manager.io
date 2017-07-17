@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/reports/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/reports/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-reports.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-reports.png
 index: 12
 ---

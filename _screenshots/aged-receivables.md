@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/aged-receivables/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/aged-receivables/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-aged-receivables.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-aged-receivables.png
 index: 8
 ---

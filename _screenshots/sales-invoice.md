@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/sales-invoice/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/sales-invoice/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-sales-invoice.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-sales-invoice.png
 index: 3
 ---

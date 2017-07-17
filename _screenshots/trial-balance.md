@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/trial-balance/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/trial-balance/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-trial-balance.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-trial-balance.png
 index: 17
 ---

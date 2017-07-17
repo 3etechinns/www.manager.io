@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/aged-payables/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/aged-payables/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-aged-payables.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-aged-payables.png
 index: 9
 ---

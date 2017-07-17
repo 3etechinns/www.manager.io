@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/cash-accounts/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/cash-accounts/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-cash-accounts.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-cash-accounts.png
 index: 16
 ---

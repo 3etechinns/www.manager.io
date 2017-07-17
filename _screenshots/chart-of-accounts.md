@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/chart-of-accounts/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/chart-of-accounts/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-chart-of-accounts.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-chart-of-accounts.png
 index: 10
 ---

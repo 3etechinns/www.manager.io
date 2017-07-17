@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/balance-sheet/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/balance-sheet/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-balance-sheet.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-balance-sheet.png
 index: 7
 ---

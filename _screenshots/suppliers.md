@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/suppliers/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/suppliers/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-suppliers.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-suppliers.png
 index: 15
 ---

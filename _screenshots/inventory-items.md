@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/inventory-items/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/inventory-items/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-inventory-items.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-inventory-items.png
 index: 5
 ---

@@ -1,6 +1,6 @@
 ---
 layout: screenshot
-preview: https://assets.manager.io/screenshots/profit-and-loss-statement/screenshot-small.png
-screenshot: https://assets.manager.io/screenshots/profit-and-loss-statement/screenshot-large.png
+preview: https://screenshots-88ef.kxcdn.com/sm-profit-and-loss-statement.png
+screenshot: https://screenshots-88ef.kxcdn.com/lg-profit-and-loss-statement.png
 index: 6
 ---
