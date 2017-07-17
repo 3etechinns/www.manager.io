@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Create non-inventory items
-permalink: /guides/create-non-inventory-items/7344
 tags: non-inventory-items settings non-inventory-item-form
 ---
 <p><strong>Non-inventory items</strong> are shortcuts for entering line items in many sales- and purchase-related transaction forms in Manager. They are entirely optional. Unlike inventory items, they are not required for any transaction entry. But once defined, they help:</p>
@@ -13,13 +12,13 @@ tags: non-inventory-items settings non-inventory-item-form
 <li>Speed up entries by automatically filling information on forms</li>
 </ul>
 
-<blockquote><p><strong>NOTE</strong><br>Non-inventory items can be used for sale and purchase of physical goods, but they do not support counting quantities on hand, monitoring stock movement, or calculating profitability. For those functions, use <a href="https://forum.manager.io/t/inventory-items/7551">inventory items</a>.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>NOTE</strong><br>Non-inventory items can be used for sale and purchase of physical goods, but they do not support counting quantities on hand, monitoring stock movement, or calculating profitability. For those functions, use <a href="/guides/7551">inventory items</a>.</p></td></tr></table>
 
 <h3>Creating non-inventory items</h3>
 
 <p>Before non-inventory items can be used, they must be created. Under the <kbd>Settings</kbd> tab, click on <kbd>Non-inventory Items</kbd>, then <kbd>New Non-inventory Item</kbd>:</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9a620d35595b80ed50b6dceea7f123dc338d71b9.png" width="218" height="52"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5ecf234a74de80ec8f97c61a4ea8e6284b741eee.png" width="182" height="52"> <strong>=&gt;</strong></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9a620d35595b80ed50b6dceea7f123dc338d71b9.png" width="218" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5ecf234a74de80ec8f97c61a4ea8e6284b741eee.png" width="182" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/867371c1fc0f0abb919ef3a492b2d1d3505e8cf3.png" width="338" height="52"></p>
 
@@ -33,20 +32,16 @@ tags: non-inventory-items settings non-inventory-item-form
 <li>
 <strong><code>Unit Name</code></strong> is optional, but can be used to specify units by which the item will be sold or purchased. Only one unit name is allowed; if goods or services are purchased and sold in different units, either apply conversions before making entries or create separate non-inventory items.</li>
 <li>The <strong><code>Description</code></strong> field is for more comprehensive information. Its contents will appear on finished forms in place of <code>Item name</code>. Anything a customer or supplier should see can be placed into this field.</li>
-<li>Two checkboxes are used to indicate whether the non-inventory item can be purchased or sold (or both). When these are checked, fields appear for additional information. The first illustration below is for a service that can be sold, but not purchased. The <code>Sale price</code>, <code>Account</code> to which a sale will be posted, and applicable <code>Tax Code</code> are entered. A <code>Tracking Code</code> can also be selected. Notice that only the <code>Sale price</code> is free text. The other three fields must be selected from previously <a href="https://forum.manager.io/t/build-a-chart-of-accounts/9181">defined accounts</a>, <a href="https://forum.manager.io/t/tax-codes/8901">tax codes</a>, or <a href="https://forum.manager.io/t/tracking-codes/8956">tracking codes</a>. This information will be prefilled whenever this non-inventory item is added to a form. Click <kbd>Create</kbd> to save the non-inventory item:</li>
+<li>Two checkboxes are used to indicate whether the non-inventory item can be purchased or sold (or both). When these are checked, fields appear for additional information. The first illustration below is for a service that can be sold, but not purchased. The <code>Sale price</code>, <code>Account</code> to which a sale will be posted, and applicable <code>Tax Code</code> are entered. A <code>Tracking Code</code> can also be selected. Notice that only the <code>Sale price</code> is free text. The other three fields must be selected from previously <a href="/guides/9181">defined accounts</a>, <a href="/guides/8901">tax codes</a>, or <a href="/guides/8956">tracking codes</a>. This information will be prefilled whenever this non-inventory item is added to a form. Click <kbd>Create</kbd> to save the non-inventory item:</li>
 </ul>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/19a3a8c2c4c9b2419979b98d0a6b742442b3c2de" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/19a3a8c2c4c9b2419979b98d0a6b742442b3c2de.png" class="lightbox" title="Screen Shot 2016-10-12 at 10.41.34 AM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/1/19a3a8c2c4c9b2419979b98d0a6b742442b3c2de_1_690x462.png" width="690" height="462"><div class="meta">
-<span class="filename">Screen Shot 2016-10-12 at 10.41.34 AM.png</span><span class="informations">706x473 30.7 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/19a3a8c2c4c9b2419979b98d0a6b742442b3c2de.png"></p>
 
 <p>The second illustration shows a non-inventory item created for advertising purchased frequently in local publications:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/f5faf42d07428a577f1112cf3687538c20515300" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f5faf42d07428a577f1112cf3687538c20515300.png" class="lightbox" title="Screen Shot 2016-10-12 at 10.40.29 AM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/f/f5faf42d07428a577f1112cf3687538c20515300_1_690x368.png" width="690" height="368"><div class="meta">
-<span class="filename">Screen Shot 2016-10-12 at 10.40.29 AM.png</span><span class="informations">705x377 26.1 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f5faf42d07428a577f1112cf3687538c20515300.png"></p>
 
-<blockquote><p><strong>NOTE</strong><br>Non-inventory items cannot be assigned to control accounts because Manager has no way to determine in advance which subaccount is applicable, so the transaction would be posted to <em>Suspense</em>. For example, a non-inventory item cannot be assigned to <em>Billable expenses</em>, because the required customer would be unknown.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>NOTE</strong><br>Non-inventory items cannot be assigned to control accounts because Manager has no way to determine in advance which subaccount is applicable, so the transaction would be posted to <em>Suspense</em>. For example, a non-inventory item cannot be assigned to <em>Billable expenses</em>, because the required customer would be unknown.</p></td></tr></table>
 
 <h3>Using non-inventory items</h3>
 
@@ -70,19 +65,15 @@ tags: non-inventory-items settings non-inventory-item-form
 
 <p>To use a non-inventory item, click on the dropdown box of the <code>Item</code> field. Or, begin typing the <code>Item code</code> or <code>Item name</code> in the field to take advantage of the autosearch capability. When a non-inventory item has been selected, all its parameters will automatically be filled for the line. Anything can be edited except the account to which the item is posted:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/f2e421d08d7b7dad6e420dd0b22b4bad413b1320" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f2e421d08d7b7dad6e420dd0b22b4bad413b1320.png" class="lightbox" title="Screen Shot 2016-10-12 at 10.53.15 AM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/f/f2e421d08d7b7dad6e420dd0b22b4bad413b1320_1_690x70.png" width="690" height="70"><div class="meta">
-<span class="filename">Screen Shot 2016-10-12 at 10.53.15 AM.png</span><span class="informations">1101x113 21.1 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f2e421d08d7b7dad6e420dd0b22b4bad413b1320.png"></p>
 
-<blockquote><p><strong>NOTE</strong><br>Although only applicable type (sale or purchase) non-inventory items are normally available when creating a form manually, items already included on a form <em>will</em> be copied to new forms when the <a href="https://forum.manager.io/t/using-the-copy-to-function/7262"><code>Copy to..</code>.</a> function is used.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>NOTE</strong><br>Although only applicable type (sale or purchase) non-inventory items are normally available when creating a form manually, items already included on a form <em>will</em> be copied to new forms when the <a href="/guides/7262"><code>Copy to..</code>.</a> function is used.</p></td></tr></table>
 
 <h3>Updating non-inventory items</h3>
 
-<p>Non-inventory items can be updated when required, such as when a service description is altered or a price change occurs. Go to <kbd>Settings</kbd> =&gt; <kbd>Non-inventory Items</kbd> and click <kbd>Edit</kbd> for the item to be changed:</p>
+<p>Non-inventory items can be updated when required, such as when a service description is altered or a price change occurs. Go to <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Non-inventory Items</kbd> and click <kbd>Edit</kbd> for the item to be changed:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/c157340df34eecf3b9f509c96bfe1828c62b6327" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c157340df34eecf3b9f509c96bfe1828c62b6327.png" class="lightbox" title="Screen Shot 2016-10-12 at 11.13.16 AM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/c/c157340df34eecf3b9f509c96bfe1828c62b6327_1_690x188.png" width="690" height="188"><div class="meta">
-<span class="filename">Screen Shot 2016-10-12 at 11.13.16 AM.png</span><span class="informations">730x199 29.5 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c157340df34eecf3b9f509c96bfe1828c62b6327.png"></p>
 
 <p>Edit the item as desired and click <kbd>Update</kbd>. <strong>Existing transactions using the non-inventory item will not be modified</strong>. Only future forms will be affected.</p>
 
