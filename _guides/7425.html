@@ -1,18 +1,17 @@
 ---
 layout: guide
 title: Use credit notes for customer returns and refunds
-permalink: /guides/use-credit-notes-for-customer-returns-and-refunds/7425
 tags: credit-notes credit-note-view credit-note-form
 ---
-<p>A <strong>credit note</strong> records the return of goods by a <a href="https://forum.manager.io/t/enter-customers/7018">customer</a> or a credit adjustment (refund) to a customer's account for goods or services previously invoiced. It makes all necessary corrections to inventory and income accounts. A credit note does not record actual payment of money to the customer, but only adjusts the customer's balance in <em>Accounts receivable</em>. A credit note can be created regardless of whether the customer has yet paid for the goods or services. </p>
+<p>A <strong>credit note</strong> records the return of goods by a <a href="/guides/7018">customer</a> or a credit adjustment (refund) to a customer's account for goods or services previously invoiced. It makes all necessary corrections to inventory and income accounts. A credit note does not record actual payment of money to the customer, but only adjusts the customer's balance in <em>Accounts receivable</em>. A credit note can be created regardless of whether the customer has yet paid for the goods or services. </p>
 
-<blockquote><p><strong>NOTE</strong><br>A credit note should not normally be used if the original transaction was a <a href="https://forum.manager.io/t/make-cash-sales-sell-without-sales-invoices/7321">cash sale</a>, because the sale will not have been recorded in the customer's subaccount in <em>Accounts receivable</em>. In such situations, a direct refund should usually be made via a <kbd>Spend money</kbd> transaction under the <kbd>Cash Accounts</kbd> tab. However, if the cash buyer has also been defined as a customer and prefers an account credit rather than a cash refund, a credit note may be used.</p></blockquote>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>NOTE</strong><br>A credit note should not normally be used if the original transaction was a <a href="/guides/7321">cash sale</a>, because the sale will not have been recorded in the customer's subaccount in <em>Accounts receivable</em>. In such situations, a direct refund should usually be made via a <kbd>Spend money</kbd> transaction under the <kbd>Cash Accounts</kbd> tab. However, if the cash buyer has also been defined as a customer and prefers an account credit rather than a cash refund, a credit note may be used.</p></td></tr></table>
 
 <h3>Enable the <kbd>Credit Notes</kbd> tab</h3>
 
 <p>Before credit notes can be created, the <kbd>Credit Notes</kbd> tab must be enabled. Click <kbd>Customize</kbd> below the left navigation pane, check the box for <kbd>Credit Notes</kbd>, and click <kbd>Update</kbd> below the list:</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fbb7d1f939575c8db2f137383d98f7d9d206b762.png" width="219" height="150"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9e8c74a32a7d607aacb801bef666d4db78d899ff.png" width="177" height="150">  <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/347ebe0b1ed64abce70cbd10e302af37ca33137c.png" width="137" height="150"></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fbb7d1f939575c8db2f137383d98f7d9d206b762.png" width="219" height="150"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9e8c74a32a7d607aacb801bef666d4db78d899ff.png" width="177" height="150">  <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/347ebe0b1ed64abce70cbd10e302af37ca33137c.png" width="137" height="150"></p>
 
 <p>Manager offers two methods for creating credit notes:</p>
 
@@ -39,7 +38,7 @@ tags: credit-notes credit-note-view credit-note-form
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0c9d2b620bec16e88b89cff924361e21b836f4c9.png" width="266" height="198"></p>
 
-<blockquote><p><strong>CAUTION</strong><br>If a line item was allocated to <em>Billable expenses</em> on the original sales invoice, no account designation will transfer to the credit note. Manager cannot determine which account to post the expense to, since it is no longer billable. In this situation, select an expense account manually.</p></blockquote>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>CAUTION</strong><br>If a line item was allocated to <em>Billable expenses</em> on the original sales invoice, no account designation will transfer to the credit note. Manager cannot determine which account to post the expense to, since it is no longer billable. In this situation, select an expense account manually.</p></td></tr></table>
 
 <p>If a customer is to receive a partial refund or credit, reduce quantities or amounts on the credit note to match. Remove line items for goods or services not being adjusted. (If the price of an inventory item is being partially or fully refunded, but the item itself will not be returned, enter the refund amount and change the quantity to zero.)</p>
 
@@ -53,7 +52,7 @@ tags: credit-notes credit-note-view credit-note-form
 
 <p>If no sales invoice exists or can be found, create a credit note manually. In the <kbd>Credit Notes</kbd> tab, click on <kbd>New Credit Note</kbd>:</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/ff8ea9245ac5d183ed7729a6f07cf884fce119be.png" width="217" height="50"> <strong>=&gt;</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/566a4af19c23205bea9d53faac6678dbb42a61e6.png" width="245" height="50"></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/ff8ea9245ac5d183ed7729a6f07cf884fce119be.png" width="217" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/566a4af19c23205bea9d53faac6678dbb42a61e6.png" width="245" height="50"></p>
 
 <p>The first stage of the credit note entry screen appears:</p>
 
@@ -61,11 +60,9 @@ tags: credit-notes credit-note-view credit-note-form
 
 <p>By default, today's date is prepopulated. As with copied credit notes, Manager will automatically assign a <code>Reference</code> number when the credit note is created. It will find the highest-numbered prior credit note and add 1.</p>
 
-<p>A <a href="https://forum.manager.io/t/enter-customers/7018">previously defined customer</a> must be selected in the dropdown box before proceeding. The customer's <code>Billing address</code> is filled automatically. Line items can be completed semi-automatically by selecting predefined inventory or non-inventory items in the <code>Item</code> field and entering quantities. Or, they may be entered manually. Applicable tax codes can be selected. Additional lines can be added 1, 5, 10, or 20 at a time. Since the credit note is being created manually, the <code>Invoice</code> field at the bottom will be blank. However, if a corresponding sales invoice is located, it can be selected:</p>
+<p>A <a href="/guides/7018">previously defined customer</a> must be selected in the dropdown box before proceeding. The customer's <code>Billing address</code> is filled automatically. Line items can be completed semi-automatically by selecting predefined inventory or non-inventory items in the <code>Item</code> field and entering quantities. Or, they may be entered manually. Applicable tax codes can be selected. Additional lines can be added 1, 5, 10, or 20 at a time. Since the credit note is being created manually, the <code>Invoice</code> field at the bottom will be blank. However, if a corresponding sales invoice is located, it can be selected:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/ed781797c78d389f23de0791b58a70a697fcaaa1" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ed781797c78d389f23de0791b58a70a697fcaaa1.png" class="lightbox" title="Screen Shot 2017-07-11 at 2.40.56 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/e/ed781797c78d389f23de0791b58a70a697fcaaa1_1_690x447.png" width="690" height="447"><div class="meta">
-<span class="filename">Screen Shot 2017-07-11 at 2.40.56 PM.png</span><span class="informations">1119x725 39.1 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ed781797c78d389f23de0791b58a70a697fcaaa1.png"></p>
 
 <p>Save the transaction by clicking <kbd>Create</kbd>.</p>
 
@@ -73,6 +70,4 @@ tags: credit-notes credit-note-view credit-note-form
 
 <p>If a customer requests a refund of the credit balance, <kbd>Spend money</kbd> from a cash account and allocate the refund to <em>Accounts receivable</em> and the customer's subaccount. When a cash refund is recorded, the balance of <em>Accounts receivable</em> for the customer will move in the positive direction:</p>
 
-<p><div class="lightbox-wrapper"><a data-download-href="https://cdn-business2.discourse.org/uploads/manager1/c1c7e3a96262af7105944d0fe8ba765d25cb93ac" href="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c1c7e3a96262af7105944d0fe8ba765d25cb93ac.png" class="lightbox" title="Screen Shot 2016-10-20 at 12.15.49 PM.png"><img src="https://cdn-business2.discourse.org/uploads/manager1/optimized/2X/c/c1c7e3a96262af7105944d0fe8ba765d25cb93ac_1_690x98.png" width="690" height="98"><div class="meta">
-<span class="filename">Screen Shot 2016-10-20 at 12.15.49 PM.png</span><span class="informations">837x119 22.3 KB</span><span class="expand"></span>
-</div></a></div></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c1c7e3a96262af7105944d0fe8ba765d25cb93ac.png"></p>
