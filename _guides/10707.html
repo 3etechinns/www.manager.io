@@ -1,0 +1,49 @@
+---
+layout: guide
+title: Transfer inventory between locations
+tags: inventory-transfers inventory-transfer-view inventory-transfer-form
+---
+<p><strong>Inventory transfers</strong> are used to record movement of physical inventory items from one location to another without a sale or purchase being involved. They are completely optional, and can only be used when at least two inventory locations have been defined (see Notes below). Inventory locations are created as described <a href="/guides/10677">in another Guide</a>.</p>
+
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Sanjay's Drum and Guitar Shop has a small retail display showroom. Because of limited space, Sanjay also rents a warehouse in a nearby industrial park where he stores most of his inventory. Sanjay creates two inventory locations: <em>Retail store</em> and <em>Warehouse</em>. As he sells items from the showroom, he brings inventory from the warehouse to replace them. He uses inventory transfers to record the movements.<br><br>Now, if a customer wants more of an item than he has in the showroom, Sanjay can look up his full stock level and see not just how many he has in total, but how many are at each location. He can avoid ordering more until he really needs to, and can make the sale immediately (arranging to deliver from the warehouse), even though he cannot physically see his inventory.</p></td></tr></table>
+
+<hr>
+
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Notes</strong><br>One location automatically exists for all businesses with inventory: <em>Unspecified location</em>. Until transfers or purchases add inventory to other locations, all inventory items will be located at <em>Unspecified location</em>. Therefore, when inventory locations are first implemented, items must be counted and assigned to their correct locations. Make these assignments using inventory transfers.<br><br>Inventory items themselves are not associated with any specific inventory location, because they can be moved from one to another. Quantities at various locations are determined by the net result of purchases, sales, write-offs, and transfers, not according to item identity.</p></td></tr></table>
+
+<h3>Enable the <kbd>Inventory Transfers</kbd> tab</h3>
+
+<p>To use inventory transfers, enable the <kbd>Inventory Transfers</kbd> tab. Click <kbd>Customize</kbd> below the left navigation pane, check the box for <kbd>Inventory Transfers</kbd>, and click <kbd>Update</kbd> below the list:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/385316b2e12e8d618daaf18b40e34b701d87ca45.png" width="78" height="30"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/09faec3cde810fcc1d910f82e83a88511bd1dbd8.png" width="150" height="33"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7bfe50fc8c613b1134d7ea4e0f9474c3f54bca76.png" width="75" height="34"></p>
+
+<h3>Enter the inventory transfer</h3>
+
+<p>In the <kbd>Inventory Transfers</kbd> tab, click <kbd>New Inventory Transfer</kbd>:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f5947bfea7b0388866b2d40cf614c0172a37870b.png" width="170" height="53"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7ee545dbb5cff449120c95f7076481c49288bb3f.png" width="327" height="52"></p>
+
+<p>Complete the form:</p>
+
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7b35e992ed69e8dc8d93be4ae3d8efa1613e2cc8.png" width="577" height="475"></p>
+
+<ul>
+<li>
+<strong><code>Date</code></strong> will show today's date by default. This may be edited.</li>
+<li>
+<strong><code>Reference</code></strong> is an automatic sequence number assigned by Manager as the form is created. Manager locates the highest-numbered existing inventory transfer and adds 1 to its Reference number.</li>
+<li>The first, summary <strong><code>Description</code></strong> is optional, allowing you to describe the transfer in general terms.</li>
+<li>
+<strong><code>Item</code></strong> allows you to select the inventory item by item code or item name.</li>
+<li>The second and all subsequent <strong><code>Description</code></strong> fields will prefill from inventory items' definitions, if they exist. Or descriptions can be entered manually.</li>
+<li>
+<strong><code>Qty</code></strong> is the number of inventory items being transferred.</li>
+<li>
+<strong><code>From</code></strong> is the origin location. <em>Unspecified location</em> is the default.</li>
+<li>
+<strong><code>To</code></strong> is the destination location. Again, <em>Unspecified location</em> is the default.</li>
+</ul>
+
+<p>Click <kbd>Create</kbd> to record the transfer. Inventory quantities at both locations will be adjusted automatically.</p>
+
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>Caution</strong><br>Remember that the inventory transfer form only records the movement of inventory. Unless you move the proper number of items from one location to another, and unless those locations are correct, physical inventory counts will be off and reconciliation may be very difficult.</p></td></tr></table>
