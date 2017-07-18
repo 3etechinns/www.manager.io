@@ -1,20 +1,21 @@
 ---
 layout: guide
-title: Reset administrator password
+title: Reset the administrator password
 tags: users
 ---
-<p>If you are using server edition and forget <code>administrator</code> password, you will have difficulties to log in.</p>
+<p>If you are using Manager's server edition and forget the password for the administrator, you will be unable to log in under the <code>Username</code> <em>administrator</em>. So you will not be able to <a href="/guides/9162">create new users or modify permissions</a>. Attempting to log in without a valid password will return a warning:</p>
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f754bb8b916e0d183aa306d1ab673011134524b5.png" width="611" height="403"></p>
 
-<p>In order to regain access, you will need to reset <code>administrator</code> password.</p>
+<p>To regain access, you must <strong>reset the <em>administrator</em> password</strong>. Follow these instructions:</p>
 
-<p>The password is saved in application data folder where Manager stores all data. In order to reset the password, go to application data folder.</p>
+<ul><li>
+<a href="/guides/8394">Go to the application data folder</a>:</li></ul>
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2cd2dc6b8e9bcae4c5d731d65525f92ceec0dab4.png" width="610" height="219"></p>
 
-<p>Find the file named <code>password</code> and delete it. This will remove password from <code>administrator</code> account.</p>
-
-<p>You can go back to login screen and enter username <code>administrator</code> and click <code>Login</code> button (do not enter anything into password field).</p>
-
-<p>It is highly recommended, once you log in, you set new password under <code>Users</code> tab so nobody will be able to gain access to your server as <code>administrator</code> without entering any password.</p>
+<ul>
+<li>Find the file named <code>password</code> and delete it. This will remove the password from the <code>administrator</code> account.</li>
+<li>Go back to the login screen, enter the <code>Username</code> <em>administrator</em>, and click <kbd>Login</kbd> (Do not enter anything into the <code>Password</code> field).</li>
+<li>Once you log in, set a new password in the <kbd>Users</kbd> tab so no-one will be able to access your server as <em>administrator</em> without entering a password.</li>
+</ul>
