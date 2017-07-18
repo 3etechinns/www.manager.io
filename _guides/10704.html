@@ -1,0 +1,85 @@
+---
+layout: guide
+title: Create goods receipts
+tags: goods-receipts goods-receipt-form goods-receipt-view
+---
+<p><strong>Goods receipts</strong> help track location of inventory items enroute from suppliers. They can be used to:</p>
+
+<ul>
+<li>Record the physical (as opposed to financial) aspect of purchase transactions</li>
+<li>Confirm receipt of ordered goods (when given to a supplier)</li>
+</ul>
+
+<p>They have no financial impact. Indeed, they include no financial information. Goods receipts are completely optional. Without them, that is, when the <kbd>Goods Receipts</kbd> tab is not enabled, receipt of goods is assumed to occur as soon as the purchase invoice or payment form is created.</p>
+
+<h3>Enable the <kbd>Goods Receipts</kbd> tab</h3>
+
+<p>To use goods receipts, first enable the <kbd>Goods Receipts</kbd> tab. Click <kbd>Customize</kbd> below the left navigation pane, check the box for <kbd>Goods Receipts</kbd>, and click <kbd>Update</kbd> below the list:</p>
+
+<p><img src="/uploads/manager1/original/2X/0/01e65dae9ce5dabf18b151382bd3954fe932df86.png" width="77" height="31"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="/uploads/manager1/original/2X/9/95db5df3583b3bf61f7b1a5375a7632d2acf9248.png" width="136" height="38"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="/uploads/manager1/original/2X/a/a40002fb799a9873a601e1ebf0703439abcfb321.png" width="76" height="37"></p>
+
+<h3>Create a goods receipt</h3>
+
+<p>Goods receipts can be created four ways:</p>
+
+<ul>
+<li>Standard method</li>
+<li>From a purchase order</li>
+<li>From purchase invoice</li>
+<li>From a debit note</li>
+</ul>
+
+<p><strong><em>Standard method</em></strong></p>
+
+<p>In the <kbd>Goods Receipts</kbd> tab, click <kbd>New Goods Receipt</kbd>:</p>
+
+<p><img src="/uploads/manager1/original/2X/c/c0bcff47847d0a6b9bb06e5514eec2175b71ca29.png" width="139" height="51"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="/uploads/manager1/original/2X/7/78106f756e02ea9427e5982def5ed95b51bcc8c5.png" width="282" height="50"></p>
+
+<p>Complete the goods receipt entry form:</p>
+
+<p><img src="/uploads/manager1/original/2X/4/49332d21defed9db15f62b8ccda24800517c389d.png" width="573" height="477"></p>
+
+<ul>
+<li>
+<strong><code>Date</code></strong> contains today's date by default, but may be edited.</li>
+<li>
+<strong><code>Reference</code></strong> is an automatic sequence added by Manager when the form is completed. Manager will locate the highest-numbered existing goods receipt and add 1 to its reference number.</li>
+<li>
+<strong><code>Order number</code></strong> is the corresponding purchase order number, if any.</li>
+<li>
+<strong><code>Invoice number</code></strong> is the corresponding purchase invoice number, if any.</li>
+<li>
+<strong><code>Supplier</code></strong> is a predefined supplier from the <kbd>Suppliers</kbd> tab. Goods receipts cannot be created for cash purchases, because the goods are presumed to have been received upon payment.</li>
+<li>The first <strong><code>Description</code></strong> is for an optional summary of the entire receipt.</li>
+<li>
+<strong><code>Item</code></strong> allows you to select inventory items or non-inventory items.</li>
+<li>The second and all subsequent <strong><code>Description</code></strong> fields describe individual line items. If this field is defined for an inventory or non-inventory item, that definition will automatically be carried over. The field may be edited.</li>
+<li>
+<strong><code>Qty</code></strong> is the quantity of the line item being received <strong>at this time</strong>.</li>
+<li>
+<strong><code>Add line</code></strong> allows you to add more line items 1, 5, 10, or 20 at a time.</li>
+<li>
+<strong><code>Location</code></strong> appears if inventory locations are defined under <kbd>Settings</kbd>. Choose the location where goods are being received.</li>
+</ul>
+
+<p>Click <kbd>Create</kbd> to issue the goods receipt. All necessary adjustments to inventory quantities and status by location occur automatically.</p>
+
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Northwind Traders has purchased 18 jars of marmalade from Specialty Biscuits. Northwind entered purchase invoice <span class="hashtag">#27484</span>. It issues goods receipt <span class="hashtag">#2315</span> when the product arrives:<br><br><img src="/uploads/manager1/original/2X/5/5b2e72d75ea05c0d3cf03d30d55455556da210b2.png" width="690" height="375"></p></td></tr></table>
+
+<p><strong><em>Other methods</em></strong></p>
+
+<p>All other methods of goods receipt creation use the <kbd>Copy to ...</kbd> function. This is available from:</p>
+
+<ul>
+<li>Purchase orders</li>
+<li>Purchase invoices</li>
+<li>Debit notes</li>
+</ul>
+
+<p>When viewing an eligible form, click <kbd>Copy to ...</kbd> and select <em>New Goods Receipt</em>:</p>
+
+<p><img src="/uploads/manager1/original/2X/4/4ec08593d0b42f1b6906e45218df6bdb30ee26d6.png" width="382" height="107"></p>
+
+<p>A completed goods receipt entry screen will appear. Edit as required and click <kbd>Create</kbd>.</p>
+
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>Caution</strong><br>Think carefully before enabling the <kbd>Goods Receipts</kbd> or <kbd>Delivery Notes</kbd> tabs. Once you have started using them, you must continue. Manager will not allow you to disable the tabs after the first goods receipt or delivery note is created. The functionality these tabs provide can be very important for some businesses. But they also entail extra work every time an inventory item is purchased or sold. Consider creating a test company to explore whether they are truly necessary for your business. They can always be added later.</p></td></tr></table>
