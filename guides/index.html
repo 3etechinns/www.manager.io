@@ -13,18 +13,39 @@ p { line-height: 24px; }
 <p>Guides that describe how to set up, configure, or use Manager.</p>
 
 {% assign guides = site.guides | sort:"title" %}
-{% assign categories = "Businesses|Preferences|Users|Summary|Cash Accounts|Expense Claims|Customers|Sales Quotes|Sales Orders|Sales Invoices|Credit Notes|Delivery Notes|Suppliers|Purchase Orders|Purchase Invoices|Goods Receipts|Debit Notes|Inventory Items|Production Orders|Employees|Payslips|Billable Time|Billable Expenses|Fixed Assets|Intangible Assets|Capital Accounts|Special Accounts|Journal Entries|Folders|Reports|Chart of Accounts|Business Details|Business Logo|Custom Fields|Email Templates|Email Settings|Inventory Kits|Inventory Locations|Lock Date|Non-inventory Items|Start Date|Tax Codes|Themes|Tracking Codes" | split: '|' %}
-{% for category in categories %}
-<div style="border-bottom: 1px solid #ccc; margin-bottom: 20px"><h2>{{ category }}</h2></div>
-<ul class="fa-ul" style="margin-bottom: 40px">
-{% assign tag = category | replace: ' ','-' | downcase %}
-{% for guide in guides %}
-{% if guide.tags contains tag %}
-<li>
-<i class="fa-li fa fa-book"></i>
-<a href="{{ guide.id }}">{{ guide.title }}</a>
-</li>
-{% endif %}
+{% assign visibleGuides = "|" %}
+
+{% for category in site.data.categories %}
+  {% assign categoryTags = category.tags | split: ' ' %}
+  <div style="border-bottom: 1px solid #ccc; margin-bottom: 20px"><h2>{{ category.name }}</h2></div>
+  <ul class="fa-ul" style="margin-bottom: 40px">
+  {% for guide in guides %}
+    {% assign visible = false %}
+    {% for categoryTag in categoryTags %}
+      {% if guide.tags contains categoryTag %}
+        {% assign visible = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if visible == true %}
+      {% assign visibleGuides = visibleGuides | append:guide.id | append:'|' %}
+      <li><i class="fa-li fa fa-book"></i><a href="{{ guide.id }}">{{ guide.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 {% endfor %}
-</ul>
+
+
+{% for guide in guides %}
+  {% if visibleGuides contains guide.id %}{% else %}
+    <div style="border-bottom: 1px solid #ccc; margin-bottom: 20px"><h2>Uncategorized</h2></div>
+    <ul class="fa-ul" style="margin-bottom: 40px">
+    {% for guide in guides %}
+      {% if visibleGuides contains guide.id %}
+      {% else %}
+        <li><i class="fa-li fa fa-book"></i><a href="{{ guide.id }}">{{ guide.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  {% break %}{% endif %}
 {% endfor %}

@@ -1,0 +1,48 @@
+name,tags
+Businesses,businesses
+Preferences,preferences
+Users,users
+Summary,summary
+Cash Accounts,cash-accounts
+Expense Claims,expense-claims
+Customers,customers
+Sales Quotes,sales-quotes sales-quote-form sales-quote-view
+Sales Orders,sales-orders sales-order-form sales-order-view
+Sales Invoices,sales-invoices sales-invoice-form sales-invoice-view
+Credit Notes,credit-notes credit-note-view
+Delivery Notes,delivery-notes delivery-note-view
+Suppliers,suppliers
+Purchase Orders,purchase-orders purchase-order-form purchase-order-view
+Purchase Invoices,purchase-invoices purchase-invoice-form purchase-invoice-form
+Goods Receipts,goods-receipts
+Debit Notes,debit-notes
+Inventory Items,inventory-items
+Inventory Transfers,inventory-transfers
+Inventory Write-Offs,inventory-write-offs
+Production Orders,production-orders
+Employees,employees
+Payslips,payslips
+Billable Time,billable-time
+Billable Expenses,billable-expenses
+Fixed Assets,fixed-assets
+Intangible Assets,intangible-assets
+Capital Accounts,capital-accounts
+Special Accounts,special-accounts
+Journal Entries,journal-entries
+Folders,folders
+Emails,emails
+Reports,reports
+Base Currency,base-currency-form
+Business Details,business-details-form
+Business Logo,business-logo-form
+Chart of Accounts,chart-of-accounts
+Custom Fields,custom-fields
+Email Settings,email-settings
+Email Templates,email-templates
+Inventory Kits,inventory-kits
+Inventory Locations,inventory-locations
+Non-Inventory Items,non-inventory-items
+Lock Date,lock-date-form
+Start Date,start-date-form
+Tax Codes,tax-codes
+Themes,themes
