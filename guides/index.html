@@ -8,7 +8,7 @@ ol > li > p, ol > li > p { margin-bottom: 0px; }
 li { margin-bottom: 5px; }
 i.fa-li { opacity: 0.5; margin-top: 3px }
 p { line-height: 24px; }
-span.label { font-weight: normal; margin-left: 5px; padding: 2px 6px }
+span.label { font-weight: normal; margin-right: 3px; padding: 2px 6px }
 </style>
 
 <p>Guides that describe how to set up, configure, or use Manager.</p>
@@ -41,10 +41,10 @@ span.label { font-weight: normal; margin-left: 5px; padding: 2px 6px }
       {% if visible == true %}
         {% assign visibleGuides = visibleGuides | append:guide.id | append:'|' %}
         <li>
-          <i class="fa-li fa fa-book"></i>          
-          <a href="{{ guide.id }}">{{ guide.title }}</a>
+          <i class="fa-li fa fa-book"></i>
           {% if guide.tags contains "beginner" %}<span class="label label-success">Beginner</span>{% endif %}
           {% if guide.tags contains "expert" %}<span class="label label-danger">Expert</span>{% endif %}      
+          <a href="{{ guide.id }}">{{ guide.title }}</a>          
         </li>
       {% endif %}
     {% endfor %}
