@@ -20,13 +20,11 @@ span.label { font-weight: normal; margin-right: 3px; padding: 2px 6px }
   {% assign categoryTags = category.tags | split: ' ' %}
   <div style="border-bottom: 1px solid #ccc; margin-bottom: 20px"><h2>{{ category.name }}</h2></div>
   <ul class="fa-ul" style="margin-bottom: 40px">
-  {% for i in (1..3) %}
+  {% for i in (1..2) %}
     {% for guide in guides %}
 
       {% if guide.tags contains "beginner" %}
         {% if i != 1 %}{% continue %}{% endif %}
-      {% elsif guide.tags contains "expert" %}
-        {% if i != 3 %}{% continue %}{% endif %}
       {% else %}
         {% if i != 2 %}{% continue %}{% endif %}
       {% endif %}
@@ -43,7 +41,6 @@ span.label { font-weight: normal; margin-right: 3px; padding: 2px 6px }
         <li>
           <i class="fa-li fa fa-book"></i>
           {% if guide.tags contains "beginner" %}<span class="label label-success">Beginner</span>{% endif %}
-          {% if guide.tags contains "expert" %}<span class="label label-danger">Expert</span>{% endif %}      
           <a href="{{ guide.id }}">{{ guide.title }}</a>          
         </li>
       {% endif %}
