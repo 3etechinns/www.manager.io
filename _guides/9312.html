@@ -5,32 +5,20 @@ tags: themes suppliers supplier-form
 ---
 {% raw %}
 <p>The <strong><code>Code</code></strong> field for suppliers is completely optional. It can be used for several purposes, including:</p>
-
 <ul>
 <li>Distinguishing suppliers with identical names</li>
 <li>Annotating different departments or ordering centers at a single supplier (with each department being created as a distinct supplier)</li>
 <li>Assigning suppliers to regions, purchasing personnel, or facilities</li>
 </ul>
-
 <h3>Assign a supplier code</h3>
-
 <p>When creating or editing a supplier in the <kbd>Suppliers</kbd> tab, enter any combination of letters or numbers in the <code>Code</code> field:</p>
-
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0697e6f4a47b38c1144032ecdce97c7cac96e670.png" width="443" height="141"></p>
-
-<p>By default, the supplier's code will be shown on printed documents next to supplier's name:</p>
-
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0a97e7e9d35e3cfdfecf4924e2d76223984a15c6.png" width="143" height="88"></p>
-
+<p><img src="/uploads/manager1/original/2X/0/0697e6f4a47b38c1144032ecdce97c7cac96e670.png" width="443" height="141"></p>
+<p>By default, the supplier’s code will be shown on printed documents next to supplier’s name:</p>
+<p><img src="/uploads/manager1/original/2X/0/0a97e7e9d35e3cfdfecf4924e2d76223984a15c6.png" width="143" height="88"></p>
 <p>The code will also show in the <kbd>Suppliers</kbd> listing and can be entered as a search parameter in other tabs:</p>
-
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f3e600f0682b4406186863143ee392928a10556b.png" width="426" height="188"></p>
-
+<p><img src="/uploads/manager1/original/2X/f/f3e600f0682b4406186863143ee392928a10556b.png" width="426" height="188"></p>
 <h3>Removing the supplier code from documents</h3>
-
-<p>If you wish to remove the supplier code from completed forms, edit the theme used to display them. While viewing the theme's computer code, find the line using the variable <code>{{ recipient.code }}</code>. This is a placeholder variable that inserts the supplier code into your documents. To hide the supplier code, simply remove <code>{{ recipient.code }}</code> from your theme. <strong>Leave the rest of the line it was in unchanged.</strong></p>
-
+<p>If you wish to remove the supplier code from completed forms, edit the theme used to display them. While viewing the theme’s computer code, find the line using the variable <code>{{ recipient.code }}</code>. This is a placeholder variable that inserts the supplier code into your documents. To hide the supplier code, simply remove <code>{{ recipient.code }}</code> from your theme. <strong>Leave the rest of the line it was in unchanged.</strong></p>
 <p>After you save your new or modified theme, the supplier code will no longer show.</p>
-
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/bc4c1d4f12bfe00ea27e2dba598ba89bd86f50a4.png" width="145" height="91"></p>
+<p><img src="/uploads/manager1/original/2X/b/bc4c1d4f12bfe00ea27e2dba598ba89bd86f50a4.png" width="145" height="91"></p>
 {% endraw %}
