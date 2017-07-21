@@ -4,6 +4,9 @@ collections:
   screenshots:
     output: true
     permalink: /desktop/:collection/:name
+  pricing:
+    output: true
+    permalink: /cloud/:collection/:name
   themes:
     output: true
   guides:
