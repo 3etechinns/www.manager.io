@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: Avoid automatic credit allocations
-tags: purchase-invoices special-accounts sales-invoices customers suppliers
+tags: customers purchase-invoices special-accounts sales-invoices suppliers
 ---
+{% raw %}
 <p>By design, Manager automatically applies receipts from customers or payments to suppliers to the oldest unpaid sales or purchase invoice if a specific invoice is not chosen during account selection:</p>
 
           <a href="https://i.imgur.com/CuZDQRa.png" target="_blank" rel="nofollow noopener">
@@ -64,3 +65,4 @@ tags: purchase-invoices special-accounts sales-invoices customers suppliers
 <hr>
 
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Notes</strong><br>By default,  <em>Special accounts</em> appears in the <em>Assets</em> group of the Balance Sheet when the first special account is created. Customer deposits of the type illustrated in the examples above contribute to the account balance as negative amounts. Deposits paid to suppliers appear as positive amounts. If your <em>Special accounts</em> balance is usually negative, you may want to move it to the <em>Liabilities</em> group by editing the account under <kbd>Settings</kbd> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <kbd>Chart of Accounts</kbd>.<br><br>The examples shown illustrate a deposit by a customer and application to a sales invoice. Procedures for deposits to suppliers and application to purchase invoices are similar, but the initial payment is a <kbd>Spend money</kbd> rather than a <kbd>Receive money</kbd> transaction.</p></td></tr></table>
+{% endraw %}

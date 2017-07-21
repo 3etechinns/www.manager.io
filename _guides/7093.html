@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: Record customer deposits and advances
-tags: receipt-form cash-accounts customers
+tags: customers receipt-form cash-accounts
 ---
+{% raw %}
 <p><strong>Customer deposits and advances</strong> are funds received by a business from a customer before they have been earned. While the funds may be present in a cash account of the business, they are actually being held in trust for the customer and represent a liability the business must eventually either repay or convert to income by completion of the economic activity for which they are intended. Some examples include:</p>
 
 <ul>
@@ -62,3 +63,4 @@ tags: receipt-form cash-accounts customers
 <p>Whenever a sales invoice is created for a customer, any available net credit in that customer's <em>Accounts receivable</em> balance will be automatically applied, reducing the balance due on the new sales invoice.</p>
 
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>Deposits and advances cannot be applied on sales recorded only via cash receipts. Such transactions are not processed through <em>Accounts receivable</em>, so Manager cannot apply any available balance. If you sell to a customer on a cash-and-carry basis, but wish to apply an existing deposit or advance, you must create and receive money against a sales invoice in separate transactions.</p></td></tr></table>
+{% endraw %}

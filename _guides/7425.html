@@ -3,6 +3,7 @@ layout: guide
 title: Use credit notes for customer returns and refunds
 tags: credit-notes credit-note-view credit-note-form beginner
 ---
+{% raw %}
 <p>A <strong>credit note</strong> records the return of goods by a <a href="/guides/7018">customer</a> or a credit adjustment (refund) to a customer's account for goods or services previously invoiced. It makes all necessary corrections to inventory and income accounts. A credit note does not record actual payment of money to the customer, but only adjusts the customer's balance in <em>Accounts receivable</em>. A credit note can be created regardless of whether the customer has yet paid for the goods or services. </p>
 
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>NOTE</strong><br>A credit note should not normally be used if the original transaction was a <a href="/guides/7321">cash sale</a>, because the sale will not have been recorded in the customer's subaccount in <em>Accounts receivable</em>. In such situations, a direct refund should usually be made via a <kbd>Spend money</kbd> transaction under the <kbd>Cash Accounts</kbd> tab. However, if the cash buyer has also been defined as a customer and prefers an account credit rather than a cash refund, a credit note may be used.</p></td></tr></table>
@@ -71,3 +72,4 @@ tags: credit-notes credit-note-view credit-note-form beginner
 <p>If a customer requests a refund of the credit balance, <kbd>Spend money</kbd> from a cash account and allocate the refund to <em>Accounts receivable</em> and the customer's subaccount. When a cash refund is recorded, the balance of <em>Accounts receivable</em> for the customer will move in the positive direction:</p>
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c1c7e3a96262af7105944d0fe8ba765d25cb93ac.png"></p>
+{% endraw %}

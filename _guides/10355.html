@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: Resolve issues with automatic credit allocations
-tags: supplier-statements customer-statements purchase-invoices sales-invoices customers suppliers
+tags: supplier-statements customer-statements customers suppliers purchase-invoices sales-invoices
 ---
+{% raw %}
 <p>When you enter a new sales or purchase invoice, you might find that Manager automatically credits the invoice with some amount, making the <code>Balance due</code> less than the invoice <code>Total</code>:</p>
 
           <a href="https://i.imgur.com/PibJxNi.png" target="_blank" rel="nofollow noopener">
@@ -36,3 +37,4 @@ tags: supplier-statements customer-statements purchase-invoices sales-invoices c
 <p>In the example above, even if you didn't notice the bookkeeping error, eventually the customer who actually paid <strong>$2,345.30</strong> on 26/04/2017 would complain that its customer statements did not reflect the payment. Or your Aged Receivables report would show that customer's account becoming more and more overdue. Sooner or later, you would discover the payment having been attributed to the wrong customer.</p>
 
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>While the example illustrates an erroneous credit being automatically applied to a sales invoice because of incorrect attribution of a receipt from a customer, similar mistakes can happen with purchase invoices and payments to suppliers. Detection and correction procedures are the same.</p></td></tr></table>
+{% endraw %}

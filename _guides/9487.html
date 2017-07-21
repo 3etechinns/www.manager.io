@@ -3,6 +3,7 @@ layout: guide
 title: Enter tax-inclusive prices on sales invoices
 tags: tax-codes sales-invoice-form sales-invoices
 ---
+{% raw %}
 <p><strong>Tax-inclusive prices</strong> already have any applicable tax added to the selling price. The customer sees the total price, including tax, rather than a tax-exclusive selling price with separately added tax. Manager can handle either situation with selection of the same tax code. But tax amounts calculated will, necessarily, be different. (See the Note below.)</p>
 
 <p>By default, unit prices on sales invoices are treated as tax-exclusive.</p>
@@ -22,3 +23,4 @@ tags: tax-codes sales-invoice-form sales-invoices
 <pre><code>Tax-exclusive price = Tax-inclusive price / (1 + Tax rate)</code></pre>
 <p>Of course, for standard tax-exclusive pricing, the higher price entered is used directly, resulting in a higher tax amount.</p>
 </td></tr></table>
+{% endraw %}

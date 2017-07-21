@@ -3,9 +3,11 @@ layout: guide
 title: Troubleshoot email issues
 tags: settings email-settings
 ---
+{% raw %}
 <p>If you can’t send emails from Manager, the first thing you should try is to upgrade to the latest version. The issue causing your problem could have been a bug in the software which might have been already fixed.</p>
 <p>If upgrading didn’t solve the problem, we need to dive into your <kbd>Email Settings</kbd> under the<kbd>Settings</kbd> tab:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/90756e1b4bce72379543e7caac15e1032c02ce0e.png"></p>
 <p>By default, Manager will send emails using an in-built SMTP server. As long as you’re connected to the Internet, this option should always work. If it doesn’t, and you are using the latest version, it could indicate a bug which should be reported to us.</p>
 <p>If you have checked the box to <code>Use custom SMTP server</code>, uncheck the option and click <kbd>Update</kbd> and test emails again. If your emails start working, the problem is with your custom SMTP server settings. Your username, host, port or password could be invalid. You need to check with your SMTP provider to determine the correct settings.</p>
 <p>Currently, Manager doesn’t support port <em>465</em>. So try different port, such as <em>587</em>. Most SMTP servers will support both ports, so this is generally not an issue.</p>
+{% endraw %}

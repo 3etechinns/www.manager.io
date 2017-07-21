@@ -3,6 +3,7 @@ layout: guide
 title: Change a form title
 tags: themes
 ---
+{% raw %}
 <p>A <strong>title</strong> is the name of a particular transaction form in Manager. Titles appear near the top of forms in many themes, but can be placed elsewhere. They include:</p>
 
 <ul>
@@ -46,3 +47,4 @@ tags: themes
 <hr>
 
 <table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>CAUTION</strong><br>Beware of unintended consequences. Any place old title text appears in the title of any form, it will be replaced with new title text. In the first example above, not only would <em>Invoice</em> become <em>Tax Invoice</em>, but <em>Purchase Invoice</em> would become <em>Purchase Tax Invoice</em>. So you may wish to limit usage of custom themes to specific forms or create additional themes. You might also use more sophisticated conditional tests in your code. Those are beyond the scope of this Guide.</p></td></tr></table>
+{% endraw %}

@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: Add freight-in to inventory item costs
-tags: purchase-invoice-form purchase-invoices inventory-items
+tags: purchase-invoice-form inventory-items purchase-invoices
 ---
+{% raw %}
 <p><strong>Freight-in</strong> represents the cost of obtaining goods from a supplier. This obviously includes transportation and shipping costs, but could also include handling and brokerage fees, customs charges, and so forth, as long as you do not need to record those as expenses in separate accounts. For typical accounting purposes, freight-in is added into the cost of goods, just as though the supplier charged a higher price.</p>
 
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Northwind Traders purchases 100 units of an inventory item at a unit price of $4.00. Northwind's supplier adds a shipping charge of $20. The fully delivered average cost of the items is not $4.00, but $4.20.</p></td></tr></table>
@@ -52,3 +53,4 @@ tags: purchase-invoice-form purchase-invoices inventory-items
 <p>For these situations, use the manual allocation method, choosing the inventory item but leaving <code>Qty</code> blank. You do not need to consolidate these separate charges on the same transaction form as the inventory item purchase. Average inventory item costs will still be calculated correctly.</p>
 
 <p>Nor do you need to list the same date on forms for the purchase and freight-in. Average cost will be adjusted as of the transaction date entered for the freight-in charge.</p>
+{% endraw %}

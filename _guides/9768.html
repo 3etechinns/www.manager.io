@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: Pay employees
-tags: payslips payment-form employees payslip-view
+tags: employees payment-form payslips payslip-view
 ---
+{% raw %}
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>This Guide provides instructions on paying employees set up under the <kbd>Employees</kbd> tab and whose payroll transactions have been entered in the <kbd>Payslips</kbd> tab. It does not address third-party payroll processing.</p></td></tr></table>
 
 <p>In Manager, payslips record earnings, deductions, etc. of employees. They <strong>do not</strong> record actual payments to those employees of amounts owed as a result of payslips. To <strong>pay employees</strong>, you must enter payments in the <kbd>Cash Accounts</kbd> tab. Two approaches can be used, depending on whether the employee is owed for a single payslip, multiple payslips, or expense claims.</p>
@@ -81,3 +82,4 @@ tags: payslips payment-form employees payslip-view
 <h3>Effect of payment</h3>
 
 <p>The payment debits <em>Employee clearing account</em> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <em>Employee name</em> and credits the cash account where the payment is posted. If all employees are paid the full amounts owed, <em>Employee clearing account</em> will be reduced to a zero balance.</p>
+{% endraw %}

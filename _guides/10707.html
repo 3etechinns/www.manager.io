@@ -3,6 +3,7 @@ layout: guide
 title: Transfer inventory between locations
 tags: inventory-transfers inventory-transfer-view inventory-transfer-form beginner
 ---
+{% raw %}
 <p><strong>Inventory transfers</strong> are used to record movement of physical inventory items from one location to another without a sale or purchase being involved. They are completely optional, and can only be used when at least two inventory locations have been defined (see Notes below). Inventory locations are created as described <a href="/guides/10677">in another Guide</a>.</p>
 
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Sanjay's Drum and Guitar Shop has a small retail display showroom. Because of limited space, Sanjay also rents a warehouse in a nearby industrial park where he stores most of his inventory. Sanjay creates two inventory locations: <em>Retail store</em> and <em>Warehouse</em>. As he sells items from the showroom, he brings inventory from the warehouse to replace them. He uses inventory transfers to record the movements.<br><br>Now, if a customer wants more of an item than he has in the showroom, Sanjay can look up his full stock level and see not just how many he has in total, but how many are at each location. He can avoid ordering more until he really needs to, and can make the sale immediately (arranging to deliver from the warehouse), even though he cannot physically see his inventory.</p></td></tr></table>
@@ -47,3 +48,4 @@ tags: inventory-transfers inventory-transfer-view inventory-transfer-form beginn
 <p>Click <kbd>Create</kbd> to record the transfer. Inventory quantities at both locations will be adjusted automatically.</p>
 
 <table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>Caution</strong><br>Remember that the inventory transfer form only records the movement of inventory. Unless you move the proper number of items from one location to another, and unless those locations are correct, physical inventory counts will be off and reconciliation may be very difficult.</p></td></tr></table>
+{% endraw %}
