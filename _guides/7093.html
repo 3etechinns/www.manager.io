@@ -5,62 +5,44 @@ tags: customers receipt-form cash-accounts
 ---
 {% raw %}
 <p><strong>Customer deposits and advances</strong> are funds received by a business from a customer before they have been earned. While the funds may be present in a cash account of the business, they are actually being held in trust for the customer and represent a liability the business must eventually either repay or convert to income by completion of the economic activity for which they are intended. Some examples include:</p>
-
 <ul>
 <li>Deposits accompanying purchase orders for custom manufacturing</li>
 <li>Receipts from prepayments for services or utilities to be invoiced later to the customer</li>
 <li>Deposits received for confirmation of hotel reservations</li>
 <li>Cleaning or damage deposits for rental property received from tenants</li>
 </ul>
-
-<h3>Accounting for deposits and advances</h3>
-
+<p>##<span class="hashtag">#Accounting</span> for deposits and advances</p>
 <p>Two  essential facts must be recorded for every deposit or advance:</p>
-
 <ul>
 <li>
 <strong>Customer</strong> - who is making the deposit?</li>
 <li>
 <strong>Amount</strong> - how much is the deposit?</li>
 </ul>
-
 <p>In Manager, both facts are recorded simultaneously when the deposit or advance is received. To receive a deposit, go to the <kbd>Cash Accounts</kbd> tab and click on <kbd>Receive money</kbd>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5d2823946cdefa25a47334c290e374c91f95aa4d.png"></p>
-
 <p>Edit the <code>Date</code>, if necessary. Add a <code>Reference</code>, if desired. Select the cash account where the deposit will be lodged. You cannot proceed without selecting a cash account. In the illustration below, the <em>Checking account</em> is selected:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/052bb2131cbd2f9bc00f210c41fa19b3f698402e.png" width="349" height="330"></p>
-
-<p>Complete the receipt. Select <em>Accounts receivable</em> and the customer's subaccount. <strong>Leave the <code>Invoice</code> field blank.</strong> A quantity is not required, because no inventory items or billable items are involved with a deposit. You may simply enter the total deposit in the <code>Unit price</code> field. However, if you wish, enter the quantity and unit price and Manager will calculate a total amount: </p>
-
+<p>Complete the receipt. Select <em>Accounts receivable</em> and the customer’s subaccount. <strong>Leave the <code>Invoice</code> field blank.</strong> A quantity is not required, because no inventory items or billable items are involved with a deposit. You may simply enter the total deposit in the <code>Unit price</code> field. However, if you wish, enter the quantity and unit price and Manager will calculate a total amount:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f49517edf30109e562bafc6452f6069b330c8db5.png"></p>
-
 <p>Click <kbd>Create</kbd> to finish.</p>
-
-<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>Deposits, even those involving calculations with quantities and unit prices, have no impact on inventory values or quantities because no inventory item is designated.</p></td></tr></table>
-
-<h3>Using deposits and advances</h3>
-
-<p>The receipt will now be added to the applicable cash account's balance. If marked as pending, it will show in the <code>Pending deposits</code> column:</p>
-
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>Note</strong><br>
+Deposits, even those involving calculations with quantities and unit prices, have no impact on inventory values or quantities because no inventory item is designated.</p>
+</td></tr></table>
+<p>##<span class="hashtag">#Using</span> deposits and advances</p>
+<p>The receipt will now be added to the applicable cash account’s balance. If marked as pending, it will show in the <code>Pending deposits</code> column:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/91a092a592cc482c7af73da1e21f61055e773f24.png"></p>
-
 <p>The deposit also reduces the total <em>Accounts receivable</em> balance, though the effect of a specific deposit may be obscured on the Balance Sheet if there are other deposits from any customers:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8f2ef4c01d6b2ea6f2a05178179e159516669eb9.png" width="334" height="167"></p>
-
-<p>To view specific information about customer deposits, you must first drill down by clicking the <em>Accounts receivable</em> balance and locating the customer's account <code>Balance</code>:</p>
-
+<p>To view specific information about customer deposits, you must first drill down by clicking the <em>Accounts receivable</em> balance and locating the customer’s account <code>Balance</code>:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/197af471bb7ab407312596fd55b849bc320dd334.png" width="579" height="235"></p>
-
 <p>Clicking on the balance, you can see transactions contributing to it, including the recent deposit:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/eb587f68745435f4dfa3802403785f5174a580a5.png"></p>
-
 <p>You can do the same thing in the <kbd>Customers</kbd> tab, with identical results.</p>
-
-<p>Whenever a sales invoice is created for a customer, any available net credit in that customer's <em>Accounts receivable</em> balance will be automatically applied, reducing the balance due on the new sales invoice.</p>
-
-<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>Note</strong><br>Deposits and advances cannot be applied on sales recorded only via cash receipts. Such transactions are not processed through <em>Accounts receivable</em>, so Manager cannot apply any available balance. If you sell to a customer on a cash-and-carry basis, but wish to apply an existing deposit or advance, you must create and receive money against a sales invoice in separate transactions.</p></td></tr></table>
+<p>Whenever a sales invoice is created for a customer, any available net credit in that customer’s <em>Accounts receivable</em> balance will be automatically applied, reducing the balance due on the new sales invoice.</p>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>Note</strong><br>
+Deposits and advances cannot be applied on sales recorded only via cash receipts. Such transactions are not processed through <em>Accounts receivable</em>, so Manager cannot apply any available balance. If you sell to a customer on a cash-and-carry basis, but wish to apply an existing deposit or advance, you must create and receive money against a sales invoice in separate transactions.</p>
+</td></tr></table>
 {% endraw %}
