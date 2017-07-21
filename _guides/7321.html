@@ -5,36 +5,30 @@ tags: sales receipt-form cash-transactions receipt-view cash-accounts
 ---
 {% raw %}
 <p>A <strong>cash sale</strong> occurs when a customer pays for goods or services immediately upon delivery. No credit is extended by the seller. No account receivable is created. Resulting revenue is posted immediately to an income account, regardless of whether the business uses <a href="/guides/7129">accrual or cash basis accounting</a>. Therefore, <strong>no sales invoice is required</strong>. The entire transaction occurs in a single step.</p>
-
 <p>Before a cash sale can be entered into Manager, at least one <a href="/guides/9219">cash account must be created</a>. Then, within the <kbd>Cash Accounts</kbd> tab, click on <kbd>Receive money</kbd>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/62af3193ca4fa0405c5e23e58e4c0e8df8f19f87.png" width="217" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/bb5149628750a6e6bd13a1be9acf5df51961285f.png" width="636" height="52"></p>
-
-<p>Select the account in which the customer's money will be received:</p>
-
+<p>Select the account in which the customer’s money will be received:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f423c87bbcd74aadafb528d873c71dbd2b5a81cf.png" width="367" height="330"></p>
-
-<p>Complete the cash receipt. By default, today's date and <a href="/guides/7307">cleared transaction status</a> are selected. These entries may be edited. The <code>Payer</code> field can be used to enter the customer's name, the receipt could be made out to <em>Cash</em>, or the field can be left blank, according to local custom or business policy. Line items can be entered either semi-automatically, by selecting inventory or non-inventory items, or manually. Applicable <a href="/guides/8901">tax codes</a> can be selected.</p>
-
+<p>Complete the cash receipt. By default, today’s date and <a href="/guides/7307">cleared transaction status</a> are selected. These entries may be edited. The <code>Payer</code> field can be used to enter the customer’s name, the receipt could be made out to <em>Cash</em>, or the field can be left blank, according to local custom or business policy. Line items can be entered either semi-automatically, by selecting inventory or non-inventory items, or manually. Applicable <a href="/guides/8901">tax codes</a> can be selected.</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/13807669ad4f40b379c2de4bb41dc943b90ff83d.png"></p>
-
 <p>Click <kbd>Create</kbd> to complete the transaction. Any necessary adjustments will be posted to inventory accounts.</p>
-
-<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>CAUTION</strong><br>Unit prices on cash sales are assumed to be inclusive of taxes calculated in accordance with the selected tax code. The calculated tax will not be added to the <code>Amount</code>, but will increase the <em>Tax payable</em> account.</p></td></tr></table>
-
-<p>To view the cash receipt, go to the <kbd>Cash Accounts</kbd> tab. Drill down by clicking on the blue balance in either the <code>Cleared balance</code> or <code>Pending deposits</code> column (according to the transaction's status) for the applicable cash account:</p>
-
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
+<p><strong>CAUTION</strong><br>
+Unit prices on cash sales are assumed to be inclusive of taxes calculated in accordance with the selected tax code. The calculated tax will not be added to the <code>Amount</code>, but will increase the <em>Tax payable</em> account.</p>
+</td></tr></table>
+<p>To view the cash receipt, go to the <kbd>Cash Accounts</kbd> tab. Drill down by clicking on the blue balance in either the <code>Cleared balance</code> or <code>Pending deposits</code> column (according to the transaction’s status) for the applicable cash account:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/364fb6516b8df71d20a28f58ae70e853d8f8c8b4.png"></p>
-
 <p>Locate the transaction and click <kbd>View</kbd>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/703aa36078620cf03ba74149ce2557ed2adc6195.png"></p>
-
 <p>The receipt can be given to the customer as evidence of the sale:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8c2658e7bfa85909049024fa6d7b3e1233129ee4.png"></p>
-
-<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>NOTES</strong><br>1. When a cash sale is entered, any available credits the customer may have from credit notes or returns will not be applied. This is because such credits are recorded in customers' subaccounts in <em>Accounts receivable</em>, which is not invoked for cash sales. To use such credits, a <a href="/guides/7178">sales invoice</a> must be used instead.<br>2. When a <a href="/guides/7022">customer statement</a> is created, cash sales for that customer will not be included. If a complete record of sales to a specific customer is desired, sales invoices must be used.<br>3. When many cash sales are made, such as to walk-in customers in a retail shop, a single cash receipt summarizing the day's sales can be entered into Manager. A cash register or point-of-sale system can be used to record individual sales, issue customer receipts, and manage cash.</p></td></tr></table>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>NOTES</strong></p>
+</td></tr></table>
+<ol>
+<li>When a cash sale is entered, any available credits the customer may have from credit notes or returns will not be applied. This is because such credits are recorded in customers’ subaccounts in <em>Accounts receivable</em>, which is not invoked for cash sales. To use such credits, a <a href="/guides/7178">sales invoice</a> must be used instead.</li>
+<li>When a <a href="/guides/7022">customer statement</a> is created, cash sales for that customer will not be included. If a complete record of sales to a specific customer is desired, sales invoices must be used.</li>
+<li>When many cash sales are made, such as to walk-in customers in a retail shop, a single cash receipt summarizing the day’s sales can be entered into Manager. A cash register or point-of-sale system can be used to record individual sales, issue customer receipts, and manage cash.</li>
+</ol>
 {% endraw %}
