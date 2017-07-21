@@ -14,7 +14,7 @@ tags: preferences
 <strong><code>00000000000000000000000000000000.manager</code></strong> is an SQLite database holding a list of businesses, users, and global preferences. This file is generated automatically the first time you launch Manager and updated as businesses and users are added or removed or global preferences are changed. It contains no accounting data. If the file is deleted, the program will generate an empty version of it. Businesses can be repopulated into the file by <a href="/guides/6263">restoring them from backup</a>.</li>
 <li>Files with long, alphanumeric names like <strong><code>69703781b9284b1684e494fdd5510cb8.manager</code></strong> are generated for each business added. Characters in the file name are not related to the name of the business. All accounting data, customer and supplier information, custom themes, settings, and attachments for a business reside in this file. For privacy reasons, no data from any business appears in the file of any other.</li>
 <li>
-<strong><code>path</code></strong> stores the application data folder path. If you have an older version of Manager or have never changed the application data folder location, this file may be missing. If Manager needs it, the program will generate it automatically.</li>
+<strong><code>data</code></strong> stores the application data folder path. If you have an older version of Manager or have never changed the application data folder location, this file may be missing. If Manager needs it, the program will generate it automatically.</li>
 <li>Another file with an alphanumeric name like <strong><code>238097db79f84dc5a44a0c6f8aa04e6c.manager</code></strong> is generated or updated automatically whenever a business file is changed. This file contains information about audit trails. If deleted, this file will be automatically regenerated.</li>
 <li>
 <strong><code>size</code></strong> (for desktop installations) stores the window size when the application is closed.</li>
@@ -22,10 +22,10 @@ tags: preferences
 <strong><code>password</code></strong> (for server installations) stores the administrator account password</li>
 </ul>
 <p>So if you have two businesses, your file structure might look something like this:</p>
-<pre><code class="lang-auto">00000000000000000000000000000000.manager
+<pre><code>00000000000000000000000000000000.manager
 69703781b9284b1684e494fdd5510cb8.manager
 76cf56919daf4a3780196f51614b327b.manager
-path
+data
 238097db79f84dc5a44a0c6f8aa04e6c.manager
 size
 </code></pre>
