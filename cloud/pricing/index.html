@@ -2,6 +2,14 @@
 layout: main
 title: Pricing
 ---
+<style>
+div.columns {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+</style>
+
 <link href="currency-flags.css" rel="stylesheet" type="text/css">
 
 <div style="padding-bottom: 40px; text-align: center; font-weight: bold">
@@ -9,22 +17,26 @@ title: Pricing
   <div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">No matter where you are, your price will be fixed</div>
 </div>
 
-<table style="margin: 0 auto">
+<div class="columns">
 {% assign mainCurrencies = "usd,gbp,eur" | split:',' %}
-{% for i in (1..2) %}
-
-{% if i == 2 %}
-<tr><td colspan="2">&nbsp;</td></tr>
-{% endif %}
-
 {% for price in site.pricing %}
 {% assign currency = price.id | split:'/' | last %}
-{% if i == 1 %}{% if mainCurrencies contains currency %}{% else %}{% continue %}{% endif %}{% endif %}
-{% if i == 2 %}{% if mainCurrencies contains currency %}{% continue %}{% else %}{% endif %}{% endif %}
-<tr>
-<td style="padding: 5px"><div class="currency-flag currency-flag-lg currency-flag-{{ currency }}"></div></td>
-<td style="padding: 5px{% if i == 1 %}; font-weight: bold{% endif %}"><a href="{{ price.url }}">{{ currency | upcase }} - {{ price.title }}</a></td>
-</tr>
+{% if mainCurrencies contains currency %}{% else %}{% continue %}{% endif %}
+<div style="padding: 10px 5px; line-height: 24px">
+<div class="currency-flag currency-flag-lg currency-flag-{{ currency }}" style="float: left; margin-right: 10px"></div>
+<a href="{{ price.url }}" style="font-weight: bold">{{ currency | upcase }} - {{ price.title }}</a>
+</div>
 {% endfor %}
+</div>
+
+<hr />
+
+<div class="columns">
+{% for price in site.pricing %}
+{% assign currency = price.id | split:'/' | last %}
+<div style="padding: 10px 5px; line-height: 24px">
+<div class="currency-flag currency-flag-lg currency-flag-{{ currency }}" style="float: left; margin-right: 10px"></div>
+<a href="{{ price.url }}">{{ currency | upcase }} - {{ price.title }}</a>
+</div>
 {% endfor %}
-</table>
+</div>
