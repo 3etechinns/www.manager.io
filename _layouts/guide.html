@@ -20,13 +20,6 @@ kbd { background-color: #fff; border: 1px solid #e9e9e9; border-radius: 3px; box
 
 <h1>{{ page.title }}</h1>
 
-{% assign content = content | strip_newlines %}
-{% assign content = content | replace: 'https://forum.manager.io/t/', '/guides/' %}
-{% assign content = content | replace: '<img src="/', '<img src="https://cdn-business2.discourse.org/' %}
-{% assign content = content | replace: '=&gt;', '<i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i>' %}
-{% assign content = content | replace: '<blockquote>  <p><strong>Example</strong>', '<blockquote style="background-color: #F6FFF2"><p><strong>Example</strong><br />' %}
-{% assign content = content | replace: '<blockquote>', '<blockquote style="background-color: #F2F9FF">' %}
-
 {{ content }}
 
 {% include footer.html %}
