@@ -5,22 +5,18 @@ tags: production-orders production-order-view production-order-form beginner
 ---
 {% raw %}
 <p><strong>Production orders</strong> are used to record manufacture of finished inventory items using existing inventory and other resources. For example, manufacturing bottled fruit juices requires fruits, bottles, and lids purchased from suppliers as inventory items. These inventory items can be converted into the finished products sold to customers.</p>
-
-<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px"><p><strong>NOTE</strong><br>Finished goods must be created as separate <a href="/guides/7551">inventory items</a> before they can be entered on production orders.</p></td></tr></table>
-
-<h3>Basic production order with inventory items</h3>
-
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>NOTE</strong><br>
+Finished goods must be created as separate <a href="/guides/7551">inventory items</a> before they can be entered on production orders.</p>
+</td></tr></table>
+<p>##<span class="hashtag">#Basic</span> production order with inventory items</p>
 <p>To record a production order, go to the <kbd>Production Orders</kbd> tab and click <kbd>New Production Order</kbd>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/bec1774f423ff46054577108bb75595fc82f20f1.png" width="216" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/cc2c5d04ba0afa9b66522c184b25402f1f3c2764.png" width="306" height="50"></p>
-
 <p>Complete the entry screen:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3fa3f1024998654296ff90648a51c310025a6be5.png" width="451" height="381"></p>
-
 <ul>
 <li>
-<strong><code>Date</code></strong> will be autofilled with today's date, but may be edited.</li>
+<strong><code>Date</code></strong> will be autofilled with today’s date, but may be edited.</li>
 <li>
 <strong><code>Priority</code></strong> is optional, and can be used as a literal priority or may be used to serialize production orders.</li>
 <li>
@@ -28,16 +24,10 @@ tags: production-orders production-order-view production-order-form beginner
 <li>Select quantity and <em>Inventory item</em> to be produced under <strong><code>Finished item</code></strong>.</li>
 <li>Select quantity and <em>Inventory item</em> for the first raw material to be used for production under <strong><code>Bill of materials</code></strong>. If more than one inventory item is used, click <kbd>Add line</kbd> to add more line items.</li>
 </ul>
-
 <p>Click <kbd>Create</kbd> to save the production order.</p>
-
-<h3>Adding non-inventory costs</h3>
-
+<p>##<span class="hashtag">#Adding</span> non-inventory costs</p>
 <p>If non-inventory costs, such as wages, consumables, or overhead allocations are required to produce the finished inventory item(s), check the box to <code>Add non-inventory cost into production</code>. Enter accounts to which the costs will be posted and the amounts. Add lines if necessary:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8c592cd4f0ea9370b80815971dd8b77ab3ea74b4.png" width="447" height="156"></p>
-
 <p>Manager will add the non-inventory costs to the current average cost of inventory item(s) consumed by the production order to calculate the cost of the produced inventory item(s).</p>
-
 <p>In the <kbd>Inventory Items</kbd> tab, the quantity of the manufactured inventory item will increase while the quantities of input inventory items will decrease by the quantities included in the production order.</p>
 {% endraw %}
