@@ -5,7 +5,6 @@ tags: settings email-templates email-template-form
 ---
 {% raw %}
 <p><strong>Email templates</strong> allow you to include standardized messages when emailing a form directly from Manager. They are available for transaction forms that typically leave the business:</p>
-
 <ul>
 <li>Sales quotes</li>
 <li>Sales invoices</li>
@@ -15,43 +14,26 @@ tags: settings email-templates email-template-form
 <li>Payslips</li>
 <li>Customer statements</li>
 </ul>
-
-<h3>Email template location</h3>
-
-<p>Email templates are unique to forms and become available under <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Email Templates</kbd> as tabs are enabled within which they can be used:</p>
-
+<p>##<span class="hashtag">#Email</span> template location<br>
+Email templates are unique to forms and become available under <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Email Templates</kbd> as tabs are enabled within which they can be used:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7644b259eca15d934e9aa394aa67f88c1f2878ca.png" width="100" height="51"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/1f7b44e96895eb6ed7657d2ffbdd96e0623ff488.png" width="154" height="47"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/541c712dfa29026fac9e689d9f3b8e831cd1834b.png" width="277" height="193"></p>
-
 <p>You do not have to create email templates, but they are empty until you edit them:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e3c06df7b67ca798c8a553dce92fc87b2c0ff656.png" width="637" height="304"></p>
-
-<h3>Develop an email template</h3>
-
+<p>##<span class="hashtag">#Develop</span> an email template</p>
 <p>To develop a specific email template, click <kbd>Edit</kbd> beside its name in the listing. Enter your desired content, using the Liquid templating language:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c6671b3653ab2a058a189e247c8e04e68d8b1b83.png" width="641" height="302"></p>
-
 <ul>
 <li>
 <strong><code>Subject</code></strong> should indicate the matter covered in the email. The code, <code>{{reference}}</code>, will insert the reference number from the specific form being sent, if one exists, such as a quote number or invoice number.</li>
 <li>
 <strong><code>Message body</code></strong> should be a standard forwarding message. You can edit this before sending the email.</li>
 </ul>
-
 <p>Click <kbd>Update</kbd> to save changes to the template. The subject line will be included in the email templates list:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/1d09f6939003b88cbe4ee58dc8d9a038eb5a3a33.png" width="310" height="153"></p>
-
-<h3>Use an email template</h3>
-
+<p>##<span class="hashtag">#Use</span> an email template</p>
 <p>Using email templates is automatic. When viewing a form, click <kbd>Email</kbd> at the top of the window:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9dd576956d47a4ff54a6dcd10e75c8db3a6b659c.png" width="492" height="49"></p>
-
 <p>The email will appear, using the email address set up for the intended recipient (customer, supplier, or employee):</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/241fbc22e8a05bfe781f4e8ad469dcd4e4a072c3.png" width="565" height="389"></p>
-
 <p>All fields may be edited as necessary before clicking <kbd>Send</kbd> to deliver the email with the form as a PDF attachment.</p>
 {% endraw %}
