@@ -5,55 +5,31 @@ tags: cash-account-form cash-accounts
 ---
 {% raw %}
 <p>A <strong>credit card</strong> belonging to a business or used exclusively for business (such as a personal credit card of a sole trader/proprietor) can be set up in two basic ways in Manager. The options are:</p>
-
 <ul>
 <li>A contra asset account, meaning the credit card will be displayed under <em>Assets</em> on the Balance Sheet, but normally with a negative value until paid off</li>
 <li>A liability account, indicating the company owes money to the credit card issuer</li>
 </ul>
-
 <p>The two approaches are financially equivalent, so both are equally correct. This choice is a matter of personal preference.</p>
-
-<h3>Create a credit card account</h3>
-
+<p>##<span class="hashtag">#Create</span> a credit card account</p>
 <p>Regardless of which option will be used, the credit card account must be created first under the <kbd>Cash Accounts</kbd> tab. A credit card account is considered a cash account because it can be used as a medium of exchange, even though actual currency is not involved.</p>
-
 <p>Enable the <kbd>Cash Accounts</kbd> tab and create the credit card account as described <a href="/guides/9219">here</a>. You may wish to <a href="/guides/8941">add custom fields</a> to your cash accounts to record things like account numbers and financial institutions. You can also <a href="/guides/7128">assign account code numbers</a> to control the order in which accounts are displayed or match them to an overall numbering scheme for your chart of accounts.</p>
-
-<h3>Contra asset option</h3>
-
+<p>##<span class="hashtag">#Contra</span> asset option</p>
 <p>To set up the credit card as a contra asset account, leave the control account field at the default option of <em>Cash &amp; cash equivalents</em> when you create it:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/7a964b918fa1134393410e7cf25f00e8f0f0c5da.png" width="327" height="64"></p>
-
 <p>Be sure to check the box indicating the account is maintained by a financial institution:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/352f5bb026d3aaa822f7da13ba44ee177d6b1f76.png" width="403" height="38"></p>
-
-<p>The credit card will now be displayed in your <kbd>Cash Accounts</kbd> tab along with other cash accounts. Because most transactions will post to this account from <kbd>Spend money</kbd> transactions, the account's balance will usually be negative. Only refunds or payments to the credit card will move its balance in a positive direction.</p>
-
+<p>The credit card will now be displayed in your <kbd>Cash Accounts</kbd> tab along with other cash accounts. Because most transactions will post to this account from <kbd>Spend money</kbd> transactions, the account’s balance will usually be negative. Only refunds or payments to the credit card will move its balance in a positive direction.</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/34daf72df7db6404ef055e6a5d94582a8edeb77e.png"></p>
-
 <p>On your Balance Sheet, the balance of the credit card account will reduce the balance of the control account, <em>Cash &amp; cash equivalents</em>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/538eb1af3cdbd0ddf453b50260d8468ea3dabe94.png" width="406" height="166"></p>
-
 <p>The advantage of the contra asset option is your <kbd>Summary</kbd> page and Balance Sheet show at a glance how much cash you have to spend that is not already obligated. The disadvantage is credit card balances are not so visible.</p>
-
-<h3>Liability option</h3>
-
+<p>##<span class="hashtag">#Liability</span> option</p>
 <p>To set up the credit card as a liability account, you must first <a href="/guides/9256">create a custom control account</a> in your chart of accounts. Give it a name like <em>Current liabilities</em> if you want it to include other short-term obligations. Or just name it <em>Credit cards</em>. Indicate the custom control account is made up of cash accounts.</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/219f40c3b11b791bdee5372ded3d625d3eae746d.png" width="545" height="355"></p>
-
 <p>Go back to the <kbd>Cash Accounts</kbd> tab and <kbd>Edit</kbd> your credit card account by assigning it to the custom control account just created:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6e6bdb27010ca8c494c9a4c8ecaafb661d046ddf.png" width="321" height="70"></p>
-
 <p>Now, the balance of your credit card account will show under <em>Liabilities</em> on your Balance Sheet:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/508fc7826fcfabc8f3b8f2a03c51c5e8f48c24db.png" width="394" height="117"></p>
-
 <p>Notice that while the credit card balance will still show in the <kbd>Cash Accounts</kbd> tab as negative, it will appear as a positive number under <em>Liabilities</em> on the <kbd>Summary</kbd> page, because <em>Liabilities</em> are automatically subtracted from <em>Assets</em> on that display.</p>
-
 <p>The advantage of the liability option is credit card balances show on your <kbd>Summary</kbd> page and Balance Sheet as amounts owed. This may be more useful if you do not always pay off the full credit card statement balance. This option clearly separates what you have (assets) from what you owe (liabilities). The disadvantage is a quick glance at the <kbd>Summary</kbd> may suggest you have more unobligated cash than you really do.</p>
 {% endraw %}
