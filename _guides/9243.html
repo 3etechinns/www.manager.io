@@ -5,44 +5,37 @@ tags: settings import-bank-statement-form bank-rules cash-accounts bank-rule-for
 ---
 {% raw %}
 <p><strong>Bank rules</strong> are decision criteria you define so Manager can automatically categorize or post transactions to correct accounts when you import bank statements. Procedures for importing statements are described in <a href="/guides/9240">another Guide</a>.</p>
-
 <h3>Define, edit, or delete a bank rule</h3>
-
 <p>Bank rules can be defined, edited, or deleted in the <kbd>Settings</kbd> tab after clicking <kbd>Bank Rules</kbd>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8577dd6bb01314d2f6ebcabc1ce6b6537b658e4c.png" width="183" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2f3fc68f2a2e2ba9144d08ec65e6308c44aad04f.png" width="125" height="52"></p>
-
 <p>To define a new bank rule, click <kbd>New Bank Rule</kbd> and complete the description. Click <kbd>Create</kbd> when finished.</p>
-
-<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Jose knows his domestic wire transfer charges are always described in his bank statements as ELECTRONIC XFER FEE. So he creates a bank rule to automatically post any transaction with the word ELECTRONIC to his <em>Bank charges</em> expense account:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6472f3576716fbf9b9f13dc7202e7dc33a594d79.png" width="444" height="288"></p></td></tr></table>
-
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Jose knows his domestic wire transfer charges are always described in his bank statements as ELECTRONIC XFER FEE. So he creates a bank rule to automatically post any transaction with the word ELECTRONIC to his <em>Bank charges</em> expense account:<br>
+<br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6472f3576716fbf9b9f13dc7202e7dc33a594d79.png" width="444" height="288"></p>
+</td></tr></table>
 <h3>Define a bank rule during categorization</h3>
-
-<p>After a bank statement has been imported, its transactions are uncategorized unless they happen to match a previously defined bank rule. When you drill down on the bank account's balance, Manager notifies you of any uncategorized transactions:</p>
-
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e0ab095c46b1429a756b89008f6c3979554262ad.png" width="378" height="49"></p>
-
+<p>After a bank statement has been imported, its transactions are uncategorized unless they happen to match a previously defined bank rule. When you drill down on the bank account’s balance, Manager notifies you of any uncategorized transactions:</p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e0ab095c46b1429a756b89008f6c3979554262ad.png" alt="" width="378" height="49"></p>
 <p>Click the <kbd>View</kbd> button to see a bulk categorization list of the uncategorized transactions:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c44f52d1dbbae961ac4d1160cc2ef6be5612d024.png"></p>
-
 <p>Notice that all checkboxes are empty. This is because Manager compared all transactions with existing bank rules during the import process, so only transactions that could not be categorized appear on the list. These transactions must be categorized, either by manual editing or with a new bank rule and bulk categorization.</p>
-
-<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px"><p><strong>Example</strong><br>Jose sees that international wire transfer fees show differently on his bank statements. So he creates a bank rule for them by clicking the <kbd>New Bank Rule</kbd> button on the applicable transaction line:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8d6618f856a5e6ea9f71f44c49cfddb707b1306e.png" width="487" height="48"><br><br>He sets a description that Manager will recognize for such fees, directing all bank account transactions from the <code>Business bank account</code> containing <code>NAB INTL TRAN FEE</code> in their descriptions to be categorized under his <em><code>Bank charges</code></em> expense account:<br><br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2a4b7d8e464ebc0d3688bdf042b089d1310d6874.png" width="444" height="283"></p></td></tr></table>
-
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Jose sees that international wire transfer fees show differently on his bank statements. So he creates a bank rule for them by clicking the <kbd>New Bank Rule</kbd> button on the applicable transaction line:<br>
+<br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8d6618f856a5e6ea9f71f44c49cfddb707b1306e.png" alt="" width="487" height="48"><br><br>
+He sets a description that Manager will recognize for such fees, directing all bank account transactions from the <code>Business bank account</code> containing <code>NAB INTL TRAN FEE</code> in their descriptions to be categorized under his <em><code>Bank charges</code></em> expense account:<br>
+<br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2a4b7d8e464ebc0d3688bdf042b089d1310d6874.png" width="444" height="283"></p>
+</td></tr></table>
 <p>After creating a bank rule, you are taken back to the bulk categorization screen, where you notice the bank statement transaction has successfully been matched by  the new bank rule.</p>
-
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d852c3126005b7a8fe4fa33cc276436f57013a52.png" width="560" height="51"></p>
-
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d852c3126005b7a8fe4fa33cc276436f57013a52.png" alt="" width="560" height="51"></p>
 <p>You should create bank rules for all transactions likely to recur, being careful not to include in the bank rule any transaction details that are unique, such as reference numbers, invoice numbers, or dates.  Once-off transactions that are infrequent should be categorized individually by clicking <kbd>Edit</kbd> rather than by creating bank rules. Transactions you edit will disappear from the bulk categorization screen.</p>
-
 <p>Once you have added all your bank rules, select all transactions matched by new bank rules by checking their boxes:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/506634aebe56a1ad4c65332a7d280056ac6e955a.png"></p>
-
 <p>Click <kbd>Bulk Update</kbd> at the bottom. All selected bank transactions with matching bank rules will be recategorized and taken off the list. Bank rules you created will be saved at the same time, so when you import bank statements again, Manager will match new bank transactions to existing bank rules, reducing the time needed to categorize them:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d1f72365073255b56d503597a5c1dff52d4e66d3.png" width="616" height="169"></p>
-
-<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px"><p><strong>Caution</strong><br>The possibility always exists that a bank rule will incorrectly categorize a transaction with unanticipated characteristics. When you complete the categorization process, review the results.</p></td></tr></table>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
+<p><strong>Caution</strong><br>
+The possibility always exists that a bank rule will incorrectly categorize a transaction with unanticipated characteristics. When you complete the categorization process, review the results.</p>
+</td></tr></table>
 {% endraw %}
