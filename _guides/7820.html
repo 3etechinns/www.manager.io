@@ -1,30 +1,21 @@
 ---
 layout: guide
-title: Receive money
+title: Receive money in cash accounts
 tags: receipt-form cash-transactions receipt-view cash-accounts
 ---
 {% raw %}
 <p>Money received in any way by a business is a <strong>receipt</strong>. Before one can be recorded, at least one <a href="/guides/9219">cash account must be established</a>.</p>
-
-<h3>Basic receipts</h3>
-
+<p>##<span class="hashtag">#Basic</span> receipts</p>
 <p>Once at least one cash account exists, receipts are recorded in the <kbd>Cash Accounts</kbd> tab by clicking on <kbd>Receive money</kbd>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6b360c64c6e33cafcfcf55877e99fa47abad552b.png" width="216" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/4214d647dd0d143b4f7b371b6189af0940bbc778.png" width="121" height="52"></p>
-
 <p>The first stage of the entry screen appears, requiring selection of the cash account where the money will be received. If both bank and cash on hand accounts exist, selection options will be grouped accordingly:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/dbe17bade16c5bcb3f17db3993b09f7c9e78d2e6.png" width="334" height="314"></p>
-
 <p>When a cash account is selected, the full entry screen appears:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/888837d0ad240d62494e01159124cb61931a73d9.png"></p>
-
 <p>Complete the entry:</p>
-
 <ul>
 <li>
-<strong><code>Date</code></strong> is automatically filled with today's date, but can be edited.</li>
+<strong><code>Date</code></strong> is automatically filled with today’s date, but can be edited.</li>
 <li>
 <strong><code>Reference</code></strong> is optional. This field can be used for bank confirmation numbers, internal sequences, or other helpful information.</li>
 <li>
@@ -34,51 +25,31 @@ tags: receipt-form cash-transactions receipt-view cash-accounts
 <li>
 <strong><code>Description</code></strong> is an optional summary of the transaction.</li>
 <li>
-<strong><code>Item</code></strong> field can be used to enter predefined <a href="/guides/7551">inventory</a> or <a href="/guides/7344">non-inventory items</a>. If you have no predefined items, this field will not appear. Making a selection here will prefill several other fields on the line. </li>
+<strong><code>Item</code></strong> field can be used to enter predefined <a href="/guides/7551">inventory</a> or <a href="/guides/7344">non-inventory items</a>. If you have no predefined items, this field will not appear. Making a selection here will prefill several other fields on the line.</li>
 <li>
 <strong><code>Account</code></strong> is the account to which the receipt will be posted.</li>
 </ul>
-
 <p>Remaining fields are self-explanatory. The completed form can be given to the Payer as a receipt:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2c0dbcfba97b6ebd8542c0a04f04680f144f5f70.png"></p>
-
-<h3>Receipts against sales invoices</h3>
-
+<p>##<span class="hashtag">#Receipts</span> against sales invoices</p>
 <p>Receipts from customers against sales invoices can be entered two ways:</p>
-
 <ul>
 <li>As a basic receipt</li>
 <li>From a sales invoice</li>
 </ul>
-
 <p><strong>As a basic receipt</strong></p>
-
 <p>To enter a receipt against a specific invoice, post it to <em>Accounts receivable</em>, the <em>Customer</em>, and the <em>Invoice</em>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/274ce492721357ab55bc20227fb4cdba6d821ea2.png" width="628" height="81"></p>
-
 <p><strong><em>Partial receipts</em></strong></p>
-
 <p>When receiving money for only part of the balance due on a sales invoice, post the transaction as above, but enter only the amount actually received. Manager will credit the partial amount against the sales invoice and show a reduced balance due. No other special steps are necessary.</p>
-
 <p><strong><em>Receipts for multiple sales invoices</em></strong></p>
-
 <p>When receiving money from a customer for multiple sales invoices, leave the <code>Invoice</code> dropdown field blank. Manager will allocate the receipt against the oldest sales invoice with a balance due first, then the next oldest, etc. However, if the receipt is designated for specific sales invoices, add lines and designate amounts for those invoices individually.</p>
-
 <p><strong>From a sales invoice</strong></p>
-
 <p>To record a receipt while viewing a sales invoice, click on <kbd>Receive money</kbd>:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6605df198e429e3f966edc2870d1e40839d47e37.png"></p>
-
 <p>A receipt entry form will appear. After a cash account is selected, the remainder of the form will be prefilled with information to enter the full amount due on the sales invoice. If the receipt is for only part of the balance due, edit the amount received by adjusting quantity or unit price.</p>
-
-<h3>Other situations</h3>
-
+<p>##<span class="hashtag">#Other</span> situations</p>
 <p>You are not restricted to using only simple income accounts to post receipts. For example, if money is received from a business owner set up under the <kbd>Capital Accounts</kbd> tab, select the matching capital account and subaccount:</p>
-
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fef5e2f98b4bc84fe9a90fdb230cce877ef92e3c.png" width="421" height="77"></p>
-
 <p>Inventory and non-inventory items can also be directly sold using receipts. For more information on selling without sales invoices see this <a href="/guides/7321">Guide</a>.</p>
 {% endraw %}
