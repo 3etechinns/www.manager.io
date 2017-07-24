@@ -9,7 +9,7 @@ tags: credit-notes credit-note-view credit-note-form beginner
 <p><strong>NOTE</strong><br>
 A credit note should not normally be used if the original transaction was a <a href="/guides/7321">cash sale</a>, because the sale will not have been recorded in the customer’s subaccount in <em>Accounts receivable</em>. In such situations, a direct refund should usually be made via a <kbd>Spend money</kbd> transaction under the <kbd>Cash Accounts</kbd> tab. However, if the cash buyer has also been defined as a customer and prefers an account credit rather than a cash refund, a credit note may be used.</p>
 </td></tr></table>
-<p>##<span class="hashtag">#Enable</span> the <kbd>Credit Notes</kbd> tab</p>
+<h3>Enable the <kbd>Credit Notes</kbd> tab</h3>
 <p>Before credit notes can be created, the <kbd>Credit Notes</kbd> tab must be enabled. Click <kbd>Customize</kbd> below the left navigation pane, check the box for <kbd>Credit Notes</kbd>, and click <kbd>Update</kbd> below the list:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fbb7d1f939575c8db2f137383d98f7d9d206b762.png" width="219" height="150"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9e8c74a32a7d607aacb801bef666d4db78d899ff.png" width="177" height="150">  <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/347ebe0b1ed64abce70cbd10e302af37ca33137c.png" width="137" height="150"></p>
 <p>Manager offers two methods for creating credit notes:</p>
@@ -17,7 +17,7 @@ A credit note should not normally be used if the original transaction was a <a h
 <li>From a sales invoice (most common)</li>
 <li>Manual method</li>
 </ul>
-<p>##<span class="hashtag">#From</span> a sales invoice</p>
+<h3>From a sales invoice</h3>
 <p>The easiest way is to create a credit note directly from the original sales invoice. Go to the <kbd>Sales Invoices</kbd> tab:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0d51429ea54d5b31b421125a2c2700c7384fc96a.png" alt="" width="252" height="58"></p>
 <p>Click the <kbd>View</kbd> button alongside the sales invoice issued for the goods or services being returned or adjusted:</p>
@@ -34,7 +34,7 @@ If a line item was allocated to <em>Billable expenses</em> on the original sales
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6159ea72e475ad4a1d04aab39be9a4bc8766d19a.png" alt="" width="266" height="172"></p>
 <p>When finished editing, click <kbd>Create</kbd> to  issue the credit note. Manager will automatically apply a sequential <code>Reference</code> number to the credit note. It will search for the highest-numbered existing credit note and add 1.</p>
 <p>The credit amount will be applied to the original sales invoice. If the customer has not paid or only partially paid the invoice, the balance due on the invoice will be reduced by the credit note amount. If a credit note is applied to a fully paid sales invoice, the credit note amount will be credited to the customer’s subaccount in <em>Accounts receivable</em>. Any credit balance will be automatically applied to the next (or the oldest existing) sales invoice for that customer.</p>
-<p>##<span class="hashtag">#Manual</span> method</p>
+<h3>Manual method</h3>
 <p>If no sales invoice exists or can be found, create a credit note manually. In the <kbd>Credit Notes</kbd> tab, click on <kbd>New Credit Note</kbd>:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/ff8ea9245ac5d183ed7729a6f07cf884fce119be.png" width="217" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/566a4af19c23205bea9d53faac6678dbb42a61e6.png" width="245" height="50"></p>
 <p>The first stage of the credit note entry screen appears:</p>
@@ -43,7 +43,7 @@ If a line item was allocated to <em>Billable expenses</em> on the original sales
 <p>A <a href="/guides/7018">previously defined customer</a> must be selected in the dropdown box before proceeding. The customer’s <code>Billing address</code> is filled automatically. Line items can be completed semi-automatically by selecting predefined inventory or non-inventory items in the <code>Item</code> field and entering quantities. Or, they may be entered manually. Applicable tax codes can be selected. Additional lines can be added 1, 5, 10, or 20 at a time. Since the credit note is being created manually, the <code>Invoice</code> field at the bottom will be blank. However, if a corresponding sales invoice is located, it can be selected:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ed781797c78d389f23de0791b58a70a697fcaaa1.png"></p>
 <p>Save the transaction by clicking <kbd>Create</kbd>.</p>
-<p>##<span class="hashtag">#Paying</span> out a refund</p>
+<h3>Paying out a refund</h3>
 <p>If a customer requests a refund of the credit balance, <kbd>Spend money</kbd> from a cash account and allocate the refund to <em>Accounts receivable</em> and the customer’s subaccount. When a cash refund is recorded, the balance of <em>Accounts receivable</em> for the customer will move in the positive direction:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c1c7e3a96262af7105944d0fe8ba765d25cb93ac.png"></p>
 {% endraw %}
