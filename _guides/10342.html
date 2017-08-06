@@ -6,7 +6,7 @@ tags: customers purchase-invoices special-accounts sales-invoices suppliers
 {% raw %}
 <p>By design, Manager automatically applies receipts from customers or payments to suppliers to the oldest unpaid sales or purchase invoice if a specific invoice is not chosen during account selection:</p>
           <a href="https://i.imgur.com/CuZDQRa.png" target="_blank" rel="nofollow noopener">
-            <img src="https://i.imgur.com/CuZDQRa.png" width="457" height="101">
+            <img src="https://i.imgur.com/CuZDQRa.png">
           </a>
 
 <p>If there is no unpaid invoice, the receipt or payment amount is posted to <em>Accounts receivable</em> (for a customer) or <em>Accounts payable</em>  (for a supplier) and automatically applied to the next sales or purchase invoice issued for the customer or supplier involved. This automatic credit allocation is the default process for handling <a href="http://www.manager.io/guides/record-customer-deposits-and-advances/7093">deposits from customers</a> or advance <a href="http://www.manager.io/guides/record-supplier-deposits-and-advances/7095">payments to suppliers</a>.</p>
@@ -17,16 +17,16 @@ The process described in this Guide is totally optional. Advances, deposits, and
 </td></tr></table>
 <h3>Set up the special account</h3>
 <p>Enable the <kbd>Special Accounts</kbd> tab by clicking <kbd>Customize</kbd> below the left navigation pane, checking the box for <kbd>Special Accounts</kbd>, and clicking <kbd>Update</kbd> below the list:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/afdaff0ba164c312361cfdd3a579ead9f085cf69.png" width="89" height="29"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0d0d97df1e64e3b7298588820c81769975a257e0.png" width="153" height="48"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/a/afdaff0ba164c312361cfdd3a579ead9f085cf69.png" width="89" height="29"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/0/0d0d97df1e64e3b7298588820c81769975a257e0.png" width="153" height="48"></p>
 <p>Go back to the <kbd>Special Accounts</kbd> tab and click <kbd>New Special Account</kbd>:</p>
-<p><a href="https://imgur.com/SOlFnib.png">https://imgur.com/SOlFnib.png</a> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5fde0b0ed6062ee77c6313d301cdf176a3ee9d39.png" width="308" height="48"></p>
+<p><a href="https://imgur.com/SOlFnib.png">https://imgur.com/SOlFnib.png</a> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/5/5fde0b0ed6062ee77c6313d301cdf176a3ee9d39.png" width="308" height="48"></p>
 <p><strong><code>Name</code></strong> the account to match the customer or supplier. Leave the default <strong><code>Control account</code></strong> as <em>Special Accounts</em>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/261f80909fb45506c6f39f8a90ef2269f1f1c370.png" width="449" height="212"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/2/261f80909fb45506c6f39f8a90ef2269f1f1c370.png" width="449" height="212"></p>
 <p>Click <kbd>Create</kbd>.</p>
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Northwind Traders has a customer named Morgenstern Gesundkost. Because Northwind expects deposits to be paid with orders, it establishes a special account for Morgenstern Gesundkost. The initial balance of the account is zero:<br>
-<br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ebc42370e3ff00986e64c7a24c61c95ce80f3171.png" width="568" height="122"></p>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/e/ebc42370e3ff00986e64c7a24c61c95ce80f3171.png" width="568" height="122"></p>
 </td></tr></table>
 <h3>Use the special account</h3>
 <p>To avoid automatic credit allocations, post transactions to the special account instead of <em>Accounts receivable</em> or <em>Accounts payable</em> as you normally would.</p>
@@ -34,7 +34,7 @@ Northwind Traders has a customer named Morgenstern Gesundkost. Because Northwind
 <p><strong>Example</strong><br>
 Morgenstern Gesundkost currently has two unpaid invoices:<br>
 <br><br>
-<a href="https://imgur.com/0Zs5NGU.png">https://imgur.com/0Zs5NGU.png</a><br>
+<img src="https://forum.manager.io/uploads/manager1/original/2X/1/132c1c4598b45e811c4741716d51356d0fcb8e70.png" alt="0Zs5NGU" width="690" height="236"><br>
 <br>Morgenstern pays Northwind Traders a deposit of $5,000 on a new order. If Northwind posted money received from them to their ordinary customer account, $5,000 would be instantly applied to their two outstanding invoices, leaving a credit balance in <em>Accounts receivable</em>.<br>
 <br>Instead, Northwind allocates $5,000 to Morgenstern’s special account:<br>
 <br><br>
@@ -51,7 +51,7 @@ When Northwind raises a sales invoice for the order to which the deposit applies
 <br><br>
 <a href="https://imgur.com/2WNjR2j.png">https://imgur.com/2WNjR2j.png</a><br>
 <br>This results in a new invoice for the difference between purchased items and the earlier deposit. The balance under <kbd>Special accounts</kbd> goes to zero:<br>
-<br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0743e956e092e730e2c60585a94c87cdecfe753b.png"></p>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/0/0743e956e092e730e2c60585a94c87cdecfe753b.png" width="690" height="386"></p>
 </td></tr></table>
 <hr>
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
