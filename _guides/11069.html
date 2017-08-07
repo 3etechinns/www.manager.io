@@ -1,0 +1,40 @@
+---
+layout: guide
+title: Create a budget
+tags: settings budgets budget-form budget-view
+---
+{% raw %}
+<p>A <strong>budget</strong> is an estimate or plan of income and expenses for a set period of time that can be compared to actual figures from the Profit &amp; Loss Statement.</p>
+<p>Manager includes a simple budgeting capability under the <kbd>Settings</kbd> tab:</p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/eb75e6c0105c516cf3c69764d8a55748a6f461f0.png" alt="37 PM" width="93" height="36"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9100d4c2c0ccec06eeef25bc0f909ad7fc7670bd.png" width="186" height="64"></p>
+<p>Click <kbd>New Budget</kbd> to start the process:</p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3f4631483431166ab132452f5fec4fae5985887f.png" alt="55 PM" width="191" height="47"></p>
+<p>Fill in the form:</p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/31503c0fffa51e851345bd7a3bbd561cc9c5116d.png" alt="54 PM" width="474" height="438"></p>
+<ul>
+<li>
+<strong><code>From</code></strong> is the first day of the budget period. By default the first day of the current month will appear. Edit as necessary.</li>
+<li>
+<strong><code>To</code></strong> is the final day of the budget period. By default, the last day of the current month will appear. Edit as necessary.</li>
+<li>
+<strong><code>Account</code></strong> fields offer all accounts from the Profit and Loss Statement side of your chart of accounts. (Budgets cannot be created for Balance Sheet accounts, because those are perpetual.)</li>
+<li>
+<strong><code>Amount</code></strong> is the expected income or expense during the budget period for the individual account. <strong>Enter income as positive numbers, expenses as negative numbers.</strong>
+</li>
+<li>Click <kbd>Add line</kbd> to add more accounts. Only those accounts with expected income or expenses need to be included in the budget.</li>
+</ul>
+<p>Click <kbd>Create</kbd> to store the budget. You can create as many budgets for as many different time periods as you want.</p>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+The business, Northwind, creates a budget for the month of May 2017:<br>
+<br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/48f55590bf1cd61fc4f7fa411d38035c085743fa.png"><br>
+<br>Northwind can view the budget to see a comparison between actual and budgeted figures for the defined time period:<br>
+<br><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/716c84ea074019ab6c1bdecd440d10a6a760665a.png"></p>
+</td></tr></table>
+<hr>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
+<p><strong>Caution</strong><br>
+When creating a budget, only accounts already in your chart of accounts can be included. So <a href="/guides/9181">build your chart of accounts</a> first, then create your budget, which will appear in the same basic format.<br>
+<br>Accounts will be included in the Profit &amp; Loss Statement (Actual vs. Budget) if you enter a budget figure or there is an actual income or expense transaction during the budget period. Only if both are true will <code>Percentage</code> figures be calculated.</p>
+</td></tr></table>
+{% endraw %}
