@@ -6,3 +6,4 @@ date,version,message
 2017-08-03,17.7.57,Fixed bug when feeding spreadsheet with duplicate column names into batch update
 2017-08-08,17.7.65,Gracefully handle date input when entering year with more than 4 digits
 2017-08-17,17.7.81,WebTranslateIt
+2017-08-14,17.7.82,Fixed inventory issue when delivering inventory kits #11085
