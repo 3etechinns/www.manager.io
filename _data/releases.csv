@@ -4,5 +4,5 @@ date,version,message
 2017-08-01,17.7.52,Improved 'Copy to' function so discounts are copied over too
 2017-08-02,17.7.55,Added in-built tax codes for India
 2017-08-03,17.7.57,Fixed bug when feeding spreadsheet with duplicate column names into batch update
-2017-08-08,17.7.65,Grafully handle date input when entering year with more than 4 digits
+2017-08-08,17.7.65,Gracefully handle date input when entering year with more than 4 digits
 2017-08-17,17.7.81,WebTranslateIt
