@@ -22,7 +22,7 @@ layout: main
 
 {% assign section2 = release.date | date:"%B %Y" %}
 {% if section != section2 %}
-<tr><td colspan="3" style="font-weight: bold; font-size: 18px; padding-bottom: 10px; border-bottom: 1px solid #ccc; margin-bottom: 10px">{{ section2 }}</td></tr>
+<tr><td colspan="3" style="padding-bottom: 10px"><div style="font-weight: bold; font-size: 18px; padding-bottom: 10px; border-bottom: 1px solid #ccc">{{ section2 }}</div></td></tr>
 {% assign section = section2 %}
 {% endif %}
 
