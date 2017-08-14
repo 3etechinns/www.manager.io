@@ -1,0 +1,35 @@
+---
+title: Releases
+layout: main
+---
+<div style="padding-bottom: 20px; text-align: center; font-weight: bold">
+	<div style="font-size: 24px; color: #333; line-height: 200%">
+		Always up to date
+	</div>
+	<div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">
+		Manager is being continuously updated to keep getting better than ever.
+	</div>
+</div>
+
+<table style="width: 100%; border-collapse: separate; border-spacing: 5px; font-size: 12px">
+
+{% assign section = "" %}
+{% assign releases = site.data.releases | reverse %}
+{% for release in releases %}
+
+{% if release.message == "WebTranslateIt" %}{% continue %}{% endif %}
+{% if release.message == "no message" %}{% continue %}{% endif %}
+
+{% assign section2 = release.date | date:"%B %Y" %}
+{% if section != section2 %}
+<tr><td colspan="3" style="font-weight: bold; font-size: 18px; padding-bottom: 10px; border-bottom: 1px solid #ccc; margin-bottom: 10px">{{ section2 }}</td></tr>
+{% assign section = section2 %}
+{% endif %}
+
+<tr>
+<td style="font-weight: bold; width: 1px; text-align: right; white-space: nowrap">{{ release.date | date_to_string }}</td>
+<td>{{ release.message }}</td>
+<td style="color: #ccc; weight: 1px; text-align: right">{{ release.version }}</td>
+</tr>
+{% endfor %}
+</table>

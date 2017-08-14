@@ -2,6 +2,7 @@
 title: Download
 layout: main
 ---
+{% assign release = site.data.releases | last %}
 <div style="padding-bottom: 40px; text-align: center; font-weight: bold">
 	<div style="font-size: 24px; color: #333; line-height: 200%">
 		Install on your desktop or laptop
@@ -20,10 +21,10 @@ layout: main
 				<div class="thumbnail" style="margin-bottom: 0px">
 					<div class="caption">
 						<div style="text-align: center; font-size: 18px; font-weight: bold">Windows</div>
-						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ site.data.version.latest }}</div>
+						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ release.version }}</div>
 						<div style="text-align: center; padding: 20px 0px"><img src="/desktop/download/windows.png" style="width: 100px; height: 100px"></div>
 						<div style="text-align: center">
-							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ site.data.version.latest }}/Manager.msi" style="font-weight: bold">Download</a>
+							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ release.version }}/Manager.msi" style="font-weight: bold">Download</a>
 						</div>
 						<div style="text-align: center; font-size: 11px; color: #666; padding-top: 15px">
 							8.7 MB — MSI format<br>
@@ -38,10 +39,10 @@ layout: main
 				<div class="thumbnail" style="margin-bottom: 0px">
 					<div class="caption">
 						<div style="text-align: center; font-size: 18px; font-weight: bold">Mac</div>
-						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ site.data.version.latest }}</div>
+						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ release.version }}</div>
 						<div style="text-align: center; padding: 20px 0px"><img src="/desktop/download/mac.png" style="width: 100px; height: 100px"></div>
 						<div style="text-align: center">
-							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ site.data.version.latest }}/Manager.dmg" style="font-weight: bold">Download</a>
+							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ release.version }}/Manager.dmg" style="font-weight: bold">Download</a>
 						</div>
 						<div style="text-align: center; font-size: 11px; color: #666; padding-top: 15px">
 							23.3 MB — DMG format<br>
@@ -56,10 +57,10 @@ layout: main
 				<div class="thumbnail" style="margin-bottom: 0px">
 					<div class="caption">
 						<div style="text-align: center; font-size: 18px; font-weight: bold">Ubuntu</div>
-						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ site.data.version.latest }}</div>
+						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ release.version }}</div>
 						<div style="text-align: center; padding: 20px 0px"><img src="/desktop/download/ubuntu.png" style="width: 100px; height: 100px"></div>
 						<div style="text-align: center">
-							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ site.data.version.latest }}/Manager.deb" style="font-weight: bold">Download</a>
+							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ release.version }}/Manager.deb" style="font-weight: bold">Download</a>
 						</div>
 						<div style="text-align: center; font-size: 11px; color: #666; padding-top: 15px">
 							6.8 MB — DEB format<br>
@@ -74,10 +75,10 @@ layout: main
 				<div class="thumbnail" style="margin-bottom: 0px">
 					<div class="caption">
 						<div style="text-align: center; font-size: 18px; font-weight: bold">Fedora</div>
-						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ site.data.version.latest }}</div>
+						<div style="color: #666; font-size: 11px; padding-top: 10px">{{ release.version }}</div>
 						<div style="text-align: center; padding: 20px 0px"><img src="/desktop/download/fedora.png" style="width: 100px; height: 100px"></div>
 						<div style="text-align: center">
-							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ site.data.version.latest }}/Manager.rpm" style="font-weight: bold">Download</a>
+							<a class="btn btn-primary" href="https://mngr.s3.amazonaws.com/{{ release.version }}/Manager.rpm" style="font-weight: bold">Download</a>
 						</div>
 						<div style="text-align: center; font-size: 11px; color: #666; padding-top: 15px">
 							7.2 MB — RPM format<br>
@@ -92,13 +93,13 @@ layout: main
 			<td colspan="4"></td>
 			<td>
 				<div style="text-align: center">
-					<a href="https://mngr.s3.amazonaws.com/{{ site.data.version.latest }}/manager-accounting.zip" style="font-size: 10px">Source package</a>
+					<a href="https://mngr.s3.amazonaws.com/{{ release.version }}/manager-accounting.zip" style="font-size: 10px">Source package</a>
 				</div>
 			</td>
 			<td></td>
 			<td>
 				<div style="text-align: center">
-					<a href="https://mngr.s3.amazonaws.com/{{ site.data.version.latest }}/Manager.src.rpm" style="font-size: 10px">Source package</a>
+					<a href="https://mngr.s3.amazonaws.com/{{ release.version }}/Manager.src.rpm" style="font-size: 10px">Source package</a>
 				</div>
 			</td>
 		</tr>
