@@ -8,4 +8,4 @@ date,version,message
 2017-08-17,17.7.81,WebTranslateIt
 2017-08-14,17.7.82,Fixed inventory issue when delivering inventory kits #11085
 2017-08-14,17.7.83,WebTranslateIt
-2017-08-14,17.7.84,When exporting reports, negative amounts to be prefixed with hyphen-minus instead of minus sign #10957
+2017-08-14,17.7.84,"When exporting reports, negative amounts to be prefixed with hyphen-minus instead of minus sign #10957"
