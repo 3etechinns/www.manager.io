@@ -28,7 +28,20 @@ layout: main
 
 <tr>
 <td style="font-weight: bold; width: 1px; text-align: right; white-space: nowrap">{{ release.date | date_to_string }}</td>
-<td>{{ release.message }}</td>
+
+{% assign words = release.message | split: ' ' %}
+{% assign message = " " %}
+{% for word in words %}
+{% assign letter = word | slice: 0 %}
+{% if letter == "#" %}
+{% assign topic = word | replace: '#','' %}
+{% assign message = message | append: " " | append: '(<a href="https://forum.manager.io/t/' | append: topic | append: '">see topic</a>)' %}
+{% else %}
+{% assign message = message | append: " " | append: word %}
+{% endif %}
+{% endfor %}
+
+<td>{{ message }}</td>
 <td style="color: #ccc; weight: 1px; text-align: right">{{ release.version }}</td>
 </tr>
 {% endfor %}
