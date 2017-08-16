@@ -10,3 +10,4 @@ date,version,message
 2017-08-14,17.7.83,WebTranslateIt
 2017-08-14,17.7.84,"When exporting reports, negative amounts to be prefixed with hyphen-minus instead of minus sign #10957"
 2017-08-15,17.7.85,"no message"
+2017-08-15,17.7.86,"Fixed issue when cash account is marked as inactive, not to show it as a choice for new transactions #11156"
