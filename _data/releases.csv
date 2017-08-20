@@ -17,3 +17,4 @@ date,version,message
 2017-08-16,17.7.90,"Improved the look of the textbox which contains exported table or rows for batch update operation"
 2017-08-16,17.7.94,"Removed batch operation buttons on exchange rates as this feature hasn't been implemented yet #8946"
 2017-08-17,17.7.95,"WebTranslateIt"
+2017-08-19,17.7.97,"WebTranslateIt"
