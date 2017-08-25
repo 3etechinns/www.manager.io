@@ -1,0 +1,53 @@
+---
+layout: guide
+title: Set up a bank account
+tags: bank-accounts bank-account-form bank-transactions beginner
+---
+{% raw %}
+<p><strong>Bank accounts</strong> are sources or repositories of money maintained by a financial institution of any type. Virtually every business needs at least one bank account. Possibilities include:</p>
+<ul>
+<li>Bank accounts</li>
+<li>Credit cards</li>
+<li>PayPal accounts</li>
+<li>Crypto-currency accounts (<em>e. g.</em>, BitCoin)</li>
+</ul>
+<h3>Enable the <kbd>Bank Accounts</kbd> tab</h3>
+<p>Before you can create a bank account, you must enable the <kbd>Bank Accounts</kbd> tab. Click <kbd>Customize</kbd> below the left navigation pane, check the box for <kbd>Bank Accounts</kbd>, and click <kbd>Update</kbd>. You will see the <kbd>Bank Accounts</kbd> tab added to the left navigation pane.</p>
+<h3>Create a bank account</h3>
+<p>Click the <kbd>Bank Accounts</kbd> tab, then <kbd>New Bank Account</kbd>:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c6ba8103869d88da08d30ec3ab27b3710780bba3.png" alt="06 AM" width="131" height="36"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/3/365b244148acd67419ec4b667330619d735a5fef.png" alt="25 AM" width="271" height="47"></p>
+<p>Define the bank account:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c172e162d8b6e0f84d4cb46ce47d222741a74eff.png" alt="24 AM" width="567" height="387"></p>
+<ul>
+<li>
+<strong><code>Name</code></strong> the account so it will be recognizable. The name could include a description, a bank’s name, a credit card designation, or an account number.</li>
+<li>
+<strong><code>Code</code></strong> allows you to set the order in which bank accounts are listed. Enter a number. If blank, accounts will display in alphabetical order.</li>
+<li>
+<strong><code>Credit limit</code></strong> can be set, especially for credit cards. You can also use this field to indicate the amount of overdraft protection.</li>
+<li>
+<strong><code>Currency</code></strong> options will be available if you have set a base currency. By default, bank accounts are undenominated. That is, they are assumed to be in your native currency, whatever that is. But if you plan to use multiple currencies, or just want your currency symbol to appear on forms and reports, set a base currency. (Go to <kbd>Settings</kbd> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <kbd>Base Currency</kbd>, select a base currency in the dropdown box and click <kbd>Update</kbd>.) Bank accounts will then automatically be denominated in your base currency. Change the selection for a specific bank account in its <code>Currency</code> dropdown box.</li>
+<li>The <strong><code>Starting balance</code></strong> check box will appear only if you have set a start date for your business. Enter the account balance on the start date in the blank field that appears when the box is checked. This feature is used when migrating to Manager from a prior accounting system.</li>
+</ul>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>Note</strong><br>
+You should only add bank accounts that belong to the business. Personal credit cards and personal bank accounts used infrequently for business transactions should not be added as bank accounts. Transactions using such personal funds should be entered as expense claims.</p>
+</td></tr></table>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Brilliant Industries, an Australian company, has one business bank account used to receive money from customers and pay suppliers and employees. The business also maintains an account with a London bank for transactions in the United Kingdom. The business owner occasionally uses a personal credit card for business expenses. Brilliant Industries creates two bank accounts in different currencies:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/a/a87f786a8aff8d83ae208f819cb6dd5a67dd2436.png" alt="16 AM" width="690" height="242"><br><br>
+Brilliant Industries does not create a bank account for the personal credit card of the owner because it is a personal account. The owner’s use of the personal credit card will be recorded in the <kbd>Expense Claims</kbd> tab.</p>
+</td></tr></table>
+<h3>View bank account balances</h3>
+<p>By default, all bank accounts are combined into an automatic control account named <em>Cash at bank</em> for Balance Sheet reporting. Foreign currencies are converted into your native currency on the Balance Sheet:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/7/743663203e8c7d02028d4637ad5844b9e1245795.png" alt="01 AM" width="344" height="118"></p>
+<p>Drill down by clicking the blue balance to see individual bank account balances:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/4/4879a674cc8c8922545ae8214dca026c612f718f.png" alt="24 AM" width="690" height="268"></p>
+<p>You can see more detailed information by selecting the <kbd>Bank Accounts</kbd> tab. Here, you can find information about all bank accounts, even if you have modified your chart of accounts to have them reported on the Balance Sheet under different control accounts. You will also see pending transactions, if any.</p>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Northwind Traders maintains a primary bank account in Euros and another for transactions in British Pounds. Its <kbd>Bank Accounts</kbd> tab shows both accounts, including pending transactions and cleared balances, in their respective, denominated currencies:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/e/e021ab39d7013b3dbc1288f74bcf71b9701508c9.png" alt="28 AM" width="690" height="201"><br></p>
+</td></tr></table>
+{% endraw %}
