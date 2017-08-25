@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Pay a refund
-tags: payment-form cash-accounts
+tags: cash-payment-form bank-payment-form cash-accounts bank-accounts
 ---
 {% raw %}
 <p>Sometimes, a business owes money to a customer and must <strong>pay a refund</strong>. Two basic situations may exist, requiring slightly different procedures:</p>
@@ -10,31 +10,31 @@ tags: payment-form cash-accounts
 <li>A customer defined under the <kbd>Customers</kbd> tab has paid in advance, paid more than was owed, or has been <a href="/guides/7425">issued a credit note</a>, so a credit is being reported as a negative balance (or entry) in <em>Accounts receivable</em>.</li>
 </ul>
 <h3>Refunds from cash sales</h3>
-<p>In the <kbd>Cash Accounts</kbd> tab, click <kbd>Spend money</kbd>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/786f851ea0e747e29a02ed6e1921c3bfcf52a3e6.png" width="219" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9a8392ce1c1f13dcd838a2ef15e781c0ce72f8f4.png" width="109" height="40"></p>
+<p>In either the <kbd>Bank Accounts</kbd> or <kbd>Cash Accounts</kbd> tab, click <kbd>Spend money</kbd>:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/4/4745b69e5eef29443952451501d74f3cf7960804.png" alt="14 PM" width="210" height="52"> <strong>OR</strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/7/786f851ea0e747e29a02ed6e1921c3bfcf52a3e6.png" width="219" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/9/9a8392ce1c1f13dcd838a2ef15e781c0ce72f8f4.png" width="109" height="40"></p>
 <p>At the first stage of the entry screen, select the cash account from which the refund will be paid:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/852df9b90cf6da213a9020b674a2dd60681d7527.png" width="351" height="217"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/8/852df9b90cf6da213a9020b674a2dd60681d7527.png" width="351" height="217"></p>
 <p>The full entry screen will appear. Complete the form as you would for any other <kbd><a href="/guides/7821">Spend money</a></kbd> transaction. In particular, complete a line item for the refund:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/aeb19e74c45829ab189cb76ecddf2335ac1e3294.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/a/aeb19e74c45829ab189cb76ecddf2335ac1e3294.png" width="689" height="42"></p>
 <ul>
-<li>If an inventory or non-inventory item was involved in the original purchase, choose it in the <code>Item</code> field. Most of the remaining fields will fill automatically, but may be edited.</li>
+<li>If an inventory or non-inventory item was involved in the original purchase, choose it in the <strong><code>Item</code></strong> field. Most of the remaining fields will fill automatically, but may be edited.</li>
 <li>
-<code>Account</code> should be the same one to which the original purchase was posted. Because this is a spending transaction, Manager will deduct the appropriate amount from an income account, add to <em>Inventory on hand</em>, and reduce <em>Tax payable</em>.</li>
+<strong><code>Account</code></strong> should be the same one to which the original purchase was posted. Because this is a spending transaction, Manager will deduct the appropriate amount from an income account, add to <em>Inventory on hand</em>, and reduce <em>Tax payable</em>.</li>
 <li>
-<code>Description</code> describes the return/refund.</li>
+<strong><code>Description</code></strong> describes the return/refund.</li>
 <li>
-<code>Qty</code> is the number of units being refunded. If an inventory item is not actually being returned, but only adjusted in price, enter zero or leave blank.</li>
+<strong><code>Qty</code></strong> is the number of units being refunded. If an inventory item is not actually being returned, but only adjusted in price, enter zero or leave blank.</li>
 <li>
-<code>Unit price</code> is the amount being refunded per unit of return. If only a partial refund is being made, enter the actual amount being refunded.</li>
-<li>Choose the same <code>Tax</code> code used for the original transaction.</li>
-<li>Select a <code>Tracking Code</code> if appropriate.</li>
+<strong><code>Unit price</code></strong> is the amount being refunded per unit of return. If only a partial refund is being made, enter the actual amount being refunded.</li>
+<li>Choose the same <strong><code>Tax</code></strong> code used for the original transaction.</li>
+<li>Select a <strong><code>Tracking Code</code></strong> if appropriate.</li>
 </ul>
 <p>Click <kbd>Create</kbd> when the form is complete. Remember to pay the customer.</p>
 <h3>Refunds of credit balances</h3>
 <p>Customer credit balances will be automatically applied to the customer’s next invoice:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/986c65cbf86ed49592ddc86c9635cc1e27b86e02.png" alt="" width="244" height="191"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/9/986c65cbf86ed49592ddc86c9635cc1e27b86e02.png" alt=""></p>
 <p>But if the next invoice is unlikely to be issued soon or the customer has requested the credit be refunded, <kbd>Spend money</kbd> to reduce the credit balance. Most procedures are identical to refunds from cash sales as described above. However, for <code>Account</code>, select <em>Accounts receivable</em>, then select the customer and enter the amount paid to the customer. Leave the <code>Invoice (optional)</code> field blank.</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/ec1f86319dfa810a7292db4add9ced6992662d03.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/e/ec1f86319dfa810a7292db4add9ced6992662d03.png" width="690" height="44"></p>
 <p>Click <kbd>Create</kbd> to save the transaction.</p>
 <table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
 <p><strong>Caution</strong><br>
