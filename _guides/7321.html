@@ -1,15 +1,19 @@
 ---
 layout: guide
 title: Make cash sales (sell without sales invoices)
-tags: sales receipt-form cash-transactions receipt-view cash-accounts
+tags: sales cash-transactions cash-accounts bank-accounts bank-transactions bank-receipt-form cash-receipt-form receipt-view
 ---
 {% raw %}
 <p>A <strong>cash sale</strong> occurs when a customer pays for goods or services immediately upon delivery. No credit is extended by the seller. No account receivable is created. Resulting revenue is posted immediately to an income account, regardless of whether the business uses <a href="/guides/7129">accrual or cash basis accounting</a>. Therefore, <strong>no sales invoice is required</strong>. The entire transaction occurs in a single step.</p>
-<p>Before a cash sale can be entered into Manager, at least one <a href="/guides/9219">cash account must be created</a>. Then, within the <kbd>Cash Accounts</kbd> tab, click on <kbd>Receive money</kbd>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/62af3193ca4fa0405c5e23e58e4c0e8df8f19f87.png" width="217" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/bb5149628750a6e6bd13a1be9acf5df51961285f.png" width="636" height="52"></p>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>Note</strong><br>
+A cash sale does not need to involve receipt of physical cash. Money can be received via any form of exchange and deposited into either a cash or bank account. The distinguishing feature is that credit is not extended by the seller to the customer.</p>
+</td></tr></table>
+<p>Before a cash sale can be entered into Manager, at least one <a href="/guides/9219">cash account</a> or <a href="/guides/11367">bank account</a> must be created. Then, within the <kbd>Cash Accounts</kbd> or <kbd>Bank Accounts</kbd> tab, click on <kbd>Receive money</kbd>:</p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/62af3193ca4fa0405c5e23e58e4c0e8df8f19f87.png" width="217" height="52"> <strong>OR</strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e8a7f3955b7a735076a831308f8a9e2e2f8faad1.png" alt="39 AM" width="217" height="53"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2d1a32520e2e7f6a98de17b1a662407e09ba68ff.png" alt="08 AM" width="347" height="51"></p>
 <p>Select the account in which the customer’s money will be received:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f423c87bbcd74aadafb528d873c71dbd2b5a81cf.png" width="367" height="330"></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/18b6083aae29b661605a26d213de9d0f552b43ee.png" alt="38 AM" width="347" height="316"></p>
 <p>Complete the cash receipt. By default, today’s date and <a href="/guides/7307">cleared transaction status</a> are selected. These entries may be edited. The <code>Payer</code> field can be used to enter the customer’s name, the receipt could be made out to <em>Cash</em>, or the field can be left blank, according to local custom or business policy. Line items can be entered either semi-automatically, by selecting inventory or non-inventory items, or manually. Applicable <a href="/guides/8901">tax codes</a> can be selected.</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/13807669ad4f40b379c2de4bb41dc943b90ff83d.png"></p>
 <p>Click <kbd>Create</kbd> to complete the transaction. Any necessary adjustments will be posted to inventory accounts.</p>
@@ -17,8 +21,10 @@ tags: sales receipt-form cash-transactions receipt-view cash-accounts
 <p><strong>CAUTION</strong><br>
 Unit prices on cash sales are assumed to be inclusive of taxes calculated in accordance with the selected tax code. The calculated tax will not be added to the <code>Amount</code>, but will increase the <em>Tax payable</em> account.</p>
 </td></tr></table>
-<p>To view the cash receipt, go to the <kbd>Cash Accounts</kbd> tab. Drill down by clicking on the blue balance in either the <code>Cleared balance</code> or <code>Pending deposits</code> column (according to the transaction’s status) for the applicable cash account:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/364fb6516b8df71d20a28f58ae70e853d8f8c8b4.png"></p>
+<p>To view the receipt, go to either the <kbd>Bank Accounts</kbd> or <kbd>Cash Accounts</kbd> tab, depending on which type of account was used to receive the money. Drill down by clicking on the blue balance in either the <code>Actual balance</code> or <code>Balance</code> column (according to the tab) for the applicable account:</p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/144a2ff994090692b2e717e3d446d00602d5cb1c.png" alt="35 AM" width="662" height="68"></p>
+<p><strong>OR</strong></p>
+<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f871ad394e660cbc5140c0492f8ddb2dbd042372.png" alt="47 AM" width="662" height="69"></p>
 <p>Locate the transaction and click <kbd>View</kbd>:</p>
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/703aa36078620cf03ba74149ce2557ed2adc6195.png"></p>
 <p>The receipt can be given to the customer as evidence of the sale:</p>
