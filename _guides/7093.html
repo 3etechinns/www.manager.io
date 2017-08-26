@@ -1,10 +1,10 @@
 ---
 layout: guide
 title: Record customer deposits and advances
-tags: customers receipt-form cash-accounts
+tags: customers cash-receipt-form bank-receipt-form cash-accounts bank-accounts
 ---
 {% raw %}
-<p><strong>Customer deposits and advances</strong> are funds received by a business from a customer before they have been earned. While the funds may be present in a cash account of the business, they are actually being held in trust for the customer and represent a liability the business must eventually either repay or convert to income by completion of the economic activity for which they are intended. Some examples include:</p>
+<p><strong>Customer deposits and advances</strong> are funds received by a business from a customer before they have been earned. While the funds may be present in a bank or cash account of the business, they are actually being held in trust for the customer and represent a liability the business must eventually either repay or convert to income by completion of the economic activity for which they are intended. Some examples include:</p>
 <ul>
 <li>Deposits accompanying purchase orders for custom manufacturing</li>
 <li>Receipts from prepayments for services or utilities to be invoiced later to the customer</li>
@@ -19,26 +19,26 @@ tags: customers receipt-form cash-accounts
 <li>
 <strong>Amount</strong> - how much is the deposit?</li>
 </ul>
-<p>In Manager, both facts are recorded simultaneously when the deposit or advance is received. To receive a deposit, go to the <kbd>Cash Accounts</kbd> tab and click on <kbd>Receive money</kbd>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5d2823946cdefa25a47334c290e374c91f95aa4d.png"></p>
-<p>Edit the <code>Date</code>, if necessary. Add a <code>Reference</code>, if desired. Select the cash account where the deposit will be lodged. You cannot proceed without selecting a cash account. In the illustration below, the <em>Checking account</em> is selected:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/052bb2131cbd2f9bc00f210c41fa19b3f698402e.png" width="349" height="330"></p>
-<p>Complete the receipt. Select <em>Accounts receivable</em> and the customer’s subaccount. <strong>Leave the <code>Invoice</code> field blank.</strong> A quantity is not required, because no inventory items or billable items are involved with a deposit. You may simply enter the total deposit in the <code>Unit price</code> field. However, if you wish, enter the quantity and unit price and Manager will calculate a total amount:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f49517edf30109e562bafc6452f6069b330c8db5.png"></p>
+<p>In Manager, both facts are recorded simultaneously when the deposit or advance is received. To receive a deposit, go to the <kbd>Bank Accounts</kbd> or <kbd>Cash Accounts</kbd> tab and click on <kbd>Receive money</kbd>:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/b/b9836904d74fede66b2bcb28f8bceaf8262e8e5d.png" alt="20 PM" width="219" height="52"> <strong>OR</strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/e/ea1044dcd579265ef5b302098ae2f7af6b751063.png" alt="41 PM" width="216" height="52"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/3/3d638244d4270ff67d2a6145e4b4355fb83df652.png" alt="57 PM" width="117" height="42"></p>
+<p>The first stage of a receipt entry form will appear. Edit the <strong><code>Date</code></strong>, if necessary. Add a <strong><code>Reference</code></strong>, if desired. Select the bank or cash account where the deposit will be lodged. You cannot proceed without selecting an account. In the illustration below, the <em>Checking account</em> is selected:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/9/9c5c651f64bd5540b94a528d468bdaf300722893.png" alt="38 PM" width="339" height="316"></p>
+<p>Complete the receipt. Do not select anything in the <code>Item</code> field. Select <em>Accounts receivable</em> and the customer’s subaccount. <strong>Leave the <code>Invoice</code> field blank.</strong> A quantity is not required, because no inventory items or billable items are involved with a deposit. You may simply enter the total deposit in the <code>Unit price</code> field. However, if you wish, enter the quantity and unit price and Manager will calculate a total amount:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/f/f49517edf30109e562bafc6452f6069b330c8db5.png" width="690" height="392"></p>
 <p>Click <kbd>Create</kbd> to finish.</p>
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
 <p><strong>Note</strong><br>
 Deposits, even those involving calculations with quantities and unit prices, have no impact on inventory values or quantities because no inventory item is designated.</p>
 </td></tr></table>
 <h3>Using deposits and advances</h3>
-<p>The receipt will now be added to the applicable cash account’s balance. If marked as pending, it will show in the <code>Pending deposits</code> column:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/91a092a592cc482c7af73da1e21f61055e773f24.png"></p>
+<p>The receipt will now be added to the applicable bank or cash account’s balance. If marked as pending, it will show in the <code>Pending deposits</code> column:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/9/936eeefba540223fece74392d45193cab836440f.png" alt="26 PM" width="685" height="122"></p>
 <p>The deposit also reduces the total <em>Accounts receivable</em> balance, though the effect of a specific deposit may be obscured on the Balance Sheet if there are other deposits from any customers:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/8f2ef4c01d6b2ea6f2a05178179e159516669eb9.png" width="334" height="167"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/8/8f2ef4c01d6b2ea6f2a05178179e159516669eb9.png" width="334" height="167"></p>
 <p>To view specific information about customer deposits, you must first drill down by clicking the <em>Accounts receivable</em> balance and locating the customer’s account <code>Balance</code>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/197af471bb7ab407312596fd55b849bc320dd334.png" width="579" height="235"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/5/5a28344fb1c3280dd7e014723222fa0eee743c7c.png" alt="58 PM" width="690" height="273"></p>
 <p>Clicking on the balance, you can see transactions contributing to it, including the recent deposit:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/eb587f68745435f4dfa3802403785f5174a580a5.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/6/68a80e0ae49cc8e09005250e9d9661c102fbf092.png" alt="39 PM" width="685" height="271"></p>
 <p>You can do the same thing in the <kbd>Customers</kbd> tab, with identical results.</p>
 <p>Whenever a sales invoice is created for a customer, any available net credit in that customer’s <em>Accounts receivable</em> balance will be automatically applied, reducing the balance due on the new sales invoice.</p>
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
