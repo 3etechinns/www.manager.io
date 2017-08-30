@@ -1,0 +1,23 @@
+---
+permalink: /install.txt
+---
+#!/bin/bash
+
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+apt-get update
+apt-get install -y mono-complete
+
+mkdir /usr/share/manager-server
+wget https://mngr.s3.amazonaws.com/{% assign release = site.data.releases | last %}{{ release.version }}/ManagerServer.tar.gz -P /usr/share/manager-server
+tar -xzf /usr/share/manager-server/ManagerServer.tar.gz -C /usr/share/manager-server
+                                
+printf "[Unit]\nAfter=network.target\n\n[Service]\nLimitNOFILE=1048576\nExecStart=/usr/bin/mono /usr/share/manager-server/ManagerServer.exe\nRestart=on-failure\nStartLimitInterval=600\n\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/manager-server.service
+systemctl enable manager-server
+systemctl start manager-server
+
+curl -fsSL https://getcaddy.com | bash
+printf ":443 {\n  proxy / localhost:8080\n  tls { max_certs 100 }\n}\n" | sudo tee /usr/share/manager-server/caddy.conf
+printf "[Unit]\nAfter=network.target\n\n[Service]\nLimitNOFILE=1048576\nExecStart=/usr/local/bin/caddy -agree=true -conf=/usr/share/manager-server/caddy.conf\nRestart=on-failure\nStartLimitInterval=600\n\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/caddy.service
+systemctl enable caddy
+systemctl start caddy
