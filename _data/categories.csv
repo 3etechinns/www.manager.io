@@ -4,7 +4,10 @@ Preferences,preferences
 Users,users
 Summary,summary
 Bank Accounts,bank-accounts
+Bank Transactions,bank-transactions
 Cash Accounts,cash-accounts
+Cash Transactions,cash-transactions
+Inter Account Transfers,inter-account-transfers
 Expense Claims,expense-claims
 Customers,customers
 Sales Quotes,sales-quotes sales-quote-form sales-quote-view
