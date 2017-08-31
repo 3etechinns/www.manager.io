@@ -46,3 +46,4 @@ date,version,message
 2017-08-30,17.9.0,"Added 3 new tabs in relation to bank & cash accounts #11468"
 2017-08-30,17.9.1,"WebTranslateIt"
 2017-08-30,17.9.2,"Reference numbers on cash transactions are now automatically generated #10166"
+2017-08-30,17.9.3,"Increased font size in the left navigation if language is set to Chinese for better readability"
