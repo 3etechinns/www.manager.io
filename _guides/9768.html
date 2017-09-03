@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Pay employees
-tags: employees payment-form payslips payslip-view
+tags: employees payslips cash-payment-form bank-payment-form payslip-view cash-payment-view bank-payment-view
 ---
 {% raw %}
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
@@ -11,34 +11,35 @@ This Guide provides instructions on paying employees set up under the <kbd>Emplo
 <p>In Manager, payslips record earnings, deductions, etc. of employees. They <strong>do not</strong> record actual payments to those employees of amounts owed as a result of payslips. To <strong>pay employees</strong>, you must enter payments in the <kbd>Cash Accounts</kbd> tab. Two approaches can be used, depending on whether the employee is owed for a single payslip, multiple payslips, or expense claims.</p>
 <h3>Single payslip approach</h3>
 <p>The simplest situation is paying an employee for whom there is only one outstanding payslip. In the <kbd>Payslips</kbd> tab, click <kbd>View</kbd> beside the payslip to be paid:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/947e124fb4b56cc576f07e1861cd7619b89ad3da.png" width="221" height="56"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/f85a97d16201fadee9c4ce3c33f8f07cc6597912.png"></p>
-<p>Click <kbd>Spend money</kbd>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/da240399edb9824aa48c19692780c509258ec9e8.png" width="504" height="49"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/9/947e124fb4b56cc576f07e1861cd7619b89ad3da.png" width="221" height="56"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/f/f85a97d16201fadee9c4ce3c33f8f07cc6597912.png" width="690" height="132"></p>
+<p>Click <kbd>Spend money</kbd> and select, click <em>New Bank Transaction</em> or <em>New Cash Transaction</em>, depending on the type of account you will pay the employee from:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/1/15ba25064744f45792d6e6b40a4e5d13f5462d4b.png" alt="11 AM" width="196" height="111"></p>
 <p>The first stage of a cash payment entry screen will appear:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e42e7f923b244b0aa5adee8b0f92d4b920cb98da.png" width="337" height="215"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/e/e42e7f923b244b0aa5adee8b0f92d4b920cb98da.png" width="337" height="215"></p>
 <ul>
-<li>Verify or edit the <code>Date</code>.</li>
-<li>Enter a <code>Reference</code> number if desired.</li>
-<li>Select the cash account the employee will be <code>Paid from</code>.</li>
+<li>Verify or edit the <strong><code>Date</code>.</strong>
+</li>
+<li>Enter a <strong><code>Reference</code></strong> number if desired. If the payment will be from a cash account, Manager will automatically assign a <code>Reference</code> by finding the highest existing number and adding 1.</li>
+<li>Select the account the employee will be <strong><code>Paid from</code></strong>.</li>
 </ul>
 <p>More fields will appear:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/a/a29167eb725953760646d50cb5b1dcde9c96f467.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/a/a29167eb725953760646d50cb5b1dcde9c96f467.png" width="690" height="180"></p>
 <ul>
 <li>
-<code>Payee</code> will be the employee for the relevant payslip.</li>
+<strong><code>Payee</code></strong> will be the employee for the relevant payslip.</li>
 <li>
-<code>Description</code> can contain summary information for the entire payment.</li>
+<strong><code>Description</code></strong> can contain summary information for the entire payment.</li>
 <li>
-<code>Item</code> should be left blank, as no inventory or non-inventory items are involved in payroll transactions.</li>
+<strong><code>Item</code></strong> should be left blank, as no inventory or non-inventory items are involved in payroll transactions.</li>
 <li>
-<code>Account</code> will be prefilled with <em>Employee clearing account</em> and <em>Employee name</em>. Do not change these.</li>
+<strong><code>Account</code></strong> will be prefilled with <em>Employee clearing account</em> and <em>Employee name</em>. Do not change these.</li>
 <li>
-<code>Description</code> for the line item is optional, but can be filled with distinguishing information, especially if other items are being added to the payment.</li>
+<strong><code>Description</code></strong> for the line item is optional, but can be filled with distinguishing information, especially if other items are being added to the payment.</li>
 <li>
-<code>Qty</code> should remain blank.</li>
+<strong><code>Qty</code></strong> should remain blank.</li>
 <li>
-<code>Unit price</code> will be prefilled with the amount of the payslip.</li>
+<strong><code>Unit price</code></strong> will be prefilled with the amount of the payslip.</li>
 </ul>
 <p>If other items are to be added to the payment, click <kbd>Add line</kbd>. When finished, click <kbd>Create</kbd>.</p>
 <table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
@@ -47,16 +48,17 @@ Be sure to complete steps in making the payment: write the cheque, enter an elec
 </td></tr></table>
 <h3>Other situations</h3>
 <p>When there are expense claims or multiple outstanding payslips for an employee, drill down from the <kbd>Summary</kbd> page on <em>Employee clearing account</em> by clicking the blue balance:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0f0cd7999fe9b5059a9483de95aa9cf9d312de63.png" width="347" height="33"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/0/0f0cd7999fe9b5059a9483de95aa9cf9d312de63.png" width="347" height="33"></p>
 <p>Either continue using the total balance shown for the employee, or drill down further by clicking the employee’s balance (in this illustration, no other employees have balances):</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b20d1839400f577ab97ea334ee560b5dcd4d0be5.png" width="541" height="121"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/b/b20d1839400f577ab97ea334ee560b5dcd4d0be5.png" width="541" height="121"></p>
 <p>If you drill down on the employee’s balance, you will be able to see all transactions contributing to it. Whichever path you follow, make note of the amount(s) owed to the employee:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9bd899eb89cea91eb886d8f1c9ccfc6445ea668f.png"></p>
-<p>Initiate payment directly in the <kbd>Cash Accounts</kbd> tab. Click <kbd>Spend money</kbd>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/da2d3bd16234cbeea28adb2614a87a3a90d7c2b6.png" width="633" height="52"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/9/9bd899eb89cea91eb886d8f1c9ccfc6445ea668f.png" width="690" height="180"></p>
+<p>Initiate payment directly in the Bank Transactions or <kbd>Cash Transactions</kbd> tab. Click <kbd>New Bank Transaction</kbd> or <kbd>New Cash Transaction</kbd> and select <em>Spend money</em>:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/1/1a06933622c92ced3fd8b7be04e4d52a0fbde9af.png" alt="13 AM" width="155" height="50"> <strong>OR</strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/a/a3472c140d73d31264481721c53fa5b2c9f2bd9c.png" alt="26 AM" width="155" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c31e5cdc94c42bc44e84bfc06bf8e52d5f67e595.png" alt="25 PM" width="188" height="145"> <strong>OR</strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/6/601416657ac4dd15f4f1e4d0cf03ec00bdd65bc3.png" alt="03 PM" width="167" height="99"></p>
 <p>Manually complete the entry form, exactly as you would for a single-payslip payment. Post the transaction to <em>Employee clearing account</em> and <em>Employee name</em>. For <code>Amount</code>, enter either the full amount due from <em>Employee clearing account</em> or one contributing amount from the employee’s drill-down listing. If following the second path, click <kbd>Add line</kbd> to enter additional contributing amounts.</p>
 <p>When all amounts have been entered, the payment total should equal the employee’s balance in <em>Employee clearing account</em>. Click <kbd>Create</kbd> to record the payment:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/381128dee5080ffd11ce9099e43cec7d843632e8.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/3/381128dee5080ffd11ce9099e43cec7d843632e8.png" width="690" height="417"></p>
 <h3>Effect of payment</h3>
 <p>The payment debits <em>Employee clearing account</em> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <em>Employee name</em> and credits the cash account where the payment is posted. If all employees are paid the full amounts owed, <em>Employee clearing account</em> will be reduced to a zero balance.</p>
 {% endraw %}
