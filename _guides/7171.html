@@ -21,29 +21,29 @@ tags: tax-codes
 <p>It any of these criteria does not apply, read on.</p>
 <h3>An example</h3>
 <p>This Guide uses a custom tax code with four components as an example. The overall tax code is named <em>Sales Tax 8.845%</em>. Components are levied by the state, a special transit district, the county, and the city. Percentage tax rates are as shown:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/1de50afcd00a8ed2a81b70f7f32f5c8f3d7204d7.png" width="481" height="298"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/1/1de50afcd00a8ed2a81b70f7f32f5c8f3d7204d7.png" width="481" height="298"></p>
 <p>In the simple situation outlined above, all components can be assigned to the default <em>Tax payable</em> account, which Manager creates automatically when the first tax code is entered. On a sales invoice with a line item to which this tax code applies, the applicable tax code is selected:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/837df679ddbd0828534c492192fb438495ed81b9.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/8/837df679ddbd0828534c492192fb438495ed81b9.png" width="690" height="41"></p>
 <p>The resulting sales invoice lists the individual tax component amounts rather than the overall tax code:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/70ae243762e351f5363e138aeb703d7cca37e369.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/7/70ae243762e351f5363e138aeb703d7cca37e369.png" width="690" height="239"></p>
 <p>Assuming no other taxable transactions have been recorded yet, the <kbd>Summary</kbd> shows all taxes payable in a single account:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d0296c0fbed4698741db58ab18b70b307356d066.png" width="357" height="26"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/d/d0296c0fbed4698741db58ab18b70b307356d066.png" width="357" height="26"></p>
 <p>The various tax reports in the <kbd>Reports</kbd> tab also group all components together. For example, the Tax Summary report includes just one line:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/8/817ded8dbdbd99e3e13b6e5277e58fe379c4759e.png" width="673" height="386"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/8/817ded8dbdbd99e3e13b6e5277e58fe379c4759e.png" width="673" height="386"></p>
 <p>If it is necessary to determine how much of each component was collected, a calculation must be made outside Manager. For example, the state component of tax collected in the report above is the ratio of that component to the total tax rate multiplied by the tax collected, so:</p>
 <p>2.90 / 8.845 x 8.85 = 2.90</p>
 <p>In this single-transaction example, that result matches the amount charged on the only sales invoice. (When more taxable transactions are recorded, the prorated portion is not so obvious, of course.) But this is cumbersome. Manager can streamline the process.</p>
 <h3>Establishing separate tax payable accounts</h3>
 <p>To keep track of individual tax components when they are payable to different authorities or on different schedules, create  separate tax payable accounts for each. In the <kbd>Settings</kbd> tab, select <kbd>Chart of Accounts</kbd>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/57d389d7458df073f143738af5281bf22f998b3e.png" width="204" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fdcca4650dae0928af4ed8c14fd46ad047d38568.png" width="166" height="50"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/5/57d389d7458df073f143738af5281bf22f998b3e.png" width="204" height="50"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/f/fdcca4650dae0928af4ed8c14fd46ad047d38568.png" width="166" height="50"></p>
 <p>On the Balance Sheet side, click <kbd>New Account</kbd>:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b9cdee3466264a0c1a126e3c235286b169a63a3f.png" width="350" height="128"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/b/b9cdee3466264a0c1a126e3c235286b169a63a3f.png" width="350" height="128"></p>
 <p>Enter a name for a tax payable account for the first tax component. In this example, account codes are used to order accounts. The default <em>Tax payable</em> account has the code 2500, so the state sales tax component is given 2501. Place the account in the <em>Liabilities</em> group (or a subgroup under that). Leave the <code>Tax Code</code> field and <code>Control account</code> checkbox blank. Leave <code>Starting balance</code> blank unless you had a carryover amount at your Start Date. Click <kbd>Create</kbd> to finish.</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/0/0d1bfb84b34c7928966d6241d56fc9a2079c3dc9.png" width="410" height="344"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/0/0d1bfb84b34c7928966d6241d56fc9a2079c3dc9.png" width="410" height="344"></p>
 <p>Repeat the process for the other tax components. Then return to <kbd>Settings</kbd> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <kbd>Tax Codes</kbd> and edit the tax code by assigning each component to its matching tax payable account:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/97e6220ec133261f1a725b72b60cbfabd38067be.png" width="499" height="314"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/9/97e6220ec133261f1a725b72b60cbfabd38067be.png" width="499" height="314"></p>
 <p>Now, the <kbd>Summary</kbd> shows a breakdown of how much tax is owed to each authority:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/ddddc9bfdbce1887ac593bedb549cbfa623bef40.png" width="331" height="161"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/d/ddddc9bfdbce1887ac593bedb549cbfa623bef40.png" width="331" height="161"></p>
 <p>Although the default <em>Tax Payable</em> account remains empty, it cannot be deleted. It is a control account created when the first tax code was defined, but is now functioning as a pass-through account. Required payments to various tax authorities can now be determined from their appropriate accounts, eliminating the need to calculate prorated shares of the overall tax code.</p>
 <p>At the present time, tax reports in Manager cannot break out individual components.</p>
 <h3>Handling different taxable situations</h3>
@@ -54,9 +54,9 @@ tags: tax-codes
 </ul>
 <p>Component account assignments are made to the same four tax payable accounts, as applicable. Codes would also be created for any other feasible combinations of customer, location, and applicability. Every tax code is, in effect, a subset of the basic, four-component code originally created. Transactions can be designated for proper tax treatment based on identity or location of the customer, type of goods, etc. If necessary, tax codes can be selected on a line item basis within any transaction form.</p>
 <p>After the new tax codes are in place, a second sales invoice for the same services to a  customer outside the city is summarized on a new line on the Tax Summary, reflecting the lower tax rate:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/f/fff41314914eb761738d2133c0867f18a12ccc3b.png" width="670" height="460"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/f/fff41314914eb761738d2133c0867f18a12ccc3b.png" width="670" height="460"></p>
 <p>But the various components are posted to the same tax payable accounts as before (reflecting the two transactions entered so far):</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3b50f9a780f393cf1c8f285fc3c02a8450a8b014.png" width="330" height="156"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/3/3b50f9a780f393cf1c8f285fc3c02a8450a8b014.png" width="330" height="156"></p>
 <h3>Changing component tax rates</h3>
 <p>When a component of a tax code changes, a completely new tax code must be created.</p>
 <table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
@@ -74,8 +74,8 @@ Never edit components of a tax code that has already been used for any transacti
 </ul>
 <p>Modified tax codes will remain available in Manager in case they can be adopted again.</p>
 <p>Returning to the example, assume the state sales tax component increases to 3.5% mid-year. A new tax code is created and the obsolete one renamed. Subsequently, a third sales invoice for identical services to a customer within the city is issued. The resulting Tax Summary shows all three rates used during the accounting period:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/59883e26249da44fba00222e06cbe3d71ca95972.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/5/59883e26249da44fba00222e06cbe3d71ca95972.png" width="661" height="500"></p>
 <h3>Paying individual tax authorities</h3>
-<p>Rather than paying off all or a portion of a single <em>Tax payable</em> account, payments can be made to tax authorities for a single component, posting the <kbd>Spend money</kbd> transaction to the appropriate component’s tax payable account. Assume, for example, the transit tax is remitted. Only the relevant account need be zeroed out. The Balance Sheet shows the amounts remaining to be paid to other tax authorities:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/538b5fed3e3d3d23b6652cafa855bc9cbe8c464f.png" width="319" height="157"></p>
+<p>Rather than paying off all or a portion of a single <em>Tax payable</em> account, payments can be made to tax authorities for a single component, posting the bank or cash transaction to the appropriate component’s tax payable account. Assume, for example, the transit tax is remitted. Only the relevant account need be zeroed out. The Balance Sheet shows the amounts remaining to be paid to other tax authorities:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/5/538b5fed3e3d3d23b6652cafa855bc9cbe8c464f.png" width="319" height="157"></p>
 {% endraw %}
