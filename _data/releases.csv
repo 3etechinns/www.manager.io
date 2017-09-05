@@ -66,3 +66,4 @@ date,version,message
 2017-09-04,17.9.21,"no message"
 2017-09-04,17.9.22,"When bank/cash account is not selected on bank/cash transaction, the transaction will be posted to 'Suspense' account instead of being ignored"
 2017-09-05,17.9.23,"no message"
+2017-09-05,17.9.24,"If due date on invoice is not specified, assume due date is on the same date as issue date of the invoice"
