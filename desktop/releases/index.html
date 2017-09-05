@@ -2,7 +2,7 @@
 title: Releases
 layout: main
 ---
-<div style="padding-bottom: 20px; text-align: center; font-weight: bold">
+<div style="text-align: center; font-weight: bold">
 	<div style="font-size: 24px; color: #333; line-height: 200%">
 		Always up to date
 	</div>
@@ -22,7 +22,7 @@ layout: main
 
 {% assign section2 = release.date | date:"%B %Y" %}
 {% if section != section2 %}
-<tr><td colspan="3" style="padding-bottom: 10px"><div style="font-weight: bold; font-size: 18px; padding-bottom: 10px; border-bottom: 1px solid #ccc">{{ section2 }}</div></td></tr>
+<tr><td colspan="3" style="padding-bottom: 10px; padding-top: 20px"><div style="font-weight: bold; font-size: 18px; padding-bottom: 10px; border-bottom: 1px solid #ccc">{{ section2 }}</div></td></tr>
 {% assign section = section2 %}
 {% endif %}
 
