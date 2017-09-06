@@ -75,3 +75,4 @@ date,version,message
 2017-09-05,17.9.30,"no message"
 2017-09-06,17.9.31,"no message"
 2017-09-06,17.9.32,"Hide 'Delete' button on billable expenses #11578"
+2017-09-06,17.9.33,"Fixed layout issue when copying invoice to recurring invoice with billable expense #11507"
