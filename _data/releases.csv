@@ -82,3 +82,4 @@ date,version,message
 2017-09-06,17.9.37,"Fixed title on 'Tracking Exception Report' #11260"
 2017-09-06,17.9.38,"Fixed attachment issue where users with read-only access were able to upload or delete attachments #11489"
 2017-09-07,17.9.39,"WebTranslateIt"
+2017-09-08,17.9.40,"WebTranslateIt"
