@@ -10,30 +10,30 @@ title: Digital Ocean
 
 <h3>Install Manager</h3>
 
-<p>Once you are in control panel, click on <kbd>Create Droplet</kbd> button in top-right corner.</p>
+<p>Once you are in control panel, click on <kbd>Create</kbd> button in top-right corner, then <kbd>Droplets</kbd>.</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/cd386cfb21d30c391930bba8a74592182a6e009b.png" width="158" height="59"></p>
+<p><img src="step1.png"></p>
 
-<p>First select an image and make sure you choose <code>Ubuntu 16.04.2 x64</code></p>
+<p>First select an image and make sure you choose <code>Ubuntu 16.04.3 x64</code></p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/6/6f579c28eb4abb36439e726c3984edd6d2f26d5c.png" width="433" height="303"></p>
+<p><img src="step2.png"></p>
 
 <p>Then select size of your server. You can go for the cheapest one which is $5 per month.</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2de4199dd3f0e0d3fcefb9a5df2b57b4363525d9.png" width="429" height="300"></p>
+<p><img src="step3.png"></p>
 
 <p>Digital Ocean is running data centers around the world. Select the location which is the closest to you.</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/9/9b0617ada142eb1b72c0ebfd63dbec77d3908796.png"></p>
+<p><img src="step4.png"></p>
 
 <p>In additional options, select <code>User data</code> option and paste the following two lines into textbox below.</p>
 
 <p></p><pre><code class="lang-bash">#!/bin/bash
-curl -fsSL http://install.manager.io | bash</code></pre>
+curl -fsSL https://www.manager.io/server/install.txt | bash</code></pre>
 
 <p>Selecting <code>Backups</code> option is also highly recommended.</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b78edbc9bbaa6d64f9587a5e4a6bf09570cda81c.png"></p>
+<p><img src="step5.png"></p>
 
 <p>Then click <kbd>Create</kbd> button.</p>
 
@@ -59,10 +59,7 @@ curl -fsSL http://install.manager.io | bash</code></pre>
 
 <p>You should see login screen to Manager Server.</p>
 
-          <a href="https://imgur.com/T9yZ9P6.png" target="_blank" rel="nofollow noopener">
-            <img src="https://imgur.com/T9yZ9P6.png" width="532" height="409">
-          </a>
-
+<p><img src="login.png"></p>
 
 <p>If this is what you see. Congratulations, you are up &amp; running. Just click <kbd>Login</kbd> button as default password is empty.</p>
 
