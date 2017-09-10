@@ -16,11 +16,12 @@ title: Vultr
 
 <p>Name your startup script <code>install.manager.io</code> and copy &amp; paste to <code>Script</code> field following line:</p>
 
-<p></p><pre><code class="lang-auto">curl -fsSL http://install.manager.io | bash</code></pre>
+<p></p><pre><code class="lang-bash">#!/bin/bash
+curl -fsSL https://www.manager.io/server/install.txt | bash</code></pre>
 
 <p>So your input should look something like this.</p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/39c840603f2d2f8126a047b35b9d3057e514b499.png" width="542" height="255"></p>
+<p><img src="startup-script.png"></p>
 
 <p>Then press <code>Add Script</code> button to save your script.</p>
 
@@ -50,9 +51,9 @@ title: Vultr
 
 <p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/d/d2c3d7c9139ddf1facf617389250803c0804c5f8.png" width="407" height="228"></p>
 
-<p>As startup script, select <code>install.manager.io</code></p>
+<p>As startup script, select <code>Manager Server</code></p>
 
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/b6a071b81bb8715429337c56ce5534e5baa31480.png" width="362" height="186"></p>
+<p><img src="manager-server.png"></p>
 
 <p>Then click <code>Deploy Now</code> button at the bottom of the screen.</p>
 
@@ -74,10 +75,7 @@ title: Vultr
 
 <p>You should see login screen to Manager Server.</p>
 
-          <a href="https://imgur.com/T9yZ9P6.png" target="_blank" rel="nofollow noopener">
-            <img src="https://imgur.com/T9yZ9P6.png" width="532" height="409">
-          </a>
-
+<p><img src="login.png"></p>
 
 <p>If this is what you see. Congratulations, you are up &amp; running. Just click <code>Login</code> button as default password is empty.</p>
 
