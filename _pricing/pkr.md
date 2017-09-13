@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Pakistani Rupee
-price: 4199
+price: 3999
 ---
