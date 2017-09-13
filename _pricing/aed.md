@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: United Arab Emirates Dirham
-price: 99
+price: 149
 ---

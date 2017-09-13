@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Argentine Peso
-price: 499
+price: 669
 ---

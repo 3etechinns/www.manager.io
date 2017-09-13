@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Chinese Renminbi Yuan
-price: 199
+price: 259
 ---

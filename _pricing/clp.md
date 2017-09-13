@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Chilean Peso
-price: 18999
+price: 24999
 ---

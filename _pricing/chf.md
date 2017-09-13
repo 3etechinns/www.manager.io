@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Swiss Franc
-price: 27
+price: 37
 ---

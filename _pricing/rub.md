@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Russian Ruble
-price: 1799
+price: 2299
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Czech Koruna
-price: 649
+price: 859
 ---

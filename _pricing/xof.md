@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: West African Cfa Franc
-price: 16999
+price: 21999
 ---

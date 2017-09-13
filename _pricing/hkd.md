@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Hong Kong Dollar
-price: 229
+price: 299
 ---

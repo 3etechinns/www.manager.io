@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Vietnamese Đồng
-price: 659999
+price: 889999
 ---

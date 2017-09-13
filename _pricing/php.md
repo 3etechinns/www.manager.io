@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Philippine Peso
-price: 1499
+price: 1999
 ---

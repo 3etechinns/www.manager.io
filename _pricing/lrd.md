@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Liberian Dollar
-price: 2799
+price: 4599
 ---

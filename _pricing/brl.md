@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Brazilian Real
-price: 89
+price: 129
 ---

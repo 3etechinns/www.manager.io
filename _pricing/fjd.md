@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Fijian Dollar
-price: 58
+price: 78
 ---

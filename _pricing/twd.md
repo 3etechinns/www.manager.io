@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: New Taiwan Dollar
-price: 889
+price: 1199
 ---

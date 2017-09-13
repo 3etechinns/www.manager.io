@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Indian Rupee
-price: 1899
+price: 2499
 ---

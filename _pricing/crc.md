@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Costa Rican Colón
-price: 16999
+price: 22999
 ---

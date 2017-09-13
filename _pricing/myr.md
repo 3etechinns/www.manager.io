@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Malaysian Ringgit
-price: 129
+price: 169
 ---

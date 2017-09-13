@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Mauritian Rupee
-price: 999
+price: 1299
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Saint Helenian Pound
-price: 22
+price: 29
 ---

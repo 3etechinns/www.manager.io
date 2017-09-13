@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Mexican Peso
-price: 499
+price: 699
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Nigerian Naira
-price: 8999
+price: 13999
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Gambian Dalasi
-price: 1399
+price: 1799
 ---

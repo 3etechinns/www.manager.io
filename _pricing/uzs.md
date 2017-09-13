@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Uzbekistani Som
-price: 119999
+price: 319999
 ---

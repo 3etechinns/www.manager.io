@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Djiboutian Franc
-price: 5199
+price: 6999
 ---

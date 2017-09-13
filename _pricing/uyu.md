@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Uruguayan Peso
-price: 829
+price: 1199
 ---

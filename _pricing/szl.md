@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Swazi Lilangeni
-price: 379
+price: 499
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Indonesian Rupiah
-price: 389999
+price: 519999
 ---

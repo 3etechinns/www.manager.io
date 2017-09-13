@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Gibraltar Pound
-price: 22
+price: 29
 ---

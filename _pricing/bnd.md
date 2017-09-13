@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Brunei Dollar
-price: 39
+price: 52
 ---

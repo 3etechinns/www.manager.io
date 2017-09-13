@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Croatian Kuna
-price: 189
+price: 249
 ---

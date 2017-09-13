@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Trinidad and Tobago Dollar
-price: 199
+price: 269
 ---

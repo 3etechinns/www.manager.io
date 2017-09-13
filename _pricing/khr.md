@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Cambodian Riel
-price: 119999
+price: 159999
 ---

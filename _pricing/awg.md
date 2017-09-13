@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Aruban Florin
-price: 52
+price: 69
 ---

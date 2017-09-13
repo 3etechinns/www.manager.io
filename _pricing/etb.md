@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Ethiopian Birr
-price: 669
+price: 919
 ---

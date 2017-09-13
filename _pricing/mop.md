@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Macanese Pataca
-price: 239
+price: 319
 ---

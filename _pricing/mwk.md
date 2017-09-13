@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Malawian Kwacha
-price: 21999
+price: 28999
 ---

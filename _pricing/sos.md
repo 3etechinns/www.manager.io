@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Somali Shilling
-price: 16999
+price: 22999
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Singapore Dollar
-price: 39
+price: 52
 ---

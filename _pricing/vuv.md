@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Vanuatu Vatu
-price: 2999
+price: 3999
 ---

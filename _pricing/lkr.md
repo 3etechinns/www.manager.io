@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Sri Lankan Rupee
-price: 4499
+price: 5999
 ---

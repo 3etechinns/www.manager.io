@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Guatemalan Quetzal
-price: 199
+price: 289
 ---

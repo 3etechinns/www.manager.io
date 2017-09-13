@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Icelandic Króna
-price: 2999
+price: 4199
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Hungarian Forint
-price: 7699
+price: 9999
 ---

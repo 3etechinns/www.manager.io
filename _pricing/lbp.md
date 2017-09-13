@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Lebanese Pound
-price: 43999
+price: 58999
 ---

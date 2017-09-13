@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Salvadoran Colón
-price: 259
+price: 349
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Samoan Tala
-price: 71
+price: 97
 ---

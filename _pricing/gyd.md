@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Guyanese Dollar
-price: 5999
+price: 7999
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Jamaican Dollar
-price: 3699
+price: 4999
 ---

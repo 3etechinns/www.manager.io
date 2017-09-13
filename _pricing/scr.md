@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Seychellois Rupee
-price: 389
+price: 539
 ---

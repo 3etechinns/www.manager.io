@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Euro
-price: 24
+price: 32
 ---

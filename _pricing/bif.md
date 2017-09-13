@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Burundian Franc
-price: 49999
+price: 67999
 ---

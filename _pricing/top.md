@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Tongan Paʻanga
-price: 64
+price: 86
 ---

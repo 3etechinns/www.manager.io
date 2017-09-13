@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Bangladeshi Taka
-price: 2399
+price: 3199
 ---

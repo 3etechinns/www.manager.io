@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Cayman Islands Dollar
-price: 23
+price: 32
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Thai Baht
-price: 979
+price: 1299
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Nicaraguan Córdoba
-price: 869
+price: 1199
 ---

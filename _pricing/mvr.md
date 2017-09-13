@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Maldivian Rufiyaa
-price: 449
+price: 599
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Cfp Franc
-price: 2999
+price: 3899
 ---

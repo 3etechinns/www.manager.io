@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: New Zealand Dollar
-price: 39
+price: 53
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Papua New Guinean Kina
-price: 91
+price: 129
 ---

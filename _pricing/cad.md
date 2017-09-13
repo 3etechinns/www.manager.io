@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Canadian Dollar
-price: 36
+price: 47
 ---

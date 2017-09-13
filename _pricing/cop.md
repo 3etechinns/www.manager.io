@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Colombian Peso
-price: 86999
+price: 119999
 ---

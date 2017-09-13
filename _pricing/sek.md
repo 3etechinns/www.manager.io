@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Swedish Krona
-price: 239
+price: 319
 ---

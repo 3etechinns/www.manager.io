@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Dominican Peso
-price: 1399
+price: 1899
 ---

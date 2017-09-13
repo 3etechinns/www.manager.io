@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Falkland Islands Pound
-price: 22
+price: 29
 ---

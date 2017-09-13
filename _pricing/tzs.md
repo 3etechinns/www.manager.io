@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Tanzanian Shilling
-price: 64999
+price: 87999
 ---

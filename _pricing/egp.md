@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Egyptian Pound
-price: 519
+price: 689
 ---

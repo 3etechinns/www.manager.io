@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Guinean Franc
-price: 259999
+price: 359999
 ---

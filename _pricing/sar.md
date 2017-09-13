@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Saudi Riyal
-price: 99
+price: 149
 ---

@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Panamanian Balboa
-price: 29
+price: 39
 ---

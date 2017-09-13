@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Ugandan Shilling
-price: 99999
+price: 149999
 ---

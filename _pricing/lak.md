@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Lao Kip
-price: 239999
+price: 329999
 ---

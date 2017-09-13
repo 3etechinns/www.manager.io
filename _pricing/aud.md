@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Australian Dollar
-price: 36
+price: 48
 ---

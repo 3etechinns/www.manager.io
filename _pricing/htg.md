@@ -1,5 +1,5 @@
 ---
 layout: pricing
 title: Haitian Gourde
-price: 1799
+price: 2499
 ---
