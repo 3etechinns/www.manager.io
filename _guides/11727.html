@@ -1,0 +1,27 @@
+---
+layout: guide
+title: Convert a bank or cash account into the other type
+tags: cash-accounts bank-accounts
+---
+{% raw %}
+<p>You can <strong>convert a bank or cash account into the other type</strong>, transferring all prior transactions to it along with the account itself. This might be necessary in the following circumstances:</p>
+<ul>
+<li>The account was miscategorized when first created prior to version 17.9.0. (All bank and cash accounts were handled under a single <kbd>Cash Accounts</kbd> tab in earlier versions. The only distinction was a checkbox to indicate the account was maintained by a financial institution.)</li>
+<li>The account was mistakenly categorized in version 17.9.0 or a later version and has had transactions entered, so it cannot be deleted.</li>
+</ul>
+<h3>Convert an account</h3>
+<p>Select the home tab for the account you want to convert, either <kbd>Bank Accounts</kbd> or <kbd>Cash Accounts</kbd>:</p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/4/4547ccc8f3aa5e6b0a72b76034b57143ae180cfd.png" alt="42 PM" width="221" height="55"> <strong>OR</strong> <img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/9/9b787dc740aad78293ce7e57c59f8a238722ecda.png" alt="56 PM" width="221" height="52"></p>
+<p>In the lower right corner of the screen, click <kbd>Convert</kbd>:</p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/7/717065faa8a1a3f489050d5409ff9c4ce4058058.png" alt="07 PM" width="156" height="41"></p>
+<p>Select the account you want to convert and click the <kbd>Convert…</kbd> button:</p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/0/0c27de801e440f3ea13d8848a07c6c7659121352.png" alt="49 PM" width="334" height="233"> <strong>OR</strong></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/e/e7ca01e87236981d110b9d7994ec03ae75478d73.png" alt="19 PM" width="334" height="237"></p>
+<h3>Results of conversion</h3>
+<p>The converted account will now appear in the listing for the other tab. Manager will treat the converted account as though it had always been the new type.</p>
+<p>Transactions made in the converted account will now appear under the other account type’s transactions tab. That is, when a bank account is converted into a cash account, its transactions formerly found in the <kbd>Bank Transactions</kbd> tab will be found in the <kbd>Cash Transactions</kbd> tab. The reverse is also true.</p>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
+<p><strong>Caution</strong><br>
+When bank accounts are converted into cash accounts, status of pending deposits and withdrawals will be lost, because cash transactions are assumed to clear immediately. An account itself can be reconverted, but pending status will not be restored.</p>
+</td></tr></table>
+{% endraw %}
