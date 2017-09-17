@@ -1,19 +1,19 @@
 ---
 layout: guide
 title: Build a chart of accounts
-tags: settings chart-of-accounts balance-sheet-account-form profit-and-loss-statement-account-form balance-sheet-group-form profit-and-loss-statement-group-form profit-and-loss-statement-subtotal-form beginner
+tags: chart-of-accounts settings balance-sheet-account-form profit-and-loss-statement-account-form balance-sheet-group-form profit-and-loss-statement-group-form profit-and-loss-statement-subtotal-form beginner
 ---
 {% raw %}
 <p>Design your <strong>chart of accounts</strong> before building it. Read <a href="/guides/8965">this Guide</a> first. Consult your accountant and attorney, if necessary. Once you have a basic structure in mind, remember that Manager will automatically add some accounts based on tabs (functions) you enable. So some accounts you want may be created for you. A few accounts may be added you did not realize you needed.</p>
 <h3>Default chart of accounts</h3>
 <p>When you first create a new business in Manager, it already has a simple chart of accounts. Find the chart of accounts by clicking on the <kbd>Settings</kbd> tab in the left navigation pane, then clicking the <kbd>Chart of Accounts</kbd> icon from the display that appears:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/4/4b90a9c1aab9fd73c783bd4a494b9e7c362155d7.png" width="183" height="50"> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/b/bf7128ce9b8ab7e619e9c7924c65f67804476c65.png" width="164" height="50"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/4/4b90a9c1aab9fd73c783bd4a494b9e7c362155d7.png" width="183" height="50"> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/b/bf7128ce9b8ab7e619e9c7924c65f67804476c65.png" width="164" height="50"></p>
 <p>Whatever you may later name your business, Manager initially assumes it is called Brilliant Industries. (It has to be named something, because Manager doesn’t show things that are not there. So if everything were blank, it would be difficult to set up your business.)</p>
 <p>Brilliant Industries’ default chart of accounts illustrates some key concepts. The Balance Sheet side includes three groups or categories in <strong>boldface</strong> type: <strong><em>Assets</em></strong>, <strong><em>Liabilities</em></strong>, and <strong><em>Equity</em></strong>. The <kbd>Edit</kbd> buttons for these groups are greyed out, because they cannot be edited. (If you read the Guide linked to above, you know that all balance sheet accounts must fall into one of these three groups.)</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3f1b1863dd7ba8c34c1eacb02b3474797ae1f73f.png" width="506" height="235"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/3/3f1b1863dd7ba8c34c1eacb02b3474797ae1f73f.png" width="506" height="235"></p>
 <p>It also includes one account, <em>Retained earnings</em> within the <em><strong>Equity</strong></em> group. <em>Retained earnings</em> is an example of an automatically generated account. Every business needs this account. So while you can <kbd>Edit</kbd> it by renaming it or assigning it to another group, you cannot delete it. But more about that later.</p>
 <p>Brilliant Industries’ chart of accounts also includes some common (but by no means universal) accounts for the Profit and Loss Statement in <em><strong>Income</strong></em> and <em><strong>Expense</strong></em> groups. You can use these groups and accounts, rename them for other purposes, or delete them to fit your planned chart of accounts structure (to save space, not all accounts are shown below):</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c295b8b8d29060dcc64ef55a88fecf412fd1302f.png" width="507" height="383"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/c/c295b8b8d29060dcc64ef55a88fecf412fd1302f.png" width="507" height="383"></p>
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
 <p><strong>Note</strong><br>
 This chart of accounts will be your starting point. You will transform it into one tailored for your legal structure, market sector, and reporting needs. As you work on it, it will be helpful to frequently check your <kbd>Summary</kbd> page to see what affect your actions are having on the display. You may even want to consider your first draft a test business, into which you can make a few sample entries to see their effects. Those few transactions can be deleted and the test business’ data file <a href="/guides/8890">copied, renamed, and opened</a> as your real business.</p>
@@ -21,9 +21,9 @@ This chart of accounts will be your starting point. You will transform it into o
 <h3>Define groups first</h3>
 <p>A four-step, methodical approach will simplify building your chart of accounts. Begin by defining groups. This step is first because every account must be assigned to a group. In fact, if you neglect to assign an account, Manager will assign it for you to an automatic group, <strong><em>Uncategorized</em></strong>.</p>
 <p>A group can be subsidiary to another group. So on the Balance Sheet side of Brilliant Industries’ chart of accounts, we will create two groups, <strong><em>Current assets</em></strong> and <strong><em>Plant, equipment, and property</em></strong>, and assign them to the <strong><em>Assets</em></strong> group. We click the <kbd>New Group</kbd> button, enter the group name and choose <strong><em>Assets</em></strong> in the dropdown box:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/7/767fde06169fdea35b0a3df70549d34a1efe9444.png" width="542" height="207"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/7/767fde06169fdea35b0a3df70549d34a1efe9444.png" width="542" height="207"></p>
 <p>We’ll do something similar under <strong><em>Liabilities</em></strong>. <strong><em>Assets</em></strong>, <strong><em>Liabilities</em></strong>, and <strong><em>Equity</em></strong> always display in that order (by long tradition). But other groups will display alphabetically unless we assign positions in the <code>Code</code> field. So we add <code>Code</code> numbers to force the display order we want. The result looks like this (note how position numbers show in grey):</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c1fcdb66258b51a00dd3df50940978b96b63e7c6.png" width="507" height="383"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/c/c1fcdb66258b51a00dd3df50940978b96b63e7c6.png" width="507" height="383"></p>
 <p>Moving to the Profit and Loss Statement side of the chart of accounts, we take several actions:</p>
 <ul>
 <li>Rename the <strong><em>Income</em></strong> group to <strong><em>Operating income</em></strong>.</li>
@@ -33,24 +33,24 @@ This chart of accounts will be your starting point. You will transform it into o
 <li>Add a <strong><em>Non-operating expenses</em></strong> group, leaving it unassigned, but checking the <kbd>Expenses</kbd> box.</li>
 </ul>
 <p>We use the <code>Code</code> field to order the groups. Our progress so far is shown below (again, some accounts have been eliminated to save space):</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/2/2a54bdfdd6edaa206103a344e5bfea204c07da94.png"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/2/2a54bdfdd6edaa206103a344e5bfea204c07da94.png"></p>
 <h3>Add totals next</h3>
 <p>Interim subtotals and final totals are useful in accounting displays. Add them with the <kbd>New Total</kbd> button. Totals calculate a running summation of all groups above them in the chart of accounts. They are positioned with the same sequence of <code>Code</code> numbers as the groups and show with dashed underlines.</p>
 <p>We add two totals and adjust position numbers to accommodate them:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/5/5f317178c9f1273034c09d2b88eb4fe056d804d5.png"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/5/5f317178c9f1273034c09d2b88eb4fe056d804d5.png"></p>
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
 <p><strong>Note</strong><br>
 A bottom-line, net profit (loss) total can be added, named as desired. If one is not specifically created, Manager will automatically add one labeled <strong><em>Net profit</em></strong> when a profit exists. If the business has a loss for the reporting period, the default total will change to <strong><em>Net loss</em></strong>.</p>
 </td></tr></table>
 <h3>Activate automatic accounts</h3>
 <p>Several tabs and some settings activate accounts necessary to their functionality when they are enabled (or as soon as the first entry is made using them). If you plan to use any of these tabs (or need the accounts they activate), enable them now following procedures in <a href="/guides/7397">this Guide</a>. Automatic accounts are summarized in the table below:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/e/e9c6506b7f928119f5a58c475bdcb0aae3bb6cd1.png"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/e/e9c6506b7f928119f5a58c475bdcb0aae3bb6cd1.png"></p>
 <p>We enable the <kbd>Customers</kbd>, <kbd>Fixed Assets</kbd>, and <kbd>Inventory Items</kbd> tabs for Brilliant Industries and make at least one entry in each tab. After reassigning accounts to appropriate groups, the Balance Sheet side of the chart of accounts looks like this:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/3/3241a9c874d8953abe62aba96d80ae3eee2acca2.png"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/3/3241a9c874d8953abe62aba96d80ae3eee2acca2.png"></p>
 <p>And the Profit and Loss Statement side looks like this:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/1/19188ffd1293045cd18f45c9aa66f8c49ede9e7d.png"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/1/19188ffd1293045cd18f45c9aa66f8c49ede9e7d.png"></p>
 <h3>Add other desired accounts</h3>
 <p>Finally, add any remaining accounts from your plan. Assign these to relevant groups or subgroups. For example, we will add accounts for short- and long-term loans to the Balance Sheet. And since Brilliant Industries is a sole proprietorship, we will change the name of <em>Retained earnings</em> to <em>Owner’s equity</em>. Note how the original, automatically assigned name of this account remains visible in the chart of accounts; it will not show elsewhere in the program:</p>
-<p><img src="https://cdn-business2.discourse.org/uploads/manager1/original/2X/c/c169d9a82cab7b083ee1dec48d5a9be7fc466473.png"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/c/c169d9a82cab7b083ee1dec48d5a9be7fc466473.png"></p>
 <p>Similar additions can be made on the Profit and Loss Statement side.</p>
 {% endraw %}

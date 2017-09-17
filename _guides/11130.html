@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Manage inventory - Part 3 Conclusion
-tags: sales-invoices purchase-invoices inventory-items reports production-orders delivery-notes goods-receipts inventory-transfers settings receipt-form payment-form inventory-transfer-view inventory-quantity-movement-list inventory-profit-margin-list inventory-kits inventory-kit-form inventory-kit-view inventory-write-offs inventory-locations inventory-location-form inventory-transfer-form inventory-write-off-form inventory-value-movement-form inventory-value-movement-view inventory-quantity-movement-form inventory-quantity-movement-view inventory-profit-margin-form inventory-profit-margin-view inventory-price-list inventory-price-list-form inventory-price-list-view inventory-quantity-by-location
+tags: cash-payment-form bank-payment-form cash-receipt-form bank-receipt-form settings delivery-notes goods-receipts inventory-transfers reports production-orders inventory-items purchase-invoices sales-invoices inventory-value-movement-form inventory-value-movement-view inventory-quantity-movement-form inventory-quantity-movement-view inventory-profit-margin-form inventory-profit-margin-view inventory-transfer-view inventory-quantity-movement-list inventory-profit-margin-list inventory-locations inventory-location-form inventory-transfer-form inventory-write-offs inventory-write-off-form inventory-kits inventory-kit-form inventory-kit-view inventory-price-list inventory-price-list-form inventory-price-list-view inventory-quantity-by-location
 ---
 {% raw %}
 <p><a href="/guides/11111">Part 1</a> of this Guide on how to <strong>manage inventory</strong> covers purchasing, producing, and selling inventory items in Manager. It also covers backorders and content of inventory reports when only basic functions are enabled. If you have not yet read Part 1, you should read it first.</p>
@@ -12,34 +12,34 @@ tags: sales-invoices purchase-invoices inventory-items reports production-orders
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Brilliant Industries decides to open a second warehouse for inventory storage and shipment. It names the original warehouse <em>North warehouse</em> and the new one <em>South warehouse</em>:<br>
-<br><img src="https://forum.manager.io/uploads/manager1/original/2X/d/d4b1ff1e7a734c9002286fb37a411a3c60b1e183.png" alt="Inventory locations" width="328" height="159"></p>
+<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/d/d4b1ff1e7a734c9002286fb37a411a3c60b1e183.png" alt="Inventory locations" width="328" height="159"></p>
 </td></tr></table>
 <p>If inventory locations have been defined, a field appears on cash receipt and payment forms to select which <code>Location</code> the items will be delivered from or received into:</p>
-<p><img src="https://forum.manager.io/uploads/manager1/original/2X/7/7802ac0bca9e6cd80475770f8aa704bd50085e2a.png" alt="Empty location field" width="316" height="64"></p>
+<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/7/7802ac0bca9e6cd80475770f8aa704bd50085e2a.png" alt="Empty location field" width="316" height="64"></p>
 <p>A cash sale or purchase is presumed to involve immediate delivery or receipt of goods from or to a location that can be specified at the time of the transaction.</p>
 <p>The same field will appear on sales and purchase invoices unless the <kbd>Delivery Notes</kbd> and <kbd>Goods Receipts</kbd> tabs are enabled. Then, location must be selected on the corresponding delivery note or goods receipt. This is because a credit sale or purchase may involve delivering or receiving goods from or to different locations at different times.</p>
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Brilliant Industries must now make a location selection on every cash receipt or payment and every delivery note or goods receipt:<br>
-<br><img src="https://forum.manager.io/uploads/manager1/original/2X/e/e1660f93f9e577ea3a33e9bf3d56957798f886ea.png" alt="Location Field" width="314" height="148"></p>
+<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/e/e1660f93f9e577ea3a33e9bf3d56957798f886ea.png" alt="Location Field" width="314" height="148"></p>
 </td></tr></table>
 <h3>Inventory transfers</h3>
 <p>To <a href="/guides/10707">move inventory between locations</a>, enable the <kbd>Inventory Transfers</kbd> tab. Transfers can shift one or more inventory items in any quantities between locations, regardless of whether the stock is owned by the business or already committed in a sales transaction. Manager will correctly track which stock is owned, to be delivered, etc.</p>
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Brilliant Industries uses an inventory transfer to move about half its inventory from the <em>Unspecified location</em> to <em>North warehouse</em>:<br>
-<br><img src="https://forum.manager.io/uploads/manager1/original/2X/8/84cb0f82349ee69c2735506f5b4a28e769039407.png" alt="Inventory Transfer" width="393" height="500"><br>
+<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/8/84cb0f82349ee69c2735506f5b4a28e769039407.png"><br>
 <br>It transfers the remaining inventory to <em>South warehouse</em>. A new report, Inventory Quantity by Location, became available when the new locations were created. That report now shows where all of Brilliant’s stock is stored:<br>
-<br><img src="https://forum.manager.io/uploads/manager1/original/2X/2/25b8c5ec4f10fafca093e9c21d2c0637b06cce36.png" alt="Inventory Qty by Location" width="690" height="318"></p>
+<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/2/25b8c5ec4f10fafca093e9c21d2c0637b06cce36.png"></p>
 </td></tr></table>
 <h3>Inventory write-offs</h3>
 <p>Inventory is sometimes lost, stolen, damaged, or spoiled and no longer available for sale. Or, it may be consumed for internal company purposes, given away for marketing reasons, and so forth. In these situations, the value of inventory must be transferred to an appropriate expense account. Inventory write-offs accomplish such transfers and correct quantity counts. To write off inventory, first enable the <kbd>Inventory Write-offs</kbd> tab.</p>
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Brilliant Industries uses several 60 W light bulbs from its inventory when moving into the new south warehouse. So it writes them off to a <em>Repairs and maintenance</em> expense account:<br>
-<br><img src="https://forum.manager.io/uploads/manager1/original/2X/f/fa8220c44eb408a9e0a4340723215a2d253bc053.png" alt="Write-off" width="440" height="455"><br>
+<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/f/fa8220c44eb408a9e0a4340723215a2d253bc053.png" alt="Write-off" width="440" height="455"><br>
 <br>The procedure would have been identical if those light bulbs had been broken during the move, but a different expense account might have been chosen. The Inventory Quantity Movement report reflects the adjustment:<br>
-<br><img src="https://forum.manager.io/uploads/manager1/original/2X/7/70991404245650b689ed22484f040bd596bd89bd.png" alt="IQM Report" width="690" height="354"><br>
+<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/7/70991404245650b689ed22484f040bd596bd89bd.png"><br>
 <br>The Inventory Value Movement report likewise shows an adjustment to value and average cost. And the Inventory Quantity by Location report shows a reduction in quantity on hand at the south warehouse.</p>
 </td></tr></table>
 <h3>Inventory effects on financial statements</h3>
@@ -56,7 +56,7 @@ Brilliant Industries uses several 60 W light bulbs from its inventory when movin
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Brilliant Industries’ Balance Sheet and Profit and Loss Statement for the year encompassing all example transactions in the three parts of this Guide are shown below. For purposes of illustration, no other transactions are included:<br>
-<br><img src="https://forum.manager.io/uploads/manager1/original/2X/5/5f359fe6b01efcdc7f70d9b0afbec56bbf9b32c7.png" alt="21 PM" width="511" height="500"></p>
+<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/5/5f359fe6b01efcdc7f70d9b0afbec56bbf9b32c7.png"></p>
 </td></tr></table>
 <table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
 <p><strong>Caution</strong><br>
