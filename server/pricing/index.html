@@ -2,4 +2,41 @@
 layout: main
 title: Pricing
 ---
-<div style="padding-bottom: 40px; text-align: center; font-weight: bold"><div style="font-size: 24px; color: #333; line-height: 200%">Pay once, use forever</div><div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">Online accounting software on your server without monthly fees.</div></div><div class="thumbnail" style="width: 600px; margin: 0 auto; padding: 40px 60px"><div style="text-align: center; padding: 20px; font-weight: bold; font-size: 36px">$299 USD</div><div style="padding-top: 20px; text-align: center"><a href="/server/installation" class="btn btn-primary btn-lg" style="font-weight: bold">Install Now</a></div></div>
+<style>
+div.columns {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+</style>
+
+<link href="currency-flags.css" rel="stylesheet" type="text/css">
+
+<div style="padding-bottom: 40px; text-align: center; font-weight: bold">
+  <div style="font-size: 24px; color: #333; line-height: 200%">Pay once, use forever</div>
+  <div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">Self-hosted accounting software without monthly fees.</div>
+</div>
+
+<div class="columns">
+{% assign mainCurrencies = "usd,gbp,eur" | split:',' %}
+{% for price in site.server_pricing %}
+{% assign currency = price.id | split:'/' | last %}
+{% if mainCurrencies contains currency %}{% else %}{% continue %}{% endif %}
+<div style="padding: 10px 5px; line-height: 24px">
+<div class="currency-flag currency-flag-lg currency-flag-{{ currency }}" style="float: left; margin-right: 10px"></div>
+<a href="{{ price.url }}" style="font-weight: bold">{{ currency | upcase }} - {{ price.title }}</a>
+</div>
+{% endfor %}
+</div>
+
+<hr />
+
+<div class="columns">
+{% for price in site.server_pricing %}
+{% assign currency = price.id | split:'/' | last %}
+<div style="padding: 10px 5px; line-height: 24px">
+<div class="currency-flag currency-flag-lg currency-flag-{{ currency }}" style="float: left; margin-right: 10px"></div>
+<a href="{{ price.url }}">{{ currency | upcase }} - {{ price.title }}</a>
+</div>
+{% endfor %}
+</div>

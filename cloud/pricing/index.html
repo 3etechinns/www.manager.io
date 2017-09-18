@@ -19,7 +19,7 @@ div.columns {
 
 <div class="columns">
 {% assign mainCurrencies = "usd,gbp,eur" | split:',' %}
-{% for price in site.pricing %}
+{% for price in site.cloud_pricing %}
 {% assign currency = price.id | split:'/' | last %}
 {% if mainCurrencies contains currency %}{% else %}{% continue %}{% endif %}
 <div style="padding: 10px 5px; line-height: 24px">
@@ -32,7 +32,7 @@ div.columns {
 <hr />
 
 <div class="columns">
-{% for price in site.pricing %}
+{% for price in site.cloud_pricing %}
 {% assign currency = price.id | split:'/' | last %}
 <div style="padding: 10px 5px; line-height: 24px">
 <div class="currency-flag currency-flag-lg currency-flag-{{ currency }}" style="float: left; margin-right: 10px"></div>
