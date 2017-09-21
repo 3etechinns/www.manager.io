@@ -118,3 +118,4 @@ date,version,message
 2017-09-19,17.9.73,"WebTranslateIt"
 2017-09-20,17.9.74,"no message"
 2017-09-20,17.9.75,"WebTranslateIt"
+2017-09-20,17.9.76,"Fixed 'Amount in words' on invoices for Rupees if amount is less than 100"
