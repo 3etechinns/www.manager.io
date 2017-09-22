@@ -122,3 +122,4 @@ date,version,message
 2017-09-21,17.9.77,"Amount in words on invoices to show subdivision of Indian rupee (Indian paisa)"
 2017-09-21,17.9.78,"WebTranslateIt"
 2017-09-21,17.9.79,"Reference numbers for journal entries, expense claims and inter-account transfers are now automatically generated"
+2017-09-22,17.9.80,"Fixed ambiguity issue when setting up date format on dates when day digit is the same as month digit #11661"
