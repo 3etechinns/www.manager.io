@@ -14,15 +14,15 @@ tags: settings inventory-items inventory-kit-form inventory-kit-view inventory-k
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Northwind Traders sells a wide range of individual food products from around the world. Each is stocked and sold individually as an inventory item with its own price. Three items could be entered on a cash receipt or sales invoice as below:<br>
-<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/8/88ed93dd00aaa3c7bdddaf8d550ad6a5d7a38150.png"><br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/8/88ed93dd00aaa3c7bdddaf8d550ad6a5d7a38150.png" width="690" height="146"><br>
 <br>But Northwind has found it can sell more by also advertising the same three products as the “Cajun cuisine pack.” So it creates an inventory kit, offering the three items together, at a discount.</p>
 </td></tr></table>
 <h3>Create an inventory kit</h3>
 <p>Before an inventory kit can be created, all items in it must first be created as individual inventory items. Procedures are described in <a href="/guides/7551">another Guide</a>. Once all component inventory items have been created, the kit can be defined.</p>
 <p>Go to the <kbd>Settings</kbd> tab and click <kbd>Inventory Kits</kbd>:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/7/7360893fb2e23160ea9dca4ad72958191c1c2c50.png" width="215" height="51"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/5/54fabc0ee5ac9b868fe180791b7392a1e1083128.png" width="149" height="43"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/7/7360893fb2e23160ea9dca4ad72958191c1c2c50.png" width="215" height="51"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong><img src="https://forum.manager.io/uploads/manager1/original/2X/5/54fabc0ee5ac9b868fe180791b7392a1e1083128.png" width="149" height="43"></p>
 <p>Complete the entry:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/1/1feab4f3a37e471cf984d75788b0b0fd88c7660a.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/7/73c7c6d7bc38d198cafe9541b0cc2ba0944ff051.png" alt="45 AM" width="420" height="500"></p>
 <ul>
 <li>
 <strong><code>Item code</code></strong> can be anything that helps find, sort, or categorize the item. This could be a stock-keeping unit (SKU) code, a model number, or a simple memory aid. It must be unique and should be short. Codes will appear on forms if they are used.</li>
@@ -32,12 +32,13 @@ Northwind Traders sells a wide range of individual food products from around the
 <strong><code>Unit Name</code></strong> is optional, but can be used to specify units by which the kit will be sold.</li>
 <li>The <strong><code>Description</code></strong> field is for more comprehensive information. Its contents, if present, will appear on finished forms in place of <code>Item name</code>, so it should also adequately identify the kit, not simply add detail. Anything a customer should see can be placed into this field.</li>
 <li>
-<strong><code>Sale price</code></strong> is the price at which the kit will be sold. The price can be higher or lower than the sum of component prices. Leave blank if the sale price frequently changes. If a sale price is entered, it will appear automatically on sales-related forms, but can also be edited.</li>
+<strong><code>Sales price</code></strong> is the price at which the kit will be sold. The price can be higher or lower than the sum of component prices. Leave blank if the sale price frequently changes. If a sale price is entered, it will appear automatically on sales-related forms, but can also be edited.</li>
 <li>Under <strong><code>Bill of materials</code></strong>, enter quantities and inventory items making up the kit.</li>
 <li>A <strong><code>Tax Code</code></strong> can be specified, if applicable.</li>
 <li>An <strong><code>Inactive</code></strong> box can later be checked if the kit is no longer sold. Inactive kits do not appear when searching for items on transaction forms.</li>
 </ul>
-<p>Click <kbd>Create</kbd> to save the inventory kit.</p>
+<p>Click <kbd>Create</kbd> to save the inventory kit. The completed definition is available for printing, emailing, or other purposes by clicking <kbd>View</kbd>. Inventory kits can also be cloned as the starting point for defining other inventory kits with similar, but not identical, components:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/9/9740d0b7329027e9199771b071e8e1a276084191.png" alt="02 AM" width="690" height="442"></p>
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
 <p><strong>Note</strong><br>
 No quantities on hand can be specified for inventory kits, because they do not exist as separate items in inventory.</p>
@@ -47,7 +48,7 @@ No quantities on hand can be specified for inventory kits, because they do not e
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
 Northwind sells the inventory kit illustrated above, saving time and ensuring pricing accuracy:<br>
-<br><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/f/f94825b1afe33cdaaeef19427b838182698dfd0e.png" width="599" height="123"><br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/f/f94825b1afe33cdaaeef19427b838182698dfd0e.png" width="599" height="123"><br>
 <br></p>
 </td></tr></table>
 <p>An inventory kit does not appear on the Inventory Quantity Movement or Inventory Value Movement reports. But its sale contributes to those reports through component items. In the case of the Inventory Value Movement report, component costs defined for the inventory items are used. Sale price of the kit has no effect on that report.</p>
