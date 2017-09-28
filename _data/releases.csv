@@ -142,3 +142,4 @@ date,version,message
 2017-09-27,17.9.97,"WebTranslateIt"
 2017-09-27,17.10.0,"Added ability to open Manager files from anywhere without importing when using desktop edition #11921"
 2017-09-28,17.10.1,"no message"
+2017-09-28,17.10.2,"Fixed issue where it wasn't possible to attach multiple files at once when using Mac #11627"
