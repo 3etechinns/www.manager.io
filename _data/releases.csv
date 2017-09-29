@@ -144,3 +144,4 @@ date,version,message
 2017-09-28,17.10.1,"no message"
 2017-09-28,17.10.2,"Fixed issue where it wasn't possible to attach multiple files at once when using Mac #11627"
 2017-09-28,17.10.3,"WebTranslateIt"
+2017-09-28,17.10.4,"Fixed error message when attempting to open Manager file directly on Mac #11937"
