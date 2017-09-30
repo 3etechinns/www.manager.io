@@ -4,7 +4,11 @@ title: Manage application data folder contents
 tags: preferences
 ---
 {% raw %}
-<p>Manager stores all business and user information, accounting data, custom themes, and attachments in a separate <strong>application data folder</strong>. No accounting, business, or user information is stored in the application itself. The default location for application data depends on your operating system and edition, but is the same for all businesses you create.</p>
+<p>Manager stores all business information, accounting data, custom themes, and attachments in a separate data file for each business. By default, these data files are saved in the <strong>application data folder</strong>. No accounting, business, or user information is stored in the application itself. The default location for application data depends on your operating system and edition, but is the same for all businesses you create.</p>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>Note</strong><br>
+When using the desktop edition, business data files can be stored outside the application data folder and opened directly without first launching the Manager application. This is done by creating a <a href="/guides/8890">backup file</a> in the desired storage location. Business data files stored this way are not also copied to the application data folder, so information below <strong>does not apply</strong> to them.</p>
+</td></tr></table>
 <p>Over time, data storage schemes for Manager have changed to accommodate new program features. Sometimes, an update requires new data files to be created. This happens automatically when the new version of Manager is launched. No action by the user is ever necessary.</p>
 <p>Relic data files are not normally deleted. These obsolete data files and/or folders are harmless and can safely be left in place. By modern standards, they are not large, and do not consume much storage capacity. However, they can be identified and deleted, if desired.</p>
 <h3>Finding your application data</h3>
@@ -32,9 +36,7 @@ size
 </code></pre>
 <p>The current version of Manager does not use or create any other files or folders.</p>
 <h3>Identifying current business files</h3>
-<p>Since Manager does not automatically delete files for removed businesses or obsolete data structures, long-time users who have been through several updates or  removed businesses may need to identify which files with alphanumeric names are currently in use. The file name of a business in use can be found in small, grey text in the lower right corner of the Manager screen:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/1/1352974d11d522129daf44fc28de7b10f1b34ba7.png" width="247" height="37"></p>
-<p>Make note of alphanumeric file names for active businesses. All others can be removed.</p>
+<p>Since Manager does not automatically delete files for removed businesses or obsolete data structures, long-time users who have been through several updates or  removed businesses may need to identify which files with alphanumeric names are currently in use. The easiest way is to enter a transaction in a business and check immediately which files were most recently modified. Files that change only with entries to a single business are the accounting files for those businesses. Make note of the modified files and corresponding businesses. A file that changes with entries to all businesses is the audit trail file. (If you have only one business, two files will change with every entry. Both should be noted.) Files not modified by any active business are obsolete.</p>
 <h3>Removing unnecessary data</h3>
 <p>After identifying all current business files among those with alphanumeric names, you can remove unnecessary files from the application data folder. To be safe, do not delete them yet. Move the following file types to a safe location:</p>
 <ul>
