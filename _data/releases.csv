@@ -151,3 +151,4 @@ date,version,message
 2017-10-01,17.10.8,"WebTranslateIt"
 2017-10-02,17.10.9,"Fixed default custom fields not showing for bank and cash transactions #11992"
 2017-10-02,17.10.10,"Added Uzbek language"
+2017-10-02,17.10.11,"Fixed bank statement importing issue when date column in CSV file contained unrecognized character #11998"
