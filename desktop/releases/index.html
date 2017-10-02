@@ -27,7 +27,7 @@ layout: main
 {% endif %}
 
 <tr>
-<td style="font-weight: bold; width: 1px; text-align: right; white-space: nowrap">{{ release.date | date_to_string }}</td>
+<td style="font-weight: bold; width: 1px; text-align: right; white-space: nowrap; vertical-align: top">{{ release.date | date_to_string }}</td>
 
 {% assign words = release.message | split: ' ' %}
 {% assign message = " " %}
@@ -42,7 +42,7 @@ layout: main
 {% endfor %}
 
 <td>{{ message }}</td>
-<td style="color: #ccc; weight: 1px; text-align: right">{{ release.version }}</td>
+<td style="color: #ccc; weight: 1px; text-align: right; vertical-align: top">{{ release.version }}</td>
 </tr>
 {% endfor %}
 </table>
