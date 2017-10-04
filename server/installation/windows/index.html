@@ -23,7 +23,7 @@ title: Windows
 
 <p>Double-click on <code>ManagerServer</code> or <code>ManagerServer.exe</code> to launch the server. When you launch the server, the last line should say:</p>
 
-<p><code>HTTP server  listening on port 8080</code></p>
+<p><code>HTTP server listening on port 8080</code></p>
 
 <p><img src="console.png"></p>
 
@@ -37,6 +37,53 @@ title: Windows
 
 <p>Default administrator password is empty so just click <code>Login</code> button without entering any password.</p>
 
-<h3>Remote access</h3>
+<h3>Access within local network</h3>
 
-<p>Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>
+<p>To access Manager Server from other computers within your local network, first find out IP address of the computer which is running Manager Server by running <code>ipconfig</code> command from command line.
+
+<p>Look for the line which says <code>IPv4 Address</code> which will reveal IP address of your computer on LAN.
+
+<p><img src="ipconfig.png"></p>
+
+<p>Your local IP address will typically start with <code>10.</code> or <code>192.168.</code>. For example, if your IP address is <code>192.168.1.4</code>, other computers on your local network will be able to access your Manager Server by typing into their web-browser <code>192.168.1.4:8080</code>. Take into consideration that by default, Windows Firewall will block inbound connections on port 8080 so you will need to create an exception so Windows Firewall will allow connection to your computer.
+
+<h3>Manager Server as a service</h3>
+
+<p>In order for anyone being able to access your Manager Server, your computer must be turned on and Manager Server instance must be running. Manager Server won't start by default when your computer restarts.</p>
+
+<p>To solve this problem, you can use free <a href="https://nssm.cc/">nssm.cc</a> in order to automatically launch Manager Server.</p>
+
+<ol>
+<li>First download NSSM and extract it to some folder</li>
+<li>Then install Manager Server as a service by entering the following command in your Terminal:</li>
+</ol>
+
+<p><code>nssm.exe install ManagerServer C:\your\path\to\manager\ManagerServer.exe</code></p>
+
+<p>Then:<p>
+
+<p><code>nssm.exe start ManagerServer</code></p>
+
+<p><img src="nssm.png"></p>
+
+<p>The first command will install the service and the second command will start Manager Server as a service. Now you can access Manager Server without launching <code>ManagerServer.exe</code> manually.</p>
+
+<p>To remove Manager Server as a service, run following commands:</p>
+
+<p><code>nssm.exe stop ManagerServer</code></p>
+
+<p>Then:</p>
+
+<p><code>nssm.exe remove ManagerServer</code></p>
+
+<h3>Internet access</h3>
+
+<p>To access your Manager Server from the Internet, you will need to configure your router so it properly routes connections from the Internet into your computer running Manager Server. This is called port forwarding.
+
+<h3>Custom domain</h3>
+
+<p>Instead of typing IP address, your users can type domain name instead. This will involve setting up A record on your domain so the domain name (or subdomain) points to IP address of your Internet router.</p>
+
+<h3>Setting up HTTPS</h3>
+
+<p>If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.
