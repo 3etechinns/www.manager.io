@@ -157,3 +157,4 @@ date,version,message
 2017-10-03,17.10.14,"no message"
 2017-10-03,17.10.15,"no message"
 2017-10-04,17.10.16,"Fixed crashing issue when trying to generate recurring sales invoice which has interval set to zero #12009"
+2017-10-04,17.10.18,"Added ability to 'reverse signs' on Capital Accounts Summary report #11968"
