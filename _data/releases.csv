@@ -168,3 +168,4 @@ date,version,message
 2017-10-09,17.10.26,"WebTranslateIt"
 2017-10-10,17.10.27,"Added two new tax codes for Pakistan #12132"
 2017-10-11,17.10.28,"WebTranslateIt"
+2017-10-12,17.10.29,"Added ability to create, update or delete exchange rates in batch"
