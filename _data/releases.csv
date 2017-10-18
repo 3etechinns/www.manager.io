@@ -177,3 +177,4 @@ date,version,message
 2017-10-16,17.10.35,"no message"
 2017-10-17,17.10.36,"no message"
 2017-10-18,17.10.37,"Added ability to create custom fields for 'Folders' tab #12215"
+2017-10-18,17.10.38,"Added new VAT tax code for users in Saudi Arabia #12135"
