@@ -1,27 +1,29 @@
 ---
 layout: guide
 title: Account for withholding tax (tax withheld at source)
-tags: sales-invoices tax-codes sales-invoice-form
+tags: purchase-invoice-form sales-invoices tax-codes purchase-invoices sales-invoice-form
 ---
 {% raw %}
-<p>Some tax authorities require <strong>withholding tax</strong> (also called <strong>tax withheld at the source</strong>) to increase tax law compliance and secure earlier receipt of tax revenues. In simple terms, customers are required to withhold a portion of the balance due on sales invoices and pay that portion directly to the tax authority. Then, either the customer or the tax authority provides certification of payment of withheld amounts to the business. The business reduces subsequent payments of tax liabilities by amounts already paid on its behalf by its customers.</p>
-<p>Withholding tax may be a form of advance payment of income taxes, value added taxes, goods and service taxes, or some combination of these and other types of tax. Manager supports withholding tax accounting through its sales invoice process.</p>
+<p>Some tax authorities require <strong>withholding tax</strong> (also called <strong>tax withheld at the source</strong>) to increase tax law compliance and secure earlier receipt of tax revenues. In simple terms, buyers are required to withhold a portion of the balance due on invoices and pay that portion directly to the tax authority. Then, either the buyer or the tax authority provides certification of payment of withheld amounts to the seller. The seller reduces subsequent payments of its tax liabilities by amounts already paid on its behalf by buyers.</p>
+<p>Withholding tax may be a form of advance payment of income taxes, value added taxes, goods and service taxes, or some combination of these and other types of tax. Because the entire process involves both buyers and sellers, Manager supports withholding tax accounting through both its sales invoice and purchase invoice processes, though procedures are somewhat different.</p>
 <table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
 <p><strong>Notes</strong><br>
 As implemented in Manager, withholding tax <strong>does not</strong> refer to deductions on payslips of taxes due from employees. These are referred to as <code>Payslip Deduction Items</code> and are explained in <a href="/guides/9667">another Guide</a>.<br>
-<br>Withholding tax cannot be applied on cash receipts, because the full amount of the transaction must be recorded. Further, cash receipts cannot be associated with individual customers’ subaccounts as withholding tax must.</p>
+<br>Withholding tax cannot be applied on cash receipts or payments, because the full amount of the transaction must be recorded. Further, cash receipts cannot be associated with individual customers’ subaccounts as withholding tax must.</p>
 </td></tr></table>
-<h3>Activating withholding tax accounts</h3>
-<p>Withholding tax functionality does not require activation of any new tabs. Nor do you need to create any new accounts. All necessary accounts are added automatically to your chart of accounts the first time you check the <code>Deduct withholding tax</code> box on a sales invoice:</p>
+<h3>Sales invoice process</h3>
+<p>The sales invoice process applies when your business is the seller and you send sales invoices to your customers.</p>
+<p><strong>Activating withholding tax accounts</strong></p>
+<p>Withholding tax functionality for sales invoices does not require activation of any new tabs. Nor do you need to create any new accounts. All necessary accounts are added automatically to your chart of accounts the first time you check the <code>Deduct withholding tax</code> box on a sales invoice:</p>
 <p><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c708739d26a333e7e1f9d9da8b1e98ab0bb766dd.png" alt="55 PM" width="184" height="29"></p>
-<p>Both accounts created are in the <em>Assets</em> group, because the money they represent technically belongs to the business until it is eventually used to pay taxes owed. They are:</p>
+<p>Two accounts are created in the <em>Assets</em> group, because the money they represent technically belongs to the business until it is eventually used to pay taxes owed. They are:</p>
 <ul>
 <li>
 <strong><em>Withholding tax</em></strong> - This account records amounts your customers have paid to the tax authority that are available to offset your tax bill.</li>
 <li>
 <strong><em>Withholding tax receivable</em></strong> - This account records amounts your customers owe to the tax authority on your behalf but have not yet paid. If withholding tax had not been deducted from sales invoice balances, amounts in this account would be included in <em>Accounts receivable</em>.</li>
 </ul>
-<h3>Applying withholding tax</h3>
+<p><strong>Applying withholding tax</strong></p>
 <p>When the <code>Deduct withholding tax</code> box is checked on a sales invoice, two options appear in a dropdown box, <em>Rate</em> and <em>Amount</em>:</p>
 <p><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c3c00e8702a9849aac3a092fcce6c5cc61175e2e.png" alt="11 PM" width="236" height="163"> <strong>OR</strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/e/e83fb06f55493645b34288fb5d00e37e5e0a3a58.png" alt="20 PM" width="220" height="161"></p>
 <p>Because withholding tax is independent of any other tax code that may be applied, percentage amounts are calculated on the total due, including other taxes. (Remember, withholding tax is not an additional tax, only a way for the tax authority to collect prospective taxes earlier.)</p>
@@ -31,15 +33,15 @@ If various line items on the sales invoice are subject to different withholding 
 </td></tr></table>
 <table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
 <p><strong>Example</strong><br>
-Sample Consulting invoices Brilliant Industries for advertising design services worth 1,000. (For clarity, all other transactions have been removed.) In this case, no tax is due directly on the design services, but 10% must be withheld by the customer against expected income tax. So the <code>Deduct withholding tax</code> box on the sales invoice is checked, and a <em>Rate</em> of 10% is entered. The resulting sales invoice shows the customer how much to withhold from payment:<br>
+Sample Consulting invoices Brilliant Industries for advertising design services worth 1,000. (For clarity of illustration, all other transactions have been removed.) In this case, no tax is due directly on the design services, but 10% must be withheld by the customer against expected income tax. So the <code>Deduct withholding tax</code> box on the sales invoice is checked, and a <em>Rate</em> of 10% is entered. The resulting sales invoice shows the customer how much to withhold from payment:<br>
 <br><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c97ab0f43536e2cd56cc890c8e05dab0a8d41ec9.png" alt="50 PM" width="690" height="380"><br>
 <br>900 is posted to <em>Accounts receivable</em> and 100 to <em>Withholding tax receivable</em>:<br>
 <br><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c0a5ff3952a46e606d8c1a1f2fc2daa30defcfa0.png" alt="58 PM" width="678" height="197"><br>
 <br>In the <kbd>Customers</kbd> tab, a new column appears showing <code>Withholding tax receivable</code>:<br>
 <br><img src="https://forum.manager.io/uploads/manager1/original/2X/5/56c8a3162f43dbd7abe7662229a20e2fd10b4337.png" alt="4COzVkC" width="383" height="171"></p>
 </td></tr></table>
-<h3>Recording customer remittance</h3>
-<p>When the customer remits the withheld tax, either the customer or the tax authority will send you some form “proof” of the remittance (a certificate, account statement, voucher, etc.). This “proof” can be recorded in Manager by clicking on the <code>Withholding tax receivable</code> figure in the <kbd>Customers</kbd> tab, then on <kbd>New Receipt</kbd>:</p>
+<p><strong>Recording customer remittance</strong></p>
+<p>When the customer remits the withheld tax, either the customer or the tax authority will send you some form of “proof” of the remittance (a certificate, account statement, voucher, etc.). This “proof” can be recorded in Manager by clicking on the <code>Withholding tax receivable</code> figure in the <kbd>Customers</kbd> tab, then on <kbd>New Receipt</kbd>:</p>
 <p><img src="https://forum.manager.io/uploads/manager1/original/2X/2/25da0c8d48d2713396d69aff289a89fd6002360c.png" alt="g5p4GiW" width="296" height="70"></p>
 <p>Enter <strong><code>Date</code></strong> and <strong><code>Amount</code></strong> of the customer’s remittance. A <strong><code>Description</code></strong> is optional:</p>
 <p><img src="https://forum.manager.io/uploads/manager1/original/2X/a/a6b8e82a21d3730b35e5165a433b626a4b2708e2.png" alt="35 PM" width="456" height="285"></p>
@@ -49,7 +51,7 @@ Sample Consulting invoices Brilliant Industries for advertising design services 
 Sample Consulting receives proof of remittance by Brilliant Industries. It enters a transaction for 100. The balance sheet shows the movement between the two accounts:<br>
 <br><img src="https://forum.manager.io/uploads/manager1/original/2X/5/567a80f771145a1a64284fd1c9735067fd438309.png" alt="45 PM" width="678" height="197"></p>
 </td></tr></table>
-<h3>Using <em>Withholding tax</em> to pay tax bill</h3>
+<p><strong>Using <em>Withholding tax</em> to pay tax bill</strong></p>
 <p>When a tax filing is made, the balance of <em>Withholding tax</em> is available to offset your tax due. Indicate the amount being applied on the appropriate forms of the tax authority and submit with your filing. <strong>This step in the process does not occur in Manager, only in your tax filing.</strong></p>
 <p>To record your application of available withholding tax credits in Manager, use a journal entry. Credit <em>Withholding tax</em> and debit either:</p>
 <ul>
@@ -60,5 +62,50 @@ Sample Consulting receives proof of remittance by Brilliant Industries. It enter
 <p><strong>Example</strong><br>
 When it submits its tax filing, Sample Consulting applies the 100 from <em>Withholding tax</em> to its total bill. Sample Consulting is a sole proprietorship, so its income is taxed on the owner’s tax return. Therefore, it makes a journal entry debiting <em>Owner’s equity</em> and crediting <em>Withholding tax</em>. That account is zeroed out on the Balance Sheet.<br>
 <br><img src="https://forum.manager.io/uploads/manager1/original/2X/b/b8817261b8f08f18f692730b9deb2c396b999420.png" alt="57 PM" width="690" height="330"></p>
+</td></tr></table>
+<h3>Purchase invoice process</h3>
+<p>The purchase invoice process is simpler, and no automatic accounts are involved, because there is no need to transfer withholding tax amounts between accounts based on actions outside the company. When your business is a buyer, you need only withhold tax, remit it to the tax authority, and possibly provide notification (if required by local law) to the supplier.</p>
+<p><strong>Setting up a <em>Withholding tax payable</em> account</strong></p>
+<p>Tax you withhold from payments to suppliers is a liability of your company, because you owe that tax to the tax authority. So you must add a <em>Withholding tax payable</em> account to the <em>Liabilities</em> group of your chart of accounts. Follow procedures in <a href="/guides/9812">another Guide</a> to add the account:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/c/caa76d0ca2888128bb91e607ebbcb19475e5ddfa.png" alt="34 AM" width="544" height="357"></p>
+<p><strong>Recording withheld tax</strong></p>
+<p>When entering a purchase invoice to which tax withholding applies, you have two concerns:</p>
+<ul>
+<li>
+<strong>Posting the full amount of purchases</strong> to the appropriate asset or expense accounts. This ensures fixed assets, inventory, and operating expenses are reflected at their actual costs. (Remember, withholding tax is not an expense of your company, so it should not affect other financial results. You are only acting as collection agent for the tax authority of amounts that will eventually be due from the supplier.)</li>
+<li>
+<strong>Recording tax withheld</strong> for later remittance.</li>
+</ul>
+<p>These two goals mean you need at least two line items on the purchase invoice. First, record purchased line items at their full costs, using as many lines as necessary, just as though no withholding tax was involved. Post these line items to the same accounts you normally would.</p>
+<p>Second, add a line item for withholding tax at the amount indicated on your supplier’s sales invoice. <strong>Enter the withholding tax as a negative quantity</strong> so it reduces the balance due on the purchase invoice. Post this line item to <em>Withholding tax payable</em>, the account you created for this purpose.</p>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Sample Consulting purchases stationery worth 500 from Summit Supplies. Summit’s sales invoice shows a 10% deduction for withholding tax is necessary. Sample enters the following information in its purchase invoice:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/5/589de5ec4e6e79c3fd428f02b533c0b2d415c44c.png" alt="32 AM" width="690" height="380"><br>
+<br>450 is posted to <em>Accounts payable</em> and 50 to the <em>Withholding tax payable</em> liability account:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/d/de73ae7884ef7c50c3faf16183ec1ff0c66bd1e9.png" alt="48 AM" width="498" height="195"><br>
+<br>The full 500 cost of stationery is posted to an expense account:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/4/4d1b6965222daa567004f3e7907c1438a6eecdf5.png" alt="08 AM" width="478" height="500"></p>
+</td></tr></table>
+<p><strong>Remitting withheld tax</strong></p>
+<p>When withheld tax is remitted to the tax authority, a <kbd>Spend money</kbd> transaction is posted to the <em>Withholding tax payable</em> account.</p>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Sample Consulting remits the 50 withheld from its payment to Summit Supplies via a bank transaction:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/a/a0711c94f1cfb83758a1779c17f9a4cd1f2ca391.png" alt="40 AM" width="690" height="398"><br>
+<br>The liability is cleared, but the reduced <em>Accounts payable</em> balance remains unchanged. The expense account where the purchase was originally posted is also not affected:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/c/c885702f372dc370374d504361badf33d05ac1e2.png" alt="41 AM" width="496" height="194"></p>
+</td></tr></table>
+<p><strong>Submitting notifications</strong></p>
+<p>Comply with local procedures when remitting withheld tax:</p>
+<ul>
+<li>File necessary information with the tax authority to indicate which suppliers’ withheld tax you are remitting.</li>
+<li>Notify suppliers of your remittance if required by law.</li>
+</ul>
+<p>For assistance preparing notifications, drill down on the balance (or dash, if the balance is zero) of <em>Withholding tax payable</em>. All relevant transactions will be listed.</p>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Sample Consulting drills down on its <em>Withholding tax payable</em> account balance and obtains the following list:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/0/05a724f91f545d070999222a2b27385438cb09c7.png" alt="56 AM" width="690" height="185"></p>
 </td></tr></table>
 {% endraw %}
