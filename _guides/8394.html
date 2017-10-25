@@ -20,7 +20,7 @@ When using the desktop edition, business data files can be stored outside the ap
 <li>Files with long, alphanumeric names like <strong><code>69703781b9284b1684e494fdd5510cb8.manager</code></strong> are generated for each business added. Characters in the file name are not related to the name of the business. All accounting data, customer and supplier information, custom themes, settings, and attachments for a business reside in this file. For privacy reasons, no data from any business appears in the file of any other.</li>
 <li>
 <strong><code>data</code></strong> stores the application data folder path. If you have an older version of Manager or have never changed the application data folder location, this file may be missing. If Manager needs it, the program will generate it automatically.</li>
-<li>Another file with an alphanumeric name like <strong><code>238097db79f84dc5a44a0c6f8aa04e6c.manager</code></strong> is generated or updated automatically whenever a business file is changed. This file contains information about audit trails. If deleted, this file will be automatically regenerated.</li>
+<li>Another file with an alphanumeric name like <strong><code>238097db79f84dc5a44a0c6f8aa04e6c.manager</code></strong> is generated or updated automatically as required. This file contains information about audit trails. If deleted, this file will be automatically regenerated if it is needed.</li>
 <li>
 <strong><code>size</code></strong> (for desktop installations) stores the window size when the application is closed.</li>
 <li>
@@ -36,7 +36,12 @@ size
 </code></pre>
 <p>The current version of Manager does not use or create any other files or folders.</p>
 <h3>Identifying current business files</h3>
-<p>Since Manager does not automatically delete files for removed businesses or obsolete data structures, long-time users who have been through several updates or  removed businesses may need to identify which files with alphanumeric names are currently in use. The easiest way is to enter a transaction in a business and check immediately which files were most recently modified. Files that change only with entries to a single business are the accounting files for those businesses. Make note of the modified files and corresponding businesses. A file that changes with entries to all businesses is the audit trail file. (If you have only one business, two files will change with every entry. Both should be noted.) Files not modified by any active business are obsolete.</p>
+<p>Since Manager does not automatically delete files for removed businesses or obsolete data structures, long-time users who have been through several updates or  removed businesses may need to identify which files with alphanumeric names are currently in use. One way is to enter a transaction in a business and check immediately which file was most recently modified. Files that change only with entries to a single business are the accounting files for those businesses. Make note of the modified files and corresponding businesses. A file that changes with entries to all businesses is the audit trail file. Files not modified by any active business are obsolete.</p>
+<p>Another way to determine which files are active is to open them directly. (This capability became available with Manager version 17.10.0.) Examine transactions in various tabs to see whether the file is up to date.</p>
+<table style="background-color: #ffffdb; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-warning"></i></td><td style="padding: 20px">
+<p><strong>Caution</strong><br>
+Do not make any entries in a file you have opened directly as you identify current business files. Such entries will complicate both data identification and recovery efforts you may be undertaking. For more information on directly opening data files, see <a href="/guides/12280">this Guide</a>.</p>
+</td></tr></table>
 <h3>Removing unnecessary data</h3>
 <p>After identifying all current business files among those with alphanumeric names, you can remove unnecessary files from the application data folder. To be safe, do not delete them yet. Move the following file types to a safe location:</p>
 <ul>
