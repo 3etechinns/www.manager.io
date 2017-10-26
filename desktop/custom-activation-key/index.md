@@ -16,17 +16,17 @@ You will see contact details referring back to this website.
 
 <div><img src="support1.png" class="thumbnail"></div>
 
-You can offer Manager for free on your website with your custom activation key. This means when your website visitors download Manager from your website, they can see your contact details under `Support` tab without any links to our website.
+You can offer Manager for free on your website with your custom activation key. This means when website visitors download Manager from your website, they will be able to see your contact details under `Support` tab instead of ours.
 
 <div><img src="support2.png" class="thumbnail"></div>
 
-This is useful if you wish to boost visibility of your brand and to increase loyality of your existing clients. Every time a client uses Manager, they will see your name attached to it, they will associate it with convenience and quality and their loyalty to your brand will increase. You can also promote your website by offering free accounting software to new visitors without being obnoxious, increasing the public's awareness of your brand.
+This is useful if you wish to boost visibility of your brand or to increase loyality of your existing clients. Every time your client uses Manager, they will see your name attached to it. They will associate it with convenience and quality and their loyalty to your brand will increase. You can also promote your website by offering free accounting software to new visitors without being obnoxious, increasing the public's awareness of your brand.
 
 While desktop edition must remain free and you cannot charge for it, you can offer paid support, setup and training services. On top of that, you can earn generous recurring commission when your free users upgrade to cloud edition or server edition.
 
 To issue custom activation code for your business, please email us to <u>contact@manager.io</u> with following details:
 
 - Your Full Name
-- Your Website URL (this is where people will be able to download Manager from. It could be your existing website or new one specifically created for promoting Manager)
-- Email Address (optional if you wish to show it under "Support" tab)
-- Telephone Number (optional if you wish to show it under "Support" tab)
+- Your Website URL
+- Email Address (optional)
+- Telephone Number (optional)
