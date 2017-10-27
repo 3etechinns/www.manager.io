@@ -202,3 +202,4 @@ date,version,message
 2017-10-26,17.10.61,"no message"
 2017-10-26,17.10.62,"Fixed unit name issue on inventory kits so they show on invoices, quotes, orders and other documents #12344"
 2017-10-26,17.10.63,"Added ability to set withholding tax on recurring sales invoices #12362"
+2017-10-26,17.10.64,"WebTranslateIt"
