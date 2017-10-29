@@ -210,3 +210,4 @@ date,version,message
 2017-10-29,17.10.69,"The item count on tabs in the left navigation not to include inactive items #12430"
 2017-10-29,17.10.70,"no message"
 2017-10-29,17.10.71,"no message"
+2017-10-29,17.10.72,"If using custom control accounts for inventory items, show 'Control Account' column under 'Inventory Items' tab #8741"
