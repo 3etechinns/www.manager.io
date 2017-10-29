@@ -207,3 +207,4 @@ date,version,message
 2017-10-27,17.10.66,"WebTranslateIt"
 2017-10-29,17.10.67,"Fixed issue when cash summary report was not visible if only 'Cash Accounts' tab was enabled #12427"
 2017-10-29,17.10.68,"When installing Manager on Windows, added ability to uncheck shortcut creation #12386"
+2017-10-29,17.10.69,"The item count on tabs in the left navigation not to include inactive items #12430"
