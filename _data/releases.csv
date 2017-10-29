@@ -205,3 +205,4 @@ date,version,message
 2017-10-26,17.10.64,"WebTranslateIt"
 2017-10-26,17.10.65,"Added 'GST 0%' and 'GST Exempt' tax codes for New Zealand #12348"
 2017-10-27,17.10.66,"WebTranslateIt"
+2017-10-29,17.10.67,"Fixed issue when cash summary report was not visible if only 'Cash Accounts' tab was enabled #12427"
