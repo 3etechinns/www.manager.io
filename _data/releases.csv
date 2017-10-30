@@ -213,3 +213,4 @@ date,version,message
 2017-10-29,17.10.72,"If using custom control accounts for inventory items, show 'Control Account' column under 'Inventory Items' tab #8741"
 2017-10-29,17.10.73,"WebTranslateIt"
 2017-10-30,17.10.74,"Fixed starting balance issue for bank accounts and cash accounts #12470"
+2017-10-30,17.10.75,"Added VAT 5% tax code for United Arab Emirates #12070"
