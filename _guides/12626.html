@@ -1,0 +1,54 @@
+---
+layout: guide
+title: Exchange inventory
+tags: cash-accounts cash-transactions inventory-items cash-payment-form bank-payment-form cash-receipt-form bank-receipt-form bank-transactions bank-accounts
+---
+{% raw %}
+<p>For purposes of this Guide, you <strong>exchange inventory</strong> when either:</p>
+<ul>
+<li>A customer returns one or more previously sold inventory items to you and receives different inventory items from you, or</li>
+<li>You return one or more previously purchased inventory items to a supplier and receive different inventory items from the supplier,</li>
+</ul>
+<p>and no credit is involved in the transaction. That means:</p>
+<ul>
+<li>Neither <em>Accounts receivable</em> from a customer nor <em>Accounts payable</em> to a supplier is adjusted, and</li>
+<li>No credit or debit note is involved.</li>
+</ul>
+<p>In other words, an <strong>exchange</strong> occurs when all movement of funds and inventory is accomplished in a single transaction. If the items exchanged are not of equal value, movement of funds can be via bank or cash transaction.</p>
+<h3>Customer returns goods</h3>
+<p>Conceptually, a customer exchanging inventory is equivalent to you buying back the item(s) the customer originally purchased and selling the new item(s) to the customer. In fact, you could enter two separate transactions. But there is a simpler way that produces identical results.</p>
+<p>In either the <kbd>Bank Transactions</kbd> or <kbd>Cash Transactions</kbd> tab, click on <kbd>New Bank Transaction</kbd> or <kbd>New Cash Transaction</kbd> and select <em>Spend money</em>:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/2/28f3251cee4b3bc8ca1edd0b9e4cd58187523d3d.png" alt="04 PM" width="160" height="37"> <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/9/9fdb513193801deecbd5bf093e59bca51de6932c.png" alt="47 PM" width="344" height="153"></p>
+<p><strong>OR</strong></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/0/0f5808ac0386acb2ab3ab69abf1996ec59ec640e.png" alt="39 PM" width="160" height="37"> <i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i> <img src="https://forum.manager.io/uploads/manager1/original/2X/1/19dadcfd4ef94fc53f3ab029e38cf33b9621c995.png" alt="55 PM" width="328" height="114"></p>
+<p>On the payment form, list all inventory items the customer is returning and their quantities. Include any tax code that was applied to the original sale.</p>
+<p>Next, list all inventory items the customer is buying in the exchange and their quantities. <strong>Because you are effectively receiving money for the replacement item(s) rather than paying, enter the replacement quantities as negative numbers.</strong> Again, include any applicable tax code.</p>
+<p>Click <kbd>Create</kbd> to record the exchange.</p>
+<table style="background-color: #F6FFF2; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 0px; padding-right: 0px; vertical-align: top"><i class="fa fa-hand-o-right"></i></td><td style="padding: 20px">
+<p><strong>Example</strong><br>
+Brilliant Industries previously sold a ceramic table lamp to Bob’s Hardware on a cash basis. Bob’s Hardware realizes it purchased the wrong product and wants to exchange the lamp for a lamp kit. Because these are wholesale transactions, no tax is assessed on any portion of the transaction.<br>
+<br>Prior to the exchange, Brilliant’s Balance Sheet shows 1,000 in <em>Cash on hand</em> and <em>Inventory on hand</em> worth 4,432.53:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/6/6a5973d7bc724a1a25666c0297432288ed475602.png" alt="50 AM" width="503" height="227"><br>
+<br>Brilliant’s <kbd>Inventory Items</kbd> list reveals it owns 18 table lamps and 5 lamp kits:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/1/14f7a730eddf9cfdc0bd46ce8c248ca8ba242cbd.png" alt="58 PM" width="690" height="162"><br>
+<br>The payment form is completed as shown below. Note the negative quantity for the replacement item:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/7/7e54da1a286177f3ea37f82c8c15e9f020fb54e1.png" alt="00 PM" width="690" height="366"><br>
+<br>Because the returned item is worth more than the replacement item, Brilliant owes Bob’s Hardware 108. When the transaction is complete, the Balance Sheet has been adjusted, showing less <em>Cash on hand</em> and increased <em>Inventory on hand</em>:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/d/dc0c46b89d8d5edc9052e2cd2b2e38d0828dc00b.png" alt="18 PM" width="499" height="226"><br>
+<br>Inventory quantities have also been adjusted. Table lamps have increased by 1 and lamp kits have decreased by 1:<br>
+<br><img src="https://forum.manager.io/uploads/manager1/original/2X/0/09f9b4337c799aba23d7024818aa6586ffe21ef3.png" alt="44 PM" width="690" height="163"></p>
+</td></tr></table>
+<table style="background-color: #F2F9FF; border-radius: 10px; margin-bottom: 20px"><tr><td style="font-size: 48px; opacity: 0.25; padding: 20px; padding-top: 15px; padding-right: 0px; vertical-align: top"><i class="fa fa-info-circle"></i></td><td style="padding: 20px">
+<p><strong>Note</strong><br>
+If replacement items are worth more than returned items, the customer will owe additional money. This will be shown by a negative total. (A negative payment is the same as a receipt.)</p>
+</td></tr></table>
+<h3>You return goods to a supplier</h3>
+<p>When you exchange inventory with a supplier, you are effectively selling back the items you originally purchased and buying replacements. The procedure for recording the transaction is basically the reverse of the one described above:</p>
+<ul>
+<li>
+<em>Receive money</em> in either a bank or cash transaction.</li>
+<li>Enter item(s) you return with positive quantities.</li>
+<li>Enter replacement item(s) you receive with negative quantities. (A negative receipt is a payment.)</li>
+<li>A positive receipt total means the supplier owes you money. A negative receipt total means you owe the supplier additional money.</li>
+</ul>
+{% endraw %}
