@@ -232,3 +232,4 @@ date,version,message
 2017-11-13,17.10.91,"no message"
 2017-11-13,17.11.0,"no message"
 2017-11-13,17.11.1,"Fixed width of audit trail screen #12428"
+2017-11-13,17.11.2,"Show customer or supplier for delivery notes and goods receipts when drilling-down into qty figures #12487"
