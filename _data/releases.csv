@@ -237,3 +237,4 @@ date,version,message
 2017-11-13,17.11.4,"Added VAT 0% tax code for United Arab Emirates and make invoice title show 'Tax Invoice' if code used #12070"
 2017-11-13,17.11.5,"WebTranslateIt"
 2017-11-13,17.11.6,"no message"
+2017-11-14,17.11.7,"Fixed inventory transfer view so item name is shown if description is empty #12734"
