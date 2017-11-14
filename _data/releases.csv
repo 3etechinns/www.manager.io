@@ -235,3 +235,4 @@ date,version,message
 2017-11-13,17.11.2,"Show customer or supplier for delivery notes and goods receipts when drilling-down into qty figures #12487"
 2017-11-13,17.11.3,"Prevent ability to delete tracking code if it has been already used in one or more transactions #12533"
 2017-11-13,17.11.4,"Added VAT 0% tax code for Saudi Arabia and make invoice title show 'Tax Invoice' if code used #12070"
+2017-11-13,17.11.5,"WebTranslateIt"
