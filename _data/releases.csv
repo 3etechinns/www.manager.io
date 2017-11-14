@@ -236,3 +236,4 @@ date,version,message
 2017-11-13,17.11.3,"Prevent ability to delete tracking code if it has been already used in one or more transactions #12533"
 2017-11-13,17.11.4,"Added VAT 0% tax code for United Arab Emirates and make invoice title show 'Tax Invoice' if code used #12070"
 2017-11-13,17.11.5,"WebTranslateIt"
+2017-11-13,17.11.6,"no message"
