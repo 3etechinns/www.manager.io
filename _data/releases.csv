@@ -245,3 +245,4 @@ date,version,message
 2017-11-16,17.11.12,"WebTranslateIt"
 2017-11-17,17.11.13,"Added ability to hide total amount on sales quotes #9208"
 2017-11-17,17.11.14,"Added ability to create custom fields for 'Inter Account Transfers' tab #12771"
+2017-11-17,17.11.15,"Added ability to clone inter account transfers #10578"
