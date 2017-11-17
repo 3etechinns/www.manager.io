@@ -30,7 +30,7 @@ index: 18
         </tr>
         <tr>
             {% for column in table.columns %}            
-            <td style="font-weight: bold; color: #A5A5A5; background-color: #DBDBDB; border-bottom-width: 5px; border-color: #A5A5A5; padding: 10px; text-align: {{ column.align }}{% if forloop.first %}; padding-left: 30px{% endif %}{% if forloop.last %}; padding-right: 30px{% endif %}{% if column.nowrap %}; white-space: nowrap; width: 80px{% endif %}">{{ column.label }}</td>
+            <td style="font-weight: bold; color: #A5A5A5; background-color: #DBDBDB; border-bottom-width: 5px; border-color: #A5A5A5; padding: 10px; text-align: {{ column.align }}{% if forloop.first %}; padding-left: 30px{% endif %}{% if forloop.last %}; padding-right: 30px{% endif %}{% if column.nowrap %}; width: 80px{% endif %}">{{ column.label }}</td>
             {% endfor %}
         </tr>
     </thead>

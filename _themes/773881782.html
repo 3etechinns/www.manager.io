@@ -37,7 +37,7 @@ index: 0
         </tr>
         <tr>
             {% for column in table.columns %}            
-            <td style="font-weight: bold; padding: 5px 10px; text-align: {{ column.align }}; border-left-width: 1px; border-bottom-width: 1px; border-top-width: 1px{% if forloop.last == true %}; border-right-width: 1px{% endif %}{% if column.nowrap %}; white-space: nowrap; width: 80px{% endif %}">{{ column.label }}</td>
+            <td style="font-weight: bold; padding: 5px 10px; text-align: {{ column.align }}; border-left-width: 1px; border-bottom-width: 1px; border-top-width: 1px{% if forloop.last == true %}; border-right-width: 1px{% endif %}{% if column.nowrap %}; width: 80px{% endif %}">{{ column.label }}</td>
             {% endfor %}
         </tr>
     </thead>

@@ -32,7 +32,7 @@ index: 2
         </tr>
         <tr>
             {% for column in table.columns %}            
-            <td style="font-weight: bold; padding: 5px 10px; color: #fff; border-color: #fff; border-right-width: 2px; border-bottom-width: 2px; text-align: {{ column.align }}; background-color: #4472C4{% if column.nowrap %}; white-space: nowrap; width: 80px{% endif %}">{{ column.label }}</td>
+            <td style="font-weight: bold; padding: 5px 10px; color: #fff; border-color: #fff; border-right-width: 2px; border-bottom-width: 2px; text-align: {{ column.align }}; background-color: #4472C4{% if column.nowrap %}; width: 80px{% endif %}">{{ column.label }}</td>
             {% endfor %}
         </tr>
     </thead>
