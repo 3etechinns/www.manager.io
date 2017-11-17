@@ -243,3 +243,4 @@ date,version,message
 2017-11-15,17.11.10,"WebTranslateIt"
 2017-11-15,17.11.11,"Fixed 'Sales Invoice Totals by Customer' report so it doesn't include starting balances #12760"
 2017-11-16,17.11.12,"WebTranslateIt"
+2017-11-17,17.11.13,"Added ability to hide total amount on sales quotes #9208"
