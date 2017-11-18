@@ -248,3 +248,4 @@ date,version,message
 2017-11-17,17.11.15,"Added ability to clone inter account transfers #10578"
 2017-11-17,17.11.16,"Fixed PDF generator issue when column names were too long #12783"
 2017-11-17,17.11.17,"WebTranslateIt"
+2017-11-17,17.11.18,"no message"
