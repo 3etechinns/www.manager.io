@@ -7,10 +7,10 @@ tags: cash-accounts cash-transactions cash-receipt-form bank-receipt-form bank-t
 <p>Money received in any way by a business is a <strong>receipt</strong>. Before one can be recorded, at least one <a href="/guides/9219">cash account</a> or <a href="/guides/11367">bank account</a> must be established. The corresponding <kbd>Bank Transactions</kbd> or <kbd>Cash Transactions</kbd> tab <a href="/guides/8865">must also be enabled</a>.</p>
 <h3>Basic receipts</h3>
 <p>Once at least one cash or bank account exists, receipts are recorded in the <kbd>Bank Transactions</kbd> or <kbd>Cash Transactions</kbd> tabs by clicking on <kbd>New Bank Transaction</kbd> or <kbd>New Cash Transaction</kbd> and selecting <em>Receive money</em>:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/4/4745b69e5eef29443952451501d74f3cf7960804.png" alt="14 PM" width="210" height="52"> <strong>OR</strong> <img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/6/6b360c64c6e33cafcfcf55877e99fa47abad552b.png" width="216" height="52">  <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/3/3f2e36f2affe4bb014fef77dd6eae48153705064.png" alt="36 PM" width="186" height="143"> <strong>OR</strong> <img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/6/601416657ac4dd15f4f1e4d0cf03ec00bdd65bc3.png" alt="03 PM" width="167" height="99"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/4/4745b69e5eef29443952451501d74f3cf7960804.png" alt="14 PM" width="210" height="52"> <strong>OR</strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/6/6b360c64c6e33cafcfcf55877e99fa47abad552b.png" width="216" height="52">  <strong><i class="fa fa-hand-o-right" style="margin-right: 10px; color: #999; font-size: 18px; padding-top: 5px"></i></strong></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/3/3f2e36f2affe4bb014fef77dd6eae48153705064.png" alt="36 PM" width="186" height="143"> <strong>OR</strong> <img src="https://forum.manager.io/uploads/manager1/original/2X/6/601416657ac4dd15f4f1e4d0cf03ec00bdd65bc3.png" alt="03 PM" width="167" height="99"></p>
 <p>Complete the entry:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/7/71cd4ae725f8f4e8043f7a18ffc02bd2fb06f1e3.png"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/7/7862fd202ba06f2498074bb373341b26dc522814.png" alt="13 AM" width="690" height="399"></p>
 <ul>
 <li>
 <strong><code>Date</code></strong> is automatically filled with today’s date, but can be edited.</li>
@@ -18,7 +18,7 @@ tags: cash-accounts cash-transactions cash-receipt-form bank-receipt-form bank-t
 <strong><code>Reference</code></strong> is optional for bank transactions, because the institution normally assigns any reference number. For cash transactions, Manager will automatically generate a <code>Reference</code> number when the receipt is created. It will find the highest existing <code>Reference</code> and add 1.</li>
 <li>Select a <strong><code>Bank account</code></strong> or <strong><code>Cash account</code></strong> (depending on whether the receipt is a bank or cash receipt).</li>
 <li>
-<strong><code>Status</code></strong> is set to <em>Cleared</em> by default. Another <a href="/guides/7307">Guide</a> covers cleared and pending transactions in greater detail.</li>
+<strong><code>Status</code></strong> is set to <em>Cleared</em> by default for bank transactions. Another <a href="/guides/7307">Guide</a> covers cleared and pending transactions in greater detail. This field does not appear for cash transactions.</li>
 <li>
 <strong><code>Payer</code></strong> is the source of the money, a person or entity.</li>
 <li>
@@ -27,9 +27,17 @@ tags: cash-accounts cash-transactions cash-receipt-form bank-receipt-form bank-t
 <strong><code>Item</code></strong> field can be used to enter predefined <a href="/guides/7551">inventory</a> or <a href="/guides/7344">non-inventory items</a>. If you have no predefined items, this field will not appear. Making a selection here will prefill several other fields on the line.</li>
 <li>
 <strong><code>Account</code></strong> is the account to which the receipt will be posted.</li>
+<li>
+<strong><code>Tax</code></strong> code and <strong><code>Tracking Code</code></strong> can be selected.</li>
+<li>
+<strong><code>Location</code></strong> field appears if inventory locations are defined.</li>
+<li>
+<strong><code>Amounts are tax inclusive</code></strong> is checked by default. Uncheck the box if taxes are to be added to unit prices.</li>
+<li>
+<strong><code>Notes</code></strong> can be used to enter any other information.</li>
 </ul>
-<p>Remaining fields are self-explanatory or are covered in other Guides. The completed form can be given to the Payer as a receipt:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/f/f1adc28b122a472ba29adba543c54ee77b8e5fa7.png"></p>
+<p>The completed form can be given to the Payer as a receipt:</p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/f/f1adc28b122a472ba29adba543c54ee77b8e5fa7.png" alt="03 PM" width="690" height="361"></p>
 <h3>Receipts against sales invoices</h3>
 <p>Receipts from customers against sales invoices can be entered two ways:</p>
 <ul>
@@ -38,17 +46,17 @@ tags: cash-accounts cash-transactions cash-receipt-form bank-receipt-form bank-t
 </ul>
 <p><strong>As a basic receipt</strong></p>
 <p>To enter a receipt against a specific invoice, post it to <em>Accounts receivable</em>, the <em>Customer</em>, and the <em>Invoice</em>:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/2/274ce492721357ab55bc20227fb4cdba6d821ea2.png" width="628" height="81"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/2/274ce492721357ab55bc20227fb4cdba6d821ea2.png" width="628" height="81"></p>
 <p><strong><em>Partial receipts</em></strong></p>
 <p>When receiving money for only part of the balance due on a sales invoice, post the transaction as above, but enter only the amount actually received. Manager will credit the partial amount against the sales invoice and show a reduced balance due. No other special steps are necessary.</p>
 <p><strong><em>Receipts for multiple sales invoices</em></strong></p>
 <p>When receiving money from a customer for multiple sales invoices, leave the <code>Invoice</code> dropdown field blank. Manager will allocate the receipt against the sales invoice with a balance due with the oldest due date first, then the next oldest, etc. However, if the receipt is designated for specific sales invoices, add lines and designate amounts for those invoices individually.</p>
 <p><strong>From a sales invoice</strong></p>
 <p>To record a receipt while viewing a sales invoice, click on <kbd>Receive money</kbd> and select the transaction type:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/1/15ba25064744f45792d6e6b40a4e5d13f5462d4b.png" alt="11 AM" width="196" height="111"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/1/15ba25064744f45792d6e6b40a4e5d13f5462d4b.png" alt="11 AM" width="196" height="111"></p>
 <p>A receipt entry form will appear. Select a bank or cash account. The remainder of the form will be prefilled with information to enter the full amount due on the sales invoice. If the receipt is for only part of the balance due, edit the amount received by adjusting quantity or unit price.</p>
 <h3>Other situations</h3>
 <p>You are not restricted to using only simple income accounts to post receipts. For example, if money is received from a business owner set up under the <kbd>Capital Accounts</kbd> tab, select the matching capital account and subaccount:</p>
-<p><img src="https://discourse-cdn-sjc1.com/business2/uploads/manager1/original/2X/f/fef5e2f98b4bc84fe9a90fdb230cce877ef92e3c.png" width="421" height="77"></p>
+<p><img src="https://forum.manager.io/uploads/manager1/original/2X/f/fef5e2f98b4bc84fe9a90fdb230cce877ef92e3c.png" width="421" height="77"></p>
 <p>Inventory and non-inventory items can also be directly sold using receipts. For more information on selling without sales invoices see this <a href="/guides/7321">Guide</a>.</p>
 {% endraw %}
