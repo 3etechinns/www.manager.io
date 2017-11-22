@@ -254,3 +254,4 @@ date,version,message
 2017-11-19,17.11.21,"WebTranslateIt"
 2017-11-20,17.11.22,"WebTranslateIt"
 2017-11-22,17.11.23,"Fixed customer statements so custom fields don't appear twice #12842"
+2017-11-22,17.11.24,"Prevent custom fields from deleting if they are in use #12864"
