@@ -258,3 +258,4 @@ date,version,message
 2017-11-22,17.11.25,"Fixed PDF generator so it doesn't break the words in the middle if there isn't enough space #12783"
 2017-11-22,17.11.26,"Fixed chart of accounts so that if group is allocated to itself, it will be shown under 'Uncategorized' #12885"
 2017-11-22,17.11.27,"no message"
+2017-11-23,17.11.28,"WebTranslateIt"
