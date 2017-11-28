@@ -266,3 +266,4 @@ date,version,message
 2017-11-28,17.11.33,"no message"
 2017-11-28,17.11.34,"no message"
 2017-11-28,17.11.35,"Fixed autocomplete sorting for inventory items on forms where broken #12929"
+2017-11-28,17.11.36,"Added ability to create recurring purchase invoices #11951"
