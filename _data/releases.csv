@@ -284,3 +284,4 @@ date,version,message
 2017-12-08,17.12.9,"WebTranslateIt"
 2017-12-10,17.12.10,"WebTranslateIt"
 2017-12-11,17.12.11,"WebTranslateIt"
+2017-12-13,17.12.12,"When importing bank statement in OFX format, for amounts assume number format as set under 'Preferences' tab"
