@@ -2,8 +2,19 @@
 layout: main
 ---
 <div style="text-align: center">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<script type="text/javascript">
+var pathArray = window.location.pathname.split( '/' );
+if (pathArray.length >= 2 && pathArray[1].toLowerCase() == 'guides') {
+  document.write("Redirecting ...");
+  if (pathArray.length == 2) {
+    window.location = "https://guides.manager.io";          
+  }
+  else {
+    window.location = "https://guides.manager.io/"+pathArray[2];
+  }
+}
+else {
+  document.write("<h1>404</h1><p><strong>Page not found :(</strong></p><p>The requested page could not be found.</p>");
+}
+</script>
 </div>
