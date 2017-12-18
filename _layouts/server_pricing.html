@@ -1,33 +1,30 @@
 {% include header.html %}
 
-<div style="padding-bottom: 40px; text-align: center; font-weight: bold">
-  <div style="font-size: 24px; color: #333; line-height: 200%">Pay once, use forever</div>
-  <div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">Self-hosted accounting software without monthly fees.</div>
-</div>
+<h4 class="text-center font-weight-bold">Pay once, use forever</h4>
+<p class="text-center lead mb-4">Self-hosted accounting software without monthly fees.</p>
 
 {% assign currency = page.id | split:'/' | last | upcase %}
 
-<div class="thumbnail" style="padding: 40px 60px; background-color: #eeffee; width: 50%; margin: 0 auto">
-  <div style="text-align: center; padding: 20px; padding-bottom: 5px; font-weight: bold; font-size: 32px">{{ page.price }} {{ currency }}</div>
-  <div style="text-align: center; padding: 20px; padding-top: 0px; font-weight: bold; font-size: 18px">One-time payment</div>
-  <div style="text-align: center; padding: 20px; padding-top: 0px; font-size: 15px; color: #666; line-height: 175%">We believe the Manager Server licensing scheme is simple, upfront and equitable.<br /><br />Our server licenses entitle you to perpetual use, and include version upgrades for 12 months starting from the date of purchase. Renewing maintenance is entirely optional.</div>
-  
-  <div style="text-align: center; padding-top: 20px">
-  <form action="https://cloud.manager.io/purchase?currency={{ currency | downcase }}" method="POST">
-    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="pk_live_YrLbNxRzg91UB3ADcLDc0uhi"
-      data-amount="{{ page.stripe }}"
-      data-name="Manager Server Edition"
-      data-allow-remember-me="false"
-      data-image="https://s3.amazonaws.com/stripe-uploads/acct_102vRP2mUW00Xt3Umerchant-icon-939520-manager-256x256.png"
-      data-locale="auto"
-      data-label="Buy now"
-      data-currency="{{ currency }}">
-    </script>
-  </form>
+<div class="card mx-auto text-center bg-light mb-4" style="max-width: 500px">
+  <div class="card-header text-muted">We believe the Manager Server licensing scheme is simple, upfront and equitable.</div>
+  <div class="card-body">    
+    <h3 class="card-title font-weight-bold my-4">{{ page.price }} {{ currency }}</h3>
+    <div class="text-center mb-4">
+      <form action="https://cloud.manager.io/purchase?currency={{ currency | downcase }}" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_live_YrLbNxRzg91UB3ADcLDc0uhi"
+          data-amount="{{ page.stripe }}"
+          data-name="Manager Server Edition"
+          data-allow-remember-me="false"
+          data-image="https://s3.amazonaws.com/stripe-uploads/acct_102vRP2mUW00Xt3Umerchant-icon-939520-manager-256x256.png"
+          data-locale="auto"
+          data-label="Buy now"
+          data-currency="{{ currency }}">
+        </script>
+      </form>
+    </div>
   </div>
-  
-  <div style="text-align: center; padding-top: 10px"><a href="/server/installation/" class="btn btn-link" style="font-weight: bold">Try it free</a></div>
+  <div class="card-footer text-muted small">Our server licenses entitle you to perpetual use, and include version upgrades for 12 months starting from the date of purchase. Renewing maintenance is entirely optional.</div>
 </div>
 
 {% include footer.html %}

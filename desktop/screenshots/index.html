@@ -2,36 +2,13 @@
 layout: main
 title: Screenshots
 ---
-<style>table#screenshots td { vertical-align: top }.thumbnail { padding: 1px }.thumbnail { padding: 1px }.thumbnail img { width: 219px }</style>
-<div style="padding-bottom: 40px; text-align: center; font-weight: bold"><div style="font-size: 24px; color: #333; line-height: 200%">Good design keeps the user happy</div><div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">Everything is designed. Few things are designed well.</div></div>
-{% assign screenshotsByIndex = site.screenshots | sort:"index" %}
-{% assign screenshotsCount = screenshotsByIndex | size %}
-{% assign screenshotsPerColumn = screenshotsCount | divided_by:4 %}
+<h4 class="text-center font-weight-bold">Good design keeps the user happy</h4>
+<p class="text-center lead mb-4">Everything is designed. Few things are designed well.</p>
 
-{% assign offset1 = 0 %}
-{% assign offset2 = screenshotsPerColumn %}
-{% assign offset3 = screenshotsPerColumn | times:2 %}
-{% assign offset4 = screenshotsPerColumn | times:3 %}
-
-<table id="screenshots" style="width: 100%"><tr>
-<td style="width: 25%; padding-right: 10px; border-right: 1px solid #eee">
-{% for screenshot in screenshotsByIndex offset:offset1 limit:screenshotsPerColumn %}
-<div class="thumbnail-wrapper"><a href="{{ screenshot.url }}" class="thumbnail"><img src="{{ screenshot.preview }}"></a></div>
-{% endfor %}
-</td>
-<td style="width: 25%; padding-right: 10px; padding-left: 10px; border-right: 1px solid #eee">
-{% for screenshot in screenshotsByIndex offset:offset2 limit:screenshotsPerColumn %}
-<div class="thumbnail-wrapper"><a href="{{ screenshot.url }}" class="thumbnail"><img src="{{ screenshot.preview }}"></a></div>
-{% endfor %}
-</td>
-<td style="width: 25%; padding-right: 10px; padding-left: 10px; border-right: 1px solid #eee">
-{% for screenshot in screenshotsByIndex offset:offset3 limit:screenshotsPerColumn %}
-<div class="thumbnail-wrapper"><a href="{{ screenshot.url }}" class="thumbnail"><img src="{{ screenshot.preview }}"></a></div>
-{% endfor %}
-</td>
-<td style="width: 25%; padding-left: 10px">
-{% for screenshot in screenshotsByIndex offset:offset4 limit:screenshotsPerColumn %}
-<div class="thumbnail-wrapper"><a href="{{ screenshot.url }}" class="thumbnail"><img src="{{ screenshot.preview }}"></a></div>
-{% endfor %}
-</td>
-</tr></table>
+<div class="card-columns mb-4">
+  {% for screenshot in site.data.screenshots %}
+  <div class="card">
+    <img class="card-img-top" src="{{ screenshot.filename }}" />
+  </div>
+  {% endfor %}
+</div>

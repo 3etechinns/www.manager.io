@@ -2,16 +2,10 @@
 title: Releases
 layout: main
 ---
-<div style="text-align: center; font-weight: bold">
-	<div style="font-size: 24px; color: #333; line-height: 200%">
-		Always up to date
-	</div>
-	<div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">
-		Manager is being continuously updated to keep getting better than ever.
-	</div>
-</div>
+<h4 class="text-center font-weight-bold">Always up to date</h4>
+<p class="text-center lead mb-4">Manager is being continuously updated to keep getting better than ever.</p>
 
-<table style="width: 100%; border-collapse: separate; border-spacing: 5px; font-size: 12px">
+<table class="table table-striped mb-4">
 
 {% assign section = "" %}
 {% assign releases = site.data.releases | reverse %}
@@ -22,12 +16,12 @@ layout: main
 
 {% assign section2 = release.date | date:"%B %Y" %}
 {% if section != section2 %}
-<tr><td colspan="3" style="padding-bottom: 10px; padding-top: 20px"><div style="font-weight: bold; font-size: 18px; padding-bottom: 10px; border-bottom: 1px solid #ccc">{{ section2 }}</div></td></tr>
+<tr class="bg-dark text-white"><td colspan="3"><h5 class="font-weight-bold mb-0">{{ section2 }}</h5></td></tr>
 {% assign section = section2 %}
 {% endif %}
 
 <tr>
-<td style="font-weight: bold; width: 1px; text-align: right; white-space: nowrap; vertical-align: top">{{ release.date | date_to_string }}</td>
+<td class="font-weight-bold text-right text-nowrap small">{{ release.date | date_to_string }}</td>
 
 {% assign words = release.message | split: ' ' %}
 {% assign message = " " %}
@@ -41,8 +35,8 @@ layout: main
 {% endif %}
 {% endfor %}
 
-<td>{{ message }}</td>
-<td style="color: #ccc; weight: 1px; text-align: right; vertical-align: top">{{ release.version }}</td>
+<td class="w-100 small">{{ message }}</td>
+<td class="text-muted text-right small">{{ release.version }}</td>
 </tr>
 {% endfor %}
 </table>

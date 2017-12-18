@@ -3,51 +3,51 @@ layout: main
 title: Windows
 ---
 {% assign release = site.data.releases | last %}
-<style>img { border: 1px solid #ccc; border-radius: 3px; padding: 1px; vertical-align: top; margin-right: 10px; max-width: 936px }h1 { border-bottom: 1px solid #ddd;padding-bottom: 20px; font-size: 24px; margin-bottom: 30px }h3 { border-bottom: 1px solid #ddd; margin-top: 40px; padding-bottom: 20px; }code { background-color: #fff; border: 1px solid #ccc; padding: 0 6px; white-space: pre }blockquote { background-color: #ffffcc; border-left: 5px solid orange; font-size: 14px; }ul, ol { margin-bottom: 1.7em; }ol > li > p, ol > li > p { margin-bottom: 0px; }pre > code { border: none; }pre { overflow: auto; word-wrap: normal; white-space: pre; } a.lightbox > div.meta { display: none }i.fa-li { opacity: 0.5 }p { line-height: 24px; }kbd { background-color: #fff; border: 1px solid #e9e9e9; border-radius: 3px; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.8); color: #222; display: inline-block; font-size: 0.857em; line-height: 1.4; margin: 0 0.1em; padding: 0.1em 0.6em; }</style><h1>Windows</h1><h3>Installing Prerequisite Software</h3>
+<h4 class="font-weight-bold">Installing Prerequisite Software</h4>
 
 <p>Manager requires Microsoft .NET Framework 4.5 to be installed on Windows. .NET Framework 4.5 is automatically included in Windows 8 or newer and in Windows Server 2012 or newer.</p>
 
 <p>Visit <a href="https://www.microsoft.com/en-au/download/details.aspx?id=30653">Microsoft website</a> to download and install .NET Framework 4.5 if it's not available on your computer.</p>
 
-<h3>Downloading Manager Server</h3>
+<h4 class="font-weight-bold">Downloading Manager Server</h4>
 
 <p>Download the latest version of Manager Server from <a href="https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip">https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip</a>.</p>
 
-<h3>Unpacking ManagerServer.zip</h3>
+<h4 class="font-weight-bold">Unpacking ManagerServer.zip</h4>
 
 <p>Unzip <code>ManagerServer.zip</code> to desired folder.</p>
 
-<p><img src="folder.png"></p>
+<p><img src="folder.png" class="img-thumbnail"></p>
 
-<h3>Launching Manager Server</h3>
+<h4 class="font-weight-bold">Launching Manager Server</h4>
 
 <p>Double-click on <code>ManagerServer</code> or <code>ManagerServer.exe</code> to launch the server. When you launch the server, the last line should say:</p>
 
 <p><code>HTTP server listening on port 8080</code></p>
 
-<p><img src="console.png"></p>
+<p><img src="console.png" class="img-thumbnail"></p>
 
 <p>By default, Manager Server will listen on port 8080. Open your web-browser and navigate to <code>http://127.0.0.1:8080</code>.</p>
 
-<p><img src="address.png"></p>
+<p><img src="address.png" class="img-thumbnail"></p>
 
 <p>You should see login screen.</p>
 
-<p><img src="login.png"></p>
+<p><img src="login.png" class="img-thumbnail"></p>
 
 <p>Default administrator password is empty so just click <code>Login</code> button without entering any password.</p>
 
-<h3>Access within local network</h3>
+<h4>Access within local network</h4>
 
 <p>To access Manager Server from other computers within your local network, first find out IP address of the computer which is running Manager Server by running <code>ipconfig</code> command from command line.
 
 <p>Look for the line which says <code>IPv4 Address</code> which will reveal IP address of your computer on LAN.
 
-<p><img src="ipconfig.png"></p>
+<p><img src="ipconfig.png" class="img-thumbnail"></p>
 
 <p>Your local IP address will typically start with <code>10.</code> or <code>192.168.</code>. For example, if your IP address is <code>192.168.1.4</code>, other computers on your local network will be able to access your Manager Server by typing into their web-browser <code>http://192.168.1.4:8080</code>. Take into consideration that by default, Windows Firewall will block inbound connections on port 8080 so you will need to create an exception so Windows Firewall will allow connection to your computer.
 
-<h3>Manager Server as a service</h3>
+<h4 class="font-weight-bold">Manager Server as a service</h4>
 
 <p>In order for anyone being able to access your Manager Server, your computer must be turned on and Manager Server instance must be running. Manager Server won't start by default when your computer restarts.</p>
 
@@ -64,7 +64,7 @@ title: Windows
 
 <p><code>nssm.exe start ManagerServer</code></p>
 
-<p><img src="nssm.png"></p>
+<p><img src="nssm.png" class="img-thumbnail"></p>
 
 <p>The first command will install the service and the second command will start Manager Server as a service. Now you can access Manager Server without launching <code>ManagerServer.exe</code> manually.</p>
 
@@ -76,14 +76,14 @@ title: Windows
 
 <p><code>nssm.exe remove ManagerServer</code></p>
 
-<h3>Internet access</h3>
+<h4 class="font-weight-bold">Internet access</h4>
 
 <p>To access your Manager Server from the Internet, you will need to configure your router so it properly routes connections from the Internet into your computer running Manager Server. This is called port forwarding.
 
-<h3>Custom domain</h3>
+<h4 class="font-weight-bold">Custom domain</h4>
 
 <p>Instead of typing IP address, your users can type domain name instead. This will involve setting up A record on your domain so the domain name (or subdomain) points to IP address of your Internet router.</p>
 
-<h3>Setting up HTTPS</h3>
+<h4 class="font-weight-bold">Setting up HTTPS</h4>
 
 <p>If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.

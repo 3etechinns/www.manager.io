@@ -2,41 +2,29 @@
 layout: main
 title: Pricing
 ---
-<style>
-div.columns {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-}
-</style>
+<h4 class="text-center font-weight-bold">Pricing in your currency</h4>
+<p class="text-center lead mb-4">No matter where you are, your price will be fixed</p>
 
-<link href="currency-flags.css" rel="stylesheet" type="text/css">
-
-<div style="padding-bottom: 40px; text-align: center; font-weight: bold">
-  <div style="font-size: 24px; color: #333; line-height: 200%">Pricing in your currency</div>
-  <div style="font-size: 16px; color: #888; line-height: 200%; margin: 0px 50px">No matter where you are, your price will be fixed</div>
-</div>
-
-<div class="columns">
+<div class="card-columns mb-4">
 {% assign mainCurrencies = "usd,gbp,eur" | split:',' %}
 {% for price in site.cloud_pricing %}
 {% assign currency = price.id | split:'/' | last %}
 {% if mainCurrencies contains currency %}{% else %}{% continue %}{% endif %}
-<div style="padding: 10px 5px; line-height: 24px">
-<div class="currency-flag currency-flag-lg currency-flag-{{ currency }}" style="float: left; margin-right: 10px"></div>
-<a href="{{ price.url }}" style="font-weight: bold">{{ currency | upcase }} - {{ price.title }}</a>
+<div class="card">
+  <div class="list-group">
+    <a href="{{ price.url }}" class="list-group-item list-group-item-action font-weight-bold">{{ currency | upcase }} - {{ price.title }}</a>
+  </div>
 </div>
 {% endfor %}
 </div>
 
-<hr />
-
-<div class="columns">
+<div class="card-columns mb-4">
 {% for price in site.cloud_pricing %}
 {% assign currency = price.id | split:'/' | last %}
-<div style="padding: 10px 5px; line-height: 24px">
-<div class="currency-flag currency-flag-lg currency-flag-{{ currency }}" style="float: left; margin-right: 10px"></div>
-<a href="{{ price.url }}">{{ currency | upcase }} - {{ price.title }}</a>
+<div class="card">
+  <div class="list-group">
+    <a href="{{ price.url }}" class="list-group-item list-group-item-action">{{ currency | upcase }} - {{ price.title }}</a>
+  </div>
 </div>
 {% endfor %}
 </div>
