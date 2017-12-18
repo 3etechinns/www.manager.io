@@ -296,3 +296,4 @@ date,version,message
 2017-12-16,17.12.21,"WebTranslateIt"
 2017-12-17,17.12.22,"WebTranslateIt"
 2017-12-18,17.12.23,"Fixed issue where 'Notes' field wasn't cloned on payments and receipts #13205"
+2017-12-18,17.12.24,"Fixed layout issue where text would not fit allocated space #13194"
