@@ -299,3 +299,4 @@ date,version,message
 2017-12-18,17.12.24,"Fixed layout issue where text would not fit allocated space #13194"
 2017-12-18,17.12.25,"Fixed issue where custom fields on sales invoices didn't clone #13093"
 2017-12-18,17.12.26,"WebTranslateIt"
+2017-12-19,17.12.27,"no message"
