@@ -305,3 +305,4 @@ date,version,message
 2017-12-20,17.12.30,"Removed 'Notes' field from bank and cash transaction forms (if field is in use, it will be converted to a custom field)"
 2017-12-20,17.12.31,"WebTranslateIt"
 2017-12-20,17.12.32,"no message"
+2017-12-20,17.12.33,"Hide 'Bank Account' column from 'Bank Transactions' tab if only single bank account is used (the same is applicable to 'Cash Transactions' tab too)"
