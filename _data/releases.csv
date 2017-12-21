@@ -304,3 +304,4 @@ date,version,message
 2017-12-20,17.12.29,"Improved the look how custom fields are presented on forms"
 2017-12-20,17.12.30,"Removed 'Notes' field from bank and cash transaction forms (if field is in use, it will be converted to a custom field)"
 2017-12-20,17.12.31,"WebTranslateIt"
+2017-12-20,17.12.32,"no message"
