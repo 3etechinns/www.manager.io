@@ -316,3 +316,4 @@ date,version,message
 2017-12-24,17.12.41,"Optional fields such as 'Telephone', 'Fax', 'Mobile', 'Notes' on customers, suppliers and employees have been converted into custom fields"
 2017-12-24,17.12.42,"Added ability to create custom field of a 'Date' type #12916"
 2017-12-24,17.12.43,"'Notes' field on sales quotes, sales invoices, delivery notes and purchase invoices converted into custom field #13298"
+2017-12-24,17.12.44,"Fields 'Delivery Date', 'Delivery Address', 'Delivery Instructions' and 'Authorized by' on orders to be converted to custom fields"
