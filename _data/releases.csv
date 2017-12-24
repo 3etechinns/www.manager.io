@@ -313,3 +313,4 @@ date,version,message
 2017-12-23,17.12.38,"Fixed debit/credit amounts for accounts receivable and accounts payable on 'General Ledger Summary' report #13275"
 2017-12-23,17.12.39,"WebTranslateIt"
 2017-12-24,17.12.40,"no message"
+2017-12-24,17.12.41,"Optional fields such as 'Telephone', 'Fax', 'Mobile', 'Notes' on customers, suppliers and employees have been converted into custom fields"
