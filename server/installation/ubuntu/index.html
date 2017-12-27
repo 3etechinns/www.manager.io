@@ -1,9 +1,16 @@
 ---
 layout: main
-title: Ubuntu
+title: Installation
 ---
+<ul class="nav nav-tabs mb-4">
+  <li class="nav-item"><a class="nav-link" href="/server/installation">Overview</a></li>
+  <li class="nav-item"><a class="nav-link" href="/server/installation/windows">Windows</a></li>
+  <li class="nav-item"><a class="nav-link" href="/server/installation/mac">Mac</a></li>
+  <li class="nav-item"><a class="nav-link active" href="/server/installation/ubuntu">Ubuntu</a></li>
+</ul>
+
 {% assign release = site.data.releases | last %}
-<h4 class="font-weight-bold">Installing prequisite Software</h4>
+<h4>Installing prequisite Software</h4>
 
 <p>Manager requires <strong>Mono</strong> to be installed on server. First, add the Mono Project GPG signing key and the package repository to your system:</p>
 
@@ -17,7 +24,7 @@ apt-get update</code></p>
 
 <p>Once Mono is installed, it's time to download the latest version of Manager Server.</p>
 
-<h4 class="font-weight-bold">Downloading Manager Server</h4>
+<h4>Downloading Manager Server</h4>
 
 <p>Create folder for Manager Server</p>
 
@@ -31,7 +38,7 @@ apt-get update</code></p>
 
 <p><code>tar -xzf /usr/share/manager-server/ManagerServer.tar.gz -C /usr/share/manager-server</code></p>
 
-<h4 class="font-weight-bold">Install Manager Server as a service</h4>
+<h4>Install Manager Server as a service</h4>
 
 <p>Install the systemd service unit configuration file:</p>
 
@@ -49,7 +56,7 @@ apt-get update</code></p>
 
 <p></p><p><code>systemctl enable manager-server</code></p>
 
-<h4 class="font-weight-bold">Connecting to Manager Server</h4>
+<h4>Connecting to Manager Server</h4>
 
 <p>By default, Manager Server will listen on port 8080. Open your web-browser and navigate to <code>http://127.0.0.1:8080</code>.</p>
 
@@ -61,6 +68,6 @@ apt-get update</code></p>
 
 <p>Default administrator password is empty so just click <kbd>Login</kbd> without entering any password.</p>
 
-<h4 class="font-weight-bold">Remote access</h4>
+<h4>Remote access</h4>
 
 <p>Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>

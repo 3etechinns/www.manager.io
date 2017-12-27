@@ -1,46 +1,43 @@
 ---
 layout: main
-title: Mac
+title: Installation
 ---
+<ul class="nav nav-tabs mb-4">
+  <li class="nav-item"><a class="nav-link" href="/server/installation">Overview</a></li>
+  <li class="nav-item"><a class="nav-link" href="/server/installation/windows">Windows</a></li>
+  <li class="nav-item"><a class="nav-link active" href="/server/installation/mac">Mac</a></li>
+  <li class="nav-item"><a class="nav-link" href="/server/installation/ubuntu">Ubuntu</a></li>
+</ul>
+
 {% assign release = site.data.releases | last %}
 
-<h4 class="font-weight-bold">Installing Prerequisite Software</h4>
-<p>Manager requires <a href="http://www.mono-project.com/">Mono</a> to be installed on Mac OS X.</p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">1</span>Installing Prerequisite Software</h4><div class="card-body">
+<p class="card-text">Manager requires <a href="http://www.mono-project.com/">Mono</a> to be installed on Mac OS X.</p>
+<p class="card-text">Download Mono from <a href="http://www.mono-project.com/download/#download-mac">http://www.mono-project.com/download/#download-mac</a> and install it on your Mac.</p>
+</div></div>
 
-<p>Download Mono from <a href="http://www.mono-project.com/download/#download-mac">http://www.mono-project.com/download/#download-mac</a> and install it on your Mac.</p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">2</span>Downloading Manager Server</h4><div class="card-body">
+<p class="card-text">Download the latest version of Manager Server from <a href="https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip">https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip</a>.</p>
+</div></div>
 
-<h4 class="font-weight-bold">Downloading Manager Server</h4>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">3</span>Unpacking ManagerServer.zip</h4><div class="card-body">
+<p class="card-text">Unzip ManagerServer.zip to desired folder.</p>
+<p class="card-text"><img src="folder.png" class="img-thumbnail"></p>
+</div></div>
 
-<p>Download the latest version of Manager Server from <a href="https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip">https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip</a>.</p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">4</span>Launching Manager Server</h4><div class="card-body">
+<p class="card-text">Launch <strong>Terminal</strong> app, navigate to the folder where you have unzipped contents of <code>ManagerServer.zip</code> and launch the server with following command:</p>
+<p class="card-text"><kbd>mono ManagerServer.exe</kbd></p>
+<p class="card-text">When you launch the server, the last line should say:</p>
+<p class="card-text"><pre><code class="lang-auto">HTTP server listening on port 8080</code></pre></p>
+<p class="card-text"><img src="console.png" class="img-thumbnail"></p>
+<p class="card-text">By default, Manager Server will listen on port 8080. Open your web-browser and navigate to <code>http://127.0.0.1:8080</code>.</p>
+<p class="card-text"><img src="address.png" class="img-thumbnail"></p>
+<p class="card-text">You should see login screen.</p>
+<p class="card-text"><img src="login.png" class="img-thumbnail"></p>
+<p class="card-text">Default administrator password is empty so just click <kbd>Login</kbd> without entering any password.</p>
+</div></div>
 
-<h4 class="font-weight-bold">Unpacking ManagerServer.zip</h4>
-
-<p>Unzip ManagerServer.zip to desired folder.</p>
-
-<p><img src="folder.png" class="img-thumbnail"></p>
-
-<h4 class="font-weight-bold">Launching Manager Server</h4>
-
-<p>Launch <strong>Terminal</strong> app, navigate to the folder where you have unzipped contents of <code>ManagerServer.zip</code> and launch the server with following command:</p>
-
-<p><kbd>mono ManagerServer.exe</kbd></p>
-
-<p>When you launch the server, the last line should say:</p>
-
-<p></p><pre><code class="lang-auto">HTTP server listening on port 8080</code></pre>
-
-<p><img src="console.png" class="img-thumbnail"></p>
-
-<p>By default, Manager Server will listen on port 8080. Open your web-browser and navigate to <code>http://127.0.0.1:8080</code>.</p>
-
-<p><img src="address.png" class="img-thumbnail"></p>
-
-<p>You should see login screen.</p>
-
-<p><img src="login.png" class="img-thumbnail"></p>
-
-<p>Default administrator password is empty so just click <kbd>Login</kbd> without entering any password.</p>
-
-<h4 class="font-weight-bold">Remote access</h4>
-
-<p>Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">5</span>Remote access</h4><div class="card-body">
+<p class="card-text">Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>
+</div></div>

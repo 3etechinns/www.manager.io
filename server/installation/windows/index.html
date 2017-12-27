@@ -1,25 +1,32 @@
 ---
 layout: main
-title: Windows
+title: Installation
 ---
+<ul class="nav nav-tabs mb-4">
+  <li class="nav-item"><a class="nav-link" href="/server/installation">Overview</a></li>
+  <li class="nav-item"><a class="nav-link active" href="/server/installation/windows">Windows</a></li>
+  <li class="nav-item"><a class="nav-link" href="/server/installation/mac">Mac</a></li>
+  <li class="nav-item"><a class="nav-link" href="/server/installation/ubuntu">Ubuntu</a></li>
+</ul>
+
 {% assign release = site.data.releases | last %}
-<h4 class="font-weight-bold">Installing Prerequisite Software</h4>
+<h4>Installing Prerequisite Software</h4>
 
 <p>Manager requires Microsoft .NET Framework 4.5 to be installed on Windows. .NET Framework 4.5 is automatically included in Windows 8 or newer and in Windows Server 2012 or newer.</p>
 
 <p>Visit <a href="https://www.microsoft.com/en-au/download/details.aspx?id=30653">Microsoft website</a> to download and install .NET Framework 4.5 if it's not available on your computer.</p>
 
-<h4 class="font-weight-bold">Downloading Manager Server</h4>
+<h4>Downloading Manager Server</h4>
 
 <p>Download the latest version of Manager Server from <a href="https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip">https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip</a>.</p>
 
-<h4 class="font-weight-bold">Unpacking ManagerServer.zip</h4>
+<h4>Unpacking ManagerServer.zip</h4>
 
 <p>Unzip <code>ManagerServer.zip</code> to desired folder.</p>
 
 <p><img src="folder.png" class="img-thumbnail"></p>
 
-<h4 class="font-weight-bold">Launching Manager Server</h4>
+<h4>Launching Manager Server</h4>
 
 <p>Double-click on <code>ManagerServer</code> or <code>ManagerServer.exe</code> to launch the server. When you launch the server, the last line should say:</p>
 
@@ -47,7 +54,7 @@ title: Windows
 
 <p>Your local IP address will typically start with <code>10.</code> or <code>192.168.</code>. For example, if your IP address is <code>192.168.1.4</code>, other computers on your local network will be able to access your Manager Server by typing into their web-browser <code>http://192.168.1.4:8080</code>. Take into consideration that by default, Windows Firewall will block inbound connections on port 8080 so you will need to create an exception so Windows Firewall will allow connection to your computer.
 
-<h4 class="font-weight-bold">Manager Server as a service</h4>
+<h4>Manager Server as a service</h4>
 
 <p>In order for anyone being able to access your Manager Server, your computer must be turned on and Manager Server instance must be running. Manager Server won't start by default when your computer restarts.</p>
 
@@ -76,14 +83,14 @@ title: Windows
 
 <p><code>nssm.exe remove ManagerServer</code></p>
 
-<h4 class="font-weight-bold">Internet access</h4>
+<h4>Internet access</h4>
 
 <p>To access your Manager Server from the Internet, you will need to configure your router so it properly routes connections from the Internet into your computer running Manager Server. This is called port forwarding.
 
-<h4 class="font-weight-bold">Custom domain</h4>
+<h4>Custom domain</h4>
 
 <p>Instead of typing IP address, your users can type domain name instead. This will involve setting up A record on your domain so the domain name (or subdomain) points to IP address of your Internet router.</p>
 
-<h4 class="font-weight-bold">Setting up HTTPS</h4>
+<h4>Setting up HTTPS</h4>
 
 <p>If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.

@@ -23,9 +23,9 @@
       .navbar-nav .nav-link:hover { text-decoration: underline }
       .navbar-nav .active > .nav-link { color: gold; background-color: #333 }
       
-      .nav .nav-item a { color: #fff }
-      .nav .nav-item a:hover { text-decoration: underline }
-      .nav .nav-item a.active { color: gold }
+      #secondary .nav-item a { color: #fff }
+      #secondary .nav-item a:hover { text-decoration: underline }
+      #secondary .nav-item a.active { color: gold }
     </style>
   </head>
   <body style="background-color: #111">
@@ -46,7 +46,7 @@
 {% if page.url == '/' or url_parts[1] == 'desktop' %}
 <div style="background-color: rgb(102,0,0); border-top: 1px solid #990000; border-bottom: 1px solid #330000; text-shadow: 1px 1px 1px #333">
 	<div class="container small" style="font-weight: 600">
-    <ul class="nav">
+    <ul id="secondary" class="nav">
       <li class="nav-item"><a href="/" class="nav-link{% if page.url == '/' %} active{% endif %}"><i class="fa fa-caret-{% if page.url == '/' %}down{% else %}right{% endif %} mr-2"></i>Home</a></li>
       <li class="nav-item"><a href="/desktop/screenshots/" class="nav-link{% if url_parts[2] == 'screenshots' %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == 'screenshots' %}down{% else %}right{% endif %} mr-2"></i>Screenshots</a></li>
       <li class="nav-item"><a href="/desktop/download/" class="nav-link{% if url_parts[2] == 'download' %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == 'download' %}down{% else %}right{% endif %} mr-2"></i>Download</a></li>
@@ -80,7 +80,7 @@
 {% if url_parts[1] == 'cloud' %}
 <div style="background-color: rgb(0,37,63); border-top: 1px solid #00375F; border-bottom: 1px solid #00121F; text-shadow: 1px 1px 1px #333">
 	<div class="container small" style="font-weight: 600">
-    <ul class="nav">
+    <ul id="secondary" class="nav">
       <li class="nav-item"><a href="/cloud/" class="nav-link{% if url_parts[2] == nil %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == nil %}down{% else %}right{% endif %} mr-2"></i>Home</a></li>
       <li class="nav-item"><a href="/cloud/pricing/" class="nav-link{% if url_parts[2] == 'pricing' %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == 'pricing' %}down{% else %}right{% endif %} mr-2"></i>Pricing</a></li>
       <li class="nav-item"><a href="/cloud/faq/" class="nav-link{% if url_parts[2] == 'faq' %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == 'faq' %}down{% else %}right{% endif %} mr-2"></i>FAQ</a></li>
@@ -109,7 +109,7 @@
 {% if url_parts[1] == 'server' %}
 <div style="background-color: rgb(19,63,0); border-top: 1px solid #1C5F00; border-bottom: 1px solid #091F00; text-shadow: 1px 1px 1px #333">
 	<div class="container small" style="font-weight: 600">
-    <ul class="nav">
+    <ul id="secondary" class="nav">
       <li class="nav-item"><a href="/server/" class="nav-link{% if url_parts[2] == nil %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == nil %}down{% else %}right{% endif %} mr-2"></i>Home</a></li>
       <li class="nav-item"><a href="/server/pricing/" class="nav-link{% if url_parts[2] == 'pricing' %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == 'pricing' %}down{% else %}right{% endif %} mr-2"></i>Pricing</a></li>
       <li class="nav-item"><a href="/server/installation/" class="nav-link{% if url_parts[2] == 'installation' %} active{% endif %}"><i class="fa fa-caret-{% if url_parts[2] == 'installation' %}down{% else %}right{% endif %} mr-2"></i>Installation</a></li>
