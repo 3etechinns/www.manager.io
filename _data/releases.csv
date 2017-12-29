@@ -323,3 +323,4 @@ date,version,message
 2017-12-26,17.12.48,"Fixed tracking code placeholder text on depreciation and amortization forms #13355"
 2017-12-28,17.12.49,"no message"
 2017-12-28,17.12.50,"WebTranslateIt"
+2017-12-28,17.12.51,"Added ability to inject custom field by name to themes #13339"
