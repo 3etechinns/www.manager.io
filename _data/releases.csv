@@ -324,3 +324,4 @@ date,version,message
 2017-12-28,17.12.49,"no message"
 2017-12-28,17.12.50,"WebTranslateIt"
 2017-12-28,17.12.51,"Added ability to inject custom field by name to themes #13339"
+2017-12-28,17.12.52,"Fixed totals under 'Sales Quotes' tab when amounts on quotes are tax exclusive #13304"
