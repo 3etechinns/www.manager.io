@@ -10,64 +10,45 @@ title: Installation
 </ul>
 
 {% assign release = site.data.releases | last %}
-<h4>Installing prequisite Software</h4>
 
-<p>Manager requires <strong>Mono</strong> to be installed on server. First, add the Mono Project GPG signing key and the package repository to your system:</p>
-
-<p><code>apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">1</span>Installing Prerequisite Software</h4><div class="card-body">
+<p class="card-text">Manager requires <strong>Mono</strong> to be installed on server. First, add the Mono Project GPG signing key and the package repository to your system:</p>
+<p class="card-text"><code>apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
 apt-get update</code></p>
+<p class="card-text">Then install Mono using following command:</p>
+<p class="card-text"><code>apt-get install -y mono-complete</code></p>
+<p class="card-text">Once Mono is installed, it's time to download the latest version of Manager Server.</p>
+</div></div>
 
-<p>Then install Mono using following command:</p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">2</span>Downloading Manager Server</h4><div class="card-body">
+<p class="card-text">Create folder for Manager Server</p>
+<p class="card-text"><code>mkdir /usr/share/manager-server</code></p>
+<p class="card-text">Download the latest version of Manager Server.</p>
+<p class="card-text"><code>wget https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.tar.gz -P /usr/share/manager-server</code></p>
+<p class="card-text">Then untar downloaded <code>ManagerServer.tar.gz</code> using following command</p>
+<p class="card-text"><code>tar -xzf /usr/share/manager-server/ManagerServer.tar.gz -C /usr/share/manager-server</code></p>
+</div></div>
 
-<p><code>apt-get install -y mono-complete</code></p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">3</span>Install Manager Server as a service</h4><div class="card-body">
+<p class="card-text">Install the systemd service unit configuration file:</p>
+<p class="card-text"><code>printf "[Unit]\nAfter=network.target\n\n[Service]\nLimitNOFILE=1048576\nExecStart=/usr/bin/mono /usr/share/manager-server/ManagerServer.exe -port 8080\nRestart=on-failure\nStartLimitInterval=600\n\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/manager-server.service</code></p>
+<p class="card-text">Reload the systemd daemon:</p>
+<p class="card-text"><code>systemctl daemon-reload</code></p>
+<p class="card-text">And finally start Manager Server:</p>
+<p class="card-text"></p><p><code>systemctl start manager-server</code></p>
+<p class="card-text">Also have the Manager Server service start automatically on boot so you don't have to start Manager Server manually:</p>
+<p class="card-text"></p><p><code>systemctl enable manager-server</code></p>
+</div></div>
 
-<p>Once Mono is installed, it's time to download the latest version of Manager Server.</p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">4</span>Connecting to Manager Server</h4><div class="card-body">
+<p class="card-text">By default, Manager Server will listen on port 8080. Open your web-browser and navigate to <code>http://127.0.0.1:8080</code>.</p>
+<p class="card-text"><img src="address.png" class="img-thumbnail"></p>
+<p class="card-text">You should see login screen.</p>
+<p class="card-text"><img src="login.png" class="img-thumbnail"></p>
+<p class="card-text">Default administrator password is empty so just click <kbd>Login</kbd> without entering any password.</p>
+</div></div>
 
-<h4>Downloading Manager Server</h4>
-
-<p>Create folder for Manager Server</p>
-
-<p><code>mkdir /usr/share/manager-server</code></p>
-
-<p>Download the latest version of Manager Server.</p>
-
-<p><code>wget https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.tar.gz -P /usr/share/manager-server</code></p>
-
-<p>Then untar downloaded <code>ManagerServer.tar.gz</code> using following command</p>
-
-<p><code>tar -xzf /usr/share/manager-server/ManagerServer.tar.gz -C /usr/share/manager-server</code></p>
-
-<h4>Install Manager Server as a service</h4>
-
-<p>Install the systemd service unit configuration file:</p>
-
-<p><code>printf "[Unit]\nAfter=network.target\n\n[Service]\nLimitNOFILE=1048576\nExecStart=/usr/bin/mono /usr/share/manager-server/ManagerServer.exe -port 8080\nRestart=on-failure\nStartLimitInterval=600\n\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/manager-server.service</code></p>
-
-<p>Reload the systemd daemon:</p>
-
-<p><code>systemctl daemon-reload</code></p>
-
-<p>And finally start Manager Server:</p>
-
-<p></p><p><code>systemctl start manager-server</code></p>
-
-<p>Also have the Manager Server service start automatically on boot so you don't have to start Manager Server manually:</p>
-
-<p></p><p><code>systemctl enable manager-server</code></p>
-
-<h4>Connecting to Manager Server</h4>
-
-<p>By default, Manager Server will listen on port 8080. Open your web-browser and navigate to <code>http://127.0.0.1:8080</code>.</p>
-
-<p><img src="address.png" class="img-thumbnail"></p>
-
-<p>You should see login screen.</p>
-
-<p><img src="login.png" class="img-thumbnail"></p>
-
-<p>Default administrator password is empty so just click <kbd>Login</kbd> without entering any password.</p>
-
-<h4>Remote access</h4>
-
-<p>Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>
+<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">5</span>Remote access</h4><div class="card-body">
+<p class="card-text">Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>
+</div></div>
