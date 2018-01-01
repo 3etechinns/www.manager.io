@@ -55,10 +55,11 @@ title: Installation
 <p class="card-text"><code>nssm.exe start ManagerServer</code></p>
 <p class="card-text"><img src="nssm.png" class="img-thumbnail"></p>
 <p class="card-text">The first command will install the service and the second command will start Manager Server as a service. Now you can access Manager Server without launching <code>ManagerServer.exe</code> manually.</p>
-<p class="card-text">To remove Manager Server as a service, run following commands:</p>
-<p class="card-text"><code>nssm.exe stop ManagerServer</code></p>
-<p class="card-text">Then:</p>
-<p class="card-text"><code>nssm.exe remove ManagerServer</code></p>
+<hr />
+<p class="card-text text-muted small">To remove Manager Server as a service, run following commands:</p>
+<p class="card-text text-muted small"><code>nssm.exe stop ManagerServer</code></p>
+<p class="card-text text-muted small">Then:</p>
+<p class="card-text text-muted small"><code>nssm.exe remove ManagerServer</code></p>
 </div></div>
 
 <div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">7</span>Internet access</h5><div class="card-body">
@@ -70,5 +71,13 @@ title: Installation
 </div></div>
 
 <div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">9</span>Setting up HTTPS</h5><div class="card-body">
-<p class="card-text">If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.
+<p class="card-text">If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.</p>
+<p class="card-text">When installing Caddy, you will need to create <code>caddy.conf</code>. Here is an example of what you will need.</p>
+<pre class="text-white bg-dark p-3 rounded">:443 {
+  tls { max_certs 1000 }
+  proxy / localhost:8080 {
+    transparent
+  }
+}</pre>
+<p class="card-text">This will instruct Caddy to act as a transparent proxy and pass all HTTPS requests to port 8080 where your Manager Server is running.</p>
 </div></div>

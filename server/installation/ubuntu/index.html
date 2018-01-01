@@ -49,6 +49,22 @@ apt-get update</code></p>
 <p class="card-text">Default administrator password is empty so just click <kbd>Login</kbd> without entering any password.</p>
 </div></div>
 
-<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">5</span>Remote access</h5><div class="card-body">
-<p class="card-text">Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">5</span>Internet access</h5><div class="card-body">
+<p class="card-text">To access your Manager Server from the Internet, you will need to configure your router so it properly routes connections from the Internet into your computer running Manager Server. This is called port forwarding.
+</div></div>
+
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">6</span>Custom domain</h5><div class="card-body">
+<p class="card-text">Instead of typing IP address, your users can type domain name instead. This will involve setting up A record on your domain so the domain name (or subdomain) points to IP address of your Internet router.</p>
+</div></div>
+
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">7</span>Setting up HTTPS</h5><div class="card-body">
+<p class="card-text">If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.</p>
+<p class="card-text">When installing Caddy, you will need to create <code>caddy.conf</code>. Here is an example of what you will need.</p>
+<pre class="text-white bg-dark p-3 rounded">:443 {
+  tls { max_certs 1000 }
+  proxy / localhost:8080 {
+    transparent
+  }
+}</pre>
+<p class="card-text">This will instruct Caddy to act as a transparent proxy and pass all HTTPS requests to port 8080 where your Manager Server is running.</p>
 </div></div>
