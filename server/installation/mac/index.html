@@ -11,21 +11,21 @@ title: Installation
 
 {% assign release = site.data.releases | last %}
 
-<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">1</span>Installing Prerequisite Software</h4><div class="card-body">
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">1</span>Installing Prerequisite Software</h5><div class="card-body">
 <p class="card-text">Manager requires <a href="http://www.mono-project.com/">Mono</a> to be installed on Mac OS X.</p>
 <p class="card-text">Download Mono from <a href="http://www.mono-project.com/download/#download-mac">http://www.mono-project.com/download/#download-mac</a> and install it on your Mac.</p>
 </div></div>
 
-<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">2</span>Downloading Manager Server</h4><div class="card-body">
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">2</span>Downloading Manager Server</h5><div class="card-body">
 <p class="card-text">Download the latest version of Manager Server from <a href="https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip">https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.zip</a>.</p>
 </div></div>
 
-<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">3</span>Unpacking ManagerServer.zip</h4><div class="card-body">
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">3</span>Unpacking ManagerServer.zip</h5><div class="card-body">
 <p class="card-text">Unzip ManagerServer.zip to desired folder.</p>
 <p class="card-text"><img src="folder.png" class="img-thumbnail"></p>
 </div></div>
 
-<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">4</span>Launching Manager Server</h4><div class="card-body">
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">4</span>Launching Manager Server</h5><div class="card-body">
 <p class="card-text">Launch <strong>Terminal</strong> app, navigate to the folder where you have unzipped contents of <code>ManagerServer.zip</code> and launch the server with following command:</p>
 <p class="card-text"><kbd>mono ManagerServer.exe</kbd></p>
 <p class="card-text">When you launch the server, the last line should say:</p>
@@ -38,6 +38,6 @@ title: Installation
 <p class="card-text">Default administrator password is empty so just click <kbd>Login</kbd> without entering any password.</p>
 </div></div>
 
-<div class="card mb-4"><h4 class="card-header"><span class="badge badge-pill badge-secondary mr-2">5</span>Remote access</h4><div class="card-body">
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">5</span>Remote access</h5><div class="card-body">
 <p class="card-text">Manager Server is basically a web server so setting up access from other computers on local network or Internet is the same as with any other web server. If you are not familiar how web servers work, consider signing up for <a href="http://www.manager.io/cloud">cloud edition</a> instead. Cloud edition works exactly the same as server edition without IT hassles.</p>
 </div></div>
