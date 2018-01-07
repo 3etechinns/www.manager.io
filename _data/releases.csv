@@ -340,3 +340,4 @@ date,version,message
 2018-01-06,17.12.67,"WebTranslateIt"
 2018-01-07,17.12.68,"Fixed display of custom field on printed documents when it's a date #13553"
 2018-01-07,17.12.69,"Fixed issue with discounts so they are not copied from sales to purchase documents #13493"
+2018-01-07,17.12.70,"no message"
