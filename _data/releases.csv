@@ -374,3 +374,4 @@ date,version,message
 2018-01-26,18.1.25,"Automatically expand width of custom field based on options in dropdown #13664"
 2018-01-26,18.1.26,"Added in-built tax codes for individual emirates within United Arab Emirates #12070"
 2018-01-26,18.1.27,"Added ability to create recurring journal entries under 'Settings' tab"
+2018-01-26,18.1.28,"WebTranslateIt"
