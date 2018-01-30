@@ -380,3 +380,4 @@ date,version,message
 2018-01-29,18.1.31,"WebTranslateIt"
 2018-01-30,18.1.32,"no message"
 2018-01-30,18.1.33,"Make customer and supplier statements remember date or period preferences for more streamlined workflow"
+2018-01-30,18.1.34,"Fixed 'Copy to' function on customer statement when viewing historical customer statement #12025"
