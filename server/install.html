@@ -11,7 +11,7 @@ apt-get install -y libmono-system-xaml4.0-cil
 apt-get install -y mono-devel
 
 mkdir /usr/share/manager-server
-wget https://mngr.s3.amazonaws.com/{{ release.version }}/ManagerServer.tar.gz -P /usr/share/manager-server
+wget https://d2ap5zrlkavzl7.cloudfront.net/{{ release.version }}/ManagerServer.tar.gz -P /usr/share/manager-server
 tar -xzf /usr/share/manager-server/ManagerServer.tar.gz -C /usr/share/manager-server
                                 
 printf "[Unit]\nAfter=network.target\n\n[Service]\nLimitNOFILE=1048576\nExecStart=/usr/bin/mono /usr/share/manager-server/ManagerServer.exe\nRestart=on-failure\nStartLimitInterval=600\n\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/manager-server.service
