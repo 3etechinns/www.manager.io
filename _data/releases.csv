@@ -396,3 +396,4 @@ date,version,message
 2018-02-05,18.1.51,"no message"
 2018-02-05,18.1.52,"no message"
 2018-02-05,18.1.53,"WebTranslateIt"
+2018-02-06,18.1.54,"Rename title of credit note to 'Tax Credit Note' if VAT tax code of United Arab Emirates is used"
