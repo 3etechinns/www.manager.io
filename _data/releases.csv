@@ -399,3 +399,4 @@ date,version,message
 2018-02-06,18.1.54,"Rename title of credit note to 'Tax Credit Note' if VAT tax code of United Arab Emirates is used"
 2018-02-06,18.1.55,"Added ability to set default bank/cash account for bank/cash transactions under 'Form Defaults' #14126"
 2018-02-06,18.1.56,"WebTranslateIt"
+2018-02-07,18.1.57,"WebTranslateIt"
