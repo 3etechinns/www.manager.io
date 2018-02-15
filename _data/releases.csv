@@ -410,3 +410,4 @@ date,version,message
 2018-02-13,18.1.65,"Added ability to view and clone inventory write-offs #3265"
 2018-02-13,18.1.66,"Improve date format detection on bank statement QIF import #14332"
 2018-02-13,18.1.67,"WebTranslateIt"
+2018-02-14,18.1.68,"WebTranslateIt"
