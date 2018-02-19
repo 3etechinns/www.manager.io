@@ -417,3 +417,4 @@ date,version,message
 2018-02-18,18.1.72,"WebTranslateIt"
 2018-02-19,18.1.73,"no message"
 2018-02-19,18.1.74,"Added search box to 'Tracking Codes' screen #14217"
+2018-02-19,18.1.75,"Added 'Total debits' and 'Total credits' totals when viewing list of transactions on customer or supplier statements #13935"
