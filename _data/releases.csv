@@ -423,3 +423,4 @@ date,version,message
 2018-02-19,18.1.78,"WebTranslateIt"
 2018-02-20,18.1.79,"no message"
 2018-02-20,18.1.80,"no message"
+2018-02-22,18.1.81,"Added 'Delivery address' field to customers if 'Delivery Notes' tab is enabled #11829"
