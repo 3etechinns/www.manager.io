@@ -436,3 +436,4 @@ date,version,message
 2018-03-03,18.1.93,"Fixed sorting by reference for relevant tabs #14644"
 2018-03-03,18.1.94,"Fixed custom fields so they are not shown on supplier statements twice #14549"
 2018-03-04,18.1.95,"Fixed date issue when trying to update existing exchange rates #14627"
+2018-03-07,18.1.96,"no message"
