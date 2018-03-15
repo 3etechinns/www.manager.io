@@ -444,3 +444,4 @@ date,version,message
 2018-03-13,18.3.1,"When creating new reports, leave 'From' field blank rather than auto-filling with the start date #10426"
 2018-03-13,18.3.2,"Fixed issue with custom fields when converting bank account into cash account and vice versa #14535"
 2018-03-14,18.3.3,"WebTranslateIt"
+2018-03-14,18.3.4,"Merge branch 'master' of https://github.com/lubos/Manager"
