@@ -13,6 +13,7 @@ layout: main
 
 {% if release.message == "WebTranslateIt" %}{% continue %}{% endif %}
 {% if release.message == "no message" %}{% continue %}{% endif %}
+{% if release.message == "Merge branch 'master' of https://github.com/lubos/Manager" %}{% continue %}{% endif %}
 
 {% assign section2 = release.date | date:"%B %Y" %}
 {% if section != section2 %}
