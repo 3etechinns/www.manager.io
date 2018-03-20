@@ -453,3 +453,4 @@ date,version,message
 2018-03-20,18.3.10,"no message"
 2018-03-19,18.3.11,"WebTranslateIt"
 2018-03-19,18.3.12,"Added 'Qty to invoice' column to 'Customers' tab to see delivered items without invoice #10443"
+2018-03-19,18.3.13,"Fixed QFX import issue where XML tags are not properly closed #14285"
