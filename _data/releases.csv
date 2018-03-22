@@ -464,3 +464,4 @@ date,version,message
 2018-03-22,18.3.21,"Added 'Description' column under 'Credit Notes' tab if used"
 2018-03-22,18.3.22,"Added VAT 0% and VAT Exempt tax codes for Saudi Arabia #12135"
 2018-03-22,18.3.23,"Added automatic reference numbers to inventory write-offs #13792"
+2018-03-23,18.3.24,"Added new tax codes (8%, 10%) for Japan #13936"
