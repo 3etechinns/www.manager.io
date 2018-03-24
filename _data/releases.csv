@@ -466,3 +466,4 @@ date,version,message
 2018-03-22,18.3.23,"Added automatic reference numbers to inventory write-offs #13792"
 2018-03-23,18.3.24,"Added new tax codes (8%, 10%) for Japan #13936"
 2018-03-22,18.3.25,"WebTranslateIt"
+2018-03-24,18.3.27,"Added 'Description' column under 'Debit Notes' tab if used"
