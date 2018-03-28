@@ -473,3 +473,4 @@ date,version,message
 2018-03-27,18.3.31,"Merge branch 'master' of https://github.com/lubos/Manager"
 2018-03-27,18.3.32,"Added mini-statement when viewing invoices instead of showing 'Amount credited' #15140"
 2018-03-27,18.3.33,"WebTranslateIt"
+2018-03-28,18.3.34,"Fixed report export when row contained a cell with no amount #15097"
