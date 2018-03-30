@@ -476,3 +476,4 @@ date,version,message
 2018-03-28,18.3.34,"Fixed report export when row contained a cell with no amount #15097"
 2018-03-28,18.3.35,"Show invoice number on credit notes if applicable"
 2018-03-28,18.3.36,"WebTranslateIt"
+2018-03-29,18.3.37,"no message"
