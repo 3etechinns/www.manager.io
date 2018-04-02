@@ -485,3 +485,4 @@ date,version,message
 2018-03-30,18.3.43,"no message"
 2018-03-31,18.3.44,"WebTranslateIt"
 2018-04-02,18.3.45,"WebTranslateIt"
+2018-04-02,18.3.46,"Fixed dropdown issue on custom fields to prevent duplicates #14857"
