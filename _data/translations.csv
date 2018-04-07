@@ -1,6 +1,6 @@
 code,percentage,localname,englishname,contributors
 ar,100,العربية,Arabic,Haitham Doraidy mohammad naji yaser nanoua Abdulbari mokhles.atallah efaiald Yasser Elkhateeb €gypt southern.carpenter majed404 imosa3da a.gamal.eldin88 luai.naji k.alqaheri loubani.yahia samarrai acc.mohamedhamza88 adnan facysd SBSCC z.kheliwi usama.ibraheem akhatib scony10 osman.a.mahmoud omair5354 rizkadel mohammedessam111 aymanaaat yasir_smart8889 aabuzaid magasal20 asaawan ali.nasser.93 mohammadayoubq jihad ashraf.i.salameh omarelmasry2006 atmaalouf bookkuwait
-nl,100,Nederlands,Dutch,Ernst Bunders Hennie Eerhart martijn vincent Tomasz Nguyen carel.ketelaars Paul van Rijn Mehh Yorrick Hardeman tomas.scheldeman Richard Martijn D. Aart van Oploo joost Jos Geluk Anton Frank sraslan reyjamin aartdijkstra rory Mitch Gooijer ingeschuffelen 2BeFresh rob t.aski rikroukens marloesknetemann raymondlukassen bram.kort alex peterfick.nl Reggie Dinsbach
+nl,100,Nederlands,Dutch,Ernst Bunders Hennie Eerhart martijn vincent Tomasz Nguyen carel.ketelaars Paul van Rijn Mehh Yorrick Hardeman tomas.scheldeman Richard Martijn D. Aart van Oploo joost Anton Jos Geluk Frank sraslan reyjamin aartdijkstra rory Mitch Gooijer ingeschuffelen 2BeFresh rob t.aski rikroukens marloesknetemann raymondlukassen bram.kort alex peterfick.nl Reggie Dinsbach
 el,100,Ελληνικά,Greek,ntrimmis Antonis Vlachos pandhm Kostas Subdee giorgos.arnakis manolis Stathis Mellios dpantoulas skazakis nitro912gr theodorakisg leongreece info panarapi forologinpc pcon konstantinos.tsatsarounos aristeidisgkoros vcharlos delliospetros
 af,100,Afrikaans,Afrikaans,martinmeyer007 jannie durkpotgieter claudine.venter1 thinusg belinda.truscott hitimanajphugues gerhard.bez alex.caudron Andrew van der Spuy
 sr,100,srpski,Serbian,vojkan.milovanovic analiza.fin.izvjestaja dragan.vukosavljevic Nikola Maric dragoslav.nikolic tanicbozidar bojanpavlovicoffice draganmatrox Goran Jordović
@@ -14,14 +14,14 @@ tr,97,Türkçe,Turkish,ahmetnsr07 erincfirtina posta Ufuk enesemretas ŞENOL KO�
 vi,96,Tiếng Việt,Vietnamese,Vũ Văn Hoàn buitrunghau Nguyễn Đình Quân Duy Trung tbn.tran93 yewleung hungphamquoc lequanghoa hoanglongrs xoojulian Pablo Alvarado lxkhanh189
 pt,95,Português,Portuguese,bmrcarneiro Manuela Silva Nuno Lopes celexi Alexsander Donay Samuel Mesquita Ana Fonseca ido sooskca euhudson Lucas osmar.mateus felipe guilhermeschneiderbr Luis Panao luiz diego.viegas aapinto godoyjon
 ro,94,română,Romanian,consult.brasov paul.pitea Sorin vfrunza Catalin Dragomirescu vasile.chisu toda ioan
-fa,93,فارسى,Persian,pnshad Aiub MRNasseri o.ahmadi.mail monib19 hamzelo.ali mehdi_song torabian.7 metalixon mo_jair efa programingc42 kamitoto1995 navidhaghi waheed peyman.mohamadpour
+fa,93,فارسى,Persian,pnshad Aiub MRNasseri o.ahmadi.mail monib19 hamzelo.ali mehdi_song torabian.7 metalixon mo_jair efa kamitoto1995 programingc42 navidhaghi waheed peyman.mohamadpour
 id,93,Bahasa Indonesia,Indonesian,reyjamin stanisk3101 kapkuncara Ajisaka teddie tesargusmawan w.nugrahadi mandau Anies Pertiwi adipriyanto.bpn darmawan.sidiq yhoga.pratama 19.guardians rahmat jeppy.chriz khairfathul herrycandi1963 fikri514 tuliskode bermansnbbn dnirawan79 ubaylicious amantun rhama.donny sariningbhuana morsen_hepi didi.purwadi mastertranskrip
 sv,92,svenska,Swedish,Jan-Eric Lindh larsonniwik Fredrik Duwell mattenrone
 es,88,español,Spanish,Marco Picón oscargonz Diego Represas jf150552 taxmatters.richmond cametiope romsaz info juanmagic01 josegjimenez greatexe Luis Galvez lublanchod fernando.lguevara Angel luis info Freddy Isaac egonzalez osorio022 caparra Luigi malrod gustavo franciscobama ferwind des leonsk29 antoniomagagna info rodrigo.ortiz leoxordonez arlopeza waldinads1987 alaskamama flira1010
 sk,87,slovenčina,Slovak,managerioslovak hiddenvs pavol.paluga Július Meri monikafoster
 de-CH,84,Deutsch (Schweiz),German (Switzerland),Radio64 johnwhosmithwatson Phantom75 wkfrehner
 hr,83,hrvatski,Croatian,vedran.ivancevic daniel.phenomena frost.giant.miniatures zsvegar darko.borojevic bbbbxxx civija mario.strmen.dvorski christian misic.mirko
-fr,83,français,French,antoinebargel nujabe.com webtranslateit.com 500assets.com jpmorin nicolas julien Erwin Mayer scialet Daniel G doris.gagnon olivier.asselin eriam kdaffef Wesly  pavel robert ju alexandrehitchcox alexandre.gauvin natalia.pokrovskaya chsmo33 antoine.rouse mickaelramanitrera rabodanmaha Abdellah Elfilali lamarane
+fr,83,français,French,antoinebargel nujabe.com webtranslateit.com 500assets.com jpmorin nicolas julien Erwin Mayer scialet Daniel G doris.gagnon olivier.asselin eriam kdaffef pavel Wesly  robert ju alexandrehitchcox alexandre.gauvin natalia.pokrovskaya chsmo33 antoine.rouse mickaelramanitrera rabodanmaha Abdellah Elfilali lamarane
 az,83,Azərbaycan,Azeri,anarsmac elxan96 90ez090 moize
 sl,82,slovenski,Slovenian,David blaziusgr Silvo Jakob Gregor Sušanj Jure Medved Ivo foseklin marko.munda andrej.volpi lionidas0001 bostjan.petru thegreatwise
 te,78,తెలుగు,Telugu,sekhar.apps10 kesava reddy hana raj.nann vsurimanchi vveeru19
@@ -33,20 +33,20 @@ ru,72,русский,Russian,mprokopov Anastasia Оля Stepan Galkin azampas Ra
 bs,71,bosanski,Bosnian,dino.bojcic logical ahajdar adnan Vesmir Ruznic sraslan
 uz,68,oʻzbekcha,Uzbek,Diyor
 ms,66,Bahasa Melayu,Malay,firdauspr auradash hamzah norman05051984 aeo.ashraf detjohn13 Rshd Mohd asyrafkhairuddin92 mydispomail-001 cskhua idea_hairul halimhamdan od3n mysycsolutions adrysabry amirul.asswad
+fi,61,suomi,Finnish,Juha Auvinen shotdog mikko
 bn,61,বাংলা,Bengali,andrew Monowar Hossain sykat007 iktheruddin096 arif.css123 qstar.inc hasan87abc mazhar266 mannuinfo topu11543 jessoreit shafizelal contact rashidul6 polashpalchowdury Md. Ikramul Hossain  ceo
 de,60,Deutsch,German,Daniel Ruf marko.langer d_k1 nielsaufdeepspace9 khargoth24 taieyaman tosho1994 Manuel Klarmann abdulshafie99 arno Daniel Banck
 my,58,မြန်မာစာ,Burmese,Lin Win Thu tunwn.mdy mbanyar033
 zh-CN,58,中文(简体),Simplified Chinese (China),zlg.happy fantacyzc ryan.lufh jameslee4848 xoojulian zack hzfywkj jtayyw tony.tong 593915157 yanchoo beiruoyi_1016 admin
 th,58,ไทย,Thai,Pichaya.L ChiVasCz nattariya kunthawat ssrinora saravuthc suratlee tawat.ted
 no,57,norsk,Norwegian,Kevin Jung Park theodor Rune Michael Hofstad alexander.dawson
-fi,55,suomi,Finnish,Juha Auvinen shotdog mikko
 da,51,dansk,Danish,finnwandersen Torben Hasse Kirkegaard railer12 soren wegeberg kurtha bkooss
 ur,50,اُردو,Urdu,aasim.sethi tmntbob Moeen Hashmi Hassaan Khawer Amjad Cheema thenewelectricstore muhammadatif.memon saqib.pcg awais_sohail89 91.syedhunain ashfaq202 celticom mshahid7194090 mzraza usrana52
 pl,50,polski,Polish,Krzysztof Pilars greg goliat4 daaaaniel info atudetank rzeka
 ko,48,한국어,Korean,ingen
 hu,48,magyar,Hungarian,radi Pal Turcsan pmarjai radnog zolenor gabor
 zh-TW,45,中文(台灣),Traditional Chinese (Taiwan),assanges simon.tai Jefferson matt81412 c.hwa.liu macho9929 iverson83102005
-it,36,italiano,Italian,a.giordano.mi tommaso.muro ruozzistefano Enrico Baioni grassi.alessio francesco.monte davide io webmaster brigo92.pb aces85 info Daniele Giulianelli piccioli66 alby jessica.oppedisano aurasanu nlogozzo123
+it,36,italiano,Italian,a.giordano.mi tommaso.muro ruozzistefano Enrico Baioni grassi.alessio francesco.monte davide io webmaster brigo92.pb aces85 info piccioli66 Daniele Giulianelli alby jessica.oppedisano aurasanu nlogozzo123
 mn,36,Mongɣol kele,Mongolian,munkh.munkhsoyol dulguunb ireedui2k5 daj_bud
 bg,32,български,Bulgarian,y.hinov simeonov.martin krapchev dimo.chankov ivanov.ivaylo
 uk,27,українська,Ukrainian,dgorbachov julia.litovenko d.matiushko swet92
