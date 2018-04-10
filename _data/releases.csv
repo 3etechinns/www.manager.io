@@ -498,3 +498,4 @@ date,version,message
 2018-04-09,18.4.8,"no message"
 2018-04-09,18.4.9,"no message"
 2018-04-10,18.4.10,"Fixed 'Balance due' on sales invoices if withholding tax is used #15339"
+2018-04-10,18.4.11,"Fixed rounding issue on 'Inventory Profit Margin' report #15193"
