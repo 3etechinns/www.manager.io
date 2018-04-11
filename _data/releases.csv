@@ -500,3 +500,4 @@ date,version,message
 2018-04-10,18.4.10,"Fixed 'Balance due' on sales invoices if withholding tax is used #15339"
 2018-04-10,18.4.11,"Fixed rounding issue on 'Inventory Profit Margin' report #15193"
 2018-04-10,18.4.12,"Fixed form defaults for 'Inter-account Transfers' #15235"
+2018-04-11,18.4.13,"Fixed incorrect count of transactions when viewing customer/supplier statements #15256"
