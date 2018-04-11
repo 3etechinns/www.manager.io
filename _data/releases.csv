@@ -502,3 +502,4 @@ date,version,message
 2018-04-10,18.4.12,"Fixed form defaults for 'Inter-account Transfers' #15235"
 2018-04-11,18.4.13,"Fixed incorrect count of transactions when viewing customer/supplier statements #15256"
 2018-04-11,18.4.14,"Fixed visibility issue of custom fields on line items #15270"
+2018-04-11,18.4.15,"no message"
