@@ -512,3 +512,4 @@ date,version,message
 2018-04-14,18.4.22,"Fixed 'Debit Notes' tab so it shows custom fields in the list #15428"
 2018-04-14,18.4.23,"no message"
 2018-04-14,18.4.24,"WebTranslateIt"
+2018-04-15,18.4.25,"Make invoice title 'Tax Invoice' when using GST tax code in Singapore"
