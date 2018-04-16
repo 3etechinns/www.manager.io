@@ -514,3 +514,4 @@ date,version,message
 2018-04-14,18.4.24,"WebTranslateIt"
 2018-04-15,18.4.25,"Make invoice title 'Tax Invoice' when using GST tax code in Singapore"
 2018-04-15,18.4.26,"no message"
+2018-04-17,18.4.27,"Fixed issue with early payment discounts when unrelated credit note is issued #15160"
