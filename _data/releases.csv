@@ -532,3 +532,4 @@ date,version,message
 2018-05-01,18.4.45,"no message"
 2018-05-01,18.4.46,"WebTranslateIt"
 2018-05-03,18.4.47,"WebTranslateIt"
+2018-05-03,18.4.48,"Added ability to set date on customer and supplier statements to 'Today' instead of manually specifying it"
