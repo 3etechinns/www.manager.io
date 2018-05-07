@@ -551,3 +551,4 @@ date,version,message
 2018-05-07,18.4.64,"no message"
 2018-05-08,18.4.65,"no message"
 2018-05-07,18.4.66,"Fixed reference numbers on production orders so they are shown on transaction lists #15779"
+2018-05-07,18.4.67,"Added account code (if used) to journal entry view screen #15770"
