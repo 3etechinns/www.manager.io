@@ -565,3 +565,4 @@ date,version,message
 2018-05-09,18.4.79,"no message"
 2018-05-09,18.4.80,"no message"
 2018-05-09,18.4.81,"no message"
+2018-05-09,18.4.82,"Fixed issue with last reconciliation date under 'Bank Accounts' showing incorrectly #15710"
