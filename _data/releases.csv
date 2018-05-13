@@ -573,3 +573,4 @@ date,version,message
 2018-05-10,18.4.88,"Fixed inventory write-offs so reference numbers and 'View' button shows on transaction lists #15761"
 2018-05-11,18.4.89,"WebTranslateIt"
 2018-05-12,18.4.90,"Merge branch 'master' of https://github.com/lubos/Manager"
+2018-05-13,18.4.91,"no message"
