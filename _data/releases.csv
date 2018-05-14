@@ -578,3 +578,4 @@ date,version,message
 2018-05-13,18.4.93,"WebTranslateIt"
 2018-05-13,18.4.94,"Fixed Devanagari font issue when generating PDF #15749"
 2018-05-13,18.4.95,"no message"
+2018-05-13,18.4.96,"Fixed control account names if renamed in Chart of Accounts #15618"
