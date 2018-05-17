@@ -583,3 +583,4 @@ date,version,message
 2018-05-14,18.4.99,"Added ability to attach files to emails #10099"
 2018-05-14,18.5.0,"no message"
 2018-05-16,18.5.1,"WebTranslateIt"
+2018-05-16,18.5.2,"Merge branch 'master' of https://github.com/lubos/Manager"
