@@ -591,3 +591,4 @@ date,version,message
 2018-05-21,18.5.8,"Merge branch 'master' of https://github.com/lubos/Manager"
 2018-05-21,18.5.9,"WebTranslateIt"
 2018-05-22,18.5.10,"Fixed PDF generation issue when br tag is used within bold text #16008"
+2018-05-22,18.5.11,"Fixed custom field date issue when the day is 31st of the month #15969"
