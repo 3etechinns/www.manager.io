@@ -1,0 +1,38 @@
+---
+title: Download
+layout: main
+---
+{% assign release = site.data.releases | last %}
+
+<h4 class="text-center font-weight-bold">Your download should begin automatically</h4>
+<p class="text-center lead mb-4">
+  Didn’t work? <a href="https://d2ap5zrlkavzl7.cloudfront.net/{{ release.version }}/Manager.msi">Try downloading again.</a>
+</p>
+
+<hr />
+
+<h5 class="text-center mt-4">Need help using Manager?</h4>
+
+<div class="row mt-4">
+  <div class="col-sm-6">
+    <div class="card text-center">
+      <div class="card-header"><i class="fa fa-book"></i> Guides</div>
+      <div class="card-body">
+        <p class="card-text text-center">Read our helpful guides on how to set up, configure, or use Manager.</p>
+        <a href="https://guides.manager.io" class="btn btn-outline-primary">Go to Guides</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="card text-center">
+      <div class="card-header"><i class="fa fa-comment"></i> Forum</div>
+      <div class="card-body">
+        <p class="card-text text-center">Join our community and get help on any issues you are having.</p>
+        <a href="https://forum.manager.io" class="btn btn-outline-primary">Go to Forum</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<iframe width="1" height="1" frameborder="0" src="https://d2ap5zrlkavzl7.cloudfront.net/{{ release.version }}/Manager.msi"></iframe>
