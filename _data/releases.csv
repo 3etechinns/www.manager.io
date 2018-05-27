@@ -608,3 +608,4 @@ date,version,message
 2018-05-25,18.5.26,"Improved bank reconciliation #16080"
 2018-05-25,18.5.27,"WebTranslateIt"
 2018-05-25,18.5.28,"Fixed visibility of accounting method option so it doesn't show if the business contains no invoices #16052"
+2018-05-26,18.5.29,"no message"
