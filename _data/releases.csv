@@ -615,3 +615,4 @@ date,version,message
 2018-05-28,18.5.33,"WebTranslateIt"
 2018-05-30,18.5.34,"Merge branch 'master' of https://github.com/lubos/Manager"
 2018-05-31,18.5.35,"Fixed issue where invoice could be deleted even if it had payment allocated to it #16126"
+2018-05-30,18.5.36,"WebTranslateIt"
