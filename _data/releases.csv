@@ -629,3 +629,4 @@ date,version,message
 2018-06-13,18.5.47,"WebTranslateIt"
 2018-06-15,18.5.48,"Fixed invoice count under 'Customers' and 'Suppliers' tabs #16272"
 2018-06-15,18.5.49,"Fixed issue when description wouldn't carry when copying to new purchase order or invoice #16222"
+2018-06-15,18.5.50,"no message"
