@@ -627,3 +627,4 @@ date,version,message
 2018-06-12,18.5.45,"no message"
 2018-06-12,18.5.46,"WebTranslateIt"
 2018-06-13,18.5.47,"WebTranslateIt"
+2018-06-15,18.5.48,"Fixed invoice count under 'Customers' and 'Suppliers' tabs #16272"
