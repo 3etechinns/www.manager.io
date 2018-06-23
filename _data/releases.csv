@@ -653,3 +653,4 @@ date,version,message
 2018-06-23,18.5.71,"Added ability to search using multiple keywords #14198"
 2018-06-23,18.5.72,"Added indicator to show there are recurring transactions pending to be created #14634"
 2018-06-23,18.5.73,"Fixed 'Purchase Invoices' tab so 'PO#' column doesn't show if not used #16417"
+2018-06-23,18.5.74,"Added ability to set 'Special Accounts' and 'Capital Accounts' inactive #16146"
