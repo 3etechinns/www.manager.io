@@ -654,3 +654,4 @@ date,version,message
 2018-06-23,18.5.72,"Added indicator to show there are recurring transactions pending to be created #14634"
 2018-06-23,18.5.73,"Fixed 'Purchase Invoices' tab so 'PO#' column doesn't show if not used #16417"
 2018-06-23,18.5.74,"Added ability to set 'Special Accounts' and 'Capital Accounts' inactive #16146"
+2018-06-23,18.5.75,"Added autocomplete functionality for 'Unit Name' field when creating or updating inventory items #14985"
