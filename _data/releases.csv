@@ -649,3 +649,4 @@ date,version,message
 2018-06-22,18.5.67,"no message"
 2018-06-22,18.5.68,"Added 'Bank Account Summary' and 'Cash Account Summary' reports #14189"
 2018-06-23,18.5.69,"no message"
+2018-06-23,18.5.70,"Added 'Batch Delete' button to every screen which contains a table #15252"
