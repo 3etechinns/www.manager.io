@@ -652,3 +652,4 @@ date,version,message
 2018-06-23,18.5.70,"Added 'Batch Delete' button to every screen which contains a table #15252"
 2018-06-23,18.5.71,"Added ability to search using multiple keywords #14198"
 2018-06-23,18.5.72,"Added indicator to show there are recurring transactions pending to be created #14634"
+2018-06-23,18.5.73,"Fixed 'Purchase Invoices' tab so 'PO#' column doesn't show if not used #16417"
