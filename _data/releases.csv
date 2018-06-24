@@ -660,3 +660,4 @@ date,version,message
 2018-06-23,18.5.78,"Added asset name to depreciation and amortization entries #10751"
 2018-06-23,18.5.79,"Fixed 'Aged Receivables' and 'Aged Payables' reports so customers/suppliers with credits are shown #11193"
 2018-06-23,18.5.80,"WebTranslateIt"
+2018-06-24,18.5.81,"Merge branch 'master' of https://github.com/lubos/Manager"
