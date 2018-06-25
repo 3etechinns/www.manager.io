@@ -663,3 +663,4 @@ date,version,message
 2018-06-24,18.5.81,"Fixed reports so it shows business name from business details if defined #15584"
 2018-06-24,18.5.83,"no message"
 2018-06-24,18.5.85,"Added support for page numbers when generating PDF invoices and other documents #16195"
+2018-06-24,18.5.86,"WebTranslateIt"
