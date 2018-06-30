@@ -676,3 +676,4 @@ date,version,message
 2018-06-29,18.5.96,"Added ability to login on multiple devices with the same username simultaneously #16494"
 2018-06-29,18.5.97,"no message"
 2018-06-30,18.5.98,"no message"
+2018-06-30,18.5.99,"Added ability to view, print and clone billable time #13206"
