@@ -672,3 +672,4 @@ date,version,message
 2018-06-28,18.5.92,"WebTranslateIt"
 2018-06-29,18.5.93,"WebTranslateIt"
 2018-06-29,18.5.94,"no message"
+2018-06-29,18.5.95,"Added ability to do batch create and batch update on tracking codes #16566"
