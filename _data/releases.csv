@@ -690,3 +690,4 @@ date,version,message
 2018-07-09,18.7.10,"no message"
 2018-07-09,18.7.12,"Merge branch 'master' of https://github.com/lubos/Manager"
 2018-07-09,18.7.13,"no message"
+2018-07-10,18.7.14,"Fixed account naming issue under 'Payslip Items' #16726"
