@@ -693,7 +693,7 @@ date,version,message
 2018-07-10,18.7.14,"Fixed account naming issue under 'Payslip Items' #16726"
 2018-07-10,18.7.15,"WebTranslateIt"
 2018-07-10,18.7.16,"Merge branch 'master' of https://github.com/lubos/Manager"
-2018-07-10,18.7.17,"Fixed payslip item issue when custom expense or liability account is deleted from Chart of Accounts #16700"
+2018-07-10,18.7.17,"Fixed payslip item issue which occured when linked expense or liability account was deleted from Chart of Accounts #16700"
 2018-07-10,18.7.18,"Added optional description field to payslips #7257"
 2018-07-10,18.7.19,"no message"
 2018-07-10,18.7.20,"Added page number to reports when generating PDF #5045"
