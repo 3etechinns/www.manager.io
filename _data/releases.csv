@@ -701,3 +701,4 @@ date,version,message
 2018-07-11,18.7.22,"no message"
 2018-07-12,18.7.23,"WebTranslateIt"
 2018-07-13,18.7.24,"Added ability to set end date for recurring sales and purchase invoices #10466"
+2018-07-13,18.7.25,"Added ability to set early payment discount on recurring sales invoices #15825"
