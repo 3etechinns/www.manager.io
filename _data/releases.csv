@@ -706,3 +706,4 @@ date,version,message
 2018-07-14,18.7.27,"Added ability to set starting balances of inventory items for each inventory location #13568"
 2018-07-14,18.7.28,"Added ability to set custom fields inactive #16037"
 2018-07-14,18.7.29,"no message"
+2018-07-14,18.7.30,"Added reference numbers to 'General Ledger Transactions' report #16797"
