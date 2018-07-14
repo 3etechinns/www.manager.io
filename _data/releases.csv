@@ -705,3 +705,4 @@ date,version,message
 2018-07-13,18.7.26,"Added 'Item Code' to 'Inventory Quantity by Location' report #13085"
 2018-07-14,18.7.27,"Added ability to set starting balances of inventory items for each inventory location #13568"
 2018-07-14,18.7.28,"Added ability to set custom fields inactive #16037"
+2018-07-14,18.7.29,"no message"
