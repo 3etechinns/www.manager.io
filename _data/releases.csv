@@ -708,3 +708,4 @@ date,version,message
 2018-07-14,18.7.29,"no message"
 2018-07-14,18.7.30,"Added reference numbers to 'General Ledger Transactions' report #16797"
 2018-07-14,18.7.31,"Fixed custom field defaults when using 'Copy To' function #14874"
+2018-07-14,18.7.32,"Added ability to set custom income account for inventory kits #12769"
