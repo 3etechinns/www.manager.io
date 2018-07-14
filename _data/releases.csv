@@ -702,3 +702,4 @@ date,version,message
 2018-07-12,18.7.23,"WebTranslateIt"
 2018-07-13,18.7.24,"Added ability to set end date for recurring sales and purchase invoices #10466"
 2018-07-13,18.7.25,"Added ability to set early payment discount on recurring sales invoices #15825"
+2018-07-13,18.7.26,"Added 'Item Code' to 'Inventory Quantity by Location' report #13085"
