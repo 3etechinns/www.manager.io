@@ -3,28 +3,94 @@ layout: main
 title: Pricing
 ---
 <h4 class="text-center font-weight-bold">Pay once, use forever</h4>
-<p class="text-center lead mb-4">Self-hosted accounting software without monthly fees.</p>
+<p class="text-center lead">Self-hosted accounting software without monthly fees.</p>
+<div class="text-center mb-4"><select id="currency" class="custom-select" onchange="document.getElementById('price').innerHTML = this.value">{% for currency in site.data.server_pricing %}<option data-price="{{ currency.StripePrice }}" data-currency="{{ currency.Code | downcase }}" value="{{ currency.Price }} {{ currency.Code }}"{% if currency.Code == "USD" %} selected{% endif %}>{{ currency.Code }} - {{ currency.Name }}</option>{% endfor %}</select></div>
+<hr />
 
-<div class="card-columns mb-4">
-{% assign mainCurrencies = "usd,gbp,eur" | split:',' %}
-{% for price in site.server_pricing %}
-{% assign currency = price.id | split:'/' | last %}
-{% if mainCurrencies contains currency %}{% else %}{% continue %}{% endif %}
-<div class="card">
-  <div class="list-group">
-    <a href="{{ price.url }}" class="list-group-item list-group-item-action font-weight-bold">{{ currency | upcase }} - {{ price.title }}</a>
+<div id="priceContainer" class="row">
+  <div class="col-md pr-4">
+    <div class="bg-light p-4" style="webkit-clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%); clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%)">
+      <h5 class="font-weight-bold mb-3">For <span id="price" class="bg-primary text-white py-1 px-2">...</span> total, you get:</h5>
+      <table>
+        <tr><td class="text-center p-2"><i class="fal fa-infinity"></i></td><td>Perpetual License</td></tr>
+        <tr><td class="text-center p-2"><i class="fal fa-calendar-alt"></i></td><td>Free Year of Upgrades</td></tr>
+        <tr><td class="text-center p-2"><i class="fal fa-building"></i></td><td>Unlimited Businesses</td></tr>
+        <tr><td class="text-center p-2"><i class="fal fa-users"></i></td><td>Unlimitted Users</td></tr>
+        <tr><td class="text-center p-2"><i class="fal fa-server"></i></td><td>Complete Control of Your Environment</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="col-md pl-4 my-auto">
+    <a href="/server/installation/" class="btn btn-success btn-block font-weight-bold btn-lg">Free Trial</a>
+    <button id="customButton" class="btn btn-outline-secondary btn-block font-weight-bold btn-lg"><i id="spinner" class="fal fa-spinner fa-spin mr-2 d-none"></i>Buy Now</button>
   </div>
 </div>
-{% endfor %}
-</div>
 
-<div class="card-columns mb-4">
-{% for price in site.server_pricing %}
-{% assign currency = price.id | split:'/' | last %}
-<div class="card">
-  <div class="list-group">
-    <a href="{{ price.url }}" class="list-group-item list-group-item-action">{{ currency | upcase }} - {{ price.title }}</a>
-  </div>
-</div>
-{% endfor %}
-</div>
+<hr />
+
+<h5 class="font-weight-bold mt-4 pt-4">Can we create as many businesses as we like?</h4>
+<p class="lead mb-4 w-75">Yes. Unlike most online accounting software, We'll never charge you extra for more businesses in Manager.</p>
+
+<h5 class="font-weight-bold mt-4 pt-4">Do we pay extra for more users?</h4>
+<p class="lead mb-4 w-75">No. We don't charge you based on how many users you add. 5 users or 50, the price is the same. If you have many businesses, you can also specify which users can see which businesses.</p>
+
+<h5 class="font-weight-bold mt-4 pt-4">Will we be charged when our trial is up?</h4>
+<p class="lead mb-4 w-75">No. We don't ask for your credit card up front, so you'll only be charged when you decide. If you want to continue after your trial, we'll ask for payment details.</p>
+
+<script>
+  document.getElementById('price').innerHTML = document.getElementById("currency").options[document.getElementById("currency").selectedIndex].value;
+</script>
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script>
+var handler = StripeCheckout.configure({
+  key: 'pk_live_YrLbNxRzg91UB3ADcLDc0uhi',
+  image: 'https://s3.amazonaws.com/stripe-uploads/acct_102vRP2mUW00Xt3Umerchant-icon-939520-manager-256x256.png',
+  locale: 'auto',
+  allowRememberMe: false,
+  token: function(token) {
+    document.getElementById('customButton').disabled = true;
+    document.getElementById('spinner').classList.remove('d-none');
+    
+    var selectedOption = document.getElementById("currency").options[document.getElementById("currency").selectedIndex];  
+    
+    var form = document.createElement('form');
+    form.setAttribute('method', 'POST');
+    form.setAttribute('action', 'https://cloud.manager.io/purchase?currency='+selectedOption.getAttribute('data-currency'));
+    
+    var field1 = document.createElement("input");
+    field1.setAttribute("type", 'hidden');
+    field1.setAttribute("name", 'stripeEmail');
+    field1.setAttribute("value", token.email);
+    form.appendChild(field1);
+    
+    var field2 = document.createElement("input");
+    field2.setAttribute("type", 'hidden');
+    field2.setAttribute("name", 'stripeToken');
+    field2.setAttribute("value", token.id);
+    form.appendChild(field2);
+    
+    document.body.appendChild(form);
+    
+    form.submit();
+  }
+});
+
+document.getElementById('customButton').addEventListener('click', function(e) {
+
+  var selectedOption = document.getElementById("currency").options[document.getElementById("currency").selectedIndex];  
+
+  // Open Checkout with further options:
+  handler.open({
+    name: 'Manager Server Edition',
+    currency: selectedOption.getAttribute('data-currency'),
+    amount: parseInt(selectedOption.getAttribute('data-price'))
+  });
+  e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+  handler.close();
+});
+</script>

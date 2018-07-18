@@ -28,7 +28,19 @@ title: Compare
     <tr><td class="text-left">Easy to Setup</td><td><i class="fas fa-ban text-muted"></i></td><td class="bg-light"><i class="fas fa-check-circle text-success"></i></td></tr>
     <tr><td class="text-left">Automatic Backups</td><td><i class="fas fa-ban text-muted"></i></td><td class="bg-light"><i class="fas fa-check-circle text-success"></i></td></tr>
     <tr><td class="text-left">Automatic Updates</td><td><i class="fas fa-ban text-muted"></i></td><td class="bg-light"><i class="fas fa-check-circle text-success"></i></td></tr>
-    <tr><td class="text-left">Pricing</td><td class="text-muted font-weight-bold">$390 USD<br /><a href="/server/pricing/" class="font-weight-normal small">See pricing in your currency</a></td><td class="font-weight-bold bg-light">$39 USD / month<br /><a href="/cloud/pricing/" class="font-weight-normal small">See pricing in your currency</a></td></tr>
+    <tr>
+      <td class="text-left">Pricing</td>
+      <td class="text-muted font-weight-bold">
+        <select id="server-currency" class="custom-select d-none text-center mb-2" onchange="document.getElementById('server-price').innerHTML = this.value">{% for currency in site.data.server_pricing %}<option value="{{ currency.Price }} {{ currency.Code }}"{% if currency.Code == "USD" %} selected{% endif %}>{{ currency.Code }} - {{ currency.Name }}</option>{% endfor %}</select>
+        <div><span id="server-price">390 USD</span></div>
+        <button class="btn btn-outline-dark btn-sm mt-2" onclick="this.classList.add('d-none'); document.getElementById('server-currency').classList.remove('d-none')">See pricing in your currency</button>
+      </td>
+      <td class="font-weight-bold bg-light">
+        <select id="cloud-currency" class="custom-select d-none text-center mb-2" onchange="document.getElementById('cloud-price').innerHTML = this.value">{% for currency in site.data.cloud_pricing %}<option value="{{ currency.Price }} {{ currency.Code }}"{% if currency.Code == "USD" %} selected{% endif %}>{{ currency.Code }} - {{ currency.Name }}</option>{% endfor %}</select>
+        <div><span id="cloud-price">39 USD</span> / month</div>
+        <button class="btn btn-outline-dark btn-sm mt-2" onclick="this.classList.add('d-none'); document.getElementById('cloud-currency').classList.remove('d-none')">See pricing in your currency</button>
+      </td>
+    </tr>
     <tr><td></td><td><a href="/server/installation/" class="btn btn-light btn-lg font-weight-bold text-muted">Free Trial</a></td><td class="bg-light"><a href="/cloud/" class="btn btn-lg btn-success font-weight-bold">Learn More</a></td></tr>
   </tbody>
 </table>

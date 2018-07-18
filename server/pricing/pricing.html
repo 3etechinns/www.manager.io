@@ -1,5 +1,0 @@
----
-permalink: /server/pricing.csv
----
-{% for price in site.server_pricing %}{{ price.id | split:'/' | last | upcase }},{{ price.stripe }}
-{% endfor %}

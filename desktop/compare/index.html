@@ -28,7 +28,15 @@ title: Compare
     <tr><td class="text-left">Access Control & User Permissions</td><td><i class="fas fa-ban text-muted"></i></td><td class="bg-light"><i class="fas fa-check-circle text-success"></i></td></tr>
     <tr><td class="text-left">Automatic Backups</td><td><i class="fas fa-ban text-muted"></i></td><td class="bg-light"><i class="fas fa-check-circle text-success"></i></td></tr>
     <tr><td class="text-left">Automatic Updates</td><td><i class="fas fa-ban text-muted"></i></td><td class="bg-light"><i class="fas fa-check-circle text-success"></i></td></tr>
-    <tr><td class="text-left">Pricing</td><td class="text-muted font-weight-bold">$0</td><td class="font-weight-bold bg-light">$39 USD / month<br /><a href="/cloud/pricing/" class="font-weight-normal small">See pricing in your currency</a></td></tr>
+    <tr>
+      <td class="text-left">Pricing</td>
+      <td class="text-muted font-weight-bold">$0</td>
+      <td class="font-weight-bold bg-light">
+        <select id="currency" class="custom-select d-none text-center mb-2" onchange="document.getElementById('price').innerHTML = this.value">{% for currency in site.data.cloud_pricing %}<option value="{{ currency.Price }} {{ currency.Code }}"{% if currency.Code == "USD" %} selected{% endif %}>{{ currency.Code }} - {{ currency.Name }}</option>{% endfor %}</select>
+        <div><span id="price">39 USD</span> / month</div>
+        <button class="btn btn-outline-dark btn-sm mt-2" id="currencyButton" onclick="this.classList.add('d-none'); document.getElementById('currency').classList.remove('d-none')">See pricing in your currency</button>
+      </td>
+    </tr>
     <tr><td></td><td><a href="/desktop/download/" class="btn btn-light btn-lg font-weight-bold text-muted">Free Download</a></td><td class="bg-light"><a href="/cloud/" class="btn btn-lg btn-success font-weight-bold">Learn More</a></td></tr>
   </tbody>
 </table>
