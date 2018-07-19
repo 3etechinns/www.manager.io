@@ -3,14 +3,14 @@ layout: main
 title: Pricing
 ---
 <h4 class="text-center font-weight-bold">We do not charge by the user or by the business</h4>
-<p class="text-center lead">We promise predictable & consistent pricing - exactly how it should be.</p>
+<p class="text-center lead">We offer predictable & consistent pricing in your currency - exactly how it should be.</p>
 <div class="text-center mb-4"><select id="currency" class="custom-select" onchange="document.getElementById('price').innerHTML = this.value">{% for currency in site.data.cloud_pricing %}<option value="{{ currency.Price }} {{ currency.Code }}"{% if currency.Code == "USD" %} selected{% endif %}>{{ currency.Code }} - {{ currency.Name }}</option>{% endfor %}</select></div>
 <hr />
 
 <div id="priceContainer" class="row">
   <div class="col-md pr-4">
     <div class="bg-light p-4" style="webkit-clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%); clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%)">
-      <h5 class="font-weight-bold mb-3">For <span id="price" class="bg-primary text-white py-1 px-2">...</span> per month total, you get:</h5>
+      <h5 class="font-weight-bold mb-3">For <span id="price" class="bg-primary text-white py-1 px-2">...</span> per month, you get:</h5>
       <table>
         <tr><td class="text-center p-2"><i class="fal fa-cubes"></i></td><td>Full-Featured Accounting</td></tr>
         <tr><td class="text-center p-2"><i class="fal fa-building"></i></td><td>Unlimited Businesses</td></tr>
@@ -21,9 +21,8 @@ title: Pricing
       </table>
     </div>
   </div>
-  <div class="col-md pl-4 my-auto">
-    
-    <form action="https://cloud.manager.io/submit" method="post">
+  <div class="col-md my-auto">
+    <form action="https://cloud.manager.io/submit" method="post" class="my-2">
       <div class="input-group input-group-lg">
         <input class="form-control" name="EmailAddress" placeholder="Enter your email" type="text"><span class="input-group-btn"><input class="btn btn-primary font-weight-bold" type="submit" value="Get Started"></span>
       </div>
@@ -33,17 +32,25 @@ title: Pricing
 
 <hr />
 
-<h5 class="font-weight-bold mt-4 pt-4">Can we create as many businesses as we like?</h4>
-<p class="lead mb-4 w-75">Yes. Unlike most online accounting software, We'll never charge you extra for more businesses in Manager.</p>
+<h4 class="text-center font-weight-bold mt-4 pt-4">Cloud Pricing FAQ</h4>
+<p class="text-center lead">Some of the more common questions we get.</p>
 
-<h5 class="font-weight-bold mt-4 pt-4">Do we pay extra for more users?</h4>
-<p class="lead mb-4 w-75">No. We don't charge you based on how many users you add. 5 users or 50, the price is the same. If you have many businesses, you can also specify which users can see which businesses.</p>
+<div class="row mb-4">
+  <div class="col-md">
+    <h5 class="font-weight-bold mt-4 pt-4">Can I try Manager Cloud for free?</h5>
+    <p class="lead mb-4">Of course! Your first 7 days are on us. Sign up for a new Manager Clouud site to get started. If you love it (and we think you will), you can continue using Manager Cloud simply by providing us with your payment details.</p>
+  
+    <h5 class="font-weight-bold mt-4 pt-4">Do we pay extra for more users or businesses?</h5>
+    <p class="lead mb-4">No. We don't charge you based on how many users or businesses you add. 5 or 50, the price is the same. If you have many businesses, you can also specify which businesses are visible to which users. Great for accountants and bookkeepers with many clients.</p>
+  </div>
+  <div class="col-md">
+    <h5 class="font-weight-bold mt-4 pt-4">What payment options do you accept?</h5>
+    <p class="lead mb-4">We accept MasterCard, Visa, and American Express. For customers purchasing an annual subscription, we also accept bank transfers or PayPal.</p>
 
-<h5 class="font-weight-bold mt-4 pt-4">Will we be charged when our trial is up?</h4>
-<p class="lead mb-4 w-75">No. We don't ask for your credit card up front, so you'll only be charged when you decide. If you want to continue after your trial, we'll ask for payment details.</p>
-
-<h5 class="font-weight-bold mt-4 pt-4">Can we cancel at any time?</h4>
-<p class="lead mb-4 w-75 pb-4">There's no minimum contract for Manager — cancel at any time without penalty or hassle. And unlike most online accounting software, you can download all your data and continue using desktop edition for free.</p>
+    <h5 class="font-weight-bold mt-4 pt-4">Can we cancel at any time?</h5>
+    <p class="lead mb-4">There's no minimum contract for Manager — cancel at any time without penalty or hassle. And unlike most online accounting software, you can download all your data and continue using desktop edition for free.</p>
+  </div>
+</div>
 
 <script>
   document.getElementById('price').innerHTML =  document.getElementById("currency").options[document.getElementById("currency").selectedIndex].value;
