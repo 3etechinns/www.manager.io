@@ -715,3 +715,4 @@ date,version,message
 2018-07-18,18.7.36,"WebTranslateIt"
 2018-07-22,18.7.37,"Added ability to create custom fields for capital accounts #16691"
 2018-07-22,18.7.38,"Added ability to create custom control accounts for capital accounts #16690"
+2018-07-22,18.7.39,"Improved journal entry view so account codes are shown where applicable #14877"
