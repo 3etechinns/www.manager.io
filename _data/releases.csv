@@ -720,3 +720,4 @@ date,version,message
 2018-07-23,18.7.41,"no message"
 2018-07-23,18.7.42,"Added 'Termination' column to recurring sales and purchase invoices where applicable #16832"
 2018-07-23,18.7.43,"When business logo is uploaded, hide ability to upload new logo until old one is deleted #16908"
+2018-07-23,18.7.44,"no message"
