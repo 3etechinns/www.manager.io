@@ -718,3 +718,4 @@ date,version,message
 2018-07-22,18.7.39,"Improved journal entry view so account codes are shown where applicable #14877"
 2018-07-22,18.7.40,"Added ability to set custom theme on inventory write-offs #15179"
 2018-07-23,18.7.41,"no message"
+2018-07-23,18.7.42,"Added 'Termination' column to recurring sales and purchase invoices where applicable #16832"
