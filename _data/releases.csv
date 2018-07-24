@@ -722,3 +722,4 @@ date,version,message
 2018-07-23,18.7.43,"When business logo is uploaded, hide ability to upload new logo until old one is deleted #16908"
 2018-07-23,18.7.44,"no message"
 2018-07-23,18.7.45,"WebTranslateIt"
+2018-07-24,18.7.46,"Merge branch 'master' of https://github.com/lubos/Manager"
