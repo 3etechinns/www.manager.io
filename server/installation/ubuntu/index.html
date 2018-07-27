@@ -50,7 +50,7 @@ title: Installation
 </div></div>
 
 <div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">5</span>Internet access</h5><div class="card-body">
-<p class="card-text">To access your Manager Server from the Internet, you will need to configure your router so it properly routes connections from the Internet into your computer running Manager Server. This is called port forwarding.
+<p class="card-text">To access your Manager Server from the Internet, you will need to configure your router so it properly routes connections from the Internet into your computer running Manager Server. This is called port forwarding.</p>
 </div></div>
 
 <div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">6</span>Custom domain</h5><div class="card-body">
@@ -58,7 +58,7 @@ title: Installation
 </div></div>
 
 <div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">7</span>Setting up HTTPS</h5><div class="card-body">
-<p class="card-text">If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.</p>
+<p class="card-text">After you set up custom domain, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.</p>
 <p class="card-text">Install Caddy using the following command:</p>
 <p class="card-text"><code>curl https://getcaddy.com | bash -s personal</code></p>
 <p class="card-text">Then create Caddy configuration file which will instruct Caddy to act as a transparent proxy and pass all HTTPS requests to port 8080 where your Manager Server is running.</p>
