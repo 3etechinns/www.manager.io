@@ -25,7 +25,7 @@ title: Installation
 <p class="card-text">Create folder for Manager Server</p>
 <p class="card-text"><code>mkdir /usr/share/manager-server</code></p>
 <p class="card-text">Download the latest version of Manager Server.</p>
-<p class="card-text"><code>wget https://d2ap5zrlkavzl7.cloudfront.net/{{ release.version }}/ManagerServer.tar.gz -P /usr/share/manager-server</code></p>
+<p class="card-text"><code>wget https://d2ap5zrlkavzl7.cloudfront.net/{{ release.version }}/ManagerServer.tar.gz -O /usr/share/manager-server/ManagerServer.tar.gz</code></p>
 <p class="card-text">Then untar downloaded <i>ManagerServer.tar.gz</i> using following command</p>
 <p class="card-text"><code>tar -xzf /usr/share/manager-server/ManagerServer.tar.gz -C /usr/share/manager-server</code></p>
 </div></div>
@@ -67,4 +67,14 @@ title: Installation
   }
 }</pre>
 <p class="card-text">This will instruct Caddy to act as a transparent proxy and pass all HTTPS requests to port 8080 where your Manager Server is running.</p>
+</div></div>
+
+<div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">8</span>Upgrading Manager Server</h5><div class="card-body">
+<p class="card-text">Download the latest version of Manager Server:</p>
+<p class="card-text"><code>wget https://d2ap5zrlkavzl7.cloudfront.net/{{ release.version }}/ManagerServer.tar.gz -O /usr/share/manager-server/ManagerServer.tar.gz</code></p>
+<p class="card-text">Then untar downloaded <i>ManagerServer.tar.gz</i> using following command</p>
+<p class="card-text"><code>tar -xzf /usr/share/manager-server/ManagerServer.tar.gz -C /usr/share/manager-server</code></p>
+<p class="card-text">Finally restart the service.</p>
+<p class="card-text"></p><p><code>systemctl restart manager-server</code></p>
+<p class="card-text">Done. You can log into your server instance to verify the latest version is running.</p>
 </div></div>
