@@ -36,7 +36,7 @@ title: Installation
 <p class="card-text">Reload the systemd daemon:</p>
 <p class="card-text"><code>systemctl daemon-reload</code></p>
 <p class="card-text">And finally start Manager Server:</p>
-<p class="card-text"></p><p><code>systemctl start manager-server</code></p>
+<p class="card-text"><code>systemctl start manager-server</code></p>
 <p class="card-text">Also have the Manager Server service start automatically on boot so you don't have to start Manager Server manually:</p>
 <p class="card-text"></p><p><code>systemctl enable manager-server</code></p>
 </div></div>
@@ -59,14 +59,16 @@ title: Installation
 
 <div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">7</span>Setting up HTTPS</h5><div class="card-body">
 <p class="card-text">If you are going to allow access from the Internet, it is highly recommended you secure Manager Server by HTTPS connection. This means your connection to your server will be encrypted. We recommend to use free edition of <a href="https://caddyserver.com/">Caddy</a> which will run on ports 80 and 443 and will automatically install SSL certificate for your custom domain.</p>
-<p class="card-text">When installing Caddy, you will need to create <code>caddy.conf</code>. Here is an example of what you will need.</p>
-<pre class="text-white bg-dark p-3 rounded">:443 {
-  tls { max_certs 1000 }
-  proxy / localhost:8080 {
-    transparent
-  }
-}</pre>
-<p class="card-text">This will instruct Caddy to act as a transparent proxy and pass all HTTPS requests to port 8080 where your Manager Server is running.</p>
+<p class="card-text">Install Caddy using the following command:</p>
+<p class="card-text"><code>curl https://getcaddy.com | bash -s personal</code></p>
+<p class="card-text">Then create Caddy configuration file which will instruct Caddy to act as a transparent proxy and pass all HTTPS requests to port 8080 where your Manager Server is running.</p>
+<p class="card-text"><code>printf ":443 {\n  proxy / localhost:8080\n  tls { max_certs 100 }\n}\n" | sudo tee /usr/share/manager-server/caddy.conf</code></p>
+<p class="card-text">Install the systemd service unit configuration file:</p>
+<p class="card-text"><code>printf "[Unit]\nAfter=network.target\n\n[Service]\nLimitNOFILE=1048576\nExecStart=/usr/local/bin/caddy -agree=true -conf=/usr/share/manager-server/caddy.conf\nRestart=always\nStartLimitInterval=600\n\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/caddy.service</code></p>
+<p class="card-text">And finally start Manager Server:</p>
+<p class="card-text"><code>systemctl start caddy</code></p>
+<p class="card-text">Also have the Caddy Server service start automatically on boot so you don't have to start it manually:</p>
+<p class="card-text"></p><p><code>systemctl enable caddy</code></p>
 </div></div>
 
 <div class="card mb-4"><h5 class="card-header"><span class="badge badge-pill badge-secondary mr-2">8</span>Upgrading Manager Server</h5><div class="card-body">
