@@ -736,3 +736,4 @@ date,version,message
 2018-07-28,18.7.57,"WebTranslateIt"
 2018-07-28,18.7.58,"Merge branch 'master' of https://github.com/lubos/Manager"
 2018-07-28,18.7.59,"Financial reports to show accounts with zero balances by default, use 'Exclude zero balances' option to hide them #16609"
+2018-07-28,18.7.60,"Added ability to show custom fields defined on bank/cash account level to show on related transactions #16931"
