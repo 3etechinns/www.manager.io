@@ -740,3 +740,4 @@ date,version,message
 2018-07-29,18.7.61,"Added ability to create bank rules for 'Billable Expenses' #17071"
 2018-07-29,18.7.62,"WebTranslateIt"
 2018-07-29,18.7.63,"no message"
+2018-07-29,18.7.64,"Added ability to create custom field as 'Number' #12916"
