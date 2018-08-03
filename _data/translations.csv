@@ -1,5 +1,5 @@
 code,percentage,localname,englishname,contributors
-nl,100,Nederlands,Dutch,Ernst Bunders Hennie Eerhart martijn vincent Tomasz Nguyen carel.ketelaars Paul van Rijn Mehh Yorrick Hardeman tomas.scheldeman Richard Martijn D. Aart van Oploo joost Jos Geluk Anton Frank reyjamin sraslan aartdijkstra rory Mitch Gooijer 2BeFresh rob ingeschuffelen rikroukens alex peterfick.nl trudyvendel Reggie Dinsbach bram.kort t.aski marloesknetemann raymondlukassen
+nl,100,Nederlands,Dutch,Ernst Bunders Hennie Eerhart martijn vincent Tomasz Nguyen carel.ketelaars Paul van Rijn Mehh Yorrick Hardeman tomas.scheldeman Richard Martijn D. Aart van Oploo joost Jos Geluk Anton Frank sraslan reyjamin aartdijkstra rory Mitch Gooijer rob 2BeFresh ingeschuffelen rikroukens alex peterfick.nl trudyvendel Reggie Dinsbach bram.kort t.aski marloesknetemann raymondlukassen
 sr,100,srpski,Serbian,analiza.fin.izvjestaja vojkan.milovanovic dragan.vukosavljevic Nikola Maric Dr Nedic Nikola dragoslav.nikolic tanicbozidar bojanpavlovicoffice Goran Jordović draganmatrox
 mk,100,македонски јазик,Macedonian,novica Predrag Tasevski marko.aleksov gligorovski.g dlalkov
 zh-HK,100,中文(香港),Traditional Chinese (Hong Kong),erph.com.hk
@@ -14,32 +14,32 @@ ar,98,العربية,Arabic,Haitham Doraidy mohammad naji yaser nanoua Abdulbari
 de,98,Deutsch,German,Daniel Ruf Marko Langer d_k1 nielsaufdeepspace9 khargoth24 taieyaman tosho1994 Manuel Klarmann arno abdulshafie99 Daniel Banck
 lt,97,lietuvių,Lithuanian,MES GALIM irina edlu73 ramunas atolodas andrius Povilas Klusas
 pt,96,Português,Portuguese,Manuela Silva bmrcarneiro Nuno Lopes celexi Alexsander Donay Samuel Mesquita Ana Fonseca ido sooskca chinguelessi euhudson diego.viegas godoyjon Luis Panao luiz Lucas aapinto felipe osmar.mateus guilhermeschneiderbr
-tr,96,Türkçe,Turkish,ahmetnsr07 erincfirtina posta Ufuk enesemretas ŞENOL KOÇAN bunyaminkoz ademalp selimelitas7 ipek srknakarcay ilham123836 brnozcan alisanari doganhatip a.kadirgngr İsmail Demirbilek alierhanersoy Egzon Prokupla artunalyan talatcorak netusta berke.turgan okanciftci34 ahmet
+tr,96,Türkçe,Turkish,ahmetnsr07 erincfirtina posta Ufuk enesemretas ŞENOL KOÇAN bunyaminkoz ademalp selimelitas7 ipek srknakarcay ilham123836 brnozcan alisanari doganhatip İsmail Demirbilek a.kadirgngr alierhanersoy Egzon Prokupla artunalyan talatcorak netusta berke.turgan okanciftci34 ahmet
 ro,93,română,Romanian,consult.brasov paul.pitea Sorin vfrunza Catalin Dragomirescu vasile.chisu toda ioan
 da,93,dansk,Danish,finnwandersen fh Torben Hasse Kirkegaard railer12 soren wegeberg kurtha bkooss
 sv,92,svenska,Swedish,Jan-Eric Lindh larsonniwik Fredrik Duwell mattenrone
 fa,92,فارسى,Persian,pnshad Aiub MRNasseri o.ahmadi.mail monib19 hamzelo.ali mehdi_song torabian.7 metalixon mo_jair efa programingc42 kamitoto1995 navidhaghi peyman.mohamadpour waheed
-es,86,español,Spanish,Marco Picón oscargonz Diego Represas jf150552 taxmatters.richmond cametiope romsaz info juanmagic01 josegjimenez greatexe Luis Galvez lublanchod fernando.lguevara Angel luis info egonzalez Freddy Isaac osorio022 Luigi caparra antoniomagagna leonsk29 gustavo alaskamama ferwind des leoxordonez arlopeza flira1010 malrod waldinads1987 franciscobama info rodrigo.ortiz
+es,86,español,Spanish,Marco Picón oscargonz Diego Represas jf150552 taxmatters.richmond cametiope romsaz info juanmagic01 josegjimenez greatexe Luis Galvez lublanchod fernando.lguevara Angel luis info Freddy Isaac egonzalez osorio022 Luigi caparra antoniomagagna leonsk29 gustavo alaskamama ferwind des leoxordonez arlopeza flira1010 malrod waldinads1987 franciscobama info rodrigo.ortiz
 sk,86,slovenčina,Slovak,managerioslovak Lubos Hasko hiddenvs pavol.paluga Július Meri monikafoster
 hr,85,hrvatski,Croatian,vedran.ivancevic daniel.phenomena frost.giant.miniatures zsvegar darko.borojevic bbbbxxx civija mario.strmen.dvorski christian misic.mirko
 de-CH,83,Deutsch (Schweiz),German (Switzerland),Radio64 johnwhosmithwatson Phantom75 wkfrehner
-fr,82,français,French,antoinebargel nujabe.com webtranslateit.com 500assets.com jpmorin nicolas julien Erwin Mayer scialet Daniel G olivier.asselin doris.gagnon eriam kdaffef Wesly  pavel robert ju alexandre.gauvin alexandrehitchcox chsmo33 lamarane karensg.mk Abdellah Elfilali natalia.pokrovskaya antoine.rouse mickaelramanitrera rabodanmaha
+fr,82,français,French,antoinebargel nujabe.com webtranslateit.com 500assets.com jpmorin nicolas julien Erwin Mayer scialet Daniel G doris.gagnon olivier.asselin eriam kdaffef pavel Wesly  robert ju alexandre.gauvin alexandrehitchcox chsmo33 lamarane karensg.mk Abdellah Elfilali natalia.pokrovskaya antoine.rouse mickaelramanitrera rabodanmaha
 az,82,Azərbaycan,Azeri,anarsmac elxan96 90ez090 moize
 sl,81,slovenski,Slovenian,David blaziusgr Silvo Jakob Gregor Sušanj Jure Medved Ivo foseklin marko.munda andrej.volpi lionidas0001 bostjan.petru thegreatwise
 te,77,తెలుగు,Telugu,sekhar.apps10 kesava reddy hana raj.nann vsurimanchi vveeru19
-ht,76,kreyòl,Haitian,jjohnny14
+ht,77,kreyòl,Haitian,jjohnny14
 si,76,siṁhala,Sinhala,admin Pahan SBSCC virajkavn sheronwollas chanakaicdl thisara.gunathilaka kasun.subasinghe akjhemachandra
 ta,76,தமிழ்,Tamil,M. Palaniappan Jiyath ahamed ayyanprasathpalani SBSCC dr.kumarasingam mail2muthuram thavaruban Mohamed Basheer befrontliner sathyayuge24 sundaresanraja kvenkat_2k1
 ca,74,català,Catalan,Quim Gual
 dv,73,Divehi,Divehi,ޔާސިފް abdhulla.alim
 ru,72,русский,Russian,mprokopov Anastasia Оля Stepan Galkin azampas Ramonkz natalia.pokrovskaya broslavski
 bs,71,bosanski,Bosnian,dino.bojcic logical ahajdar adnan Vesmir Ruznic sraslan
-ms,69,Bahasa Melayu,Malay,firdauspr auradash hamzah norman05051984 aeo.ashraf detjohn13 asyrafkhairuddin92 Rshd Mohd mydispomail-001 cskhua idea_hairul adrysabry mysycsolutions halimhamdan od3n amirul.asswad
+ms,69,Bahasa Melayu,Malay,firdauspr auradash hamzah norman05051984 aeo.ashraf detjohn13 asyrafkhairuddin92 Rshd Mohd mydispomail-001 idea_hairul cskhua adrysabry mysycsolutions halimhamdan od3n amirul.asswad
 uz,68,oʻzbekcha,Uzbek,Diyor
 zh-CN,66,中文(简体),Simplified Chinese (China),zlg.happy thresh14 fantacyzc ryan.lufh jameslee4848 xoojulian zack hzfywkj tony.tong admin jtayyw 593915157 beiruoyi_1016 yanchoo
 bn,62,বাংলা,Bengali,andrew Monowar Hossain sykat007 iktheruddin096 hasandhali arif.css123 qstar.inc mazhar266 hasan87abc ceo rashidul6 jessoreit polashpalchowdury Md. Ikramul Hossain  shafizelal topu11543 mannuinfo contact
 fi,61,suomi,Finnish,Juha Auvinen shotdog mikko
-my,58,မြန်မာစာ,Burmese,Lin Win Thu tunwn.mdy mbanyar033
+my,58,မြန်မာစာ,Burmese,Lin Win Thu tunwn.mdy mbanyar033 pyephyoeaung1
 th,57,ไทย,Thai,Pichaya.L ChiVasCz nattariya kunthawat ssrinora saravuthc suratlee tawat.ted
 no,56,norsk,Norwegian,Kevin Jung Park theodor Rune Michael Hofstad alexander.dawson
 ur,50,اُردو,Urdu,aasim.sethi tmntbob Moeen Hashmi Hassaan Khawer Amjad Cheema thenewelectricstore muhammadatif.memon 91.syedhunain celticom ajmal.kh86 usrana52 ashfaq202 saqib.pcg jahangir.amin awais_sohail89 mshahid7194090 mzraza
@@ -48,7 +48,7 @@ ko,48,한국어,Korean,ingen
 hu,48,magyar,Hungarian,radi Pal Turcsan pmarjai radnog gabor zolenor
 zh-TW,45,中文(台灣),Traditional Chinese (Taiwan),assanges simon.tai Jefferson matt81412 c.hwa.liu iverson83102005 macho9929
 hi,41,हिंदी,Hindi,Sameer Gupta anshumang244 pradeepkumarjangir pgaworld robin08rangi universalmedicaregkp ss621480 jbmakwana1 patel8795 hunaidzaki
-it,36,italiano,Italian,a.giordano.mi tommaso.muro ruozzistefano Enrico Baioni grassi.alessio francesco.monte davide io brigo92.pb webmaster aces85 info piccioli66 Daniele Giulianelli nlogozzo123 jessica.oppedisano fbgulotta m.apice74 aurasanu alby
+it,36,italiano,Italian,a.giordano.mi tommaso.muro ruozzistefano Enrico Baioni grassi.alessio francesco.monte davide io brigo92.pb webmaster aces85 info Daniele Giulianelli piccioli66 nlogozzo123 jessica.oppedisano fbgulotta m.apice74 aurasanu alby
 mn,36,Mongɣol kele,Mongolian,munkh.munkhsoyol dulguunb ireedui2k5 daj_bud
 bg,32,български,Bulgarian,y.hinov simeonov.martin krapchev dimo.chankov ivanov.ivaylo
 uk,27,українська,Ukrainian,dgorbachov julia.litovenko d.matiushko swet92
@@ -57,7 +57,7 @@ ku,24,کوردی,Kurdish,diyako eye.aram ibrahimqadir rebazsalih barhambakr
 he,23,עברית,Hebrew,Isaac Portal sergey.rav nir danielh101
 be,20,Беларускі,Belarusian,6598335
 so,19,Af-Soomaali,Somali,hasantanni mudey001 liinxasan10
-ml,19,മലയാളം,Malayalam,supergassales shinerajendran xkaterboi chinturj muraliksa rafeekpp spacesofttech sameerudma sameeh1986 musthafaanas
+ml,19,മലയാളം,Malayalam,supergassales shinerajendran xkaterboi muraliksa rafeekpp chinturj spacesofttech sameerudma sameeh1986 musthafaanas
 cs,17,čeština,Czech,lukas Daniel Vítek karel.jakub
 gl,17,galego,Galician,Diego Represas
 fy,17,Frysk,Frisian,land_wilco
