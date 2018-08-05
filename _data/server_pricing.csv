@@ -1,10 +1,12 @@
 Code,Name,Price,StripePrice
 AED,United Arab Emirates Dirham,"1,490",149000
+ALL,Albanian Lek,"43,990",4399000
 ANG,Netherlands Antillean Gulden,"690",69000
 ARS,Argentine Peso,"6,690",669000
 AUD,Australian Dollar,"480",48000
 AWG,Aruban Florin,"690",69000
 BBD,Barbadian Dollar,"780",78000
+BDT,Bangladeshi Taka,"31,990",3199000
 BIF,Burundian Franc,"679,990",679990
 BMD,Bermudian Dollar,"390",39000
 BND,Brunei Dollar,"520",52000
@@ -17,9 +19,13 @@ CAD,Canadian Dollar,"470",47000
 CHF,Swiss Franc,"370",37000
 CLP,Chilean Peso,"249,990",249990
 CNY,Chinese Renminbi Yuan,"2,590",259000
+CRC,Costa Rican Colón,"229,990",22999000
+CVE,Cape Verdean Escudo,"36,990",3699000
 CZK,Czech Koruna,"8,590",859000
 DJF,Djiboutian Franc,"69,990",69990
 DKK,Danish Krone,"2,490",249000
+DOP,Dominican Peso,"18,990",1899000
+DZD,Algerian Dinar,"43,990",4399000
 EGP,Egyptian Pound,"6,890",689000
 ETB,Ethiopian Birr,"8,990",899000
 EUR,Euro,"320",32000
@@ -27,44 +33,75 @@ FJD,Fijian Dollar,"780",78000
 FKP,Falkland Islands Pound,"290",29000
 GBP,British Pound,"290",29000
 GIP,Gibraltar Pound,"290",29000
+GMD,Gambian Dalasi,"17,990",1799000
+GNF,Guinean Franc,"3,599,990",3599990
 GTQ,Guatemalan Quetzal,"2,890",289000
+GYD,Guyanese Dollar,"79,990",7999000
 HKD,Hong Kong Dollar,"2,990",299000
 HNL,Honduran Lempira,"9,190",919000
 HRK,Croatian Kuna,"2,490",249000
+HTG,Haitian Gourde,"24,990",2499000
+HUF,Hungarian Forint,"99,990",9999000
 ILS,Israeli New Sheqel,"1,390",139000
+INR,Indian Rupee,"24,990",2499000
+ISK,Icelandic Króna,"41,990",4199000
+JMD,Jamaican Dollar,"49,990",4999000
 JPY,Japanese Yen,"42,990",42990
+KES,Kenyan Shilling,"39,990",3999000
 KMF,Comorian Franc,"169,990",169990
 KRW,South Korean Won,"449,990",449990
 KYD,Cayman Islands Dollar,"320",32000
+KZT,Kazakhstani Tenge,"139,990",13999000
+LBP,Lebanese Pound,"589,990",58999000
+LKR,Sri Lankan Rupee,"59,990",5999000
+LRD,Liberian Dollar,"45,990",4599000
 MAD,Moroccan Dirham,"3,690",369000
 MDL,Moldovan Leu,"6,890",689000
+MNT,Mongolian Tögrög,"959,990",95999000
 MOP,Macanese Pataca,"3,190",319000
+MRO,Mauritanian Ouguiya,"149,990",14999000
+MUR,Mauritian Rupee,"12,990",1299000
 MVR,Maldivian Rufiyaa,"5,990",599000
+MWK,Malawian Kwacha,"289,990",28999000
 MXN,Mexican Peso,"6,990",699000
 MYR,Malaysian Ringgit,"1,690",169000
 NAD,Namibian Dollar,"4,990",499000
+NGN,Nigerian Naira,"139,990",13999000
+NIO,Nicaraguan Córdoba,"11,990",1199000
 NOK,Norwegian Krone,"2,990",299000
+NPR,Nepalese Rupee,"39,990",3999000
 NZD,New Zealand Dollar,"530",53000
 PAB,Panamanian Balboa,"390",39000
 PEN,Peruvian Nuevo Sol,"1,290",129000
 PGK,Papua New Guinean Kina,"1,290",129000
+PHP,Philippine Peso,"19,990",1999000
+PKR,Pakistani Rupee,"39,990",3999000
 PLN,Polish Złoty,"1,390",139000
+PYG,Paraguayan Guaran,"2,299,990",2299990
 QAR,Qatari Riyal,"1,490",149000
+RUB,Russian Ruble,"22,990",2299000
 SAR,Saudi Riyal,"1,490",149000
 SBD,Solomon Islands Dollar,"2,990",299000
 SCR,Seychellois Rupee,"5,390",539000
 SEK,Swedish Krona,"3,190",319000
 SGD,Singapore Dollar,"520",52000
 SHP,Saint Helenian Pound,"290",29000
+SOS,Somali Shilling,"229,990",22999000
 SVC,Salvadoran Colón,"3,490",349000
 SZL,Swazi Lilangeni,"4,990",499000
+THB,Thai Baht,"12,990",1299000
 TOP,Tongan Paʻanga,"860",86000
 TTD,Trinidad and Tobago Dollar,"2,690",269000
+TWD,New Taiwan Dollar,"11,990",1199000
+TZS,Tanzanian Shilling,"879,990",87999000
 UAH,Ukrainian Hryvnia,"9,990",999000
 USD,United States Dollar,"390",39000
+UYU,Uruguayan Peso,"11,990",1199000
+VND,Vietnamese Đồng,"8,899,990",8899990
 VUV,Vanuatu Vatu,"39,990",39990
 WST,Samoan Tala,"970",97000
 XAF,Central African Cfa Franc,"219,990",219990
 XOF,West African Cfa Franc,"219,990",219990
 XPF,Cfp Franc,"38,990",38990
+YER,Yemeni Rial,"97,990",9799000
 ZAR,South African Rand,"4,990",499000
