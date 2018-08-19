@@ -786,3 +786,4 @@ date,version,message
 2018-08-17,18.8.10,"Added ability to enter multiple lines of text into line item custom fields #17424"
 2018-08-18,18.8.11,"no message"
 2018-08-19,18.8.12,"Fixed custom field number-type issue which prevented numbers from being cleared #17483"
+2018-08-19,18.8.13,"Added 'Import Bank Statement' button under 'Bank Accounts' tab when clicking on 'Statement balance' figure #15306"
