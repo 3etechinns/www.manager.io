@@ -787,3 +787,4 @@ date,version,message
 2018-08-18,18.8.11,"no message"
 2018-08-19,18.8.12,"Fixed custom field number-type issue which prevented numbers from being cleared #17483"
 2018-08-19,18.8.13,"Added 'Import Bank Statement' button under 'Bank Accounts' tab when clicking on 'Statement balance' figure #15306"
+2018-08-20,18.8.14,"Added ability to clone inventory transfers"
